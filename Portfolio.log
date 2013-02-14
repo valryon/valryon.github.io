@@ -1,6 +1,437 @@
-INFO|WEBSITENAME.Log|2013-02-10 00:05:20,479|Starting website WEBSITENAME...
-INFO|WEBSITENAME.Log|2013-02-10 00:09:11,839|Starting website WEBSITENAME...
-INFO|WEBSITENAME.Log|2013-02-10 00:10:00,890|Starting website WEBSITENAME...
-INFO|WEBSITENAME.Log|2013-02-10 00:10:09,355|Starting website WEBSITENAME...
-INFO|WEBSITENAME.Log|2013-02-10 00:10:41,465|Starting website WEBSITENAME...
-INFO|Portfolio.Log|2013-02-10 00:14:05,189|Starting website Portfolio...
+INFO|Portfolio.Log|2013-02-14 15:35:46,906|Starting website Portfolio...
+INFO|Portfolio.Log|2013-02-14 15:52:54,740|Starting website Portfolio...
+INFO|Portfolio.Log|2013-02-14 15:54:34,483|Starting website Portfolio...
+INFO|Portfolio.Log|2013-02-14 15:55:30,185|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-14 15:55:37,396|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-02-un-article-exemple.markdown.md
+DEBUG|Portfolio.Log|2013-02-14 15:55:37,398|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-15.article1.md
+DEBUG|Portfolio.Log|2013-02-14 15:55:37,399|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-14 15:57:52,851|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-14 15:57:52,970|Source file location: ./_posts
+INFO|Portfolio.Log|2013-02-14 15:57:52,972|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-14 15:58:08,635|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-14 15:58:20,218|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-14 16:09:40,251|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-14 16:09:40,394|Source file location: ./_posts
+INFO|Portfolio.Log|2013-02-14 16:09:40,395|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-02-un-article-exemple.markdown.md
+ERROR|Portfolio.Log|2013-02-14 16:09:40,433|Exception ! Source : GenerateArticles.ReadMeta. System.IO.FileNotFoundException: Impossible de trouver le fichier 'C:\Program Files (x86)\IIS Express\2011-09-02-un-article-exemple.markdown.meta'.
+Nom de fichier : 'C:\Program Files (x86)\IIS Express\2011-09-02-un-article-exemple.markdown.meta'
+   à System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   à System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   à System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   à System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   à System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   à System.IO.File.ReadAllText(String path)
+   à Portfolio.ArticlesService.GenerateArticles(Controller controller) dans d:\dev\GitHub\portfolio\ArticlesService.cs:ligne 57
+INFO|Portfolio.Log|2013-02-14 16:09:40,505|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-15.article1.md
+ERROR|Portfolio.Log|2013-02-14 16:09:40,520|Exception ! Source : GenerateArticles.ReadMeta. System.IO.FileNotFoundException: Impossible de trouver le fichier 'C:\Program Files (x86)\IIS Express\2011-09-15.article1.meta'.
+Nom de fichier : 'C:\Program Files (x86)\IIS Express\2011-09-15.article1.meta'
+   à System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   à System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   à System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   à System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   à System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   à System.IO.File.ReadAllText(String path)
+   à Portfolio.ArticlesService.GenerateArticles(Controller controller) dans d:\dev\GitHub\portfolio\ArticlesService.cs:ligne 57
+INFO|Portfolio.Log|2013-02-14 16:09:40,525|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2.md
+ERROR|Portfolio.Log|2013-02-14 16:09:40,539|Exception ! Source : GenerateArticles.ReadMeta. System.IO.FileNotFoundException: Impossible de trouver le fichier 'C:\Program Files (x86)\IIS Express\2011-09-16.article2.meta'.
+Nom de fichier : 'C:\Program Files (x86)\IIS Express\2011-09-16.article2.meta'
+   à System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   à System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   à System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   à System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   à System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   à System.IO.File.ReadAllText(String path)
+   à Portfolio.ArticlesService.GenerateArticles(Controller controller) dans d:\dev\GitHub\portfolio\ArticlesService.cs:ligne 57
+DEBUG|Portfolio.Log|2013-02-14 16:09:46,318|Source file location: ./_posts
+INFO|Portfolio.Log|2013-02-14 16:09:46,320|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-02-un-article-exemple.markdown.md
+ERROR|Portfolio.Log|2013-02-14 16:09:46,344|Exception ! Source : GenerateArticles.ReadMeta. System.IO.FileNotFoundException: Impossible de trouver le fichier 'C:\Program Files (x86)\IIS Express\2011-09-02-un-article-exemple.markdown.meta'.
+Nom de fichier : 'C:\Program Files (x86)\IIS Express\2011-09-02-un-article-exemple.markdown.meta'
+   à System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   à System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   à System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   à System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   à System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   à System.IO.File.ReadAllText(String path)
+   à Portfolio.ArticlesService.GenerateArticles(Controller controller) dans d:\dev\GitHub\portfolio\ArticlesService.cs:ligne 57
+INFO|Portfolio.Log|2013-02-14 16:09:46,348|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-15.article1.md
+ERROR|Portfolio.Log|2013-02-14 16:09:46,363|Exception ! Source : GenerateArticles.ReadMeta. System.IO.FileNotFoundException: Impossible de trouver le fichier 'C:\Program Files (x86)\IIS Express\2011-09-15.article1.meta'.
+Nom de fichier : 'C:\Program Files (x86)\IIS Express\2011-09-15.article1.meta'
+   à System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   à System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   à System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   à System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   à System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   à System.IO.File.ReadAllText(String path)
+   à Portfolio.ArticlesService.GenerateArticles(Controller controller) dans d:\dev\GitHub\portfolio\ArticlesService.cs:ligne 57
+INFO|Portfolio.Log|2013-02-14 16:09:46,367|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2.md
+ERROR|Portfolio.Log|2013-02-14 16:09:46,381|Exception ! Source : GenerateArticles.ReadMeta. System.IO.FileNotFoundException: Impossible de trouver le fichier 'C:\Program Files (x86)\IIS Express\2011-09-16.article2.meta'.
+Nom de fichier : 'C:\Program Files (x86)\IIS Express\2011-09-16.article2.meta'
+   à System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   à System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   à System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   à System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   à System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   à System.IO.File.ReadAllText(String path)
+   à Portfolio.ArticlesService.GenerateArticles(Controller controller) dans d:\dev\GitHub\portfolio\ArticlesService.cs:ligne 57
+DEBUG|Portfolio.Log|2013-02-14 16:10:00,495|Source file location: ./_posts
+INFO|Portfolio.Log|2013-02-14 16:10:01,658|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-02-un-article-exemple.markdown.md
+ERROR|Portfolio.Log|2013-02-14 16:10:27,127|Exception ! Source : GenerateArticles.ReadMeta. System.IO.FileNotFoundException: Impossible de trouver le fichier 'C:\Program Files (x86)\IIS Express\2011-09-02-un-article-exemple.markdown.meta'.
+Nom de fichier : 'C:\Program Files (x86)\IIS Express\2011-09-02-un-article-exemple.markdown.meta'
+   à System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   à System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   à System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   à System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   à System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   à System.IO.File.ReadAllText(String path)
+   à Portfolio.ArticlesService.GenerateArticles(Controller controller) dans d:\dev\GitHub\portfolio\ArticlesService.cs:ligne 57
+INFO|Portfolio.Log|2013-02-14 16:10:27,130|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-15.article1.md
+ERROR|Portfolio.Log|2013-02-14 16:10:27,131|Exception ! Source : GenerateArticles.ReadMeta. System.IO.FileNotFoundException: Impossible de trouver le fichier 'C:\Program Files (x86)\IIS Express\2011-09-15.article1.meta'.
+Nom de fichier : 'C:\Program Files (x86)\IIS Express\2011-09-15.article1.meta'
+   à System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   à System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   à System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   à System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   à System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   à System.IO.File.ReadAllText(String path)
+   à Portfolio.ArticlesService.GenerateArticles(Controller controller) dans d:\dev\GitHub\portfolio\ArticlesService.cs:ligne 57
+INFO|Portfolio.Log|2013-02-14 16:10:27,134|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2.md
+ERROR|Portfolio.Log|2013-02-14 16:10:27,134|Exception ! Source : GenerateArticles.ReadMeta. System.IO.FileNotFoundException: Impossible de trouver le fichier 'C:\Program Files (x86)\IIS Express\2011-09-16.article2.meta'.
+Nom de fichier : 'C:\Program Files (x86)\IIS Express\2011-09-16.article2.meta'
+   à System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   à System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   à System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   à System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   à System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   à System.IO.File.ReadAllText(String path)
+   à Portfolio.ArticlesService.GenerateArticles(Controller controller) dans d:\dev\GitHub\portfolio\ArticlesService.cs:ligne 57
+INFO|Portfolio.Log|2013-02-14 16:10:33,435|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-14 16:10:33,580|Source file location: ./_posts
+INFO|Portfolio.Log|2013-02-14 16:10:36,362|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-02-un-article-exemple.markdown.md
+ERROR|Portfolio.Log|2013-02-14 16:11:39,746|Exception ! Source : GenerateArticles.ReadMeta. Newtonsoft.Json.JsonReaderException: Invalid character after parsing property name. Expected ':' but got: t. Path 'tags', line 7, position 15.
+   à Newtonsoft.Json.JsonTextReader.ParseProperty()
+   à Newtonsoft.Json.JsonTextReader.ParseObject()
+   à Newtonsoft.Json.JsonTextReader.ReadInternal()
+   à Newtonsoft.Json.JsonTextReader.Read()
+   à Newtonsoft.Json.Linq.JContainer.ReadContentFrom(JsonReader r)
+   à Newtonsoft.Json.Linq.JContainer.ReadTokenFrom(JsonReader reader)
+   à Newtonsoft.Json.Linq.JObject.Load(JsonReader reader)
+   à Newtonsoft.Json.Linq.JObject.Parse(String json)
+   à Portfolio.ArticlesService.GenerateArticles(Controller controller) dans d:\dev\GitHub\portfolio\ArticlesService.cs:ligne 59
+INFO|Portfolio.Log|2013-02-14 16:11:39,822|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-14 16:12:15,185|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-14 16:13:56,928|Starting website Portfolio...
+INFO|Portfolio.Log|2013-02-14 16:14:06,720|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-14 16:14:07,971|Source file location: ./_posts
+INFO|Portfolio.Log|2013-02-14 16:14:07,974|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-02-un-article-exemple.markdown.md
+ERROR|Portfolio.Log|2013-02-14 16:14:18,394|Exception ! Source : GenerateArticles.ReadMeta. System.FormatException: La chaîne n'a pas été reconnue en tant que DateTime valide.
+   à System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   à System.DateTime.Parse(String s)
+   à Portfolio.ArticlesService.GenerateArticles(Controller controller) dans d:\dev\GitHub\portfolio\ArticlesService.cs:ligne 66
+INFO|Portfolio.Log|2013-02-14 16:14:18,466|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-15.article1.md
+ERROR|Portfolio.Log|2013-02-14 16:14:28,448|Exception ! Source : GenerateArticles.ReadMeta. System.FormatException: La chaîne n'a pas été reconnue en tant que DateTime valide.
+   à System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   à System.DateTime.Parse(String s)
+   à Portfolio.ArticlesService.GenerateArticles(Controller controller) dans d:\dev\GitHub\portfolio\ArticlesService.cs:ligne 66
+INFO|Portfolio.Log|2013-02-14 16:14:28,452|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2.md
+ERROR|Portfolio.Log|2013-02-14 16:14:28,453|Exception ! Source : GenerateArticles.ReadMeta. System.FormatException: La chaîne n'a pas été reconnue en tant que DateTime valide.
+   à System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   à System.DateTime.Parse(String s)
+   à Portfolio.ArticlesService.GenerateArticles(Controller controller) dans d:\dev\GitHub\portfolio\ArticlesService.cs:ligne 66
+INFO|Portfolio.Log|2013-02-14 16:14:49,730|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-14 16:14:49,870|Source file location: ./_posts
+INFO|Portfolio.Log|2013-02-14 16:14:49,872|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-02-un-article-exemple.markdown.md
+ERROR|Portfolio.Log|2013-02-14 16:14:58,023|Exception ! Source : GenerateArticles.ReadMeta. System.FormatException: La chaîne n'a pas été reconnue en tant que DateTime valide.
+   à System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   à System.DateTime.Parse(String s, IFormatProvider provider)
+   à Portfolio.ArticlesService.GenerateArticles(Controller controller) dans d:\dev\GitHub\portfolio\ArticlesService.cs:ligne 67
+INFO|Portfolio.Log|2013-02-14 16:14:58,105|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-14 16:15:48,569|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-14 16:15:48,907|Source file location: ./_posts
+INFO|Portfolio.Log|2013-02-14 16:15:48,909|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-02-un-article-exemple.markdown.md
+ERROR|Portfolio.Log|2013-02-14 16:15:58,394|Exception ! Source : GenerateArticles.ReadMeta. System.FormatException: La chaîne n'a pas été reconnue en tant que DateTime valide.
+   à System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   à System.DateTime.Parse(String s, IFormatProvider provider)
+   à Portfolio.ArticlesService.GenerateArticles(Controller controller) dans d:\dev\GitHub\portfolio\ArticlesService.cs:ligne 67
+INFO|Portfolio.Log|2013-02-14 16:15:58,464|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-15.article1.md
+ERROR|Portfolio.Log|2013-02-14 16:15:58,464|Exception ! Source : GenerateArticles.ReadMeta. System.FormatException: La chaîne n'a pas été reconnue en tant que DateTime valide.
+   à System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   à System.DateTime.Parse(String s, IFormatProvider provider)
+   à Portfolio.ArticlesService.GenerateArticles(Controller controller) dans d:\dev\GitHub\portfolio\ArticlesService.cs:ligne 67
+INFO|Portfolio.Log|2013-02-14 16:15:58,468|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2.md
+ERROR|Portfolio.Log|2013-02-14 16:15:58,468|Exception ! Source : GenerateArticles.ReadMeta. System.FormatException: La chaîne n'a pas été reconnue en tant que DateTime valide.
+   à System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   à System.DateTime.Parse(String s, IFormatProvider provider)
+   à Portfolio.ArticlesService.GenerateArticles(Controller controller) dans d:\dev\GitHub\portfolio\ArticlesService.cs:ligne 67
+DEBUG|Portfolio.Log|2013-02-14 16:16:26,008|Source file location: ./_posts
+INFO|Portfolio.Log|2013-02-14 16:16:26,009|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-14 16:16:28,865|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-14 16:16:28,874|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2.md
+ERROR|Portfolio.Log|2013-02-14 16:16:28,897|Exception ! Source : GenerateArticles.ReadMeta. System.FormatException: La chaîne n'a pas été reconnue en tant que DateTime valide.
+   à System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   à System.DateTime.Parse(String s, IFormatProvider provider)
+   à Portfolio.ArticlesService.GenerateArticles(Controller controller) dans d:\dev\GitHub\portfolio\ArticlesService.cs:ligne 67
+INFO|Portfolio.Log|2013-02-14 16:24:58,888|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-14 16:24:59,257|Source file location: ./_posts
+INFO|Portfolio.Log|2013-02-14 16:24:59,259|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-14 16:24:59,345|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-14 16:24:59,350|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-14 16:26:08,594|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-14 16:26:08,694|Source file location: ./_posts
+INFO|Portfolio.Log|2013-02-14 16:26:08,695|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-14 16:26:08,791|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-14 16:26:08,795|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-14 16:27:30,214|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-14 16:27:30,309|Source file location: ./_posts
+INFO|Portfolio.Log|2013-02-14 16:27:30,310|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-14 16:27:30,398|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-14 16:27:30,402|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2.md
+DEBUG|Portfolio.Log|2013-02-14 16:27:48,648|Source file location: ./_posts
+INFO|Portfolio.Log|2013-02-14 16:27:48,649|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-14 16:27:48,653|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-14 16:27:48,658|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-14 16:43:21,768|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-14 16:43:21,934|Source file location: ./_posts
+INFO|Portfolio.Log|2013-02-14 16:43:21,936|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-14 16:43:22,028|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-14 16:43:22,032|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-14 16:46:47,301|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-14 16:46:47,397|Source file location: ./_posts
+INFO|Portfolio.Log|2013-02-14 16:46:47,398|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-14 16:46:47,493|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-14 16:46:47,496|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-14 16:46:51,341|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-14 16:46:51,439|Source file location: ./_posts
+INFO|Portfolio.Log|2013-02-14 16:46:51,439|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-14 16:46:51,530|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-14 16:46:51,534|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-14 16:48:32,671|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-14 16:48:32,768|Source file location: ./_posts
+INFO|Portfolio.Log|2013-02-14 16:48:32,768|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-14 16:48:32,860|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-14 16:48:32,863|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-14 16:49:45,513|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-14 16:49:45,658|Source file location: ./_posts
+INFO|Portfolio.Log|2013-02-14 16:49:45,660|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-02-un-article-exemple.markdown.md
+DEBUG|Portfolio.Log|2013-02-14 16:49:47,052|Source file location: ./_posts
+ERROR|Portfolio.Log|2013-02-14 16:49:47,080|Exception ! Source : GenerateArticles. System.IO.DirectoryNotFoundException: Impossible de trouver une partie du chemin d'accès 'D:\dev\GitHub\portfolio\Blog\_posts'.
+   à System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   à System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   à System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   à System.IO.Directory.GetFiles(String path, String searchPattern)
+   à Portfolio.ArticlesService.generateArticles(Controller controller) dans d:\dev\GitHub\portfolio\ArticlesService.cs:ligne 69
+DEBUG|Portfolio.Log|2013-02-14 16:50:10,821|Source file location: ./_posts
+ERROR|Portfolio.Log|2013-02-14 16:50:17,466|Exception ! Source : GenerateArticles. System.IO.DirectoryNotFoundException: Impossible de trouver une partie du chemin d'accès 'D:\dev\GitHub\portfolio\Blog\_posts'.
+   à System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   à System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   à System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   à System.IO.Directory.GetFiles(String path, String searchPattern)
+   à Portfolio.ArticlesService.generateArticles(Controller controller) dans d:\dev\GitHub\portfolio\ArticlesService.cs:ligne 69
+INFO|Portfolio.Log|2013-02-14 16:50:17,513|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-14 16:50:17,517|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-14 16:50:56,963|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-14 16:50:57,106|Source file location: ~/_posts
+INFO|Portfolio.Log|2013-02-14 16:50:57,108|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-14 16:50:57,193|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-14 16:50:57,198|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-14 16:52:27,486|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-14 16:52:27,631|Source file location: ~/_posts
+INFO|Portfolio.Log|2013-02-14 16:52:27,633|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-14 16:52:27,723|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-14 16:52:27,727|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-14 16:54:19,003|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-14 16:54:19,104|Source file location: ~/_posts
+INFO|Portfolio.Log|2013-02-14 16:54:19,105|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-14 16:54:19,197|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-14 16:54:19,201|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-14 16:58:28,143|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-14 16:58:28,284|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-14 16:58:28,289|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-14 16:58:28,292|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-14 16:58:28,295|Source file location: ~/_posts
+INFO|Portfolio.Log|2013-02-14 16:58:28,295|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-14 16:58:28,415|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-14 16:58:28,419|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-14 16:58:28,430|Cache : élement "articles" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-14 16:58:52,264|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-14 16:58:52,386|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-14 16:58:52,389|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-14 16:58:52,391|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-14 16:58:52,393|Source file location: ~/_posts
+INFO|Portfolio.Log|2013-02-14 16:58:52,393|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-14 16:58:52,496|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-14 16:58:52,500|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-14 16:58:52,512|Cache : élement "articles" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-14 16:59:06,041|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-14 16:59:06,042|Source file location: ~/_posts
+INFO|Portfolio.Log|2013-02-14 16:59:06,042|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-02-un-article-exemple.markdown.md
+ERROR|Portfolio.Log|2013-02-14 16:59:06,083|Exception ! Source : GenerateArticles. System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.
+   à System.Web.HttpServerVarsCollection.Get(String name)
+   à System.Web.Mvc.UrlRewriterHelper.WasThisRequestRewritten(HttpContextBase httpContext)
+   à System.Web.Mvc.UrlRewriterHelper.WasRequestRewritten(HttpContextBase httpContext)
+   à System.Web.Mvc.PathHelpers.GenerateClientUrlInternal(HttpContextBase httpContext, String contentPath)
+   à System.Web.Mvc.PathHelpers.GenerateClientUrl(HttpContextBase httpContext, String contentPath)
+   à System.Web.Mvc.UrlHelper.GenerateUrl(String routeName, String actionName, String controllerName, RouteValueDictionary routeValues, RouteCollection routeCollection, RequestContext requestContext, Boolean includeImplicitMvcValues)
+   à System.Web.Mvc.UrlHelper.GenerateUrl(String routeName, String actionName, String controllerName, String protocol, String hostName, String fragment, RouteValueDictionary routeValues, RouteCollection routeCollection, RequestContext requestContext, Boolean includeImplicitMvcValues)
+   à System.Web.Mvc.UrlHelper.Action(String actionName, String controllerName, Object routeValues, String protocol)
+   à Portfolio.ArticlesService.generateArticles(Controller controller) dans d:\dev\GitHub\portfolio\ArticlesService.cs:ligne 82
+INFO|Portfolio.Log|2013-02-14 16:59:06,084|Cache : élement "articles" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-14 17:00:02,081|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-14 17:00:03,166|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-14 17:00:03,169|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-14 17:00:03,171|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-14 17:00:03,172|Source file location: ~/_posts
+INFO|Portfolio.Log|2013-02-14 17:00:03,173|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-14 17:00:03,267|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-14 17:00:03,271|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-14 17:00:03,281|Cache : élement "articles" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-14 17:00:06,867|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-14 17:00:06,868|Source file location: ~/_posts
+INFO|Portfolio.Log|2013-02-14 17:00:06,868|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-02-un-article-exemple.markdown.md
+ERROR|Portfolio.Log|2013-02-14 17:00:06,873|Exception ! Source : GenerateArticles. System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.
+   à System.Web.HttpServerVarsCollection.Get(String name)
+   à System.Web.Mvc.UrlRewriterHelper.WasThisRequestRewritten(HttpContextBase httpContext)
+   à System.Web.Mvc.UrlRewriterHelper.WasRequestRewritten(HttpContextBase httpContext)
+   à System.Web.Mvc.PathHelpers.GenerateClientUrlInternal(HttpContextBase httpContext, String contentPath)
+   à System.Web.Mvc.PathHelpers.GenerateClientUrl(HttpContextBase httpContext, String contentPath)
+   à System.Web.Mvc.UrlHelper.GenerateUrl(String routeName, String actionName, String controllerName, RouteValueDictionary routeValues, RouteCollection routeCollection, RequestContext requestContext, Boolean includeImplicitMvcValues)
+   à System.Web.Mvc.UrlHelper.GenerateUrl(String routeName, String actionName, String controllerName, String protocol, String hostName, String fragment, RouteValueDictionary routeValues, RouteCollection routeCollection, RequestContext requestContext, Boolean includeImplicitMvcValues)
+   à System.Web.Mvc.UrlHelper.Action(String actionName, String controllerName, Object routeValues, String protocol)
+   à Portfolio.ArticlesService.generateArticles(Controller controller) dans d:\dev\GitHub\portfolio\ArticlesService.cs:ligne 82
+INFO|Portfolio.Log|2013-02-14 17:00:06,874|Cache : élement "articles" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-14 17:00:28,381|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-14 17:00:36,715|Source file location: ~/_posts
+INFO|Portfolio.Log|2013-02-14 17:00:38,676|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-02-un-article-exemple.markdown.md
+ERROR|Portfolio.Log|2013-02-14 17:00:47,332|Exception ! Source : GenerateArticles. System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.
+   à System.Web.HttpServerVarsCollection.Get(String name)
+   à System.Web.Mvc.UrlRewriterHelper.WasThisRequestRewritten(HttpContextBase httpContext)
+   à System.Web.Mvc.UrlRewriterHelper.WasRequestRewritten(HttpContextBase httpContext)
+   à System.Web.Mvc.PathHelpers.GenerateClientUrlInternal(HttpContextBase httpContext, String contentPath)
+   à System.Web.Mvc.PathHelpers.GenerateClientUrl(HttpContextBase httpContext, String contentPath)
+   à System.Web.Mvc.UrlHelper.GenerateUrl(String routeName, String actionName, String controllerName, RouteValueDictionary routeValues, RouteCollection routeCollection, RequestContext requestContext, Boolean includeImplicitMvcValues)
+   à System.Web.Mvc.UrlHelper.GenerateUrl(String routeName, String actionName, String controllerName, String protocol, String hostName, String fragment, RouteValueDictionary routeValues, RouteCollection routeCollection, RequestContext requestContext, Boolean includeImplicitMvcValues)
+   à System.Web.Mvc.UrlHelper.Action(String actionName, String controllerName, Object routeValues, String protocol)
+   à Portfolio.ArticlesService.generateArticles(Controller controller) dans d:\dev\GitHub\portfolio\ArticlesService.cs:ligne 82
+INFO|Portfolio.Log|2013-02-14 17:00:47,334|Cache : élement "articles" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-14 17:01:02,693|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-14 17:01:06,074|Source file location: ~/_posts
+INFO|Portfolio.Log|2013-02-14 17:01:08,010|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-02-un-article-exemple.markdown.md
+ERROR|Portfolio.Log|2013-02-14 17:01:27,797|Exception ! Source : GenerateArticles. System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.
+   à System.Web.HttpServerVarsCollection.Get(String name)
+   à System.Web.Mvc.UrlRewriterHelper.WasThisRequestRewritten(HttpContextBase httpContext)
+   à System.Web.Mvc.UrlRewriterHelper.WasRequestRewritten(HttpContextBase httpContext)
+   à System.Web.Mvc.PathHelpers.GenerateClientUrlInternal(HttpContextBase httpContext, String contentPath)
+   à System.Web.Mvc.PathHelpers.GenerateClientUrl(HttpContextBase httpContext, String contentPath)
+   à System.Web.Mvc.UrlHelper.GenerateUrl(String routeName, String actionName, String controllerName, RouteValueDictionary routeValues, RouteCollection routeCollection, RequestContext requestContext, Boolean includeImplicitMvcValues)
+   à System.Web.Mvc.UrlHelper.GenerateUrl(String routeName, String actionName, String controllerName, String protocol, String hostName, String fragment, RouteValueDictionary routeValues, RouteCollection routeCollection, RequestContext requestContext, Boolean includeImplicitMvcValues)
+   à System.Web.Mvc.UrlHelper.Action(String actionName, String controllerName, Object routeValues, String protocol)
+   à Portfolio.ArticlesService.generateArticles(Controller controller) dans d:\dev\GitHub\portfolio\ArticlesService.cs:ligne 82
+INFO|Portfolio.Log|2013-02-14 17:01:27,798|Cache : élement "articles" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-14 17:01:39,159|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-14 17:01:42,022|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-14 17:01:42,029|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-14 17:01:42,033|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-14 17:01:44,664|Source file location: ~/_posts
+INFO|Portfolio.Log|2013-02-14 17:01:46,792|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-14 17:02:09,550|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-14 17:02:09,558|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-14 17:02:09,579|Cache : élement "articles" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-14 17:02:21,592|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-14 17:02:23,939|Source file location: ~/_posts
+INFO|Portfolio.Log|2013-02-14 17:02:27,552|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-02-un-article-exemple.markdown.md
+ERROR|Portfolio.Log|2013-02-14 17:02:27,582|Exception ! Source : GenerateArticles. System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.
+   à System.Web.HttpServerVarsCollection.Get(String name)
+   à System.Web.Mvc.UrlRewriterHelper.WasThisRequestRewritten(HttpContextBase httpContext)
+   à System.Web.Mvc.UrlRewriterHelper.WasRequestRewritten(HttpContextBase httpContext)
+   à System.Web.Mvc.PathHelpers.GenerateClientUrlInternal(HttpContextBase httpContext, String contentPath)
+   à System.Web.Mvc.PathHelpers.GenerateClientUrl(HttpContextBase httpContext, String contentPath)
+   à System.Web.Mvc.UrlHelper.GenerateUrl(String routeName, String actionName, String controllerName, RouteValueDictionary routeValues, RouteCollection routeCollection, RequestContext requestContext, Boolean includeImplicitMvcValues)
+   à System.Web.Mvc.UrlHelper.GenerateUrl(String routeName, String actionName, String controllerName, String protocol, String hostName, String fragment, RouteValueDictionary routeValues, RouteCollection routeCollection, RequestContext requestContext, Boolean includeImplicitMvcValues)
+   à System.Web.Mvc.UrlHelper.Action(String actionName, String controllerName, Object routeValues, String protocol)
+   à Portfolio.ArticlesService.generateArticles(Controller controller) dans d:\dev\GitHub\portfolio\ArticlesService.cs:ligne 82
+INFO|Portfolio.Log|2013-02-14 17:02:27,583|Cache : élement "articles" -> mise à jour terminée !
+DEBUG|Portfolio.Log|2013-02-14 17:02:27,587|Aucune donnée récupérée dans le cache pour la clé "articles".
+INFO|Portfolio.Log|2013-02-14 17:03:04,178|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-14 17:03:04,278|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-14 17:03:04,281|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-14 17:03:04,283|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-14 17:03:04,284|Source file location: ~/_posts
+INFO|Portfolio.Log|2013-02-14 17:03:04,285|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-14 17:03:04,378|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-14 17:03:04,381|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-14 17:03:04,392|Cache : élement "articles" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-14 17:03:48,739|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-14 17:03:48,845|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-14 17:03:48,867|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-14 17:03:48,869|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-14 17:03:48,870|Source file location: ~/_posts
+INFO|Portfolio.Log|2013-02-14 17:03:48,870|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-14 17:03:48,962|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-14 17:03:48,965|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-14 17:03:48,976|Cache : élement "articles" -> mise à jour terminée !
+DEBUG|Portfolio.Log|2013-02-14 17:04:01,490|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-14 17:04:01,490|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-14 17:04:01,490|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-14 17:04:01,491|Source file location: ~/_posts
+INFO|Portfolio.Log|2013-02-14 17:04:01,492|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-14 17:04:01,496|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-14 17:04:01,501|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-14 17:04:01,506|Cache : élement "articles" -> mise à jour terminée !
+DEBUG|Portfolio.Log|2013-02-14 17:04:12,860|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-14 17:04:12,860|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-14 17:04:12,860|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-14 17:04:12,860|Source file location: ~/_posts
+INFO|Portfolio.Log|2013-02-14 17:04:12,861|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-14 17:04:12,863|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-14 17:04:12,866|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2 - Copie (2).md
+INFO|Portfolio.Log|2013-02-14 17:04:12,871|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2 - Copie (3).md
+INFO|Portfolio.Log|2013-02-14 17:04:12,875|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2 - Copie.md
+INFO|Portfolio.Log|2013-02-14 17:04:12,879|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-14 17:04:12,882|Cache : élement "articles" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-14 17:04:45,476|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-14 17:04:45,577|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-14 17:04:45,580|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-14 17:04:45,581|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-14 17:04:45,583|Source file location: ~/_posts
+INFO|Portfolio.Log|2013-02-14 17:04:45,583|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-14 17:04:45,677|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-14 17:04:45,680|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2 - Copie (2).md
+INFO|Portfolio.Log|2013-02-14 17:04:45,691|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2 - Copie (3).md
+INFO|Portfolio.Log|2013-02-14 17:04:45,695|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2 - Copie.md
+INFO|Portfolio.Log|2013-02-14 17:04:45,699|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-14 17:04:45,703|Cache : élement "articles" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-14 17:07:36,529|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-14 17:07:36,634|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-14 17:07:36,637|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-14 17:07:36,639|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-14 17:07:36,640|Source file location: ~/_posts
+INFO|Portfolio.Log|2013-02-14 17:07:36,640|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-14 17:07:36,735|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-14 17:07:36,739|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2 - Copie (2).md
+INFO|Portfolio.Log|2013-02-14 17:07:36,748|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2 - Copie (3).md
+INFO|Portfolio.Log|2013-02-14 17:07:36,752|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2 - Copie.md
+INFO|Portfolio.Log|2013-02-14 17:07:36,755|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-14 17:07:36,759|Cache : élement "articles" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-14 17:09:45,502|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-14 17:09:45,604|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-14 17:09:45,607|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-14 17:09:45,608|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-14 17:09:45,610|Source file location: ~/_posts
+INFO|Portfolio.Log|2013-02-14 17:09:45,611|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-14 17:09:45,707|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-14 17:09:45,710|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2 - Copie (2).md
+INFO|Portfolio.Log|2013-02-14 17:09:45,719|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2 - Copie (3).md
+INFO|Portfolio.Log|2013-02-14 17:09:45,723|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2 - Copie.md
+INFO|Portfolio.Log|2013-02-14 17:09:45,726|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-14 17:09:45,730|Cache : élement "articles" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-14 17:12:30,973|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-14 17:12:31,116|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-14 17:12:31,122|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-14 17:12:31,126|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-14 17:12:31,128|Source file location: ~/_posts
+INFO|Portfolio.Log|2013-02-14 17:12:31,129|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-14 17:12:31,216|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-14 17:12:31,221|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2 - Copie (2).md
+INFO|Portfolio.Log|2013-02-14 17:12:31,232|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2 - Copie (3).md
+INFO|Portfolio.Log|2013-02-14 17:12:31,237|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2 - Copie.md
+INFO|Portfolio.Log|2013-02-14 17:12:31,241|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-14 17:12:31,247|Cache : élement "articles" -> mise à jour terminée !

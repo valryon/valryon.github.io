@@ -1,0 +1,22 @@
+@model Portfolio.ViewModels.BlogViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="hero-unit">
+    <h2>Index</h2>
+    <p>
+        Portfolio
+    </p>
+</div>
+<div>
+    @if (Model.Articles != null)
+    {
+        foreach (Portfolio.Models.Article article in Model.Articles)
+        {
+        <a href="@article.Url" >
+            <p>@article.Title</p>
+        </a>
+        }
+    }
+</div>

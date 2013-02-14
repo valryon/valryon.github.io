@@ -19,11 +19,46 @@ namespace Portfolio
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
-                "Default", // Nom d'itinéraire
-                "{controller}/{action}/{id}", // URL avec des paramètres
-                new { controller = "Home", action = "Index", id = UrlParameter.Optional } // Paramètres par défaut
+                "Article",
+                "{title}",
+                new { controller = "Blog", action = "Article" }
             );
 
+            routes.MapRoute(
+                "Error 404",
+                "404",
+                new { controller = "Error", action = "Error404" }
+            );
+
+            routes.MapRoute(
+                "Error 500",
+                "500",
+                new { controller = "Error", action = "Error500" }
+            );
+
+            routes.MapRoute(
+                "Sitemap",
+                "sitemap.xml",
+                new { controller = "Blog", action = "Sitemap" }
+            );
+
+            routes.MapRoute(
+                "Robots",
+                "robots.txt",
+                new { controller = "Blog", action = "Robots" }
+            );
+
+            routes.MapRoute(
+                "Reload",
+                "reload",
+                new { controller = "Blog", action = "ReloadArticles" }
+            );
+
+            routes.MapRoute(
+                "Default", // Nom d'itinéraire
+                "{controller}/{action}/{id}", // URL avec des paramètres
+                new { controller = "Blog", action = "Index", id = UrlParameter.Optional } // Paramètres par défaut
+            );
         }
 
         protected void Application_Start()
