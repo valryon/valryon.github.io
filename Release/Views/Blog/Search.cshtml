@@ -1,0 +1,24 @@
+﻿@model Portfolio.ViewModels.SearchViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    Model.Title = "Searching... "+Model.SearchTitle;
+}
+
+<h2>@Model.SearchTitle</h2>
+
+@if (Model.Results.Count > 0)
+{
+    <ul>
+        @foreach (Portfolio.Models.Article article in Model.Results)
+        {
+            <li><a href="@article.Url">@article.Title</a></li>
+        }
+
+    </ul>
+
+}
+else
+{
+    <p>No results, sorry!</p>   
+}
+
