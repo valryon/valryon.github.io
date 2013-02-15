@@ -1,6 +1,5 @@
 ﻿@model Portfolio.ViewModels.ArticleViewModel
 <article>
-
     <div class="row-fluid">
         <div class="well">
 
@@ -11,6 +10,7 @@
             </h2>
             <p>
                 @Model.Article.PublishedDate.ToString("dd MMM yyyy"),&nbsp;
+                @Model.Article.Language,&nbsp;
                 @foreach (string cat in Model.Article.Categories)
                 {
                     <a href="@Url.Action("Search", "Blog", new { request = cat })">

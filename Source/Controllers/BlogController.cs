@@ -32,7 +32,7 @@ namespace Portfolio.Controllers
             }
 
             model.PageCount = model.Articles.Count / pageSize;
-            model.Articles = model.Articles.Skip((model.CurrentPage-1) * pageSize).Take(pageSize).ToList();
+            model.Articles = model.Articles.Skip((model.CurrentPage - 1) * pageSize).Take(pageSize).ToList();
 
             return View(model);
         }
@@ -71,8 +71,13 @@ namespace Portfolio.Controllers
         {
             SearchViewModel search = new SearchViewModel();
 
+            if (request.IsNullOrEmpty())
+            {
+                return RedirectToAction("Index");
+            }
+
             bool isCategory = false;
-            
+
             if (ArticlesService.Instance.GetCategories(this).Contains(request.ToLower()))
             {
                 isCategory = true;
@@ -104,9 +109,16 @@ namespace Portfolio.Controllers
             return "";
         }
 
-        public string Robots()
+        public ActionResult Robots()
         {
-            return "";
+            string robots = "";
+            robots += "User-agent: *\n";
+            robots += "Sitemap: " + Url.Action("Sitemap", "Blog", null, "http");
+
+            return new ContentResult() {
+               Content = robots,
+               ContentType = "text/text"
+            };
         }
 
         public ActionResult Feed()
