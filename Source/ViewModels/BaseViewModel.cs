@@ -12,5 +12,12 @@ namespace Portfolio.ViewModels
         public List<string> Categories { get; set; }
 
         public List<ArticleViewModel> FavoritesArticles { get; set; }
+
+        public Dictionary<string, string> Metas { get; set; }
+
+        public BaseViewModel()
+        {
+            Metas = new Dictionary<string, string>();
+        }
     }
 }
