@@ -23,5 +23,22 @@ namespace Portfolio.Models
         public string SourceFilename { get; set; }
 
         public string Url { get; set; }
+
+        public override bool Equals(object obj)
+        {
+            if (obj is Article)
+            {
+                Article a = obj as Article;
+
+                return a.SourcePath == SourcePath;
+            }
+
+            return false;
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
     }
 }

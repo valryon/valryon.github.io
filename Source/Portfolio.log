@@ -653,3 +653,179 @@ INFO|Portfolio.Log|2013-02-15 11:26:25,026|Processing file: D:\dev\GitHub\portfo
 INFO|Portfolio.Log|2013-02-15 11:26:25,030|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2 - Copie.md
 INFO|Portfolio.Log|2013-02-15 11:26:25,034|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2.md
 INFO|Portfolio.Log|2013-02-15 11:26:25,039|Cache : élement "articles" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-15 11:29:01,283|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 11:29:01,380|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 11:29:01,383|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 11:29:01,384|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 11:29:01,386|Source file location: D:\dev\GitHub\portfolio\Posts
+INFO|Portfolio.Log|2013-02-15 11:29:01,386|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-02-un-article-exemple.markdown.md
+ERROR|Portfolio.Log|2013-02-15 11:29:01,392|Exception ! Source : GenerateArticles.ReadMeta. System.IO.FileNotFoundException: Impossible de trouver le fichier 'D:\dev\GitHub\portfolio\Posts\2011-09-02-un-article-exemple.markdown.meta'.
+Nom de fichier : 'D:\dev\GitHub\portfolio\Posts\2011-09-02-un-article-exemple.markdown.meta'
+   à System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   à System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   à System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   à System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   à System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   à System.IO.File.ReadAllText(String path)
+   à Portfolio.Services.ArticlesService.generateArticles(Controller controller) dans d:\dev\GitHub\portfolio\Source\Services\ArticlesService.cs:ligne 93
+INFO|Portfolio.Log|2013-02-15 11:29:01,456|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-15.article1.md
+ERROR|Portfolio.Log|2013-02-15 11:29:01,456|Exception ! Source : GenerateArticles.ReadMeta. System.IO.FileNotFoundException: Impossible de trouver le fichier 'D:\dev\GitHub\portfolio\Posts\2011-09-15.article1.meta'.
+Nom de fichier : 'D:\dev\GitHub\portfolio\Posts\2011-09-15.article1.meta'
+   à System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   à System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   à System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   à System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   à System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   à System.IO.File.ReadAllText(String path)
+   à Portfolio.Services.ArticlesService.generateArticles(Controller controller) dans d:\dev\GitHub\portfolio\Source\Services\ArticlesService.cs:ligne 93
+INFO|Portfolio.Log|2013-02-15 11:29:01,459|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2.md
+ERROR|Portfolio.Log|2013-02-15 11:29:01,460|Exception ! Source : GenerateArticles.ReadMeta. System.IO.FileNotFoundException: Impossible de trouver le fichier 'D:\dev\GitHub\portfolio\Posts\2011-09-16.article2.meta'.
+Nom de fichier : 'D:\dev\GitHub\portfolio\Posts\2011-09-16.article2.meta'
+   à System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   à System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   à System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   à System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   à System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   à System.IO.File.ReadAllText(String path)
+   à Portfolio.Services.ArticlesService.generateArticles(Controller controller) dans d:\dev\GitHub\portfolio\Source\Services\ArticlesService.cs:ligne 93
+INFO|Portfolio.Log|2013-02-15 11:29:01,471|Cache : élement "articles" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-15 11:29:11,880|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 11:29:12,027|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 11:29:12,031|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 11:29:12,034|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 11:29:12,037|Source file location: D:\dev\GitHub\portfolio\Posts
+INFO|Portfolio.Log|2013-02-15 11:29:12,038|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-15 11:29:23,047|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-15 11:29:23,053|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-15 11:29:23,065|Cache : élement "articles" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-15 11:47:36,595|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 11:47:36,702|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 11:47:36,705|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 11:47:36,707|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 11:47:36,708|Source file location: D:\dev\GitHub\portfolio\Posts
+INFO|Portfolio.Log|2013-02-15 11:47:36,709|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-15 11:47:36,811|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-15 11:47:36,815|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-15 11:47:36,826|Cache : élement "articles" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-15 11:48:42,545|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 11:48:42,639|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 11:48:42,642|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 11:48:42,643|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 11:48:42,645|Source file location: D:\dev\GitHub\portfolio\Posts
+INFO|Portfolio.Log|2013-02-15 11:48:42,645|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-15 11:48:42,747|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-15 11:48:42,750|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-15 11:48:42,762|Cache : élement "articles" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-15 11:52:32,106|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 11:52:32,202|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 11:52:32,205|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 11:52:32,207|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 11:52:32,208|Source file location: D:\dev\GitHub\portfolio\Posts
+INFO|Portfolio.Log|2013-02-15 11:52:32,208|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-15 11:52:32,306|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-15 11:52:32,309|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-15 11:52:32,321|Cache : élement "articles" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-15 11:52:48,182|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 11:52:48,294|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 11:52:48,296|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 11:52:48,298|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 11:52:48,299|Source file location: D:\dev\GitHub\portfolio\Posts
+INFO|Portfolio.Log|2013-02-15 11:52:48,300|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-15 11:52:48,389|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-15 11:52:48,393|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-15 11:52:48,403|Cache : élement "articles" -> mise à jour terminée !
+DEBUG|Portfolio.Log|2013-02-15 11:52:51,355|Demande Ajout Cache articles_category_jekyll
+INFO|Portfolio.Log|2013-02-15 11:52:51,355|Cache : Ajout élément "articles_category_jekyll"
+INFO|Portfolio.Log|2013-02-15 11:52:51,355|Cache : élement "articles_category_jekyll" -> mise à jour
+INFO|Portfolio.Log|2013-02-15 11:52:51,356|Cache : élement "articles_category_jekyll" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-15 11:54:30,687|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 11:54:30,789|Demande Ajout Cache articles_category_jekyll
+INFO|Portfolio.Log|2013-02-15 11:54:30,791|Cache : Ajout élément "articles_category_jekyll"
+INFO|Portfolio.Log|2013-02-15 11:54:30,793|Cache : élement "articles_category_jekyll" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 11:54:30,794|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 11:54:30,794|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 11:54:30,794|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 11:54:30,796|Source file location: D:\dev\GitHub\portfolio\Posts
+INFO|Portfolio.Log|2013-02-15 11:54:30,796|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-15 11:54:30,897|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-15 11:54:30,901|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-15 11:54:30,912|Cache : élement "articles" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-15 11:54:30,913|Cache : élement "articles_category_jekyll" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-15 11:54:35,802|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 11:54:35,903|Demande Ajout Cache articles_category_jekyll
+INFO|Portfolio.Log|2013-02-15 11:54:35,906|Cache : Ajout élément "articles_category_jekyll"
+INFO|Portfolio.Log|2013-02-15 11:54:35,908|Cache : élement "articles_category_jekyll" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 11:54:35,909|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 11:54:35,909|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 11:54:35,909|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 11:54:35,911|Source file location: D:\dev\GitHub\portfolio\Posts
+INFO|Portfolio.Log|2013-02-15 11:54:35,911|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-15 11:54:36,006|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-15 11:54:36,009|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-15 11:54:36,021|Cache : élement "articles" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-15 11:54:36,022|Cache : élement "articles_category_jekyll" -> mise à jour terminée !
+DEBUG|Portfolio.Log|2013-02-15 11:54:57,380|Demande Ajout Cache articles_category_pouet
+INFO|Portfolio.Log|2013-02-15 11:54:57,381|Cache : Ajout élément "articles_category_pouet"
+INFO|Portfolio.Log|2013-02-15 11:54:57,381|Cache : élement "articles_category_pouet" -> mise à jour
+INFO|Portfolio.Log|2013-02-15 11:54:57,381|Cache : élement "articles_category_pouet" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-15 12:03:53,530|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 12:03:53,623|Demande Ajout Cache articles_category_pouet
+INFO|Portfolio.Log|2013-02-15 12:03:53,626|Cache : Ajout élément "articles_category_pouet"
+INFO|Portfolio.Log|2013-02-15 12:03:53,627|Cache : élement "articles_category_pouet" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 12:03:53,628|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 12:03:53,628|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 12:03:53,629|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 12:03:53,630|Source file location: D:\dev\GitHub\portfolio\Posts
+INFO|Portfolio.Log|2013-02-15 12:03:53,630|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-15 12:03:53,722|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-15 12:03:53,725|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-15 12:03:53,736|Cache : élement "articles" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-15 12:03:53,737|Cache : élement "articles_category_pouet" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-15 12:05:32,154|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 12:05:32,251|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 12:05:32,254|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 12:05:32,255|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 12:05:32,257|Source file location: D:\dev\GitHub\portfolio\Posts
+INFO|Portfolio.Log|2013-02-15 12:05:32,257|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-15 12:05:32,354|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-15 12:05:32,358|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-15 12:05:32,369|Cache : élement "articles" -> mise à jour terminée !
+DEBUG|Portfolio.Log|2013-02-15 12:05:34,678|Demande Ajout Cache articles_category_jekyll
+INFO|Portfolio.Log|2013-02-15 12:05:34,679|Cache : Ajout élément "articles_category_jekyll"
+INFO|Portfolio.Log|2013-02-15 12:05:34,679|Cache : élement "articles_category_jekyll" -> mise à jour
+INFO|Portfolio.Log|2013-02-15 12:05:34,680|Cache : élement "articles_category_jekyll" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-15 12:06:03,527|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 12:06:03,627|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 12:06:03,630|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 12:06:03,631|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 12:06:03,633|Source file location: D:\dev\GitHub\portfolio\Posts
+INFO|Portfolio.Log|2013-02-15 12:06:03,633|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-15 12:06:03,729|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-15 12:06:03,732|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-15 12:06:03,743|Cache : élement "articles" -> mise à jour terminée !
+DEBUG|Portfolio.Log|2013-02-15 12:06:03,744|Demande Ajout Cache articles_category_jekyll
+INFO|Portfolio.Log|2013-02-15 12:06:03,745|Cache : Ajout élément "articles_category_jekyll"
+INFO|Portfolio.Log|2013-02-15 12:06:03,745|Cache : élement "articles_category_jekyll" -> mise à jour
+INFO|Portfolio.Log|2013-02-15 12:06:03,745|Cache : élement "articles_category_jekyll" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-15 12:06:31,514|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 12:06:31,633|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 12:06:31,635|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 12:06:31,637|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 12:06:31,638|Source file location: D:\dev\GitHub\portfolio\Posts
+INFO|Portfolio.Log|2013-02-15 12:06:31,639|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-15 12:06:31,739|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-15 12:06:31,742|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-15 12:06:31,754|Cache : élement "articles" -> mise à jour terminée !
+DEBUG|Portfolio.Log|2013-02-15 12:06:31,755|Demande Ajout Cache articles_category_jekyll
+INFO|Portfolio.Log|2013-02-15 12:06:31,755|Cache : Ajout élément "articles_category_jekyll"
+INFO|Portfolio.Log|2013-02-15 12:06:31,756|Cache : élement "articles_category_jekyll" -> mise à jour
+INFO|Portfolio.Log|2013-02-15 12:06:31,756|Cache : élement "articles_category_jekyll" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-15 12:07:29,771|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 12:07:29,876|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 12:07:29,879|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 12:07:29,881|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 12:07:29,882|Source file location: D:\dev\GitHub\portfolio\Posts
+INFO|Portfolio.Log|2013-02-15 12:07:29,883|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-15 12:07:29,977|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-15 12:07:29,981|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-15 12:07:29,991|Cache : élement "articles" -> mise à jour terminée !

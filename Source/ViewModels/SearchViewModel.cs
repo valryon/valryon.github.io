@@ -6,10 +6,10 @@ using Portfolio.Models;
 
 namespace Portfolio.ViewModels
 {
-    public class BlogViewModel : BaseViewModel
+    public class SearchViewModel : BaseViewModel
     {
-        public List<Article> Articles { get; set; }
+        public List<Article> Results { get; set; }
 
-        public List<string> Categories { get; set; }
+        public string SearchTitle { get; set; }
     }
 }

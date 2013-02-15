@@ -20,3 +20,20 @@
         }
     }
 </div>
+<div>
+    <h2>Catégories</h2>
+
+    @if (Model.Categories != null)
+    {
+        <ul>
+            @foreach (string cat in Model.Categories)
+            {
+                <li>
+                    <a href="@Url.Action("Search", "Blog", new { request = cat })" >
+                        @cat
+                    </a>
+                </li>
+            }
+        </ul>
+    }
+</div>

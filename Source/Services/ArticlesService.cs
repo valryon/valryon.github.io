@@ -21,11 +21,13 @@ namespace Portfolio.Services
     {
         private static ArticlesService m_instance;
         private static string cacheKey = "articles";
+        private static string cacheKeyCategory = "articles_category_";
 
         private String sourceFileLocation = ConfigurationManager.AppSettings["PostsLocation"];
+        private String PostsExtension = ConfigurationManager.AppSettings["PostsExtension"];
+        private String PostsInfosExtension = ConfigurationManager.AppSettings["PostsInfosExtension"];
 
         private Markdown m_markdownParser;
-        private List<Article> m_articles;
 
         public ArticlesService()
         {
@@ -39,7 +41,7 @@ namespace Portfolio.Services
         }
 
         /// <summary>
-        /// Get all 
+        /// Get all articles (with smart cache)
         /// </summary>
         /// <param name="controller"></param>
         /// <returns></returns>
@@ -54,6 +56,128 @@ namespace Portfolio.Services
             }
 
             return CacheManager.Get<List<Article>>(cacheKey);
+        }
+
+        /// <summary>
+        /// Get the previous article
+        /// </summary>
+        /// <param name="article"></param>
+        /// <returns></returns>
+        public Article Previous(Controller controller, Article article)
+        {
+            return getFromArticlePosition(controller, article, -1);
+        }
+
+        /// <summary>
+        /// Get the next article
+        /// </summary>
+        /// <param name="article"></param>
+        /// <returns></returns>
+        public Article Next(Controller controller, Article article)
+        {
+            return getFromArticlePosition(controller, article, 1);
+        }
+
+        /// <summary>
+        /// Get (article + position) article
+        /// </summary>
+        /// <param name="article"></param>
+        /// <param name="position"></param>
+        /// <returns></returns>
+        private Article getFromArticlePosition(Controller controller, Article article, int position)
+        {
+            List<Article> articles = GetArticles(controller);
+
+            int index = articles.IndexOf(article);
+
+            if (index >= 0)
+            {
+                int requestedPosition = index + position;
+
+                if (requestedPosition > 0 && requestedPosition < articles.Count)
+                {
+                    return articles[requestedPosition];
+                }
+            }
+
+            return null;
+        }
+
+        /// <summary>
+        /// Get the articles containing the keywrods
+        /// </summary>
+        /// <returns></returns>
+        public List<Article> GetArticlesFromKeywords(Controller controller, string keywords)
+        {
+            List<Article> articles = GetArticles(controller);
+            List<Article> results = new List<Article>();
+
+            // Split keywords
+            string[] keywordList = keywords.Split('+');
+            foreach (string k in keywordList)
+            {
+                string kClean = k.RemoveHtmlTags().ToLower().Trim();
+
+                foreach (Article a in articles)
+                {
+                    bool match = false;
+                    match |= a.Title.ToLower().Contains(kClean);
+                    match |= a.Description.RemoveHtmlTags().ToLower().Contains(kClean);
+                    match |= a.Content.RemoveHtmlTags().ToLower().Contains(kClean);
+
+                    if (match)
+                    {
+                        results.Add(a);
+                    }
+                }
+            }
+
+            return results;
+        }
+
+        /// <summary>
+        /// Get the articles containing this category
+        /// </summary>
+        /// <returns></returns>
+        public List<Article> GetArticlesFromCategories(Controller controller, string cat)
+        {
+            string catCacheKey = cacheKeyCategory + cat;
+
+            string searchCat = cat.ToLower().Trim();
+
+            // Articles for this cat are in cache?
+            if (CacheManager.TestKey(catCacheKey) == false)
+            {
+
+                // If no, we put them in
+                Func<List<Article>> getArticlesForCat = () =>
+                {
+                    List<Article> articles = GetArticles(controller);
+
+                    return articles.Where(a => a.Categories.Contains(cat)).ToList();
+                };
+
+                CacheManager.Set<List<Article>>(catCacheKey, getArticlesForCat, new TimeSpan(1, 0, 0, 0), true);
+            }
+
+            return CacheManager.Get<List<Article>>(catCacheKey);
+        }
+
+        /// <summary>
+        /// Get all categories
+        /// </summary>
+        /// <param name="controller"></param>
+        /// <returns></returns>
+        public List<string> GetCategories(Controller controller)
+        {
+            List<string> cats = new List<string>();
+
+            foreach (Article a in GetArticles(controller))
+            {
+                cats.AddRange(a.Categories);
+            }
+
+            return cats.Distinct().ToList(); // :3
         }
 
         /// <summary>
@@ -77,7 +201,7 @@ namespace Portfolio.Services
             Logger.Log(LogLevel.Debug, "Source file location: " + sourceFileLocation);
             try
             {
-                foreach (string source in Directory.GetFiles(sourceFileLocation, "*.md"))
+                foreach (string source in Directory.GetFiles(sourceFileLocation, "*." + PostsExtension))
                 {
                     Logger.Log(LogLevel.Info, "Processing file: " + source);
 
@@ -90,14 +214,14 @@ namespace Portfolio.Services
                     // -- Search for a json meta file
                     try
                     {
-                        string jsonMeta = File.ReadAllText(Path.GetFullPath(source).Replace(".md", ".meta"));
+                        string jsonMeta = File.ReadAllText(Path.GetFullPath(source).Replace("." + PostsExtension, "." + PostsInfosExtension));
 
                         JObject json = JObject.Parse(jsonMeta);
 
                         string layout = json["layout"].ToString();
                         string title = json["title"].ToString();
                         string desc = json["description"].ToString();
-                        List<string> categories = json["categories"].Select(j => j.ToString()).ToList();
+                        List<string> categories = json["categories"].Select(j => j.ToString().ToLower().Trim()).ToList();
                         DateTime dateTime = DateTime.Parse(json["publishedDate"].ToString(), CultureInfo.GetCultureInfo("fr-FR"));
 
                         article.Layout = layout;
@@ -146,15 +270,6 @@ namespace Portfolio.Services
                 }
 
                 return m_instance;
-            }
-        }
-
-
-        public bool AreArticlesGenerated
-        {
-            get
-            {
-                return m_articles != null;
             }
         }
     }

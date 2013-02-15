@@ -119,6 +119,7 @@
     <Compile Include="Utils\Db\SqlRequestExecuter.cs" />
     <Compile Include="Utils\PortfolioException.cs" />
     <Compile Include="Utils\StringEx.cs" />
+    <Compile Include="ViewModels\SearchViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\css\bootstrap-responsive.css" />
@@ -151,6 +152,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Blog\Article.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Blog\Search.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

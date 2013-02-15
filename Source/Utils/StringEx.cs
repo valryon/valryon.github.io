@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Web;
 
 namespace System
@@ -13,6 +14,21 @@ namespace System
     /// <remarks>Author: Olivier De Bel-Air</remarks>
     public static class StringEx
     {
+        public static bool IsNullOrEmpty(this string s)
+        {
+            return string.IsNullOrEmpty(s);
+        }
+
+        public static string RemoveHtmlTags(this string content)
+        {
+            if (content != null)
+            {
+                content = Regex.Replace(content, "<.*?>", string.Empty);
+            }
+
+            return content;
+        }
+
         /// <summary>
         /// Permet de traiter la réécriture des liens pour retirer les critères 
         /// </summary>
