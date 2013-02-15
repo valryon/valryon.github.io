@@ -13,14 +13,65 @@
 <body>
 
     <div class="container-fluid">
-        <div class="hero-unit">
-            <h2>@Model.Title</h2>
-        </div>
+
 
         <div class="row-fluid">
-            @RenderBody()
-        </div>
+            <div class="span3">
 
+                <p>
+                    <a href="@Url.Action("Index", "Blog")">
+                        <img src="../../Content/img/logo_home.png" alt="Damien Mayance - Game & Software developper" />
+                    </a>
+                </p>
+                <div class="sidebar-nav">
+                    <div class="nav-pills nav-stacked">
+                        <ul class="nav nav-list">
+                            <li class="nav-header">Sidebar</li>
+                            <li><a href="http://twitter.com/Valryon">@@Valryon</a></li>
+                            <li><a href="http://github.com/Valryon">GitHub</a></li>
+                            <li><a href="@Url.Action("Feed","Blog")">Feed</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                @if (Model.Categories != null)
+                {
+                    <div class="sidebar-nav">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li class="nav-header">Categories</li>
+
+                            @foreach (string cat in Model.Categories)
+                            {
+                                <li>
+                                    <a href="@Url.Action("Search", "Blog", new { request = cat })" >
+                                        @cat
+                                    </a>
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                }
+
+            </div>
+            <div class="span9">
+                <div class="hero-unit">
+                    <h1>@Model.Title</h1>
+                </div>
+
+
+                @RenderBody()
+
+            </div>
+        </div>
+        <div class="row-fluid muted">
+            <hr />
+            <p>
+                All rights reserved. Damien Mayance
+            </p>
+            <p>
+                Homemade website with ASP.NET MVC and Markdown CSharp. <a href="https://github.com/Valryon/portfolio">Sources available on GitHub.</a>
+            </p>
+        </div>
     </div>
 </body>
 </html>

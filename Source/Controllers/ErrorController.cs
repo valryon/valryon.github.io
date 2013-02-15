@@ -8,7 +8,7 @@ using Portfolio.ViewModels;
 
 namespace Portfolio.Controllers
 {
-    public class ErrorController : Controller
+    public class ErrorController : BaseController
     {
         //
         // GET: /Error/

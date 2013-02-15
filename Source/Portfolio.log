@@ -829,3 +829,132 @@ INFO|Portfolio.Log|2013-02-15 12:07:29,883|Processing file: D:\dev\GitHub\portfo
 INFO|Portfolio.Log|2013-02-15 12:07:29,977|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-15.article1.md
 INFO|Portfolio.Log|2013-02-15 12:07:29,981|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2.md
 INFO|Portfolio.Log|2013-02-15 12:07:29,991|Cache : élement "articles" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-15 14:21:06,314|Starting website Portfolio...
+INFO|Portfolio.Log|2013-02-15 14:21:22,111|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 14:21:22,288|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 14:21:22,292|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 14:21:22,294|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 14:21:22,297|Source file location: D:\dev\GitHub\portfolio\Posts
+INFO|Portfolio.Log|2013-02-15 14:21:22,298|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-15 14:21:22,389|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-15 14:21:22,394|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-15 14:21:22,409|Cache : élement "articles" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-15 14:25:06,988|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 14:25:07,320|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 14:25:07,324|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 14:25:07,327|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 14:25:07,330|Source file location: D:\dev\GitHub\portfolio\Posts
+INFO|Portfolio.Log|2013-02-15 14:25:07,331|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-15 14:25:07,437|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-15 14:25:07,442|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-15 14:25:07,456|Cache : élement "articles" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-15 14:35:38,024|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 14:35:38,146|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 14:35:38,152|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 14:35:38,155|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 14:35:38,328|Source file location: D:\dev\GitHub\portfolio\Posts
+INFO|Portfolio.Log|2013-02-15 14:35:38,330|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-15 14:35:38,429|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-15 14:35:38,433|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-15 14:35:38,446|Cache : élement "articles" -> mise à jour terminée !
+DEBUG|Portfolio.Log|2013-02-15 14:36:32,893|Demande Ajout Cache articles_category_jekyll
+INFO|Portfolio.Log|2013-02-15 14:36:32,894|Cache : Ajout élément "articles_category_jekyll"
+INFO|Portfolio.Log|2013-02-15 14:36:32,897|Cache : élement "articles_category_jekyll" -> mise à jour
+INFO|Portfolio.Log|2013-02-15 14:36:32,904|Cache : élement "articles_category_jekyll" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-15 14:37:51,907|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 14:37:51,956|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 14:37:51,959|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 14:37:51,960|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 14:37:52,131|Source file location: D:\dev\GitHub\portfolio\Posts
+INFO|Portfolio.Log|2013-02-15 14:37:52,131|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-15 14:37:52,236|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-15 14:37:52,239|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-15 14:37:52,251|Cache : élement "articles" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-15 14:39:09,441|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 14:39:09,494|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 14:39:09,497|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 14:39:09,498|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 14:39:09,666|Source file location: D:\dev\GitHub\portfolio\Posts
+INFO|Portfolio.Log|2013-02-15 14:39:09,666|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-15 14:39:09,791|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-15 14:39:09,795|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-15 14:39:09,805|Cache : élement "articles" -> mise à jour terminée !
+DEBUG|Portfolio.Log|2013-02-15 14:45:10,521|Demande Ajout Cache articles_category_jekyll
+INFO|Portfolio.Log|2013-02-15 14:45:10,521|Cache : Ajout élément "articles_category_jekyll"
+INFO|Portfolio.Log|2013-02-15 14:45:10,522|Cache : élement "articles_category_jekyll" -> mise à jour
+INFO|Portfolio.Log|2013-02-15 14:45:10,523|Cache : élement "articles_category_jekyll" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-15 14:49:06,518|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 14:49:06,644|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 14:49:06,647|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 14:49:06,649|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 14:49:06,650|Source file location: D:\dev\GitHub\portfolio\Posts
+INFO|Portfolio.Log|2013-02-15 14:49:06,651|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-15 14:49:06,749|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-15 14:49:06,752|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-15 14:49:06,765|Cache : élement "articles" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-15 14:50:21,294|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 14:50:24,309|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 14:50:24,326|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 14:50:24,327|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 14:50:24,329|Source file location: D:\dev\GitHub\portfolio\Posts
+INFO|Portfolio.Log|2013-02-15 14:50:24,329|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-15 14:50:24,422|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-15 14:50:24,425|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-15 14:50:24,436|Cache : élement "articles" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-15 14:50:56,488|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 14:50:57,360|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 14:50:57,363|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 14:50:57,364|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 14:50:57,366|Source file location: D:\dev\GitHub\portfolio\Posts
+INFO|Portfolio.Log|2013-02-15 14:50:57,367|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-15 14:50:57,467|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-15 14:50:57,470|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-15 14:50:57,481|Cache : élement "articles" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-15 14:51:14,142|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 14:51:14,249|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 14:51:14,252|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 14:51:14,253|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 14:51:14,255|Source file location: D:\dev\GitHub\portfolio\Posts
+INFO|Portfolio.Log|2013-02-15 14:51:14,256|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-15 14:51:14,347|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-15 14:51:14,351|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-15 14:51:14,361|Cache : élement "articles" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-15 14:56:22,492|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 14:56:22,598|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 14:56:22,601|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 14:56:22,602|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 14:56:22,604|Source file location: D:\dev\GitHub\portfolio\Posts
+INFO|Portfolio.Log|2013-02-15 14:56:22,604|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-15 14:56:22,698|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-15 14:56:22,701|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-15 14:56:22,711|Cache : élement "articles" -> mise à jour terminée !
+DEBUG|Portfolio.Log|2013-02-15 14:56:32,883|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 14:56:32,883|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 14:56:32,884|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 14:56:32,884|Source file location: D:\dev\GitHub\portfolio\Posts
+INFO|Portfolio.Log|2013-02-15 14:56:32,885|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-15 14:56:32,889|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-15 14:56:32,892|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-15 14:56:32,895|Cache : élement "articles" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-15 14:57:15,265|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 14:57:15,368|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 14:57:15,371|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 14:57:15,372|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 14:57:15,374|Source file location: D:\dev\GitHub\portfolio\Posts
+INFO|Portfolio.Log|2013-02-15 14:57:15,374|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-15 14:57:15,467|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-15 14:57:15,471|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-15 14:57:15,481|Cache : élement "articles" -> mise à jour terminée !
+DEBUG|Portfolio.Log|2013-02-15 14:57:17,908|Demande Ajout Cache articles_category_jekyll
+INFO|Portfolio.Log|2013-02-15 14:57:17,909|Cache : Ajout élément "articles_category_jekyll"
+INFO|Portfolio.Log|2013-02-15 14:57:17,909|Cache : élement "articles_category_jekyll" -> mise à jour
+INFO|Portfolio.Log|2013-02-15 14:57:17,909|Cache : élement "articles_category_jekyll" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-15 15:05:18,867|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 15:05:18,977|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 15:05:18,980|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 15:05:18,981|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 15:05:18,983|Source file location: D:\dev\GitHub\portfolio\Posts
+INFO|Portfolio.Log|2013-02-15 15:05:18,984|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-15 15:05:19,087|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-15 15:05:19,091|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-15 15:05:19,103|Cache : élement "articles" -> mise à jour terminée !

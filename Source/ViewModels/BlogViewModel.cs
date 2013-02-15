@@ -9,7 +9,5 @@ namespace Portfolio.ViewModels
     public class BlogViewModel : BaseViewModel
     {
         public List<Article> Articles { get; set; }
-
-        public List<string> Categories { get; set; }
     }
 }

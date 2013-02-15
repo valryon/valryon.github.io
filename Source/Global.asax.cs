@@ -50,6 +50,12 @@ namespace Portfolio
             );
 
             routes.MapRoute(
+                "Feed",
+                "feed",
+                new { controller = "Blog", action = "Feed" }
+            );
+
+            routes.MapRoute(
                 "Search",
                 "search/{request}",
                 new { controller = "Blog", action = "Search" }
@@ -58,7 +64,7 @@ namespace Portfolio
             routes.MapRoute(
                 "Article",
                 "{title}",
-                new { controller = "Blog", action = "Article" }
+                new { controller = "Blog", action = "Single" }
             );
 
             routes.MapRoute(

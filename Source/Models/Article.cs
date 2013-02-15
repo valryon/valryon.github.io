@@ -8,7 +8,7 @@ namespace Portfolio.Models
     public class Article
     {
         public string Title { get; set; }
-        public string Content { get; set; }
+        public string HtmlContent { get; set; }
 
         public string Layout { get; set; }
 

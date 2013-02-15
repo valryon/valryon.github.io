@@ -123,7 +123,7 @@ namespace Portfolio.Services
                     bool match = false;
                     match |= a.Title.ToLower().Contains(kClean);
                     match |= a.Description.RemoveHtmlTags().ToLower().Contains(kClean);
-                    match |= a.Content.RemoveHtmlTags().ToLower().Contains(kClean);
+                    match |= a.HtmlContent.RemoveHtmlTags().ToLower().Contains(kClean);
 
                     if (match)
                     {
@@ -209,7 +209,7 @@ namespace Portfolio.Services
                     Article article = new Article();
                     article.SourcePath = source;
                     article.SourceFilename = Path.GetFileName(source);
-                    article.Url = controller.Url.Action("Article", "Blog", new { title = Path.GetFileNameWithoutExtension(source).ProcessPath().ToLower() }, "http");
+                    article.Url = controller.Url.Action("Single", "Blog", new { title = Path.GetFileNameWithoutExtension(source).ProcessPath().ToLower() }, "http");
 
                     // -- Search for a json meta file
                     try
@@ -242,7 +242,7 @@ namespace Portfolio.Services
                     // -- Read the markdown
                     string html = m_markdownParser.Transform(postContent);
 
-                    article.Content = html;
+                    article.HtmlContent = html;
 
                     articles.Add(article);
                 }

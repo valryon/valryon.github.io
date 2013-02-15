@@ -8,5 +8,7 @@ namespace Portfolio.ViewModels
     public abstract class BaseViewModel
     {
         public string Title { get; set; }
+
+        public List<string> Categories { get; set; }
     }
 }
