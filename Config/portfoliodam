@@ -1,0 +1,29 @@
+# Portfolio dam
+<VirtualHost *:80>
+        ServerName www.valryon.fr
+	ServerAlias www.dmayance.com
+        DocumentRoot /srv/www/portfoliodam/Release/
+
+        ErrorLog /srv/www/portfoliodam/log/error.log
+        CustomLog /srv/www/portfoliodam/log/access.log combined
+
+        MonoDocumentRootDir "/srv/www/portfoliodam/Release/"
+        MonoServerPath portfoliodam "/opt/mono-2.10/bin/mod-mono-server4"
+        AddMonoApplications portfoliodam "/:/srv/www/portfoliodam/Release/"
+        MonoDebug portfoliodam true
+        MonoSetEnv portfoliodam MONO_IOMAP=all
+
+        <Directory /srv/www/portfoliodam/Release>
+                MonoSetServerAlias portfoliodam
+                SetHandler mono
+                AddHandler mod_mono .aspx .ascx .asax .ashx .config .cs .asmx
+                allow from all
+                Order allow,deny
+                SetEnvIfNoCase Request_URI "\.(?:gif|jpe?g|png)$" no-gzip dont-vary
+        </Directory>
+        <IfModule mod_deflate.c>
+                AddOutputFilterByType DEFLATE text/html text/plain text/xml text/javascript
+        </IfModule>
+</VirtualHost>
+
+
