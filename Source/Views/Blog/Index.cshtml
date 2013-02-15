@@ -10,7 +10,9 @@
     {
         foreach (Portfolio.ViewModels.ArticleViewModel articleModel in Model.Articles)
         {
-        @Html.Partial("ArticleView", articleModel);
+        <div class="row-fluid">
+            @Html.Partial("ArticleView", articleModel)
+        </div>
         }
         
         <div class="pagination pagination-large pagination-right">
@@ -27,10 +29,10 @@
                     {
                         continue;
                     }
-                    <li class="@(i == Model.CurrentPage ? "active": "")"><a href="@Url.Action("Index", "Blog", new { page = i })">@i</a></li>
+                    <li class="@(i == Model.CurrentPage ? "active" : "")"><a href="@Url.Action("Index", "Blog", new { page = i })">@i</a></li>
                 }
 
-                @if (Model.CurrentPage < Model.PageCount )
+                @if (Model.CurrentPage < Model.PageCount)
                 {
                     <li><a href="@Url.Action("Index", "Blog", new { page = Model.CurrentPage + 1 })">&rarr;</a></li>
                 }
