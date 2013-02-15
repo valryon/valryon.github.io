@@ -7,6 +7,6 @@ namespace Portfolio.ViewModels
 {
     public abstract class BaseViewModel
     {
-        public string Title {get;set;}
+        public string Title { get; set; }
     }
 }
