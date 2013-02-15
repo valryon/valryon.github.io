@@ -163,6 +163,6 @@ pip-log.txt
 .DS_Store
 
 
-*.log
+Portfolio.log
 !Release
 !Release/*

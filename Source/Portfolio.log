@@ -1199,3 +1199,12 @@ DEBUG|Portfolio.Log|2013-02-15 16:37:00,143|Demande Ajout Cache articles_categor
 INFO|Portfolio.Log|2013-02-15 16:37:00,144|Cache : Ajout élément "articles_category_test2"
 INFO|Portfolio.Log|2013-02-15 16:37:00,144|Cache : élement "articles_category_test2" -> mise à jour
 INFO|Portfolio.Log|2013-02-15 16:37:00,145|Cache : élement "articles_category_test2" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-15 16:39:12,498|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 16:39:12,608|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 16:39:12,610|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 16:39:12,611|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 16:39:12,613|Source file location: D:\dev\GitHub\portfolio\Posts
+INFO|Portfolio.Log|2013-02-15 16:39:12,613|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-15 16:39:12,701|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-15 16:39:12,705|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-15 16:39:12,716|Cache : élement "articles" -> mise à jour terminée !

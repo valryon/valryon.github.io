@@ -51,6 +51,9 @@ namespace Portfolio.Controllers
                 {
                     SingleViewModel model = new SingleViewModel();
                     model.Content = new ArticleViewModel(article);
+                    model.PreviousArticle = ArticlesService.Instance.Previous(this, article);
+                    model.NextArticle = ArticlesService.Instance.Next(this, article);
+
                     return View(model);
                 }
             }

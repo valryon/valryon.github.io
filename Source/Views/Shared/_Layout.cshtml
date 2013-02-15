@@ -80,18 +80,20 @@
                 }
                 @if (Model.Categories != null && Model.Categories.Count > 0)
                 {
-                    <h4>Categories</h4>
-                    <ul class="nav nav-pills nav-stacked">
+                    <div class="hidden-phone">
+                        <h4>Categories</h4>
+                        <ul class="nav nav-pills nav-stacked">
 
-                        @foreach (string cat in Model.Categories)
-                        {
-                            <li>
-                                <a href="@Url.Action("Search", "Blog", new { request = cat })" >
-                                    <i class="icon-tags"></i>&nbsp;@cat
-                                </a>
-                            </li>
-                        }
-                    </ul>
+                            @foreach (string cat in Model.Categories)
+                            {
+                                <li>
+                                    <a href="@Url.Action("Search", "Blog", new { request = cat })" >
+                                        <i class="icon-tags"></i>&nbsp;@cat
+                                    </a>
+                                </li>
+                            }
+                        </ul>
+                    </div>
                 }
 
             </div>

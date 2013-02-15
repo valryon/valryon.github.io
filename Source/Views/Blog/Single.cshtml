@@ -1,5 +1,4 @@
 ﻿@model Portfolio.ViewModels.SingleViewModel
-
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
     Model.Title = Model.Content.Article.Title;
@@ -9,6 +8,23 @@
     Model.Metas["og:description"] = Model.Content.Article.Description;
 }
 
+<div class="row-fluid">
+    @Html.Partial("ArticleView", Model.Content)
+</div>
 
-@Html.Partial("ArticleView", Model.Content);
-
+<div class="row-fluid">
+    <p class="well">
+        Want to react? Let's do this on <a href="http://www.twitter.com/Valryon">Twitter</a> :).
+    </p>
+</div>
+@if (Model.NextArticle != null)
+{
+    <div class="row-fluid">
+        <aside>
+            <p>
+                Read the next article:
+                <a href="@Model.NextArticle.Url">@Model.NextArticle.Title</a>
+            </p>
+        </aside>
+    </div>
+}
