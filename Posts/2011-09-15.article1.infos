@@ -1,9 +1,0 @@
-﻿{
-	"layout" : "post",
-	"title" : "ArticDFSDFle test avec plus d'éléments",
-	"description" : "Description de cet article test, encore plus longue",
-	"categories" : ["Jekyll","Test2"],
-	"publishedDate" : "2013-03-14 00:00:00",
-	"favorite" :"false",
-	"lang":"fr"
-}

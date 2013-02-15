@@ -1,9 +1,0 @@
-﻿{
-	"layout" : "post",
-	"title" : "Article test avec plus d'éléments",
-	"description" : "Description de cet article test, encore plus longue",
-	"categories" : ["Jekyll","Test","Test2","Test3"],
-	"publishedDate" : "2013-02-14",
-	"favorite" :"false",
-	"lang":"en"
-}
