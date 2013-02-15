@@ -5,32 +5,36 @@
     Model.Title = "Welcome traveler";
 }
 
-
 <div>
     @if (Model.Articles != null)
     {
-        foreach (Portfolio.Models.Article article in Model.Articles)
+        foreach (Portfolio.ViewModels.ArticleViewModel articleModel in Model.Articles)
         {
-        <a href="@article.Url" >
-            <p>@article.Title</p>
-        </a>
+        @Html.Partial("ArticleView", articleModel);
         }
-    }
-</div>
-<div>
-    <h2>Catégories</h2>
+        
+        <div class="pagination pagination-large pagination-right">
+            <ul>
 
-    @if (Model.Categories != null)
-    {
-        <ul>
-            @foreach (string cat in Model.Categories)
-            {
-                <li>
-                    <a href="@Url.Action("Search", "Blog", new { request = cat })" >
-                        @cat
-                    </a>
-                </li>
-            }
-        </ul>
+                @if (Model.CurrentPage > 1)
+                {
+                    <li><a href="@Url.Action("Index", "Blog", new { page = Model.CurrentPage - 1 })">&larr;</a></li>
+                }
+
+                @for (int i = Model.CurrentPage - 6; i < Model.CurrentPage + 6; i++)
+                {
+                    if (i < 1 || i > Model.PageCount)
+                    {
+                        continue;
+                    }
+                    <li class="@(i == Model.CurrentPage ? "active": "")"><a href="@Url.Action("Index", "Blog", new { page = i })">@i</a></li>
+                }
+
+                @if (Model.CurrentPage < Model.PageCount )
+                {
+                    <li><a href="@Url.Action("Index", "Blog", new { page = Model.CurrentPage + 1 })">&rarr;</a></li>
+                }
+            </ul>
+        </div>
     }
 </div>

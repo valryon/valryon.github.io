@@ -1,7 +1,7 @@
 ﻿@model Portfolio.ViewModels.SearchViewModel
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
-    Model.Title = "Searching... "+Model.SearchTitle;
+    Model.Title = "Searching... " + Model.SearchTitle;
 }
 
 <h2>@Model.SearchTitle</h2>
@@ -9,9 +9,14 @@
 @if (Model.Results.Count > 0)
 {
     <ul>
-        @foreach (Portfolio.Models.Article article in Model.Results)
+        @foreach (Portfolio.ViewModels.ArticleViewModel articleModel in Model.Results)
         {
-            <li><a href="@article.Url">@article.Title</a></li>
+            <li>
+                <h3><a href="@articleModel.Article.Url">@articleModel.Article.Title</a></h3>
+                <p>
+                    @articleModel.Article.Description
+                </p>
+            </li>
         }
 
     </ul>

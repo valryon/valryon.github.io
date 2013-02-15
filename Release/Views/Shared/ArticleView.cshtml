@@ -1,0 +1,30 @@
+﻿@model Portfolio.ViewModels.ArticleViewModel
+<article>
+
+    <div class="row-fluid">
+        <div class="well">
+
+            <h2>
+                <a href="@Model.Article.Url" >
+                    @Model.Article.Title
+                </a>
+            </h2>
+            <p>
+                @Model.Article.PublishedDate.ToString("dd MMM yyyy"),&nbsp;
+                @foreach (string cat in Model.Article.Categories)
+                {
+                    <a href="@Url.Action("Search", "Blog", new { request = cat })">
+                        @cat&nbsp;
+                    </a>
+                }
+            </p>
+            <p>
+                @Model.Article.Description
+            </p>
+        </div>
+    </div>
+
+    <div class="row-fluid">
+        @Html.Raw(Model.Article.HtmlContent)
+    </div>
+</article>
