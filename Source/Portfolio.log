@@ -435,3 +435,221 @@ INFO|Portfolio.Log|2013-02-14 17:12:31,232|Processing file: D:\dev\GitHub\portfo
 INFO|Portfolio.Log|2013-02-14 17:12:31,237|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2 - Copie.md
 INFO|Portfolio.Log|2013-02-14 17:12:31,241|Processing file: D:\dev\GitHub\portfolio\_posts\2011-09-16.article2.md
 INFO|Portfolio.Log|2013-02-14 17:12:31,247|Cache : élement "articles" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-15 11:15:40,126|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 11:15:41,899|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 11:15:41,905|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 11:15:41,907|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 11:15:41,910|Source file location: ~/../Posts/
+ERROR|Portfolio.Log|2013-02-15 11:15:42,006|Exception ! Source : GenerateArticles. System.Web.HttpException (0x80004005): Impossible d'utiliser .. en début de commande à partir du répertoire de niveau supérieur.
+   à System.Web.Util.UrlPath.ReduceVirtualPath(String path)
+   à System.Web.Util.UrlPath.ReduceVirtualPath(String path)
+   à System.Web.VirtualPath.Create(String virtualPath, VirtualPathOptions options)
+   à System.Web.HttpServerUtility.MapPath(String path)
+   à System.Web.HttpServerUtilityWrapper.MapPath(String path)
+   à Portfolio.Services.ArticlesService.generateArticles(Controller controller) dans d:\dev\GitHub\portfolio\Source\Services\ArticlesService.cs:ligne 80
+INFO|Portfolio.Log|2013-02-15 11:15:42,009|Cache : élement "articles" -> mise à jour terminée !
+DEBUG|Portfolio.Log|2013-02-15 11:15:42,011|Aucune donnée récupérée dans le cache pour la clé "articles".
+INFO|Portfolio.Log|2013-02-15 11:16:20,062|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 11:16:20,142|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 11:16:20,147|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 11:16:20,149|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 11:16:20,326|Source file location: D:\dev\GitHub\portfolio\Posts\Posts
+ERROR|Portfolio.Log|2013-02-15 11:16:20,398|Exception ! Source : GenerateArticles. System.Web.HttpException (0x80004005): 'D:/dev/GitHub/portfolio/Posts/Posts' est un chemin d'accès physique, mais un chemin d'accès virtuel était attendu.
+   à System.Web.Util.UrlPath.CheckValidVirtualPath(String path)
+   à System.Web.Util.UrlPath.Combine(String appPath, String basepath, String relative)
+   à System.Web.VirtualPath.Combine(VirtualPath relativePath)
+   à System.Web.HttpRequest.MapPath(VirtualPath virtualPath, VirtualPath baseVirtualDir, Boolean allowCrossAppMapping)
+   à System.Web.HttpServerUtility.MapPath(String path)
+   à System.Web.HttpServerUtilityWrapper.MapPath(String path)
+   à Portfolio.Services.ArticlesService.generateArticles(Controller controller) dans d:\dev\GitHub\portfolio\Source\Services\ArticlesService.cs:ligne 80
+INFO|Portfolio.Log|2013-02-15 11:16:20,400|Cache : élement "articles" -> mise à jour terminée !
+DEBUG|Portfolio.Log|2013-02-15 11:16:20,402|Aucune donnée récupérée dans le cache pour la clé "articles".
+INFO|Portfolio.Log|2013-02-15 11:16:38,293|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 11:16:38,429|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 11:16:38,433|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 11:16:38,436|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 11:16:38,438|Source file location: D:\dev\GitHub\portfolio\Posts
+ERROR|Portfolio.Log|2013-02-15 11:16:38,470|Exception ! Source : GenerateArticles. System.Web.HttpException (0x80004005): 'D:/dev/GitHub/portfolio/Posts' est un chemin d'accès physique, mais un chemin d'accès virtuel était attendu.
+   à System.Web.Util.UrlPath.CheckValidVirtualPath(String path)
+   à System.Web.Util.UrlPath.Combine(String appPath, String basepath, String relative)
+   à System.Web.VirtualPath.Combine(VirtualPath relativePath)
+   à System.Web.HttpRequest.MapPath(VirtualPath virtualPath, VirtualPath baseVirtualDir, Boolean allowCrossAppMapping)
+   à System.Web.HttpServerUtility.MapPath(String path)
+   à System.Web.HttpServerUtilityWrapper.MapPath(String path)
+   à Portfolio.Services.ArticlesService.generateArticles(Controller controller) dans d:\dev\GitHub\portfolio\Source\Services\ArticlesService.cs:ligne 80
+INFO|Portfolio.Log|2013-02-15 11:16:38,472|Cache : élement "articles" -> mise à jour terminée !
+DEBUG|Portfolio.Log|2013-02-15 11:16:38,474|Aucune donnée récupérée dans le cache pour la clé "articles".
+INFO|Portfolio.Log|2013-02-15 11:17:01,752|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 11:17:01,835|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 11:17:01,840|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 11:17:01,842|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 11:17:02,012|Source file location: ~\Posts
+ERROR|Portfolio.Log|2013-02-15 11:17:02,077|Exception ! Source : GenerateArticles. System.IO.DirectoryNotFoundException: Impossible de trouver une partie du chemin d'accès 'D:\dev\GitHub\portfolio\Source\Posts'.
+   à System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   à System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   à System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   à System.IO.Directory.GetFiles(String path, String searchPattern)
+   à Portfolio.Services.ArticlesService.generateArticles(Controller controller) dans d:\dev\GitHub\portfolio\Source\Services\ArticlesService.cs:ligne 80
+INFO|Portfolio.Log|2013-02-15 11:17:02,079|Cache : élement "articles" -> mise à jour terminée !
+DEBUG|Portfolio.Log|2013-02-15 11:17:02,080|Aucune donnée récupérée dans le cache pour la clé "articles".
+DEBUG|Portfolio.Log|2013-02-15 11:17:05,810|Aucune donnée récupérée dans le cache pour la clé "articles".
+DEBUG|Portfolio.Log|2013-02-15 11:17:19,632|Aucune donnée récupérée dans le cache pour la clé "articles".
+DEBUG|Portfolio.Log|2013-02-15 11:17:40,727|Aucune donnée récupérée dans le cache pour la clé "articles".
+INFO|Portfolio.Log|2013-02-15 11:17:45,128|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 11:17:45,271|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 11:17:45,275|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 11:17:45,278|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 11:17:45,280|Source file location: ~\Posts
+ERROR|Portfolio.Log|2013-02-15 11:17:45,308|Exception ! Source : GenerateArticles. System.IO.DirectoryNotFoundException: Impossible de trouver une partie du chemin d'accès 'D:\dev\GitHub\portfolio\Source\Posts'.
+   à System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   à System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   à System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   à System.IO.Directory.GetFiles(String path, String searchPattern)
+   à Portfolio.Services.ArticlesService.generateArticles(Controller controller) dans d:\dev\GitHub\portfolio\Source\Services\ArticlesService.cs:ligne 80
+INFO|Portfolio.Log|2013-02-15 11:17:45,310|Cache : élement "articles" -> mise à jour terminée !
+DEBUG|Portfolio.Log|2013-02-15 11:17:45,311|Aucune donnée récupérée dans le cache pour la clé "articles".
+INFO|Portfolio.Log|2013-02-15 11:18:04,410|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 11:18:04,499|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 11:18:04,503|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 11:18:04,506|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 11:18:04,681|Source file location: ~\..\Posts
+ERROR|Portfolio.Log|2013-02-15 11:18:04,717|Exception ! Source : GenerateArticles. System.Web.HttpException (0x80004005): Impossible d'utiliser .. en début de commande à partir du répertoire de niveau supérieur.
+   à System.Web.Util.UrlPath.ReduceVirtualPath(String path)
+   à System.Web.Util.UrlPath.ReduceVirtualPath(String path)
+   à System.Web.VirtualPath.Create(String virtualPath, VirtualPathOptions options)
+   à System.Web.HttpServerUtility.MapPath(String path)
+   à System.Web.HttpServerUtilityWrapper.MapPath(String path)
+   à Portfolio.Services.ArticlesService.generateArticles(Controller controller) dans d:\dev\GitHub\portfolio\Source\Services\ArticlesService.cs:ligne 80
+INFO|Portfolio.Log|2013-02-15 11:18:04,719|Cache : élement "articles" -> mise à jour terminée !
+DEBUG|Portfolio.Log|2013-02-15 11:18:04,720|Aucune donnée récupérée dans le cache pour la clé "articles".
+INFO|Portfolio.Log|2013-02-15 11:18:39,709|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 11:18:39,784|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 11:18:39,790|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 11:18:39,792|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 11:18:39,965|Source file location: ..\..\Posts
+ERROR|Portfolio.Log|2013-02-15 11:18:39,998|Exception ! Source : GenerateArticles. System.Web.HttpException (0x80004005): Impossible d'utiliser .. en début de commande à partir du répertoire de niveau supérieur.
+   à System.Web.Util.UrlPath.ReduceVirtualPath(String path)
+   à System.Web.Util.UrlPath.Reduce(String path)
+   à System.Web.Util.UrlPath.Combine(String appPath, String basepath, String relative)
+   à System.Web.VirtualPath.Combine(VirtualPath relativePath)
+   à System.Web.HttpRequest.MapPath(VirtualPath virtualPath, VirtualPath baseVirtualDir, Boolean allowCrossAppMapping)
+   à System.Web.HttpServerUtility.MapPath(String path)
+   à System.Web.HttpServerUtilityWrapper.MapPath(String path)
+   à Portfolio.Services.ArticlesService.generateArticles(Controller controller) dans d:\dev\GitHub\portfolio\Source\Services\ArticlesService.cs:ligne 80
+INFO|Portfolio.Log|2013-02-15 11:18:40,000|Cache : élement "articles" -> mise à jour terminée !
+DEBUG|Portfolio.Log|2013-02-15 11:18:40,003|Aucune donnée récupérée dans le cache pour la clé "articles".
+INFO|Portfolio.Log|2013-02-15 11:19:15,117|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 11:19:15,261|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 11:19:15,266|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 11:19:15,268|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 11:19:15,271|Source file location: D:\dev\GitHub\portfolio\Posts
+INFO|Portfolio.Log|2013-02-15 11:19:15,271|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-15 11:19:15,376|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-15 11:19:15,389|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2 - Copie (2).md
+INFO|Portfolio.Log|2013-02-15 11:19:15,418|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2 - Copie (3).md
+INFO|Portfolio.Log|2013-02-15 11:19:15,428|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2 - Copie.md
+INFO|Portfolio.Log|2013-02-15 11:19:15,437|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-15 11:19:15,454|Cache : élement "articles" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-15 11:19:29,216|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 11:19:29,371|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 11:19:29,376|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 11:19:29,379|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 11:19:29,381|Source file location: D:\dev\GitHub\portfolio\Posts
+INFO|Portfolio.Log|2013-02-15 11:19:29,382|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-15 11:19:29,469|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-15 11:19:34,688|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 11:19:34,835|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 11:19:34,841|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 11:19:34,844|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 11:19:35,015|Source file location: D:\dev\GitHub\portfolio\Posts
+INFO|Portfolio.Log|2013-02-15 11:19:35,016|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-15 11:19:35,116|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-15 11:19:35,121|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2 - Copie (2).md
+INFO|Portfolio.Log|2013-02-15 11:19:35,132|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2 - Copie (3).md
+INFO|Portfolio.Log|2013-02-15 11:19:35,137|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2 - Copie.md
+INFO|Portfolio.Log|2013-02-15 11:19:35,142|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-15 11:19:35,147|Cache : élement "articles" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-15 11:21:37,778|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 11:21:38,080|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 11:21:38,083|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 11:21:38,084|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 11:21:38,085|Source file location: D:\dev\GitHub\portfolio\Posts
+INFO|Portfolio.Log|2013-02-15 11:21:38,086|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-15 11:21:38,178|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-15 11:21:38,181|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2 - Copie (2).md
+INFO|Portfolio.Log|2013-02-15 11:21:38,192|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2 - Copie (3).md
+INFO|Portfolio.Log|2013-02-15 11:21:38,196|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2 - Copie.md
+INFO|Portfolio.Log|2013-02-15 11:21:38,200|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-15 11:21:38,205|Cache : élement "articles" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-15 11:21:59,347|Starting website Portfolio...
+INFO|Portfolio.Log|2013-02-15 11:22:28,251|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 11:22:34,609|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 11:22:34,612|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 11:22:34,613|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 11:22:34,615|Source file location: D:\dev\GitHub\portfolio\Posts
+INFO|Portfolio.Log|2013-02-15 11:22:34,615|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-15 11:22:34,708|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-15 11:22:34,711|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2 - Copie (2).md
+INFO|Portfolio.Log|2013-02-15 11:22:34,721|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2 - Copie (3).md
+INFO|Portfolio.Log|2013-02-15 11:22:34,724|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2 - Copie.md
+INFO|Portfolio.Log|2013-02-15 11:22:34,728|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-15 11:22:34,732|Cache : élement "articles" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-15 11:22:51,788|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 11:22:51,928|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 11:22:51,933|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 11:22:51,935|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 11:22:51,938|Source file location: D:\dev\GitHub\portfolio\Posts
+INFO|Portfolio.Log|2013-02-15 11:22:51,939|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-15 11:22:52,029|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-15 11:22:52,034|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2 - Copie (2).md
+INFO|Portfolio.Log|2013-02-15 11:22:52,045|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2 - Copie (3).md
+INFO|Portfolio.Log|2013-02-15 11:22:52,050|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2 - Copie.md
+INFO|Portfolio.Log|2013-02-15 11:22:52,055|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-15 11:22:52,061|Cache : élement "articles" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-15 11:23:08,282|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 11:23:08,378|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 11:23:08,381|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 11:23:08,382|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 11:23:08,384|Source file location: D:\dev\GitHub\portfolio\Posts
+INFO|Portfolio.Log|2013-02-15 11:23:08,384|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-15 11:23:08,479|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-15 11:23:08,483|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2 - Copie (2).md
+INFO|Portfolio.Log|2013-02-15 11:23:08,493|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2 - Copie (3).md
+INFO|Portfolio.Log|2013-02-15 11:23:08,497|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2 - Copie.md
+INFO|Portfolio.Log|2013-02-15 11:23:08,500|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-15 11:23:08,524|Cache : élement "articles" -> mise à jour terminée !
+DEBUG|Portfolio.Log|2013-02-15 11:25:19,914|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 11:25:19,914|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 11:25:19,915|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 11:25:19,915|Source file location: D:\dev\GitHub\portfolio\Posts
+INFO|Portfolio.Log|2013-02-15 11:25:19,915|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-15 11:25:19,919|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-15 11:25:19,923|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2 - Copie (2).md
+INFO|Portfolio.Log|2013-02-15 11:25:19,926|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2 - Copie (3).md
+INFO|Portfolio.Log|2013-02-15 11:25:19,930|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2 - Copie.md
+INFO|Portfolio.Log|2013-02-15 11:25:19,933|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-15 11:25:19,936|Cache : élement "articles" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-15 11:25:32,089|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 11:25:32,241|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 11:25:32,246|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 11:25:32,249|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 11:25:32,252|Source file location: D:\dev\GitHub\portfolio\Posts
+INFO|Portfolio.Log|2013-02-15 11:25:32,253|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-15 11:25:32,339|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-15 11:25:32,344|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2 - Copie (2).md
+INFO|Portfolio.Log|2013-02-15 11:25:32,355|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2 - Copie (3).md
+INFO|Portfolio.Log|2013-02-15 11:25:32,360|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2 - Copie.md
+INFO|Portfolio.Log|2013-02-15 11:25:32,364|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-15 11:25:32,373|Cache : élement "articles" -> mise à jour terminée !
+INFO|Portfolio.Log|2013-02-15 11:26:24,817|Starting website Portfolio...
+DEBUG|Portfolio.Log|2013-02-15 11:26:24,910|Demande Ajout Cache articles
+INFO|Portfolio.Log|2013-02-15 11:26:24,912|Cache : Ajout élément "articles"
+INFO|Portfolio.Log|2013-02-15 11:26:24,914|Cache : élement "articles" -> mise à jour
+DEBUG|Portfolio.Log|2013-02-15 11:26:24,915|Source file location: D:\dev\GitHub\portfolio\Posts
+INFO|Portfolio.Log|2013-02-15 11:26:24,916|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-02-un-article-exemple.markdown.md
+INFO|Portfolio.Log|2013-02-15 11:26:25,011|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-15.article1.md
+INFO|Portfolio.Log|2013-02-15 11:26:25,015|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2 - Copie (2).md
+INFO|Portfolio.Log|2013-02-15 11:26:25,026|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2 - Copie (3).md
+INFO|Portfolio.Log|2013-02-15 11:26:25,030|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2 - Copie.md
+INFO|Portfolio.Log|2013-02-15 11:26:25,034|Processing file: D:\dev\GitHub\portfolio\Posts\2011-09-16.article2.md
+INFO|Portfolio.Log|2013-02-15 11:26:25,039|Cache : élement "articles" -> mise à jour terminée !

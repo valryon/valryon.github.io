@@ -15,11 +15,13 @@ namespace Portfolio.Controllers
 
         public ActionResult Error404()
         {
+            Response.StatusCode = 404;
             return View(new ErrorViewModel());
         }
 
         public ActionResult Error500()
         {
+            Response.StatusCode = 500;
             return View(new ErrorViewModel());
         }
 

@@ -1,3 +1,4 @@
+using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 using Portfolio.Utils.Log;
@@ -17,12 +18,6 @@ namespace Portfolio
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-
-            routes.MapRoute(
-                "Article",
-                "{title}",
-                new { controller = "Blog", action = "Article" }
-            );
 
             routes.MapRoute(
                 "Error 404",
@@ -55,11 +50,18 @@ namespace Portfolio
             );
 
             routes.MapRoute(
+                "Article",
+                "{title}",
+                new { controller = "Blog", action = "Article" }
+            );
+
+            routes.MapRoute(
                 "Default", // Nom d'itinéraire
                 "{controller}/{action}/{id}", // URL avec des paramètres
                 new { controller = "Blog", action = "Index", id = UrlParameter.Optional } // Paramètres par défaut
             );
         }
+
 
         protected void Application_Start()
         {

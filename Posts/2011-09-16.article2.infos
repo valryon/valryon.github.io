@@ -1,0 +1,7 @@
+﻿{
+	"layout" : "post",
+	"title" : "Article test avec plus d'éléments",
+	"description" : "Description de cet article test, encore plus longue",
+	"categories" : ["Jekyll"],
+	"publishedDate" : "2013-02-14"
+}

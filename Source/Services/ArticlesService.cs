@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Globalization;
 using System.IO;
 using System.Linq;
@@ -21,7 +22,7 @@ namespace Portfolio.Services
         private static ArticlesService m_instance;
         private static string cacheKey = "articles";
 
-        private String sourceFileLocation = "~/_posts";
+        private String sourceFileLocation = ConfigurationManager.AppSettings["PostsLocation"];
 
         private Markdown m_markdownParser;
         private List<Article> m_articles;
@@ -48,7 +49,7 @@ namespace Portfolio.Services
             {
                 CacheManager.Set<List<Article>>(cacheKey, () =>
                 {
-                    return generateArticles(controller);
+                    return generateArticles(controller).OrderByDescending(a => a.PublishedDate).ToList();
                 }, new TimeSpan(1, 0, 0, 0), true);
             }
 
@@ -76,7 +77,7 @@ namespace Portfolio.Services
             Logger.Log(LogLevel.Debug, "Source file location: " + sourceFileLocation);
             try
             {
-                foreach (string source in Directory.GetFiles(controller.Server.MapPath(sourceFileLocation), "*.md"))
+                foreach (string source in Directory.GetFiles(sourceFileLocation, "*.md"))
                 {
                     Logger.Log(LogLevel.Info, "Processing file: " + source);
 
@@ -84,7 +85,7 @@ namespace Portfolio.Services
                     Article article = new Article();
                     article.SourcePath = source;
                     article.SourceFilename = Path.GetFileName(source);
-                    article.Url = controller.Url.Action("Article", "Blog", new { title = Path.GetFileNameWithoutExtension(source) }, "http").ProcessPath().ToLower();
+                    article.Url = controller.Url.Action("Article", "Blog", new { title = Path.GetFileNameWithoutExtension(source).ProcessPath().ToLower() }, "http");
 
                     // -- Search for a json meta file
                     try

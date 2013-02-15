@@ -35,7 +35,7 @@ namespace Portfolio.Controllers
                 }
             }
 
-            return View("Error404", "Error");
+            return RedirectToActionPermanent("Error404", "Error");
         }
 
         public ActionResult ReloadArticles()
