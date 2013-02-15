@@ -4,5 +4,6 @@
 	"description" : "Description de cet article test, encore plus longue",
 	"categories" : ["Jekyll","Test"],
 	"publishedDate" : "2013-05-14 00:00:00",
-	"favorite" :"true"
+	"favorite" :"true",
+	"lang":"fr"
 }

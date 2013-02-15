@@ -233,6 +233,7 @@ namespace Portfolio.Services
                             List<string> categories = json["categories"].Select(j => j.ToString().ToLower().Trim()).ToList();
                             DateTime dateTime = DateTime.Parse(json["publishedDate"].ToString(), CultureInfo.GetCultureInfo("fr-FR"));
                             bool isFavorite =Boolean.Parse(json["favorite"].ToString());
+                            string lang = json["lang"].ToString();
 
                             article.Layout = layout;
                             article.Title = title;
@@ -240,22 +241,23 @@ namespace Portfolio.Services
                             article.Categories = categories;
                             article.PublishedDate = dateTime;
                             article.IsFavorite = isFavorite;
+                            article.Language = lang;
+
+                            // -- Extract file content
+                            string postContent = File.ReadAllText(source);
+
+
+                            // -- Read the markdown
+                            string html = m_markdownParser.Transform(postContent);
+
+                            article.HtmlContent = html;
+
+                            articles.Add(article);
                         }
                         catch (Exception metaException)
                         {
                             Logger.LogException(LogLevel.Error, "GenerateArticles.ReadMeta", metaException);
                         }
-
-                        // -- Extract file content
-                        string postContent = File.ReadAllText(source);
-
-
-                        // -- Read the markdown
-                        string html = m_markdownParser.Transform(postContent);
-
-                        article.HtmlContent = html;
-
-                        articles.Add(article);
                     }
                     catch (Exception e)
                     {

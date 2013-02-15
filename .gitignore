@@ -162,7 +162,7 @@ pip-log.txt
 # Mac crap
 .DS_Store
 
-
-Portfolio.log
 !Release
 !Release/*
+
+Portfolio.log
