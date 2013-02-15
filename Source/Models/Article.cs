@@ -24,6 +24,8 @@ namespace Portfolio.Models
 
         public string Url { get; set; }
 
+        public bool IsFavorite { get; set; }
+
         public override bool Equals(object obj)
         {
             if (obj is Article)

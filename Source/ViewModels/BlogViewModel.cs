@@ -8,6 +8,12 @@ namespace Portfolio.ViewModels
 {
     public class BlogViewModel : BaseViewModel
     {
-        public List<Article> Articles { get; set; }
+        public List<ArticleViewModel> Articles { get; set; }
+
+        public int CurrentPage { get; set; }
+
+        public int PageCount { get; set; }
+
+        public int MinPage { get; set; }
     }
 }

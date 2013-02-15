@@ -10,5 +10,7 @@ namespace Portfolio.ViewModels
         public string Title { get; set; }
 
         public List<string> Categories { get; set; }
+
+        public List<ArticleViewModel> FavoritesArticles { get; set; }
     }
 }

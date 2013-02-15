@@ -14,14 +14,25 @@ namespace Portfolio.Controllers
 {
     public class BlogController : BaseController
     {
+        private static int pageSize = 3;
+
         /// <summary>
         /// Blog home
         /// </summary>
         /// <returns></returns>
-        public ActionResult Index()
+        public ActionResult Index(int? page)
         {
             BlogViewModel model = new BlogViewModel();
-            model.Articles = ArticlesService.Instance.GetArticles(this);
+            model.Articles = ArticlesService.Instance.GetArticles(this).Select(a => new ArticleViewModel(a)).ToList();
+
+            model.CurrentPage = 1;
+            if (page.HasValue)
+            {
+                model.CurrentPage = page.Value > 0 ? page.Value : 1;
+            }
+
+            model.PageCount = model.Articles.Count / pageSize;
+            model.Articles = model.Articles.Skip((model.CurrentPage-1) * pageSize).Take(pageSize).ToList();
 
             return View(model);
         }
@@ -39,10 +50,7 @@ namespace Portfolio.Controllers
                 if (article.Url.ToLower().Contains(Request.RawUrl.ToLower()))
                 {
                     SingleViewModel model = new SingleViewModel();
-                    model.Content = new ArticleViewModel()
-                    {
-                        Article = article
-                    };
+                    model.Content = new ArticleViewModel(article);
                     return View(model);
                 }
             }
@@ -70,12 +78,12 @@ namespace Portfolio.Controllers
             if (isCategory)
             {
                 search.SearchTitle = "Category: \"" + request + "\"";
-                search.Results = ArticlesService.Instance.GetArticlesFromCategories(this, request);
+                search.Results = ArticlesService.Instance.GetArticlesFromCategories(this, request).Select(a => new ArticleViewModel(a)).ToList();
             }
             else
             {
                 search.SearchTitle = "\"" + request + "\"";
-                search.Results = ArticlesService.Instance.GetArticlesFromKeywords(this, request);
+                search.Results = ArticlesService.Instance.GetArticlesFromKeywords(this, request).Select(a => new ArticleViewModel(a)).ToList();
             }
 
             return View(search);

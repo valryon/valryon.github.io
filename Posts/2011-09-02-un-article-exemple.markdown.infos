@@ -2,6 +2,7 @@
 	"layout" : "post",
 	"title" : "874512Article test avec plus d'éléments",
 	"description" : "Description de cet article test, encore plus longue",
-	"categories" : ["Jekyll"],
-	"publishedDate" : "2013-05-14 00:00:00"
+	"categories" : ["Jekyll","Test"],
+	"publishedDate" : "2013-05-14 00:00:00",
+	"favorite" :"true"
 }

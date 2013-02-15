@@ -8,7 +8,7 @@ namespace Portfolio.ViewModels
 {
     public class SearchViewModel : BaseViewModel
     {
-        public List<Article> Results { get; set; }
+        public List<ArticleViewModel> Results { get; set; }
 
         public string SearchTitle { get; set; }
     }

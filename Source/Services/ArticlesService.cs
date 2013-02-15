@@ -45,7 +45,7 @@ namespace Portfolio.Services
         /// </summary>
         /// <param name="controller"></param>
         /// <returns></returns>
-        public List<Article> GetArticles(Controller controller)
+        public List<Article> GetArticles(Controller controller, bool onlyFavorites = false)
         {
             if (CacheManager.TestKey(cacheKey) == false)
             {
@@ -55,7 +55,14 @@ namespace Portfolio.Services
                 }, new TimeSpan(1, 0, 0, 0), true);
             }
 
-            return CacheManager.Get<List<Article>>(cacheKey);
+            List<Article> articles = CacheManager.Get<List<Article>>(cacheKey);
+
+            if (onlyFavorites)
+            {
+                return articles.Where(a => a.IsFavorite).ToList();
+            }
+
+            return articles;
         }
 
         /// <summary>
@@ -206,54 +213,61 @@ namespace Portfolio.Services
                     Logger.Log(LogLevel.Info, "Processing file: " + source);
 
                     // For each of them :
-                    Article article = new Article();
-                    article.SourcePath = source;
-                    article.SourceFilename = Path.GetFileName(source);
-                    article.Url = controller.Url.Action("Single", "Blog", new { title = Path.GetFileNameWithoutExtension(source).ProcessPath().ToLower() }, "http");
-
-                    // -- Search for a json meta file
                     try
                     {
-                        string jsonMeta = File.ReadAllText(Path.GetFullPath(source).Replace("." + PostsExtension, "." + PostsInfosExtension));
+                        Article article = new Article();
+                        article.SourcePath = source;
+                        article.SourceFilename = Path.GetFileName(source);
+                        article.Url = controller.Url.Action("Single", "Blog", new { title = Path.GetFileNameWithoutExtension(source).ProcessPath().ToLower() }, "http");
 
-                        JObject json = JObject.Parse(jsonMeta);
+                        // -- Search for a json meta file
+                        try
+                        {
+                            string jsonMeta = File.ReadAllText(Path.GetFullPath(source).Replace("." + PostsExtension, "." + PostsInfosExtension));
 
-                        string layout = json["layout"].ToString();
-                        string title = json["title"].ToString();
-                        string desc = json["description"].ToString();
-                        List<string> categories = json["categories"].Select(j => j.ToString().ToLower().Trim()).ToList();
-                        DateTime dateTime = DateTime.Parse(json["publishedDate"].ToString(), CultureInfo.GetCultureInfo("fr-FR"));
+                            JObject json = JObject.Parse(jsonMeta);
 
-                        article.Layout = layout;
-                        article.Title = title;
-                        article.Description = desc;
-                        article.Categories = categories;
-                        article.PublishedDate = dateTime;
+                            string layout = json["layout"].ToString();
+                            string title = json["title"].ToString();
+                            string desc = json["description"].ToString();
+                            List<string> categories = json["categories"].Select(j => j.ToString().ToLower().Trim()).ToList();
+                            DateTime dateTime = DateTime.Parse(json["publishedDate"].ToString(), CultureInfo.GetCultureInfo("fr-FR"));
+                            bool isFavorite =Boolean.Parse(json["favorite"].ToString());
+
+                            article.Layout = layout;
+                            article.Title = title;
+                            article.Description = desc;
+                            article.Categories = categories;
+                            article.PublishedDate = dateTime;
+                            article.IsFavorite = isFavorite;
+                        }
+                        catch (Exception metaException)
+                        {
+                            Logger.LogException(LogLevel.Error, "GenerateArticles.ReadMeta", metaException);
+                        }
+
+                        // -- Extract file content
+                        string postContent = File.ReadAllText(source);
+
+
+                        // -- Read the markdown
+                        string html = m_markdownParser.Transform(postContent);
+
+                        article.HtmlContent = html;
+
+                        articles.Add(article);
                     }
-                    catch (Exception metaException)
+                    catch (Exception e)
                     {
-                        Logger.LogException(LogLevel.Error, "GenerateArticles.ReadMeta", metaException);
+                        // Log
+                        Logger.LogException(LogLevel.Error, "GenerateArticles.Foreach", e);
                     }
-
-                    // -- Extract file content
-                    string postContent = File.ReadAllText(source);
-
-
-                    // -- Read the markdown
-                    string html = m_markdownParser.Transform(postContent);
-
-                    article.HtmlContent = html;
-
-                    articles.Add(article);
                 }
             }
             catch (Exception e)
             {
                 // Log
                 Logger.LogException(LogLevel.Error, "GenerateArticles", e);
-
-                // TODO Send mail
-
                 return null;
             }
 

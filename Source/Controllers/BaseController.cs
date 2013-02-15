@@ -28,6 +28,7 @@ namespace Portfolio.Controllers
         protected virtual void FillBaseViewModel(BaseViewModel viewModel)
         {
             viewModel.Categories = ArticlesService.Instance.GetCategories(this);
+            viewModel.FavoritesArticles = ArticlesService.Instance.GetArticles(this, true).Select(a => new ArticleViewModel(a)).ToList();
         }
     }
 }

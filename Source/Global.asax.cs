@@ -62,6 +62,12 @@ namespace Portfolio
             );
 
             routes.MapRoute(
+               "Home",
+               "blog/{page}",
+               new { controller = "Blog", action = "Index", page = 1 }
+            );
+
+            routes.MapRoute(
                 "Article",
                 "{title}",
                 new { controller = "Blog", action = "Single" }
