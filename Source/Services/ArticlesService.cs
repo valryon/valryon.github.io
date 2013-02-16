@@ -11,6 +11,7 @@ using Newtonsoft.Json.Linq;
 using Portfolio.Models;
 using Portfolio.Utils.Data;
 using Portfolio.Utils.Log;
+using HtmlAgilityPack;
 
 namespace Portfolio.Services
 {
@@ -23,9 +24,11 @@ namespace Portfolio.Services
         private static string cacheKey = "articles";
         private static string cacheKeyCategory = "articles_category_";
 
-        private String sourceFileLocation = ConfigurationManager.AppSettings["PostsLocation"];
-        private String PostsExtension = ConfigurationManager.AppSettings["PostsExtension"];
-        private String PostsInfosExtension = ConfigurationManager.AppSettings["PostsInfosExtension"];
+        private static String sourceFileLocation = ConfigurationManager.AppSettings["PostsLocation"];
+        private static String PostsExtension = ConfigurationManager.AppSettings["PostsExtension"];
+        private static String PostsInfosExtension = ConfigurationManager.AppSettings["PostsInfosExtension"];
+
+        private static TimeSpan articlesTtl = new TimeSpan(1, 0, 0, 0);
 
         private Markdown m_markdownParser;
 
@@ -38,6 +41,10 @@ namespace Portfolio.Services
                 EncodeProblemUrlCharacters = true,
                 LinkEmails = true
             });
+
+#if DEBUG
+            articlesTtl = new TimeSpan(0, 0, 5);
+#endif
         }
 
         /// <summary>
@@ -249,7 +256,7 @@ namespace Portfolio.Services
 
                             // -- Read the markdown
                             string html = m_markdownParser.Transform(postContent);
-
+                            html = manipulateHtml(html);
                             article.HtmlContent = html;
 
                             articles.Add(article);
@@ -275,6 +282,42 @@ namespace Portfolio.Services
 
             return articles;
         }
+
+        /// <summary>
+        /// Apply some auto rules to the html output
+        /// </summary>
+        /// <param name="htmlInput"></param>
+        /// <returns></returns>
+        private string manipulateHtml(string htmlInput)
+        {
+            string htmlOuput = string.Empty ;
+
+            // Manipulate directly the DOM
+            HtmlDocument doc = new HtmlDocument();
+            doc.LoadHtml(htmlInput);
+
+            // Add class and tricks
+
+            // -- on images
+            foreach(var imgElement in doc.DocumentNode.Descendants("img"))
+            {
+                string imgClass = "";
+                if(imgElement.Attributes["class"] != null)
+                {
+                    imgClass = imgElement.Attributes["class"].Value;
+                }
+                imgClass += " img-rounded";
+                imgElement.SetAttributeValue("class", imgClass);
+
+            }
+
+            // Return as HTML string
+            htmlOuput = doc.DocumentNode.InnerHtml;
+
+            return htmlOuput;
+        }
+
+
 
         public static ArticlesService Instance
         {
