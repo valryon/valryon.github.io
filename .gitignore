@@ -165,4 +165,6 @@ pip-log.txt
 !Release
 !Release/*
 
+log
+log/*
 Portfolio.log
