@@ -6,6 +6,8 @@
 <div class="span4" />
 						</div>
 
+<div class="row-fluid">
+
 Il y a un peu plus de deux ans, aux alentours d’avril 2009, je téléchargeais Visual studio C# 2008 Express et XNA 3.1 dans le but de tester un peu cette technologie et de faire un remake rapide de mon jeu NDS [Shmup](http://www.valryon.fr/shmup-nds/).
 
 Aujourd’hui, en juin 2011, « Shmup XNA » est connu sous le nom de **The Great Paper Adventure**, Shmup 2D coloré, délire régressif 16 bits sur tous les plans. Avec plus de 5000 téléchargements de la version PC, et plus de 2000 de la version Xbox 360 à l’heure actuelle, ce projet d’étudiants sans le sous et sans moyens est un succès à nos yeux.
@@ -108,3 +110,5 @@ Damien. The Great Paper Team Leader of The Great Paper Adventure Of The Nameless
 ### A voir aussi
 
 - [The Great Paper Artbook : l’artbook du jeu, les ennemis, les décors, la technique](http://thegreatpaperadventure.com/files/artbook/Artbook.pdf)
+
+</div>
