@@ -1,12 +1,4 @@
-<div class="row-fluid">
-<div class="span4" />
-   <div class="span4">
-						 	<a title="Using cheat codes - Kawaii - Indie DB" href="http://www.indiedb.com/games/the-great-paper-adventure/images/using-cheat-codes-kawaii" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.indiedb.com']);" target="_blank"><img class="aligncenter" src="http://media.indiedb.com/cache/images/games/1/13/12847/thumb_620x2000/kawaii_mode.png" alt="Using cheat codes - Kawaii"></a>
-						</div>
-<div class="span4" />
-						</div>
-
-<div class="row-fluid">
+<a title="Using cheat codes - Kawaii - Indie DB" href="http://www.indiedb.com/games/the-great-paper-adventure/images/using-cheat-codes-kawaii" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.indiedb.com']);" target="_blank"><img class="aligncenter" src="http://media.indiedb.com/cache/images/games/1/13/12847/thumb_620x2000/kawaii_mode.png" alt="Using cheat codes - Kawaii"></a>
 
 Il y a un peu plus de deux ans, aux alentours d’avril 2009, je téléchargeais Visual studio C# 2008 Express et XNA 3.1 dans le but de tester un peu cette technologie et de faire un remake rapide de mon jeu NDS [Shmup](http://www.valryon.fr/shmup-nds/).
 
@@ -32,6 +24,7 @@ Enfin, il paraît qu’on a le public qu’on mérite… dans ce cas on est plus
 
 ### Les graphismes
 
+<img src="http://thegreatpaperadventure.com/static/images/artworks/art4.png" />
 
 Bien que le jeu pêche du côté de son gameplay (voir après), l’un des points forts du jeu qui aura fait l’unanimité aura été son ambiance complètement barrée, définie par les musiques et les dessins.
 
@@ -73,8 +66,6 @@ Nous avons quelques pistes pour l’expliquer :
 
 ### Les bruitages
 
-<img src="http://thegreatpaperadventure.com/static/images/artworks/art4.png" />
-
 Sound Designer, ça ne s’improvise pas. Au cours du développement, plusieurs solutions pour les sons ont été envisagées.
 
 - **Faire les sons nous mêmes.** Mais sans matériel et sans idées, à moins de partir sur des bruits à la bouche qui n’auraient pas plu à tout le monde, cela ne semblait pas la bonne option.
@@ -110,5 +101,3 @@ Damien. The Great Paper Team Leader of The Great Paper Adventure Of The Nameless
 ### A voir aussi
 
 - [The Great Paper Artbook : l’artbook du jeu, les ennemis, les décors, la technique](http://thegreatpaperadventure.com/files/artbook/Artbook.pdf)
-
-</div>

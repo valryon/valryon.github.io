@@ -306,9 +306,11 @@ namespace Portfolio.Services
                 {
                     imgClass = imgElement.Attributes["class"].Value;
                 }
-                imgClass += " img-rounded";
+                imgClass += " img-rounded displayed";
                 imgElement.SetAttributeValue("class", imgClass);
-
+                
+                // center
+                //var pContainer = imgElement.Ancestors("p").FirstOrDefault();
             }
 
             // Return as HTML string

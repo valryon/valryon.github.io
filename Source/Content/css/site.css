@@ -1,3 +1,15 @@
 body {
     padding-top: 20px;
 }
+
+/* Justify everything */
+p {
+    text-align: justify;
+}
+
+/* Auto align images*/
+img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
