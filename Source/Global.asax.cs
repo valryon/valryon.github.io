@@ -2,6 +2,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 using Portfolio.Utils.Log;
+using System.Globalization;
 
 namespace Portfolio
 {
@@ -91,6 +92,7 @@ namespace Portfolio
 
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
+
         }
     }
 }

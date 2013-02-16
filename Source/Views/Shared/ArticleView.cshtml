@@ -9,7 +9,7 @@
                 </a>
             </h2>
             <p>
-                @Model.Article.PublishedDate.ToString("dd MMM yyyy"),&nbsp;
+                @Model.Article.PublishedDate.ToString("dd MMM yyyy", System.Globalization.CultureInfo.GetCultureInfo("fr-FR")),&nbsp;
                 @Model.Article.Language,&nbsp;
                 @foreach (string cat in Model.Article.Categories)
                 {
