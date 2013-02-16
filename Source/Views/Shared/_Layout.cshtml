@@ -46,72 +46,97 @@
 
 
         <div class="row-fluid">
+
             <div class="span3">
 
-                <p>
-                    <a href="@Url.Action("Index", "Blog")">
-                        <img src="../../Content/img/logo_home.png" alt="Damien Mayance - Game & Software developper" />
-                    </a>
-                </p>
-
-                <p>
-                    <img src="http://www.gravatar.com/avatar/545f7c7f0ed11d6ef21722a7e6c47acf?s=200" alt="What I look like" />
-                </p>
-
-                <h3>General</h3>
-                <div class="sidebar-nav">
-                    <div class="nav-pills nav-stacked">
-                        <ul class="nav nav-list">
-                            <li class="nav-header">Sidebar</li>
-                            <li><a href="http://twitter.com/Valryon">@@Valryon</a></li>
-                            <li><a href="http://github.com/Valryon">GitHub</a></li>
-                            <li><a href="@Url.Action("Feed", "Blog")">Feed</a></li>
-                        </ul>
-                    </div>
+                @*Sidebar mobile*@
+                <div class="hero-unit visible-phone">
+                    <p>
+                        <img src="http://www.gravatar.com/avatar/545f7c7f0ed11d6ef21722a7e6c47acf?s=120" alt="What I look like" />
+                    </p>
+                    <h1>Damien Mayance</h1>
+                    <h2>Game & Software developer</h2>
+                    <ul class="nav nav-pills">
+                        <li><a href="http://twitter.com/Valryon">@@Valryon</a></li>
+                        <li><a href="http://github.com/Valryon">GitHub</a></li>
+                        <li><a href="@Url.Action("Feed", "Blog")">Feed</a></li>
+                    </ul>
                 </div>
 
+                @*Side bar desktop & tablet *@
+                <div class="hidden-phone">
 
-                <h3>Articles</h3>
+                    <p>
+                        <a href="@Url.Action("Index", "Blog")">
+                            <img src="../../Content/img/logo_home.png" alt="Damien Mayance - Game & Software developper" />
+                        </a>
+                    </p>
+
+                    <p>
+                        <img src="http://www.gravatar.com/avatar/545f7c7f0ed11d6ef21722a7e6c47acf?s=200" alt="What I look like" />
+                    </p>
+
+                    <h3>General</h3>
+                    <div class="sidebar-nav">
+                        <div class="nav-pills nav-stacked">
+                            <ul class="nav nav-list">
+                                <li class="nav-header">Sidebar</li>
+                                <li><a href="http://twitter.com/Valryon">@@Valryon</a></li>
+                                <li><a href="http://github.com/Valryon">GitHub</a></li>
+                                <li><a href="@Url.Action("Feed", "Blog")">Feed</a></li>
+                            </ul>
+                        </div>
+                    </div>
 
 
-                @using (Html.BeginForm("Search", "Blog", null, FormMethod.Get, new { @class = "form-search" }))
-                {
-                    <input type="text" class="input-medium search-query" name="request" />
-                    <button type="submit" class="btn"><i class="icon-search"></i></button>
-                }
+                    <h3>Articles</h3>
 
-                @if (Model.FavoritesArticles != null && Model.FavoritesArticles.Count > 0)
-                {
-                    <h4>Do not miss</h4>
-                    <ul class="nav nav-pills nav-stacked">
-                        @foreach (Portfolio.ViewModels.ArticleViewModel a in Model.FavoritesArticles)
-                        {
-                            <li><a href="@a.Article.Url"><i class="icon-star"></i>&nbsp;@a.Article.Title</a></li>
-                        }
-                    </ul>
-                }
-                @if (Model.Categories != null && Model.Categories.Count > 0)
-                {
-                    <div class="hidden-phone">
-                        <h4>Categories</h4>
+
+                    @using (Html.BeginForm("Search", "Blog", null, FormMethod.Get, new { @class = "form-search" }))
+                    {
+                        <input type="text" class="input-medium search-query" name="request" />
+                        <button type="submit" class="btn"><i class="icon-search"></i></button>
+                    }
+
+                    @if (Model.FavoritesArticles != null && Model.FavoritesArticles.Count > 0)
+                    {
+                        <h4>Do not miss</h4>
                         <ul class="nav nav-pills nav-stacked">
-
-                            @foreach (string cat in Model.Categories)
+                            @foreach (Portfolio.ViewModels.ArticleViewModel a in Model.FavoritesArticles)
                             {
-                                <li>
-                                    <a href="@Url.Action("Search", "Blog", new { request = cat })" >
-                                        <i class="icon-tags"></i>&nbsp;@cat
-                                    </a>
-                                </li>
+                                <li><a href="@a.Article.Url"><i class="icon-star"></i>&nbsp;@a.Article.Title</a></li>
                             }
                         </ul>
-                    </div>
-                }
+                    }
+                    @if (Model.Categories != null && Model.Categories.Count > 0)
+                    {
+                        <div class="hidden-phone">
+                            <h4>Categories</h4>
+                            <ul class="nav nav-pills nav-stacked">
+
+                                @foreach (string cat in Model.Categories)
+                                {
+                                    <li>
+                                        <a href="@Url.Action("Search", "Blog", new { request = cat })" >
+                                            <i class="icon-tags"></i>&nbsp;@cat
+                                        </a>
+                                    </li>
+                                }
+                            </ul>
+                        </div>
+                    }
+
+                </div>
 
             </div>
+
+
+            @*Page content*@
             <div class="span9">
                 @RenderBody()
             </div>
+
+
         </div>
         <div class="row-fluid muted">
             <hr />
