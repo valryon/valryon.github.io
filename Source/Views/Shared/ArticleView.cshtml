@@ -2,19 +2,18 @@
 <article>
     <div class="row-fluid">
         <div class="well">
-
             <h2>
                 <a href="@Model.Article.Url" >
                     @Model.Article.Title
                 </a>
             </h2>
             <p>
-                @Model.Article.PublishedDate.ToString("dd MMM yyyy", System.Globalization.CultureInfo.GetCultureInfo("fr-FR")),&nbsp;
-                @Model.Article.Language,&nbsp;
+                <strong>@Model.Article.PublishedDate.ToString("dd MMM yyyy", System.Globalization.CultureInfo.GetCultureInfo("fr-FR"))</strong>&nbsp;
+                <span class="badge badge-success">@Model.Article.Language</span>&nbsp;
                 @foreach (string cat in Model.Article.Categories)
                 {
                     <a href="@Url.Action("Search", "Blog", new { request = cat })">
-                        @cat&nbsp;
+                        <span class="badge badge-info">@cat</span>&nbsp;
                     </a>
                 }
             </p>
@@ -27,6 +26,16 @@
     @if (Model.ShowContent)
     {
         <div class="row-fluid">
+
+            @if (Model.Article.Language.ToLower().Trim() == "fr")
+            {
+                <div class="alert alert-info">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <h4>Is this blog in french or in english?!</h4> 
+                    As you can see, even if all the new stuff is in english, the old ones remains in french.
+                </div>
+            }
+
             @Html.Raw(Model.Article.HtmlContent)
         </div>
     }

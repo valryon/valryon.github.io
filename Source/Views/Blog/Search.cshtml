@@ -1,7 +1,7 @@
 ﻿@model Portfolio.ViewModels.SearchViewModel
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
-    Model.Title = Model.SearchTitle;
+    Model.Title = Model.Search;
 
     if (Model.IsCategory == false)
     {
@@ -10,24 +10,24 @@
 }
 
 <div class="hero-unit">
-    <h2>@Model.SearchTitle</h2>
+    <h4>Searching : @Model.Search</h4>
 
     @if (@Model.Results.Count == 0)
     {
         <p>
-            Aucun résultat
+            No result
         </p>
     }
     else if (@Model.Results.Count == 1)
     {
         <p>
-            Un résultat
+            One result
         </p>
     }
     else
     {
         <p>
-            @Model.Results.Count résultats
+            @Model.Results.Count results
         </p>
     }
 

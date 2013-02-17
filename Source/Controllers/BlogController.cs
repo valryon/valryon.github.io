@@ -84,15 +84,13 @@ namespace Portfolio.Controllers
             }
 
             search.IsCategory = isCategory;
-
+           
             if (isCategory)
             {
-                search.SearchTitle = "Category: \"" + request + "\"";
                 search.Results = ArticlesService.Instance.GetArticlesFromCategories(this, request).Select(a => new ArticleViewModel(a, false)).ToList();
             }
             else
             {
-                search.SearchTitle = "\"" + request + "\"";
                 search.Results = ArticlesService.Instance.GetArticlesFromKeywords(this, request).Select(a => new ArticleViewModel(a)).ToList();
             }
 

@@ -10,6 +10,5 @@ namespace Portfolio.ViewModels
     {
         public List<ArticleViewModel> Results { get; set; }
         public bool IsCategory { get; set; }
-        public string SearchTitle { get; set; }
     }
 }
