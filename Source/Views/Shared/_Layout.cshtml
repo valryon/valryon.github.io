@@ -20,6 +20,10 @@
     {
         Model.Metas["og:description"] = "Game and software indie developper";
     }
+    if (Model.Metas.ContainsKey("robots") == false)
+    {
+        Model.Metas["robots"] = "index,follow";
+    }
 }
 <!DOCTYPE html>
 <html>
@@ -44,7 +48,6 @@
 
     <div class="container-fluid">
 
-
         <div class="row-fluid">
 
             <div class="span3">
@@ -52,14 +55,14 @@
                 @*Sidebar mobile*@
                 <div class="hero-unit visible-phone">
                     <p>
-                        <img src="http://www.gravatar.com/avatar/545f7c7f0ed11d6ef21722a7e6c47acf?s=120" alt="What I look like" />
+                        <a href="@Url.Action("Index", "Blog")">
+                            <img src="http://www.gravatar.com/avatar/545f7c7f0ed11d6ef21722a7e6c47acf?s=120" alt="What I look like" />
+                        </a>
                     </p>
                     <h1>Damien Mayance</h1>
                     <h2>Game & Software developer</h2>
                     <ul class="nav nav-pills">
-                        <li><a href="http://twitter.com/Valryon">@@Valryon</a></li>
-                        <li><a href="http://github.com/Valryon">GitHub</a></li>
-                        <li><a href="@Url.Action("Feed", "Blog")">Feed</a></li>
+                        @Html.Partial("ContactLinks")
                     </ul>
                 </div>
 
@@ -68,33 +71,20 @@
 
                     <p>
                         <a href="@Url.Action("Index", "Blog")">
-                            <img src="../../Content/img/logo_home.png" alt="Damien Mayance - Game & Software developper" />
+                            <img src="http://www.gravatar.com/avatar/545f7c7f0ed11d6ef21722a7e6c47acf?s=200" alt="What I look like" />
                         </a>
                     </p>
 
-                    <p>
-                        <img src="http://www.gravatar.com/avatar/545f7c7f0ed11d6ef21722a7e6c47acf?s=200" alt="What I look like" />
-                    </p>
-
-                    <h3>General</h3>
                     <div class="sidebar-nav">
-                        <div class="nav-pills nav-stacked">
-                            <ul class="nav nav-list">
-                                <li class="nav-header">Sidebar</li>
-                                <li><a href="http://twitter.com/Valryon">@@Valryon</a></li>
-                                <li><a href="http://github.com/Valryon">GitHub</a></li>
-                                <li><a href="@Url.Action("Feed", "Blog")">Feed</a></li>
-                            </ul>
-                        </div>
+                        <ul class="nav nav-stacked nav-pills">
+                            @Html.Partial("ContactLinks")
+                        </ul>
                     </div>
-
-
-                    <h3>Articles</h3>
 
 
                     @using (Html.BeginForm("Search", "Blog", null, FormMethod.Get, new { @class = "form-search" }))
                     {
-                        <input type="text" class="input-medium search-query" name="request" />
+                        <input type="text" class="input-medium search-query" name="request" value="@Model.Search" />
                         <button type="submit" class="btn"><i class="icon-search"></i></button>
                     }
 

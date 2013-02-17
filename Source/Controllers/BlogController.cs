@@ -66,10 +66,10 @@ namespace Portfolio.Controllers
         /// </summary>
         /// <param name="category"></param>
         /// <returns></returns>
-        [AcceptVerbs("POST", "GET")]
         public ActionResult Search(string request)
         {
             SearchViewModel search = new SearchViewModel();
+            search.Search = request;
 
             if (request.IsNullOrEmpty())
             {
@@ -83,10 +83,12 @@ namespace Portfolio.Controllers
                 isCategory = true;
             }
 
+            search.IsCategory = isCategory;
+
             if (isCategory)
             {
                 search.SearchTitle = "Category: \"" + request + "\"";
-                search.Results = ArticlesService.Instance.GetArticlesFromCategories(this, request).Select(a => new ArticleViewModel(a)).ToList();
+                search.Results = ArticlesService.Instance.GetArticlesFromCategories(this, request).Select(a => new ArticleViewModel(a, false)).ToList();
             }
             else
             {

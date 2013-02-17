@@ -10,13 +10,17 @@ namespace Portfolio.ViewModels
     {
         public Article Article { get; set; }
 
+        public bool ShowContent { get; set; }
+
         public ArticleViewModel()
         {
-
+            ShowContent = true;
         }
 
-        public ArticleViewModel(Article a)
+        public ArticleViewModel(Article a, bool showContent = true)
+            : this()
         {
+            ShowContent = showContent;
             Article = a;
         }
     }

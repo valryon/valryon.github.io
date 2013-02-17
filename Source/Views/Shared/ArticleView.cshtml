@@ -24,7 +24,10 @@
         </div>
     </div>
 
-    <div class="row-fluid">
-        @Html.Raw(Model.Article.HtmlContent)
-    </div>
+    @if (Model.ShowContent)
+    {
+        <div class="row-fluid">
+            @Html.Raw(Model.Article.HtmlContent)
+        </div>
+    }
 </article>

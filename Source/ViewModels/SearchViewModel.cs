@@ -9,7 +9,7 @@ namespace Portfolio.ViewModels
     public class SearchViewModel : BaseViewModel
     {
         public List<ArticleViewModel> Results { get; set; }
-
+        public bool IsCategory { get; set; }
         public string SearchTitle { get; set; }
     }
 }

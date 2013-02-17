@@ -58,14 +58,15 @@ namespace Portfolio
 
             routes.MapRoute(
                 "Search",
-                "search/{request}",
+                "search",
                 new { controller = "Blog", action = "Search" }
             );
 
             routes.MapRoute(
                "Home",
                "blog/{page}",
-               new { controller = "Blog", action = "Index", page = 1 }
+               new { controller = "Blog", action = "Index", page = 1 },
+               new { page = @"\d+" }
             );
 
             routes.MapRoute(

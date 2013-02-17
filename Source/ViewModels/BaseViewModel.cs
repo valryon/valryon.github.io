@@ -8,7 +8,7 @@ namespace Portfolio.ViewModels
     public abstract class BaseViewModel
     {
         public string Title { get; set; }
-
+        public string Search { get; set; }
         public List<string> Categories { get; set; }
 
         public List<ArticleViewModel> FavoritesArticles { get; set; }
