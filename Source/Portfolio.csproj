@@ -164,9 +164,11 @@
     <Content Include="Views\Blog\Search.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Properties\PublishProfiles\local.pubxml" />
     <Content Include="Views\Shared\ArticleView.cshtml" />
     <Content Include="Views\Shared\ContactLinks.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\Mac.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

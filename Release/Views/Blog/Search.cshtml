@@ -1,21 +1,45 @@
 ﻿@model Portfolio.ViewModels.SearchViewModel
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
-    Model.Title = Model.SearchTitle;
+    Model.Title = Model.Search;
+
+    if (Model.IsCategory == false)
+    {
+        Model.Metas["robots"] = "noindex,follow";
+    }
 }
 
-<h2>@Model.SearchTitle</h2>
+<div class="hero-unit">
+    <h4>Searching : @Model.Search</h4>
+
+    @if (@Model.Results.Count == 0)
+    {
+        <p>
+            No result
+        </p>
+    }
+    else if (@Model.Results.Count == 1)
+    {
+        <p>
+            One result
+        </p>
+    }
+    else
+    {
+        <p>
+            @Model.Results.Count results
+        </p>
+    }
+
+</div>
 
 @if (Model.Results.Count > 0)
 {
-    <ul>
+    <ul class="nav">
         @foreach (Portfolio.ViewModels.ArticleViewModel articleModel in Model.Results)
         {
-            <li>
-                <h3><a href="@articleModel.Article.Url">@articleModel.Article.Title</a></h3>
-                <p>
-                    @articleModel.Article.Description
-                </p>
+            <li class="small">
+                @Html.Partial("ArticleView", articleModel);
             </li>
         }
 
