@@ -7,6 +7,11 @@ p {
     text-align: justify;
 }
 
+.avatar
+{
+    margin-bottom:20px;
+}
+
 /* Auto align images*/
 img.displayed {
     display: block;

@@ -6,9 +6,6 @@ using System.Globalization;
 
 namespace Portfolio
 {
-    // Remarque : pour obtenir des instructions sur l'activation du mode classique IIS6 ou IIS7, 
-    // visitez http://go.microsoft.com/?LinkId=9394801
-
     public class MvcApplication : System.Web.HttpApplication
     {
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
@@ -19,6 +16,13 @@ namespace Portfolio
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+
+            // Redirect old site resources
+            routes.MapRoute(
+                "RedirectDownload",
+                "telechargements",
+                new { controller = "Index", action = "Blog" }
+            );
 
             routes.MapRoute(
                 "Error 404",
