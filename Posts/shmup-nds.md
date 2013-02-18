@@ -1,6 +1,4 @@
-# Shmup
-
-Note : **ce "jeu" a été développé lors de l'apogée du Homebrew sur Nintendo DS (2007-2008). En l'état c'est assez mauvais mais le défi technique était intéressant.**
+﻿Note : **ce "jeu" a été développé lors de l'apogée du Homebrew sur Nintendo DS (2007-2008). En l'état c'est assez mauvais mais le défi technique était intéressant.**
 
 ## Description
 
