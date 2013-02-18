@@ -3,6 +3,7 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using Portfolio.Utils.Log;
 using System.Globalization;
+using System;
 
 namespace Portfolio
 {
@@ -98,6 +99,20 @@ namespace Portfolio
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
 
+        }
+
+        protected void Application_BeginRequest(Object sender, EventArgs e)
+        {
+            // Get the requested URL so we can do some validation on it.
+            // We exclude the query string, and add that later, so it's not included
+            // in the validation
+            string url = (Request.Url.Scheme + "://" + HttpContext.Current.Request.Url.Authority + HttpContext.Current.Request.Url.AbsolutePath);
+
+            // If we're not a request for the root, and end with a slash, strip it off
+            if (HttpContext.Current.Request.Url.AbsolutePath != "/" && HttpContext.Current.Request.Url.AbsolutePath.EndsWith("/"))
+            {
+                Response.RedirectPermanent(url.Substring(0, url.Length - 1) + HttpContext.Current.Request.Url.Query);
+            }
         }
     }
 }

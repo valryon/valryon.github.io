@@ -100,4 +100,4 @@ Damien. The Great Paper Team Leader of The Great Paper Adventure Of The Nameless
 
 ### A voir aussi
 
-- [The Great Paper Artbook : l’artbook du jeu, les ennemis, les décors, la technique](http://thegreatpaperadventure.com/files/artbook/Artbook.pdf)
+- [The Great Paper Artbook : l’artbook du jeu, les ennemis, les décors, la technique](http://d.pr/f/rLif)
