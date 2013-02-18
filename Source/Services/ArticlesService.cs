@@ -201,7 +201,7 @@ namespace Portfolio.Services
         public void RegenerateArticles(Controller controller)
         {
             CacheManager.Remove(cacheKey);
-            GetArticles(controller);
+            CacheManager.ReloadAll();
         }
 
         /// <summary>
