@@ -34,99 +34,98 @@
     <title>@(Model.Title.IsNullOrEmpty() ? "" : @Model.Title + " - ")Damien Mayance</title>
     <link href="@Url.Content("~/Content/css/site.css")" rel="stylesheet" type="text/css" />
     <link href="@Url.Content("~/Content/css/bootstrap.css")" rel="stylesheet" type="text/css" />
+    @*<link href="@Url.Content("~/Content/css/superhero-bootstrap.css")" rel="stylesheet" type="text/css" />*@
     <link href="@Url.Content("~/Content/css/bootstrap-responsive.css")" rel="stylesheet" type="text/css" />
     <script src="@Url.Content("~/Content/js/jquery-1.9.1.min.js")" type="text/javascript"></script>
     <script src="@Url.Content("~/Content/js/bootstrap.min.js")" type="text/javascript"></script>
-
     @foreach (string meta in Model.Metas.Keys)
     {
         <meta property="@meta" content="@Model.Metas[meta]" />
     }
 </head>
-
 <body>
-
     <div class="container-fluid">
-
         <div class="row-fluid">
-
             <div class="span3">
-
                 @*Sidebar mobile*@
                 <div class="hero-unit visible-phone">
                     <p>
                         <a href="@Url.Action("Index", "Blog")">
-                            <img src="http://www.gravatar.com/avatar/545f7c7f0ed11d6ef21722a7e6c47acf?s=120" alt="What I look like" />
+                            <img src="http://www.gravatar.com/avatar/545f7c7f0ed11d6ef21722a7e6c47acf?s=120"
+                                alt="What I look like" class="img-rounded displayed" />
                         </a>
                     </p>
-                    <h1>Damien Mayance</h1>
-                    <h2>Game & Software developer</h2>
-                    <ul class="nav nav-pills">
+                    <h1 class="text-center">
+                        Damien Mayance
+                    </h1>
+                    <h2 class="text-center">
+                        Game & Software developer
+                    </h2>
+                    <div>
+                        @Html.Partial("ShortDesc")
+                    </div>
+                    <ul class="nav nav-pills text-center">
                         @Html.Partial("ContactLinks")
                     </ul>
                 </div>
-
                 @*Side bar desktop & tablet *@
                 <div class="hidden-phone">
-
-                    <p>
+                    <div class="well">
                         <a href="@Url.Action("Index", "Blog")">
-                            <img src="http://www.gravatar.com/avatar/545f7c7f0ed11d6ef21722a7e6c47acf?s=200" alt="What I look like" />
+                            <img src="http://www.gravatar.com/avatar/545f7c7f0ed11d6ef21722a7e6c47acf?s=200"
+                                alt="What I look like" class="img-polaroid displayed avatar" />
                         </a>
-                    </p>
-
-                    <div class="sidebar-nav">
-                        <ul class="nav nav-stacked nav-pills">
-                            @Html.Partial("ContactLinks")
-                        </ul>
-                    </div>
-
-
-                    @using (Html.BeginForm("Search", "Blog", null, FormMethod.Get, new { @class = "form-search" }))
-                    {
-                        <input type="text" class="input-medium search-query" name="request" value="@Model.Search" />
-                        <button type="submit" class="btn"><i class="icon-search"></i></button>
-                    }
-
-                    @if (Model.FavoritesArticles != null && Model.FavoritesArticles.Count > 0)
-                    {
-                        <h4>Do not miss</h4>
-                        <ul class="nav nav-pills nav-stacked">
-                            @foreach (Portfolio.ViewModels.ArticleViewModel a in Model.FavoritesArticles)
-                            {
-                                <li><a href="@a.Article.Url"><i class="icon-star"></i>&nbsp;@a.Article.Title</a></li>
-                            }
-                        </ul>
-                    }
-                    @if (Model.Categories != null && Model.Categories.Count > 0)
-                    {
-                        <div class="hidden-phone">
-                            <h4>Categories</h4>
-                            <ul class="nav nav-pills nav-stacked">
-
-                                @foreach (string cat in Model.Categories)
-                                {
-                                    <li>
-                                        <a href="@Url.Action("Search", "Blog", new { request = cat })" >
-                                            <i class="icon-tags"></i>&nbsp;@cat
-                                        </a>
-                                    </li>
-                                }
+                        <p class="lead text-center">
+                            Damien Mayance
+                        </p>
+                        @Html.Partial("ShortDesc")
+                        <div class="sidebar-nav">
+                            <ul class="nav nav-stacked nav-pills">
+                                @Html.Partial("ContactLinks")
                             </ul>
                         </div>
-                    }
-
+                        <h4>
+                            Search</h4>
+                        @using (Html.BeginForm("Search", "Blog", null, FormMethod.Get, new { @class = "form-search" }))
+                        {
+                            <input type="text" class="input-medium search-query" name="request" value="@Model.Search" />
+                            <button type="submit" class="btn">
+                                <i class="icon-search"></i>
+                            </button>
+                        }
+                        @if (Model.FavoritesArticles != null && Model.FavoritesArticles.Count > 0)
+                        {
+                            <h4>
+                                Do not miss
+                            </h4>
+                            <ul class="nav nav-pills nav-stacked">
+                                @foreach (Portfolio.ViewModels.ArticleViewModel a in Model.FavoritesArticles)
+                                {
+                                    <li><a href="@a.Article.Url"><i class="icon-star"></i>&nbsp;@a.Article.Title</a></li>
+                                }
+                            </ul>
+                        }
+                        @if (Model.Categories != null && Model.Categories.Count > 0)
+                        {
+                            <h4>
+                                Categories
+                            </h4>
+                            <ul class="nav nav-pills nav-stacked">
+                                @foreach (string cat in Model.Categories)
+                                {
+                                    <li><a href="@Url.Action("Search", "Blog", new { request = cat })" ><i class="icon-tags">
+                                    </i>&nbsp;@cat
+                                    </a></li>
+                                }
+                            </ul>
+                        }
+                    </div>
                 </div>
-
             </div>
-
-
             @*Page content*@
             <div class="span9">
                 @RenderBody()
             </div>
-
-
         </div>
         <div class="row-fluid muted">
             <hr />
@@ -134,7 +133,8 @@
                 All rights reserved. Damien Mayance
             </p>
             <p>
-                Homemade website with ASP.NET MVC and Markdown CSharp. <a href="https://github.com/Valryon/portfolio">Sources available on GitHub.</a>
+                Homemade website with ASP.NET MVC and Markdown CSharp. <a href="https://github.com/Valryon/portfolio">
+                    Sources available on GitHub.</a>
             </p>
         </div>
     </div>
