@@ -38,6 +38,7 @@
     <link href="@Url.Content("~/Content/css/bootstrap-responsive.css")" rel="stylesheet" type="text/css" />
     <script src="@Url.Content("~/Content/js/jquery-1.9.1.min.js")" type="text/javascript"></script>
     <script src="@Url.Content("~/Content/js/bootstrap.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Content/js/ga.js")" type="text/javascript"></script>
     @foreach (string meta in Model.Metas.Keys)
     {
         <meta property="@meta" content="@Model.Metas[meta]" />
@@ -48,13 +49,13 @@
         <div class="row-fluid">
             <div class="span3">
                 @*Sidebar mobile*@
-                <div class="hero-unit visible-phone">
-                    <p>
+                <div class="hero-unit-mobile visible-phone">
+                    @*  <p>
                         <a href="@Url.Action("Index", "Blog")">
                             <img src="http://www.gravatar.com/avatar/545f7c7f0ed11d6ef21722a7e6c47acf?s=120"
                                 alt="What I look like" class="img-rounded displayed" />
                         </a>
-                    </p>
+                    </p>*@
                     <h1 class="text-center">
                         Damien Mayance
                     </h1>
@@ -85,14 +86,14 @@
                             </ul>
                         </div>
                         <h4>
-                            Search</h4>
-                        @using (Html.BeginForm("Search", "Blog", null, FormMethod.Get, new { @class = "form-search" }))
-                        {
-                            <input type="text" class="input-medium search-query" name="request" value="@Model.Search" />
-                            <button type="submit" class="btn">
-                                <i class="icon-search"></i>
-                            </button>
-                        }
+                            Search
+                        </h4>
+                        <form action="/search" method="get" class="form-search">
+                        <input type="text" class="input-medium search-query" name="request" value="@Model.Search" />
+                        <button type="submit" class="btn">
+                            <i class="icon-search"></i>
+                        </button>
+                        </form>
                         @if (Model.FavoritesArticles != null && Model.FavoritesArticles.Count > 0)
                         {
                             <h4>

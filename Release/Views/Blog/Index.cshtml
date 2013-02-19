@@ -10,8 +10,9 @@
     {
         foreach (Portfolio.ViewModels.ArticleViewModel articleModel in Model.Articles)
         {
-        <div class="row-fluid">
+        <div class="row-fluid article-home">
             @Html.Partial("ArticleView", articleModel)
+            <hr />
         </div>
         }
         

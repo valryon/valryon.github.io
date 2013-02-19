@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="D:\dev\GitHub\portfolio\Release" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Views/Shared/ArticleView.cshtml" publishTime="02/18/2013 16:31:19" />
+    <file relUrl="Views/Shared/ContactLinks.cshtml" publishTime="02/18/2013 14:14:32" />
+    <file relUrl="bin/System.Web.Helpers.dll" publishTime="01/05/2011 14:45:38" />
+    <file relUrl="Global.asax" publishTime="02/14/2013 14:30:52" />
+    <file relUrl="Content/img/glyphicons-halflings-white.png" publishTime="02/14/2013 14:30:52" />
+    <file relUrl="bin/log4net.dll" publishTime="02/14/2013 14:30:52" />
+    <file relUrl="Views/Error/Error404.cshtml" publishTime="02/18/2013 14:14:32" />
+    <file relUrl="Views/Shared/_Layout.cshtml" publishTime="02/19/2013 11:38:47" />
+    <file relUrl="bin/Portfolio.pdb" publishTime="02/19/2013 11:44:33" />
+    <file relUrl="bin/fr/System.Web.WebPages.Deployment.resources.dll" publishTime="01/10/2011 10:11:24" />
+    <file relUrl="bin/Portfolio.dll" publishTime="02/19/2013 11:44:33" />
+    <file relUrl="Content/css/superhero-bootstrap.css" publishTime="02/18/2013 16:46:12" />
+    <file relUrl="bin/System.Web.WebPages.Razor.dll" publishTime="01/05/2011 14:45:38" />
+    <file relUrl="Content/css/bootstrap-responsive.css" publishTime="02/14/2013 14:30:52" />
+    <file relUrl="Content/js/bootstrap.min.js" publishTime="02/14/2013 14:30:52" />
+    <file relUrl="bin/System.Web.WebPages.Deployment.xml" publishTime="05/03/2012 08:55:10" />
+    <file relUrl="bin/fr/System.Web.Razor.resources.dll" publishTime="01/10/2011 10:11:20" />
+    <file relUrl="bin/HtmlAgilityPack.dll" publishTime="02/18/2013 14:14:32" />
+    <file relUrl="bin/System.Web.WebPages.dll" publishTime="01/05/2011 14:45:38" />
+    <file relUrl="bin/System.Web.Mvc.xml" publishTime="02/09/2011 10:26:24" />
+    <file relUrl="Views/Blog/Search.cshtml" publishTime="02/19/2013 11:39:17" />
+    <file relUrl="bin/fr/System.Web.Mvc.resources.dll" publishTime="01/12/2011 17:24:22" />
+    <file relUrl="bin/System.Web.Razor.xml" publishTime="12/20/2010 09:52:36" />
+    <file relUrl="bin/System.Web.WebPages.xml" publishTime="05/03/2012 08:55:10" />
+    <file relUrl="bin/System.Web.Mvc.dll" publishTime="01/05/2011 16:42:16" />
+    <file relUrl="bin/Newtonsoft.Json.dll" publishTime="12/14/2012 09:51:01" />
+    <file relUrl="bin/System.Web.WebPages.Razor.xml" publishTime="12/20/2010 09:52:36" />
+    <file relUrl="Content/img/glyphicons-halflings.png" publishTime="02/14/2013 14:30:52" />
+    <file relUrl="Views/_ViewStart.cshtml" publishTime="02/14/2013 14:30:52" />
+    <file relUrl="Content/css/site.css" publishTime="02/19/2013 10:11:34" />
+    <file relUrl="bin/fr/System.Web.Helpers.resources.dll" publishTime="01/10/2011 10:11:10" />
+    <file relUrl="bin/fr/System.Web.WebPages.Razor.resources.dll" publishTime="01/10/2011 10:11:26" />
+    <file relUrl="bin/fr/System.Web.WebPages.resources.dll" publishTime="01/10/2011 10:11:30" />
+    <file relUrl="bin/System.Web.Razor.dll" publishTime="01/05/2011 14:45:38" />
+    <file relUrl="Views/Error/Error500.cshtml" publishTime="02/18/2013 14:14:32" />
+    <file relUrl="bin/System.Web.WebPages.Deployment.dll" publishTime="01/05/2011 14:45:38" />
+    <file relUrl="Views/Blog/Single.cshtml" publishTime="02/18/2013 17:06:29" />
+    <file relUrl="Web.config" publishTime="02/19/2013 11:44:33" />
+    <file relUrl="Views/Shared/ShortDesc.cshtml" publishTime="02/18/2013 16:43:56" />
+    <file relUrl="Content/css/bootstrap.css" publishTime="02/14/2013 14:30:52" />
+    <file relUrl="bin/MarkdownSharp.dll" publishTime="02/14/2013 15:48:14" />
+    <file relUrl="Views/Blog/Index.cshtml" publishTime="02/19/2013 10:11:51" />
+    <file relUrl="Content/js/ga.js" publishTime="02/19/2013 11:18:53" />
+    <file relUrl="Content/js/jquery-1.9.1.min.js" publishTime="02/14/2013 14:30:52" />
+    <file relUrl="Views/Web.config" publishTime="02/14/2013 14:30:52" />
+    <file relUrl="bin/System.Web.Helpers.xml" publishTime="05/03/2012 08:55:10" />
+  </publishProfile>
+</publishData>
