@@ -91,7 +91,7 @@ namespace Portfolio.Controllers
             }
             else
             {
-                search.Results = ArticlesService.Instance.GetArticlesFromKeywords(this, request).Select(a => new ArticleViewModel(a)).ToList();
+                search.Results = ArticlesService.Instance.GetArticlesFromKeywords(this, request).Select(a => new ArticleViewModel(a, false)).ToList();
             }
 
             return View(search);

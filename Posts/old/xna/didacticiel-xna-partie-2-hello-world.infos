@@ -1,0 +1,10 @@
+﻿{
+	"layout" : "post",
+	"title" : "Didacticiel XNA : Partie 2 - Hello World",
+	"description" : "Premiers pas avec XNA : afficher un Hello World.",
+	"categories" : ["tutorial"],
+	"publishedDate" : "2010-02-01 00:00:00",
+	"favorite" :"false",
+	"lang":"fr",
+	"process":"false"
+}

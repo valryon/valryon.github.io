@@ -26,6 +26,11 @@ article
     margin-bottom: 30px;
 }
 
+.article-home
+{
+    margin-bottom: 60px;
+}
+
 /* Hero-unit for mobile header */
 .hero-unit-mobile {
   padding-left:20px;

@@ -242,6 +242,12 @@ namespace Portfolio.Services
                             bool isFavorite = Boolean.Parse(json["favorite"].ToString());
                             string lang = json["lang"].ToString();
 
+                            bool process = true;
+                            if (json["process"] != null)
+                            {
+                                process = Boolean.Parse(json["process"].ToString());
+                            }
+
                             article.Layout = layout;
                             article.Title = title;
                             article.Description = desc;
@@ -253,11 +259,17 @@ namespace Portfolio.Services
                             // -- Extract file content
                             string postContent = File.ReadAllText(source);
 
-
-                            // -- Read the markdown
-                            string html = m_markdownParser.Transform(postContent);
-                            html = manipulateHtml(html);
-                            article.HtmlContent = html;
+                            if (process)
+                            {
+                                // -- Read the markdown
+                                string html = m_markdownParser.Transform(postContent);
+                                html = manipulateHtml(html);
+                                article.HtmlContent = html;
+                            }
+                            else
+                            {
+                                article.HtmlContent = postContent;
+                            }
 
                             articles.Add(article);
                         }
