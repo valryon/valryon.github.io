@@ -62,6 +62,12 @@ namespace Portfolio
             );
 
             routes.MapRoute(
+                "SearchRequest",
+                "search/{request}",
+                new { controller = "Blog", action = "Search"}
+            );
+
+            routes.MapRoute(
                 "Search",
                 "search",
                 new { controller = "Blog", action = "Search" }

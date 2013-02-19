@@ -9,6 +9,7 @@ using Portfolio.Services;
 using Portfolio.Utils.Log;
 using Portfolio.Utils.Web;
 using Portfolio.ViewModels;
+using System.Text;
 
 namespace Portfolio.Controllers
 {
@@ -68,6 +69,8 @@ namespace Portfolio.Controllers
         /// <returns></returns>
         public ActionResult Search(string request)
         {
+            request = request.Replace("+", " ");
+
             SearchViewModel search = new SearchViewModel();
             search.Search = request;
 
@@ -84,7 +87,7 @@ namespace Portfolio.Controllers
             }
 
             search.IsCategory = isCategory;
-           
+
             if (isCategory)
             {
                 search.Results = ArticlesService.Instance.GetArticlesFromCategories(this, request).Select(a => new ArticleViewModel(a, false)).ToList();
@@ -104,9 +107,47 @@ namespace Portfolio.Controllers
             return RedirectToAction("Index");
         }
 
-        public string Sitemap()
+        public ActionResult Sitemap()
         {
-            return "";
+            string content = "";
+
+            string url = "http://www.valryon.fr";
+            StringBuilder sb = new StringBuilder();
+
+            sb.AppendLine("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
+            sb.AppendLine("<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\" xmlns:news=\"http://www.google.com/schemas/sitemap/0.9\">");
+
+            sb.AppendLine(generateSitemapLink(url + "/blog"));
+
+            foreach (Article a in ArticlesService.Instance.GetArticles(this))
+            {
+                sb.AppendLine(generateSitemapLink(a.Url));
+            }
+
+            foreach (string cat in ArticlesService.Instance.GetCategories(this))
+            {
+                sb.AppendLine(generateSitemapLink(url + "/search/" + HttpUtility.UrlEncode(cat)));
+            }
+
+            sb.AppendLine("</urlset>");
+            content = sb.ToString();
+
+            return new ContentResult()
+            {
+                ContentType = "text/xml",
+                Content = content
+            };
+        }
+
+        private string generateSitemapLink(string url)
+        {
+            StringBuilder sb = new StringBuilder();
+
+            sb.AppendLine("<url>");
+            sb.AppendLine("<loc>" + url + "</loc>");
+            sb.AppendLine("</url>");
+
+            return sb.ToString();
         }
 
         public ActionResult Robots()
@@ -115,9 +156,10 @@ namespace Portfolio.Controllers
             robots += "User-agent: *\n";
             robots += "Sitemap: " + Url.Action("Sitemap", "Blog", null, "http");
 
-            return new ContentResult() {
-               Content = robots,
-               ContentType = "text/text"
+            return new ContentResult()
+            {
+                Content = robots,
+                ContentType = "text/text"
             };
         }
 
