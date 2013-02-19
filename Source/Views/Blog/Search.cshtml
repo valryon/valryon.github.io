@@ -8,31 +8,51 @@
         Model.Metas["robots"] = "noindex,follow";
     }
 }
-
 <div class="hero-unit">
-    <h4>Searching : @Model.Search</h4>
-
-    @if (@Model.Results.Count == 0)
+    @if (Model.Results.Count == 0)
     {
+        <h1>
+            Ohhhhhhh
+        </h1>
         <p>
-            No result
+            Searching "@Model.Search" returned nothing... :(</p>
+        <p>
+            But here's a <a href="http://placekitten.com/">kitty</a>.
         </p>
-    }
-    else if (@Model.Results.Count == 1)
-    {
         <p>
-            One result
+            @{
+        Random rand = new Random(DateTime.Now.Millisecond);
+
+        int x = rand.Next(150, 800);
+        int y = rand.Next(150, 800);
+            }
+            <img src="http://placekitten.com/@x/@y" />
         </p>
     }
     else
     {
+        <h1>
+            Look what I found!
+        </h1>
+    
         <p>
-            @Model.Results.Count results
+            You were looking for "@Model.Search".
         </p>
+   
+        if (Model.Results.Count == 1)
+        {
+        <p>
+            And there is... <span class="badge badge-info">One result</span>
+        </p>
+        }
+        else
+        {
+        <p>
+            And there are... <span class="badge badge-info">@Model.Results.Count results</span>
+        </p>
+        }
     }
-
 </div>
-
 @if (Model.Results.Count > 0)
 {
     <ul class="nav">
@@ -42,12 +62,11 @@
                 @Html.Partial("ArticleView", articleModel)
             </li>
         }
-
     </ul>
 
 }
 else
 {
-    <p>No results, sorry!</p>   
+    <p>
+        No results, sorry!</p>   
 }
-
