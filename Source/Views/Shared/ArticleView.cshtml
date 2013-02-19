@@ -8,7 +8,7 @@
                 </a>
             </h2>
             <p>
-                <strong>@Model.Article.PublishedDate.ToString("dd MMM yyyy", System.Globalization.CultureInfo.GetCultureInfo("fr-FR"))</strong>&nbsp;
+                <strong>@Model.Article.PublishedDate.ToString("dd MMM yyyy")</strong>&nbsp;
                 <span class="badge badge-success">@Model.Article.Language</span>&nbsp;
                 @foreach (string cat in Model.Article.Categories)
                 {
