@@ -10,7 +10,7 @@
 
 ## Source
 
-[Le code source](https://github.com/Valryon/Culturez-Vous/tree/master/app/wp7) est disponible sur GitHub.
+<a class="btn btn-primary" href="https://github.com/Valryon/Culturez-Vous/tree/master/app/wp7">Voir le code source sur GitHub</a>
 
 Les données des expressions viennent du [Twitter 1Jour1Mot](http://twitter.com/1Jour1Mot), dont nous avions reçu l’autorisation d’utiliser le contenu (un grand merci à Jean-Philippe !).
 

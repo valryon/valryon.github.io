@@ -215,7 +215,7 @@ namespace Portfolio.Services
             Logger.Log(LogLevel.Debug, "Source file location: " + sourceFileLocation);
             try
             {
-                foreach (string source in Directory.GetFiles(sourceFileLocation, "*." + PostsExtension))
+                foreach (string source in Directory.GetFiles(sourceFileLocation, "*." + PostsExtension, SearchOption.AllDirectories))
                 {
                     Logger.Log(LogLevel.Info, "Processing file: " + source);
 
@@ -239,7 +239,7 @@ namespace Portfolio.Services
                             string desc = json["description"].ToString();
                             List<string> categories = json["categories"].Select(j => j.ToString().ToLower().Trim()).ToList();
                             DateTime dateTime = DateTime.Parse(json["publishedDate"].ToString(), CultureInfo.GetCultureInfo("fr-FR"));
-                            bool isFavorite =Boolean.Parse(json["favorite"].ToString());
+                            bool isFavorite = Boolean.Parse(json["favorite"].ToString());
                             string lang = json["lang"].ToString();
 
                             article.Layout = layout;
@@ -290,7 +290,7 @@ namespace Portfolio.Services
         /// <returns></returns>
         private string manipulateHtml(string htmlInput)
         {
-            string htmlOuput = string.Empty ;
+            string htmlOuput = string.Empty;
 
             // Manipulate directly the DOM
             HtmlDocument doc = new HtmlDocument();
@@ -299,18 +299,26 @@ namespace Portfolio.Services
             // Add class and tricks
 
             // -- on images
-            foreach(var imgElement in doc.DocumentNode.Descendants("img"))
+            List<HtmlNode> imgElements = new List<HtmlNode>(doc.DocumentNode.Descendants("img"));
+            foreach (var imgElement in imgElements)
             {
                 string imgClass = "";
-                if(imgElement.Attributes["class"] != null)
+                if (imgElement.Attributes["class"] != null)
                 {
                     imgClass = imgElement.Attributes["class"].Value;
                 }
                 imgClass += " img-rounded displayed";
                 imgElement.SetAttributeValue("class", imgClass);
-                
-                // center
-                //var pContainer = imgElement.Ancestors("p").FirstOrDefault();
+
+                // Add a link on top of them
+                if (imgElement.ParentNode.Name != "a" && imgElement.Attributes["src"] != null)
+                {
+                    HtmlNode aElement = HtmlNode.CreateNode("<a href=\"" + imgElement.Attributes["src"].Value + "\" class=\"thumbail\">" + imgElement.InnerHtml + "</a>");
+                    
+                    imgElement.ParentNode.ReplaceChild(aElement, imgElement);
+
+                    aElement.AppendChild(imgElement);
+                }
             }
 
             // Return as HTML string

@@ -8,8 +8,9 @@ Scannez-les tous ! **Monique Passion Hôtesse de caisse** est une simulation uni
 
 ## Téléchargement
 
-- <a href="http://d.pr/f/OWmp" class="btn btn-primary">Télécharger le jeu</a>
-- <a href="https://github.com/Valryon/super-caissiere" class="btn btn-info">Accéder au code source</a>
+<a href="http://d.pr/f/OWmp" class="btn btn-primary">Télécharger le jeu</a>
+
+<a href="https://github.com/Valryon/super-caissiere" class="btn btn-info">Accéder au code source</a>
 
 ## Screenshots
 

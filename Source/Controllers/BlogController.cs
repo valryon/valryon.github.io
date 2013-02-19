@@ -160,5 +160,10 @@ namespace Portfolio.Controllers
                 Feed = feed
             };
         }
+
+        public ActionResult RedirectDownload()
+        {
+            return RedirectToActionPermanent("Index");
+        }
     }
 }

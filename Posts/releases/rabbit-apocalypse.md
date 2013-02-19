@@ -7,8 +7,9 @@ Le jeu se présente sous la forme d’un platformer oldschool dans lequel le jou
 
 ## Téléchargement
 
-- [La version présentée au TGS](http://thegreatpaperadventure.com/files/RabbitApocalypse_v1.0_TGS_FINAL.zip)
-- [Le code source, sous licence LGPL, est disponible sous GitHub](https://github.com/Valryon/Rabbit-Apocalypse)
+<a class="btn btn-primary" href="http://thegreatpaperadventure.com/files/RabbitApocalypse_v1.0_TGS_FINAL.zip">Télécharger le jeu présenté au TGS</a>
+
+<a class="btn btn-info" href="https://github.com/Valryon/Rabbit-Apocalypse">Voir le code source</a>
 
 **Remarque :** Ogmo Editor ne permet plus de télécharger l’ancienne version sous Adobe Air… il n’est donc plus possible d’éditer les niveaux existants, sauf à la main en touchant au XML.
 

@@ -21,8 +21,8 @@ namespace Portfolio
             // Redirect old site resources
             routes.MapRoute(
                 "RedirectDownload",
-                "telechargements",
-                new { controller = "Index", action = "Blog" }
+                "telechargements/",
+                new { controller = "Blog", action = "RedirectDownload" }
             );
 
             routes.MapRoute(
