@@ -1,4 +1,4 @@
-Starting from the day after tomorrow I'll truly be an **indie software and game developer**.
+﻿Starting from the day after tomorrow I'll truly be an **indie software and game developer**.
 
 By truly I mean that I just left my current job at [RegionsJob](http://www.regionsjob.com), an awesome French website making company, to create my own business with a friend, **[Matthieu Oger](http://www.twitter.com/yiashen)**.
 
@@ -10,7 +10,7 @@ So this is an ASP.NET MVC website running on a Linux server and parsing Markdown
 
 The whole code source and the articles are open-source. I can simply publish new content by pushing it on my Gitub repository, and a git hook will update the server remotely.
 
-<a href=”http://github.com/Valryon/portfolio” class=” btn btn-primary”>See the source code</a>
+<a href="http://github.com/Valryon/portfolio" class="btn btn-primary">See the source code</a>
 
 ## Breaking changes
 
