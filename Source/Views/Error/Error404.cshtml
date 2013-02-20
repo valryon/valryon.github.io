@@ -3,10 +3,16 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Oups, cette page n'existe pas !</h2>
+<h2>Oops, There's nothing here!</h2>
 <div class="row-fluid">
     <p>
-        En guise de consolation, voici <a href="http://panzi.github.com/Browser-Ponies/">quelques poneys</a>.
+        Maybe this was an old article that hasn't been ported to the new blog.
+    </p>
+    <p>
+        But here are some <a href="http://panzi.github.com/Browser-Ponies/">ponies</a>.
+    </p>
+    <p class="lead">
+        <a href="@Url.Action("Index", "Blog")">Get back home.</a>
     </p>
 </div>
 <script type="text/javascript" src="http://panzi.github.com/Browser-Ponies/basecfg.js" id="browser-ponies-config"></script>

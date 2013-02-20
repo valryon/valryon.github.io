@@ -171,6 +171,7 @@
     <Content Include="Views\Shared\ContactLinks.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\PublishProfiles\local.pubxml" />
     <None Include="Properties\PublishProfiles\Mac.pubxml" />
     <Content Include="Views\Shared\ShortDesc.cshtml" />
   </ItemGroup>

@@ -1,13 +1,13 @@
 ﻿@model Portfolio.ViewModels.ArticleViewModel
-<article>
+<article class="well">
     <div class="row-fluid">
-        <div class="well">
+        <div class="">
             <h1>
                 <a href="@Model.Article.Url" >
                     @Model.Article.Title
                 </a>
             </h1>
-            <p>
+            <p class="muted">
                 <strong>@Model.Article.PublishedDate.ToString("dd MMM yyyy")</strong>&nbsp;
                 <span class="badge badge-success">@Model.Article.Language</span>&nbsp;
                 @foreach (string cat in Model.Article.Categories)
@@ -17,14 +17,16 @@
                     </a>
                 }
             </p>
+            <br />
             <p>
-                @Model.Article.Description
+                <strong>@Model.Article.Description</strong>
             </p>
         </div>
     </div>
 
     @if (Model.ShowContent)
     {
+        <br />
         <div class="row-fluid">
 
             @if (Model.Article.Language.ToLower().Trim() == "fr")
