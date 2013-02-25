@@ -1,11 +1,11 @@
-﻿As a fellow XNA developer, I've always been interested by [MonoGame](monogame.codeplex.com). Since the 3.0 version came out in January 2013, I thought the good timing to give it a try for a brand new game project.
+As a fellow XNA developer, I've always been interested by [MonoGame](monogame.codeplex.com). Since the 3.0 version came out in January 2013, I thought it was the good timing to give it a try for a brand new game project.
 
 
 ## The context
 
-My new game project will be announced soon, but I can safely say for now that:
+This new game project will be announced soon, but I can safely say for now that:
 
-- this project is with [Laurent Brossard](http://rednalhgih.com/)
+- I'm doing it with [Laurent Brossard](http://rednalhgih.com/)
 - it will be mobile (iOS first, android and/or windows phone next)
 - it will be simple, so no need for complex engines
 
@@ -14,7 +14,7 @@ And for this project, I tried MonoGame. And MonoTouch. Let's see what happened.
 
 ## Installing and using MonoGame
 
-Installing MonoGame with the 3.0 installer is a really easy step **if you have XNA already installed**. This is a matter of time, but for now you must have a **working Windows XNA dev env** for its content project and pipeline.
+Installing MonoGame with the 3.0 installer is a really easy step. Getting it working too, **if you have XNA already installed**. This is a matter of time, but for now you must have a **working Windows XNA dev env** for its content project and pipeline.
 
 Having XNA is simple on Windows 7 but a bit tricky on Windows 8. 
 
@@ -50,10 +50,10 @@ Well all of that is true, except it's full of traps, strange behavior, incompati
 The font you use on desktop? Not working on iOS.
 This nice sprite? Not working because of many reasons.
 
-And there's not a nice error message, you'd rather have to look at the console to find a raw stack trace, google it and figure out it may be the content.
+And there's not a nice error message, you have to look at the console to find a raw stack trace, google it and figure out it may be the content.
 
-And then you realize you have an horrible codebase, with many projects referencing different assemblies, sharing code full of ``#if PLATFORM`` instructions...
+And then you realize you have **an horrible codebase**, with many projects referencing different assemblies, sharing code full of ``#if PLATFORM`` instructions...
 
 That's where I thought that for mobile game dev, I'd rather stick to the **native frameworks** for now. **Unity** would be a better idea, but the license fees are too expansive for me, for now.
 
-It doesn't mean it doesn't works. Look at Bastion and many App Store games that use MonoGame and MonoTouch. For me it's just not the right solution, and it's not mature enough.
+It doesn't mean it doesn't works. Look at Bastion and many App Store games that use MonoGame and MonoTouch. For me it's just not the right solution, and it seems to be not mature enough.
