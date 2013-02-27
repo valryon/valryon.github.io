@@ -1,7 +1,7 @@
 # Portfolio dam
 <VirtualHost *:80>
         ServerName www.valryon.fr
-	ServerAlias www.dmayance.com
+		ServerAlias dmayance.com www.dmayance.com new.valryon.fr dmayance.com
         DocumentRoot /srv/www/portfoliodam/Release/
 
         ErrorLog /srv/www/portfoliodam/log/error.log
