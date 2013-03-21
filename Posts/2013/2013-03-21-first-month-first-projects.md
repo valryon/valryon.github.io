@@ -1,4 +1,4 @@
-﻿I can also reveal that I will create **Pixelnest Studio** in May with Matthieu Oger. It will be a little development studio creating games and apps on mobile, web and desktop support (so nearly everywhere). We will start based at Rennes, France.
+I can also reveal that I will create **Pixelnest Studio** in May with Matthieu Oger. It will be a little development studio creating games and apps on mobile, web and desktop support (so nearly everywhere). We will start based at Rennes, France.
 
 We have **two games projects** in our boxes. We’d like to sell them both quickly as soon as we really create the company, so it could maybe makes some income. 
 
@@ -8,7 +8,9 @@ So what I am working on.
 
 ## A video game quiz
 
-We are creating a mobile (iOS for now) version of the [KoiKouKesse](http://koikoukesse.fr.st/). It is a fast and simple quiz game. We are adding a multiplayer versus mode and some cool stuff.
+This game is an origina lcreation from [Laurent Brossard](http://rednalhgih.com/), who was looking for developers for a mobile version.
+
+We are creating an iOS (for now) version of the [KoiKouKesse](http://koikoukesse.fr.st/). It is a fast and simple quiz game. We are adding a multiplayer versus mode and some cool stuff.
 
 We are using [Monotouch](http://xamarin.com/monotouch) and, for a .NET developer, it’s **awesome**. It’s cheap, reliable, the IDE is nice (and relay on official tools like Interface Builder or the simulator). Even connecting to Game Center is easy.
 
@@ -20,6 +22,8 @@ It looks like that:
 
 <iframe width="640" height="360" src="http://www.youtube.com/embed/_NmrTlopJ-c" frameborder="0" allowfullscreen></iframe>
 But every day I add some cool features, so actually there is sharks who want to eat drowing pirates and you must saves them to win bonuses. [Like in this secret cheated video you shouldn’t see]( http://www.youtube.com/watch?v=A11Z3wvrprk).
+
+What you see is not what you will get, [Marion Chrétien](http://www.xn--miroir-enchant-okb.com/) is working on new awesome sprites but I am using a lot of placeholders for now!
 
 Working on this game doesn’t actually look like **working**. At least when you implements an orbital laser and you think "nah, it’s not pirate enough".
  
