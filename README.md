@@ -1,4 +1,4 @@
-Damien Mayance (Valryob) - Portfolio
+Damien Mayance (Valryon) - Portfolio
 =========
 
 My personnal portfolio and blog.
