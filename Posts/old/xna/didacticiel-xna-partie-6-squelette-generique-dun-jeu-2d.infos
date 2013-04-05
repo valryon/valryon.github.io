@@ -1,0 +1,10 @@
+﻿{
+	"layout" : "post",
+	"title" : "Didacticiel XNA : Partie 6 – Squelette générique d'un jeu 2D",
+	"description" : "Quelques conseils et pistes pour préparer l'architecture logiciel d'un jeu 2D.",
+	"categories" : ["tutorial"],
+	"publishedDate" : "2010-02-05 00:00:00",
+	"favorite" :"false",
+	"lang":"fr",
+	"process":"false"
+}

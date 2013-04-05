@@ -1,0 +1,10 @@
+﻿{
+	"layout" : "post",
+	"title" : "Didacticiel XNA : Partie 3 - Affichage d'images, de sprites, de backgrounds",
+	"description" : "Les bases de l'affichage et animation de sprites avec XNA",
+	"categories" : ["tutorial"],
+	"publishedDate" : "2010-02-02 00:00:00",
+	"favorite" :"false",
+	"lang":"fr",
+	"process":"false"
+}
