@@ -2,9 +2,74 @@
 <html lang="en"> 
 <head>
     <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} - Damien Mayance</title>
-    </head>
-  <body>
-{{ content }}
-  </body>
+    <link href="/static/css/custom-bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="/static/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
+    <link href="/static/css/site.css" rel="stylesheet" type="text/css" />
+    <script src="/static/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="/static/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/static/js/ga.js" type="text/javascript"></script>
+    
+    <meta property="twitter:creator" content="@Valryon" />
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:type" content="blog" />
+    <meta property="robots" content="index,follow" />
+</head>
+<body>
+ <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span3">
+				<!-- Sidebar modile -->
+                <div class="well hidden-phone">
+                    <a href="/">
+                        <img src="http://www.gravatar.com/avatar/545f7c7f0ed11d6ef21722a7e6c47acf?s=200"
+                            alt="What I look like" class="img-polaroid displayed avatar" />
+                    </a>
+                    <p class="lead text-center">
+                        Damien Mayance
+                    </p>
+  <div>
+                        <p>
+				Hi, I am a young <strong>indie</strong> game and software developer, currently
+				<strong>creating my company</strong> with Matthieu Oger and working on two game projects.
+			</p>
+			<p>
+				Meet me in <strong>Rennes</strong>, France, or contact me using the following
+				links.
+			</p>
+								</div>
+                    <div class="sidebar-nav">
+                        <ul class="nav nav-stacked nav-pills">
+<li><a href="http://twitter.com/Valryon"><i class="icon icon-user"></i>&nbsp;@@Valryon</a></li>
+<li><a href="http://github.com/Valryon"><i class="icon icon-wrench"></i>&nbsp;GitHub</a></li>
+<li><a href="http://linkedin.com/in/damienmayance"><i class="icon icon-user"></i>&nbsp;LinkedIn</a></li>
+<li><a href="http://careers.stackoverflow.com/dmayance "><i class="icon icon-user"></i>&nbsp;Careers 2.0</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="span1">
+                </div>
+                
+            <div class="span6">
+				{{ content }}
+            </div>
+
+        </div>
+    </div>
+    <div class="row-fluid muted">
+        <hr />
+        <p>
+            All rights reserved. Damien Mayance
+        </p>
+        <p>
+            Homemade website with ASP.NET MVC, Twitter bootstrap and Markdown CSharp. <a href="https://github.com/Valryon/portfolio">Sources available on GitHub.</a>
+        </p>
+    </div>
+    </div>
+
+</body>
 </html>
