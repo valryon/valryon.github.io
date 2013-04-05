@@ -2,6 +2,7 @@
 title: The Great Paper Adventure (PC/Xbox 360)
 layout: release
 ---
+
 The Great Paper Adventure est un shoot them up réalisé avec XNA sorti en 2010 sur PC et Xbox 360.
 
 <img src="http://uppix.net/b/f/f/01e9d4263691050611047efe03847tt.jpg" />
