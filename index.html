@@ -4,7 +4,7 @@ title: Damien Mayance (Valryon)
 ---
 
 <div>
-	  {% for post in site.posts %}
+	  {% for post in paginator.posts %}
 		<article class="well">
 			<p id="article-header">
 		  		<a class="" href="{{site.url}}{{ post.url }}"><h2>{{ post.title }}</h2></a>
@@ -16,4 +16,23 @@ title: Damien Mayance (Valryon)
 		  
 		</article>
 	  {% endfor %}
+	  
+	  <div class="pagination pagination-centered">
+	  <ul>
+  	{% if paginator.previous_page %}
+  		{% if paginator.previous_page == 1 %}
+    		<li><span><a href="{{site.url}}">«</a></span></li>
+	    {% else %}
+		    <li><span><a href="/page{{paginator.previous_page}}">«</a></span></li>
+    	{% endif %}
+  	{% endif %}
+  	
+  	<li><span class="disabled" ">{{paginator.page}} of {{paginator.total_pages}}</span></li>
+  	
+  	{% if paginator.next_page %}
+    	<li><a href="/page{{paginator.next_page}}">»</a></li>
+  	{% endif %}
+  	
+  	</ul>
+	</div>
 </div>
