@@ -2,6 +2,6 @@ safe: true
 auto: true
 pygments: true
 markdown: kramdown
-url: http://valryon.github.io/
+url: http://dmayance.com
 permalink: /:title
 paginate: 4 
