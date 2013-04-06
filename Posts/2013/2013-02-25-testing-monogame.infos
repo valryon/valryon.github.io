@@ -1,9 +1,0 @@
-﻿{
-	"layout" : "post",
-	"title" : "Testing MonoGame 3.0 on a real project",
-	"description" : "My recent experience of MonoGame to make a desktop and mobile simple game.",
-	"categories" : ["gamedev"],
-	"publishedDate" : "2013-02-25 00:00:00",
-	"favorite" :"false",
-	"lang":"en"
-}
