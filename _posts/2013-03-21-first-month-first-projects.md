@@ -12,7 +12,7 @@ So what I am working on.
 
 ## A video game quiz
 
-This game is an origina lcreation from [Laurent Brossard](http://rednalhgih.com/), who was looking for developers for a mobile version.
+This game is an original creation from [Laurent Brossard](http://rednalhgih.com/), who was looking for developers for a mobile version.
 
 We are creating an iOS (for now) version of the [KoiKouKesse](http://koikoukesse.fr.st/). It is a fast and simple quiz game. We are adding a multiplayer versus mode and some cool stuff.
 
