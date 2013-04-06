@@ -23,8 +23,8 @@
         <div class="row-fluid">
             <div class="span3">
 				<!-- Sidebar modile -->
-                <div class="well hidden-phone">
-                    <a href="/">
+                <div class="well">
+                    <a href="{{ site.url }}">
                         <img src="http://www.gravatar.com/avatar/545f7c7f0ed11d6ef21722a7e6c47acf?s=200"
                             alt="What I look like" class="img-polaroid displayed avatar" />
                     </a>
@@ -52,13 +52,13 @@
                     </div>
                 </div>
             </div>
+                
+            <div class="span8">
+				{{ content }}
+            </div>
 
             <div class="span1">
                 </div>
-                
-            <div class="span6">
-				{{ content }}
-            </div>
 
         </div>
     </div>

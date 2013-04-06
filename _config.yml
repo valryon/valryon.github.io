@@ -3,3 +3,4 @@ auto: true
 pygments: true
 markdown: kramdown
 url: http://valryon.github.io/portfolio
+permalink: /:title
