@@ -42,26 +42,8 @@ Children will fill the ``content`` layout section with some new things you write
 This is very similar to some other template system, such as the Razor one in ASP.NET MVC.
 
 If you want a sitemap, it's the same idea. You add a ``sitemap.xml`` to your repository containing some code:
-``
----
-layout: nil
----
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.sitemaps.org/schemas/sitemap-image/1.1" xmlns:video="http://www.sitemaps.org/schemas/sitemap-video/1.1">
-  {% for post in site.posts %}
-    {% unless post.hide %}
-		  <url>
-		    <loc>{{ site.url }}{{ post.url }}</loc>
-		    {% if post.lastmod %}
-		    <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
-		    {% else %}
-		    <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-		    {% endif %}
-		  </url>
-	  {% endunless %}
-  {% endfor %}
-</urlset>
-``
+
+<script src="https://gist.github.com/Valryon/5335214.js"></script>
 
 Here it just shows every post, but you can manually specify any URL you want. Same goes for the RSS feed.
 
