@@ -24,12 +24,7 @@ Jekyll is smart. It will look at each files you feed him with and try to transfo
 
 Posts, for example, have a simple header like this:
 
-```
----
-title: Blogging with Jekyll and GitHub pages
-layout: post
----
-```
+<script src="https://gist.github.com/Valryon/5335230.js"></script>
 
 The `layout` item tells the engine the layout to use. This layout is stored in the ``_layouts`` folder (what a surprise).
 
