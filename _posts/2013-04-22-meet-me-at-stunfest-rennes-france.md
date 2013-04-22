@@ -16,6 +16,8 @@ Soon available for iOS devices.
 
 This game is made in full collaboration with Laurent Brossard, an awesome game designer.
 
+*Work in progress screenshots*
+
 <img src="{{site.url}}/static/content/2013-04-22/koikou1.png" />
 
 <img src="{{site.url}}/static/content/2013-04-22/koikou2.png" />
@@ -33,6 +35,8 @@ But be careful, the other pirates want this gold too, they will try to take it b
 One day available for PC (with Leapmotion compatibility), and iOS devices.
 
 The graphics are made by Marion Chértien, an awesome graphist.
+
+*Work in progress screenshots*
 
 <img src="{{site.url}}/static/content/2013-04-22/george0.png" />
 
