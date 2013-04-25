@@ -21,8 +21,9 @@ Come aboard with George, it is time for some adventure!
 This game will be playable at the Stunfest 2013, Rennes, France. This demo version is not the final product.
 
 This game is made by:
-- Pixelnest Studio - http://pixelnest.io (@Pixelnest)
-- Marion Chrétien - http://www.miroir-enchanté.com/ (@Lolyan_)
+
+- My studio with Matthieu, [Pixelnest Studio](http://pixelnest.io) ([@Pixelnest](http://twitter.com/Pixelnest))
+- Our awesome graphist [Marion Chrétien](http://www.miroir-enchanté.com/) ([@Lolyan_](http://twitter.com/Lolyan_))
 
 # What's in?
 
