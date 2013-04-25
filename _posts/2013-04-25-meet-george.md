@@ -22,8 +22,8 @@ This game will be playable at the Stunfest 2013, Rennes, France. This demo versi
 
 This game is made by:
 
-- My studio with Matthieu, [Pixelnest Studio](http://pixelnest.io) ([Pixelnest !](http://twitter.com/Pixelnest))
-- Our awesome graphist [Marion Chrétien](http://www.miroir-enchanté.com/) ([@Lolyan_ !](http://twitter.com/Lolyan_))
+- My studio with Matthieu, [Pixelnest Studio](http://pixelnest.io) ([Pixelnest](http://twitter.com/Pixelnest))
+- Our awesome graphist [Marion Chrétien](http://www.miroir-enchanté.com/) ([@Lolyan_ ](http://twitter.com/Lolyan_))
 
 # What's in?
 
