@@ -25,7 +25,7 @@ Here at 1:52 you can see a part of the West Indie Collective booth where we were
 
 - The George team (**Matthieu Oger**, **Marion Chrétien** and **me**, a bit tired!)
 
-<img src="{{site.url}}/static/content/2013-05-04/georgeteam_stunfest.jpg" width="450" />
+<a href="{{site.url}}/static/content/2013-05-04/georgeteam_stunfest.jpg"><img src="{{site.url}}/static/content/2013-05-04/georgeteam_stunfest.jpg" width="450" /></a>
 
 
 ### Jeuxvideo.com
@@ -53,6 +53,6 @@ Thanks to their respective authors.
 
 Thanks to 3hitcombo for this great event.
 
-Thanks to the [West Indie Collective](www.westindiecollective.com) for the booth.
+Thanks to the [West Indie Collective](www.westindiecollective.org) for the booth.
 
 *See you at the 10th anniversary?!*
