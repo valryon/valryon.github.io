@@ -40,6 +40,8 @@ BadGeek interviews. You can see 2 leapmotion games here.
 <iframe width="640" height="360" src="http://www.youtube.com/embed/UyAxn5VZEqQ" frameborder="0" allowfullscreen></iframe>
 
 
+### Thanks for playing!
+
 Of course those photo albums and videos wort the entire watch ;).
 
 Thanks to their respective authors.
