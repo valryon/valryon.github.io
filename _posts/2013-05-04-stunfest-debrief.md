@@ -23,6 +23,11 @@ Here at 1:52 you can see a part of the West Indie Collective booth where we were
 
 <a href="https://plus.google.com/photos/103787293337489326081/albums/5872181211322299361/5872181311811163234"><img src="https://lh3.googleusercontent.com/-4h2MyvJMquA/UX4tynsxFGI/AAAAAAAAB5g/5aJs0lth1Wk/w1048-h786/P1000135.JPG" width="450" /></a>
 
+- The George team (**Matthieu Oger**, **Marion Chrétien** and **me**, a bit tired!)
+
+<img src="{{site.url}}/static/content/2013-05-04/georgeteam_stunfest.jpg" width="450" />
+
+
 ### Jeuxvideo.com
 
 - Jeuxvideo.com video about the event
