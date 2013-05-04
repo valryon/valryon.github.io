@@ -53,6 +53,6 @@ Thanks to their respective authors.
 
 Thanks to 3hitcombo for this great event.
 
-Thanks to the [West Indie Collective](www.westindiecollective.org) for the booth.
+Thanks to the [West Indie Collective](http://www.westindiecollective.org) for the booth.
 
 *See you at the 10th anniversary?!*
