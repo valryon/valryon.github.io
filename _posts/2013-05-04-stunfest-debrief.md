@@ -34,7 +34,7 @@ Here at 1:52 you can see a part of the West Indie Collective booth where we were
 BadGeek interviews. You can see 2 leapmotion games here.
 
 - At 8'12" you can see MrLapinou showing [Piyo Piyo](http://www.youtube.com/watch?v=wF-ADywfjHk)
-- At 9'20" it's me (Marion!) talking about George.
+- At 9'20" it's me (Mario!) talking about George.
 
 
 <iframe width="640" height="360" src="http://www.youtube.com/embed/UyAxn5VZEqQ" frameborder="0" allowfullscreen></iframe>
