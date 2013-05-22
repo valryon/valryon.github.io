@@ -1,7 +1,4 @@
-safe: true  
-auto: true
+name: Damien Mayance (Valryon)
 pygments: true
 markdown: kramdown
-url: http://dmayance.com
 permalink: /:title
-paginate: 4 
