@@ -1,4 +1,4 @@
-﻿---
+---
 title: Meet George, Le Pirate.
 layout: post
 ---

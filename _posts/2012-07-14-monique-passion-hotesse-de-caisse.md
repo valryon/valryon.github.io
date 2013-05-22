@@ -1,4 +1,4 @@
-﻿---
+---
 title: Monique Passion Hôtesse de caisse
 layout: release
 ---

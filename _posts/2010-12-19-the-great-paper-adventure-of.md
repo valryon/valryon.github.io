@@ -1,4 +1,4 @@
-﻿---
+---
 title: The Great Paper Adventure (PC/Xbox 360)
 layout: release
 ---
