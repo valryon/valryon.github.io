@@ -1,6 +1,6 @@
 ﻿---
 title: Rabbit Apocalype!
-layout: release
+layout: post
 ---
 
 Dans le cadre du concours **Game A Niaque** du **Toulouse Game Show 2011**, la Great Paper Team (Lapinou, yaki_ et moi-même) a réalisé un petit nouveau jeu sur les contraintes imposées.

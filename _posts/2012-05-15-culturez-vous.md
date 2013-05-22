@@ -1,6 +1,6 @@
 ---
 title: Culturez-Vous !
-layout: release
+layout: post
 ---
 
 Application ludique et littéraire pour Windows Phone 7.

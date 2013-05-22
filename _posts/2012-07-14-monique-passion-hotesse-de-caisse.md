@@ -1,6 +1,6 @@
 ---
 title: Monique Passion Hôtesse de caisse
-layout: release
+layout: post
 ---
 
 *Notre participation au concours [Make Something Horrible de Canard PC](http://www.canardpc.com/news-52821-grand_concours_canard_pc___make_something_horrible.html).*
