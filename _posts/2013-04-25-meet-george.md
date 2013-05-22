@@ -1,10 +1,9 @@
----
+﻿---
 title: Meet George, Le Pirate.
 layout: post
 ---
 
 <iframe width="640" height="360" src="http://www.youtube.com/embed/xBU0OXjJko4" frameborder="0" allowfullscreen></iframe>
-
 
 **We all like gold. And finding treasures. So does George!**
 
