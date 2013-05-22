@@ -4,13 +4,19 @@ title: Damien Mayance (Valryon)
 ---
 <div>
 	  {% for post in site.posts %}
-		<article class="well">
-			<p id="article-header">
+		<article>
+			<p>
 		  		<a class="" href="{{site.url}}{{ post.url }}"><h2>{{ post.title }}</h2></a>
 			  	<span class="label label-info">{{ post.date | date: "%d %B %Y" }}</span>
+				<span class="label label-success">{{ post.platform }}</span>			
 			</p>
-		    <div id="article-excerpt">
-    			{{ post.content  }}
+		    <div>
+				<p>
+					<img src="{{ post.thumbail }}" width="200" />
+				</p>
+				<p>
+    				{{ post.excerpt  }}
+				</p>
   			</div>
 		  
 		</article>

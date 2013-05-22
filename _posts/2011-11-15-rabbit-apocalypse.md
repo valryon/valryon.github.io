@@ -1,14 +1,14 @@
-﻿---
+---
 title: Rabbit Apocalype!
 layout: post
+thumbnail: {{ site.url }}/static/content/ra.png
+platform: PC
 ---
-
-Dans le cadre du concours **Game A Niaque** du **Toulouse Game Show 2011**, la Great Paper Team (Lapinou, yaki_ et moi-même) a réalisé un petit nouveau jeu sur les contraintes imposées.
-
-<img src="http://uppix.net/1/b/2/4fe9ce13449d9209bb105fc27eaectt.jpg" />
 
 Rabbit Apocalypse! est un jeu créé en un mois dans le cadre du concours Game A Niaque organisé au Toulouse Game Show 2011.
 Le jeu se présente sous la forme d’un platformer oldschool dans lequel le joueur doit sauver son espèce de la fin du monde en retrouvant les clés du vaisseau spatial qui les emmènera dans l’espace.
+
+<img src="http://uppix.net/1/b/2/4fe9ce13449d9209bb105fc27eaectt.jpg" />
 
 ## Téléchargement
 

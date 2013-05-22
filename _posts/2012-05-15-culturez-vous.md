@@ -1,11 +1,14 @@
 ---
 title: Culturez-Vous !
 layout: post
+thumbnail: {{ site.url }}/static/content/cv.png
+platform: Windows Phone 7
 ---
 
 Application ludique et littéraire pour Windows Phone 7.
 
 **Culturez-Vous !** était une application pour **Windows Phone 7** dont le but était de faire découvrir des mots ou expressions désuets et amusants de la langue française, avec en bonus tous les dimanches, une contrepèterie.
+
 
 ## L’équipe
 

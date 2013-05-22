@@ -20,62 +20,48 @@
     <meta property="robots" content="index,follow" />
 </head>
 <body>
+
  <div class="container-fluid">
-        <div class="row-fluid">
-            <div class="span3">
-				<!-- Sidebar modile -->
-                <div class="well">
-                    <a href="{{ site.url }}">
-                        <img src="http://www.gravatar.com/avatar/545f7c7f0ed11d6ef21722a7e6c47acf?s=200"
-                            alt="What I look like" class="img-polaroid displayed avatar" />
-                    </a>
-                    <p class="lead text-center">
-                        Damien Mayance
-                    </p>
-  <div>
-                        <p>
-				Hi, I am a young <strong>indie</strong> game and software developer, currently
-				<strong>creating my company</strong> with Matthieu Oger and working on two game projects.
-			</p>
-			<p>
-				Meet me in <strong>Rennes</strong>, France, or contact me using the following
-				links.
-			</p>
-								</div>
-                    <div class="sidebar-nav">
-                        <ul class="nav nav-stacked nav-pills">
-<li><a href="http://twitter.com/Valryon"><i class="icon icon-user"></i>&nbsp;@Valryon</a></li>
-<li><a href="http://github.com/Valryon"><i class="icon icon-wrench"></i>&nbsp;GitHub</a></li>
-<li><a href="http://linkedin.com/in/damienmayance"><i class="icon icon-user"></i>&nbsp;LinkedIn</a></li>
-<li><a href="http://careers.stackoverflow.com/dmayance "><i class="icon icon-user"></i>&nbsp;Careers 2.0</a></li>
-
-                        </ul>
-                    </div>
-					<div>
+	<div class="span1">
+	</div>
+	<div class="span10">
+	
+		 <div class="container-fluid">
+		        <div class="row-fluid">
+					<p class="text-center">
+		     	       <a href="{{ site.url }}/">
+		                    <img src="http://www.gravatar.com/avatar/545f7c7f0ed11d6ef21722a7e6c47acf?s=200"
+		                        alt="What I look like" class="img-polaroid displayed avatar" />
+		                </a>
+				       <span class="lead">
+		                    Damien Mayance
+						</span>
+						Indie game and software developer. Rennes, France.
+					</p>
+					<p class="text-center">
+						Co-founder of 
 						<a href="http://pixelnest.io"><img src="{{site.url}}/static/img/pixelnest.png" width="250" alt="Pixelnest Studio" /></a>
-					</div>
-                </div>
-            </div>
-                
-            <div class="span8">
-				{{ content }}
-            </div>
-
-            <div class="span1">
-                </div>
-
-        </div>
-    </div>
-    <div class="row-fluid muted">
-        <hr />
-        <p>
-            All rights reserved. Damien Mayance
-        </p>
-        <p>
-            Simple blog made with Jekyll, Twitter bootstrap and GitHub pages. <a href="https://github.com/Valryon/valryon.github.io">Sources available on GitHub.</a>
-        </p>
-    </div>
-    </div>
-
+					</p>
+				</div>
+				<div class="row-fluid">
+					<ul class="nav nav-pills">
+						<li><a href="http://twitter.com/Valryon"><i class="icon icon-user"></i>&nbsp;@Valryon</a></li>
+						<li><a href="http://github.com/Valryon"><i class="icon icon-wrench"></i>&nbsp;GitHub</a></li>
+						<li><a href="http://linkedin.com/in/damienmayance"><i class="icon icon-user"></i>&nbsp;LinkedIn</a></li>
+						<li><a href="http://careers.stackoverflow.com/dmayance "><i class="icon icon-user"></i>&nbsp;Careers 2.0</a></li>
+					</ul>
+				</div>
+		
+				<div class="row-fluid">
+					{{ content }}
+				</div>
+				<div class="row-fluid muted">
+				</div>
+		</div>
+	
+	</div>
+	<div class="span1">
+	</div>
+</div>
 </body>
 </html>

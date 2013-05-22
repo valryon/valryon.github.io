@@ -1,12 +1,13 @@
 ---
 title: Meet George, Le Pirate.
 layout: post
+thumbnail: {{ site.url }}/static/content/george.png
+platform: PC / iPad
 ---
 
-<iframe width="640" height="360" src="http://www.youtube.com/embed/xBU0OXjJko4" frameborder="0" allowfullscreen></iframe>
+Projet de jeu Pixelnest.
 
 **We all like gold. And finding treasures. So does George!**
-
 George is a friendly pirate looking for adventure. 
 
 He finds treasure islands where he can dig to find hidden chests full of delicious gold coins the day, and he musts come home before the night.
@@ -14,6 +15,8 @@ He finds treasure islands where he can dig to find hidden chests full of delicio
 But other pirates want to steal his gold, so George must use his good-old shotgun to protect his treasure!
 
 Come aboard with George, it is time for some adventure!
+
+<iframe width="640" height="360" src="http://www.youtube.com/embed/xBU0OXjJko4" frameborder="0" allowfullscreen></iframe>
 
 # Wanna try?
 
