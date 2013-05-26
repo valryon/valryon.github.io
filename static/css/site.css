@@ -1,0 +1,33 @@
+.avatar
+{
+	background: url(http://www.gravatar.com/avatar/545f7c7f0ed11d6ef21722a7e6c47acf?s=200) center 0 no-repeat;
+	background-size: 200px 200px;
+	height: 200px;
+	width: 200px;
+	margin: 42px auto 21px;
+	overflow: hidden;
+	text-indent: -9999em;
+
+}
+
+.header
+{
+	text-align: center;
+	background-color: #edeff1;
+}
+
+.links
+{
+	text-align: center;
+	color: #ffffff;
+}
+
+.links a
+{
+	color: #ffffff;
+}
+
+.link
+{
+	margin: 12px 12px 12px;
+}
