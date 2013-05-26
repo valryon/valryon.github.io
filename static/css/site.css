@@ -13,13 +13,14 @@
 .header
 {
 	text-align: center;
-	background-color: #edeff1;
+	background-color: #EDEFF1;
 }
 
 .links
 {
 	text-align: center;
-	color: #ffffff;
+	background-color: #3498DB;
+	color: #FFFFFF;
 }
 
 .links a
