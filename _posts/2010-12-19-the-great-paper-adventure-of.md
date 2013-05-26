@@ -1,8 +1,6 @@
 ---
 title: The Great Paper Adventure (PC/Xbox 360)
 layout: post
-thumbnail: {{ site.url }}/static/content/tgpa.png
-platform: PC / X360
 ---
 
 The Great Paper Adventure est un shoot them up 2D réalisé avec XNA sorti en 2010 sur PC et Xbox 360.

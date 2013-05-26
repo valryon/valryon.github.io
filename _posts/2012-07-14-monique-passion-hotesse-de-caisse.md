@@ -1,8 +1,6 @@
 ---
 title: Monique Passion Hôtesse de caisse
 layout: post
-thumbnail: {{ site.url }}/static/content/monique.png
-platform: PC
 ---
 
 Simulation humouristique et volontairement mauvaise du quotidien d'une hôtesse de caisse.

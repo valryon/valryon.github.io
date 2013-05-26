@@ -1,8 +1,6 @@
 ---
 title: Culturez-Vous !
 layout: post
-thumbnail: {{ site.url }}/static/content/cv.png
-platform: Windows Phone 7
 ---
 
 Application ludique et littéraire pour Windows Phone 7.

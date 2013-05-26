@@ -23,7 +23,7 @@
 	color: #FFFFFF;
 }
 
-.links a
+.links, a
 {
 	color: #FFFFFF;
 }
@@ -33,21 +33,29 @@
 	margin: 12px 12px 12px;
 }
 
-.post
+.posts
 {
 	background-color: #EDEFF1;
 	padding: 21px 42px 21px 42px;
 }
 
+.post
+{
+	background-color: #EDEFF1;
+	padding: 12px 0px 12px 0px
+}
+
 .post-title
 {
-
+	margin: 12px auto 12px auto;;
 }
 
 .footer
 {
-	padding: 12px 24px 12px 24px;
+	color: #FFFFFF;
+	background-color: #3498DB;
 }
 .footer a
 {
+	color: #34495E;
 }

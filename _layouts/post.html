@@ -2,8 +2,26 @@
 layout: default
 ---
 
-<h1>{{ page.title  }}</h1>
-<span class="label label-info">{{ page.date | date: "%d %B %Y" }}</span>
-
-{{ content  }}
+<div class="row-fluid post">
+	<article class="">
+			
+		<div class="span3">
+			<p class="text-center">
+			<!--				<img src="{{ post.thumbail }}" width="200" /> -->
+				<img class="img-polaroid" src="http://placekitten.com/g/200/200" />
+			</p>
+		</div>
+		<div class="span9">
+		  	<h1 class="post-title">{{ page.title }}</h1>
+			<ul class="muted">
+			  	<li>Project date: {{ page.date | date: "%d %B %Y" }}</li>
+				<li>Target platforms: {{ page.platform }} {{ counter }}</li>
+			</ul>
+			<p>
+				{{ content  }}
+			</p>
+		</div>
+	
+	</article>
+</div>
 

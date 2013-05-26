@@ -1,8 +1,6 @@
 ---
 title: Rabbit Apocalype!
 layout: post
-thumbnail: {{ site.url }}/static/content/ra.png
-platform: PC
 ---
 
 Rabbit Apocalypse! est un jeu créé en un mois dans le cadre du concours Game A Niaque organisé au Toulouse Game Show 2011.

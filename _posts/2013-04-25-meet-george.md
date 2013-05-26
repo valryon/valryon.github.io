@@ -1,11 +1,9 @@
 ---
 title: Meet George, Le Pirate.
 layout: post
-thumbnail: {{ site.url }}/static/content/george.png
-platform: PC / iPad
 ---
 
-Projet de jeu Pixelnest.
+A first game prototype from Pixelnest with Pirates, gold and treasures to find using Leapmotion. The first version was playable at Stunfest 2013, Rennes.
 
 **We all like gold. And finding treasures. So does George!**
 George is a friendly pirate looking for adventure. 
