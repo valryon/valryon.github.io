@@ -4,22 +4,27 @@ title: Damien Mayance (Valryon)
 ---
 <div>
 	  {% for post in site.posts %}
-		<article>
-			<p>
-		  		<a class="" href="{{site.url}}{{ post.url }}"><h2>{{ post.title }}</h2></a>
-			  	<span class="label label-info">{{ post.date | date: "%d %B %Y" }}</span>
-				<span class="label label-success">{{ post.platform }}</span>			
-			</p>
-		    <div>
-				<p>
-<!--					<img src="{{ post.thumbail }}" width="200" /> -->
-					<img src="http://placekitten.com/g/200/200" />
-				</p>
-				<p>
-    				{{ post.excerpt  }}
-				</p>
-  			</div>
-		  
+		<article class="post">
+			<div class="container-fluid">
+			    <div class="row-fluid">
+					<div class="span2">
+						<p>
+		<!--					<img src="{{ post.thumbail }}" width="200" /> -->
+							<img src="http://placekitten.com/g/200/200" />
+						</p>
+					</div>
+					<div class="span10">
+				  		<a class="post-title" href="{{site.url}}{{ post.url }}"><h2>{{ post.title }}</h2></a>
+					<p>
+					  	<span class="label label-info">{{ post.date | date: "%d %B %Y" }}</span>
+						<span class="label label-success">{{ post.platform }}</span>			
+					</p>
+						<p>
+		    				{{ post.excerpt  }}
+						</p>
+					</div>
+	  			</div>
+		  </div>
 		</article>
 	  {% endfor %}
 </div>

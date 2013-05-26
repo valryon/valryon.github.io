@@ -25,10 +25,29 @@
 
 .links a
 {
-	color: #ffffff;
+	color: #FFFFFF;
 }
 
 .link
 {
 	margin: 12px 12px 12px;
+}
+
+.post
+{
+	background-color: #EDEFF1;
+	padding: 21px 42px 21px 42px;
+}
+
+.post-title
+{
+
+}
+
+.footer
+{
+	padding: 12px 24px 12px 24px;
+}
+.footer a
+{
 }
