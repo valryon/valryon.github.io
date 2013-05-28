@@ -3,55 +3,29 @@ title: Rabbit Apocalype!
 layout: post
 ---
 
-Rabbit Apocalypse! est un jeu créé en un mois dans le cadre du concours Game A Niaque organisé au Toulouse Game Show 2011.
-Le jeu se présente sous la forme d’un platformer oldschool dans lequel le joueur doit sauver son espèce de la fin du monde en retrouvant les clés du vaisseau spatial qui les emmènera dans l’espace.
+**Rabbit Apocalypse!** is a short and simple 2D **platformer** with random level creation.
+
+The earth is going to be blown by an asteroid, and rabbits want to survive by going into space with their spaceship.
+Sdaly they lost the key, and you must find it quickly!
+
+The level generation consists in assembling already defined pieces toegether randomly following rules.
+
+The little game was made in two months from scratch for a contest (Game A Niaque 2011). It uses a custom XNA engine full of bugs.
 
 <img src="http://uppix.net/1/b/2/4fe9ce13449d9209bb105fc27eaectt.jpg" />
 
-## Téléchargement
+## Download
 
 <a class="btn btn-primary" href="http://thegreatpaperadventure.com/files/RabbitApocalypse_v1.0_TGS_FINAL.zip">Télécharger le jeu présenté au TGS</a>
 
 <a class="btn btn-info" href="https://github.com/Valryon/Rabbit-Apocalypse">Voir le code source</a>
 
-**Remarque :** Ogmo Editor ne permet plus de télécharger l’ancienne version sous Adobe Air… il n’est donc plus possible d’éditer les niveaux existants, sauf à la main en touchant au XML.
+### The Team
 
-## Installation
-
-Le jeu nécessite le framework .NET 4.0 pour se lancer. Un PC assez récent est requis malgré le look très rétro.
-
-### Configuration recommandée
-
-- Windows XP, Vista, 7
-- Processeur dual-core 2.0 Ghz
-- Carte graphique avec Pixel Shaders 2.0 et DirectX 9.0c
-- 512 Mo de RAM
-- 250 Mo d’espace libre
-- Frameworks : .NET 4.0 et XNA 4.0
-
-### L’équipe
-
-**The Great Paper Team**
-
-- Gabriel CORBEL : game & level designer, testeur
-- Damien MAYANCE : développeur
-- Thibault PERSON : développeur, graphiste 2D
-
-Le moteur est fait maison, grâce au framework .NET 4.0 et XNA 4.0.
-
-### Crédits supplémentaires
-
-Toutes les musiques sont de [Spintronic (Cyril BROUILLARD)](http://www.chiptunes-headbangers.net/Spintronic).
-Les musiques sont annoncées dans le jeu, vous pourrez ainsi retrouvez les titres que appréciez.
-Un grand merci à Cyril pour ses musiques, sa gentillesse et sa généroisé.
-
-### Bugs connus
-
-Les collisions avec le sol et les plate-formes sont un désatre. Il arrive que le joueur passe à travers tout un pan du niveau…
-
-Les musiques se lancent parfois avec du retard.
-
-N’hésitez pas à nous envoyer vos commentaires, ayez simplement conscience de la limite de ce projet .
+- Gabriel CORBEL: game & level designer, tester
+- Damien MAYANCE: developer
+- Thibault PERSON: developer, 2D artist
+- (Cyril BROUILLARD)](http://www.chiptunes-headbangers.net/Spintronic): musics.
 
 ## Screenshots
 

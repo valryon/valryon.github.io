@@ -3,10 +3,24 @@ title: Monique Passion Hôtesse de caisse
 layout: post
 ---
 
+Cashier job **game parody**, made for the "worst game ever" contest.
+And we won. 
+
+The game is in french only, we don't plan to translate but I think it's playable even if you don't understand anything. It's a bit like a german serious simulator.
+
+From here you can:
+
+<a href="http://d.pr/f/OWmp" class="btn btn-primary">Download the game (Windows, XNA)</a>
+
+<a href="https://github.com/Valryon/super-caissiere" class="btn btn-info">See the source code</a>
+
+Enjoy.. if you can!
+
+## French version s'il-vous-plaît
+
 Simulation humouristique et volontairement mauvaise du quotidien d'une hôtesse de caisse.
 
-
-*Notre participation au concours humouristique [Make Something Horrible de Canard PC](http://www.canardpc.com/news-52821-grand_concours_canard_pc___make_something_horrible.html).*
+*Notre participation au concours [Make Something Horrible de Canard PC](http://www.canardpc.com/news-52821-grand_concours_canard_pc___make_something_horrible.html).*
 
 **Disclaimer :** ceci est un jeu parodique dans le cadre de la participation d’un concours humouristique. Toute ressemblance avec des faits ou des personnes réelles ne seraient que pure coïncidence. De même qu’il ne s’agit pas de se moquer d’un métier, mais bien des jeux vendus à prix d’or et pourtant encore plus mauvais que notre « simulateur ».
 
@@ -16,7 +30,7 @@ Scannez-les tous ! **Monique Passion Hôtesse de caisse** est une simulation uni
 
 ## Téléchargement
 
-<a href="http://d.pr/f/OWmp" class="btn btn-primary">Télécharger le jeu</a>
+<a href="http://d.pr/f/OWmp" class="btn btn-primary">Télécharger le jeu (Windows, XNA)</a>
 
 <a href="https://github.com/Valryon/super-caissiere" class="btn btn-info">Accéder au code source</a>
 

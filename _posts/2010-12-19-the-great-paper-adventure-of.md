@@ -3,24 +3,17 @@ title: The Great Paper Adventure (PC/Xbox 360)
 layout: post
 ---
 
-The Great Paper Adventure est un shoot them up 2D réalisé avec XNA sorti en 2010 sur PC et Xbox 360.
+**The Great Paper Adventure** is a funny papered **2D shoot-them-up** made with XNA. It was released on PC during Decembre 2012 and on Xbox during June 2011.
 
 <img src="http://uppix.net/b/f/f/01e9d4263691050611047efe03847tt.jpg" />
 
-## Plus d’informations
+## Download
 
-- [Retrouvez toutes les informations sur le jeu et son équipe, et des liens pour télécharger le jeu](http://www.thegreatpaperadventure.com)
-- [A lire également, le post-mortem du jeu](http://www.valryon.fr/the-great-paper-adventure-post-mortem)
+<a href="http://www.thegreatpaperadventure.com" class="btn btn-primary">Download the game (Windows, XNA)</a>
 
-## Description
+<a href="https://github.com/Valryon/the-great-paper-adventure" class="btn btn-info">See the source code</a>
 
-**The Great Paper Adventure** *Of The Nameless hero In A Fantastic And Papered World*, est un jeu qui, en plus d’avoir un nom cool, est réalisé grâce au framework XNA 4.0 et .NET 4.0 de Microsoft.
-
-Le but du jeu est de se frayer un chemin à travers les niveaux en dézinguant les ennemis et les boss sur la route. Pour cela le joueur dispose de plusieurs armes, comme une mitrailleuse, un lance-flamme, un lance-trucs, un lance-roquettes, …
-
-Le jeu est disponible sur PC (gratuit) et Xbox 360 (240 MSP).
-
-## Trailer et screenshots
+## Trailer & screenshots
 
 <object width="640" height="360"><param name="movie" value="http://www.youtube.com/v/J1tHrOtvXvQ?version=3&amp;hl=fr_FR&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/J1tHrOtvXvQ?version=3&amp;hl=fr_FR&amp;rel=0" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>
 

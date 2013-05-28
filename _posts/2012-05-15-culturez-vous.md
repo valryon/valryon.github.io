@@ -3,12 +3,12 @@ title: Culturez-Vous !
 layout: post
 ---
 
-Application ludique et littéraire pour Windows Phone 7.
+**Culturez-Vous !** was an application for Windows Phone 7, that was providing one old or unused french word everyday.
 
-**Culturez-Vous !** était une application pour **Windows Phone 7** dont le but était de faire découvrir des mots ou expressions désuets et amusants de la langue française, avec en bonus tous les dimanches, une contrepèterie.
+We had to remove it from the market due to our lack of time to update it but from May 2012 to Feb 2013 we had about 10.000 downloads.
 
 
-## L’équipe
+## The team
 
 - Anaïs Noblanc (idée originale)
 - Damien Mayance (développeur WP7)
@@ -16,15 +16,13 @@ Application ludique et littéraire pour Windows Phone 7.
 - Matthieu Oger (designer WP7)
 - Nicolas Pillon (web)
 
-## Source
+## Source code
 
-<a class="btn btn-primary" href="https://github.com/Valryon/Culturez-Vous/tree/master/app/wp7">Voir le code source sur GitHub</a>
+<a class="btn btn-primary" href="https://github.com/Valryon/Culturez-Vous/tree/master/app/wp7">See the source code on GitHub</a>
 
-Les données des expressions viennent du [Twitter 1Jour1Mot](http://twitter.com/1Jour1Mot), dont nous avions reçu l’autorisation d’utiliser le contenu (un grand merci à Jean-Philippe !).
+Words and data are from the [1Jour1Mot Twitter](http://twitter.com/1Jour1Mot), which granted us authourization of using its content. Thanks a lot to them!
 
-L’application a été arrêtée et retirée du marché en février 2013 car nous n’avions plus le temps de nous en occuper.
-
-En souvenir, voici quelques screenshots de l’application :
+## Screenshots
 
 <img src="http://uppix.net/d/5/8/1e19cf19e36ce6e336426044d758f.png" />
 

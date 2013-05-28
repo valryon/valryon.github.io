@@ -16,14 +16,12 @@ title: Damien Mayance (Valryon)
 		</div>
 		<div class="span9">
 		  	<h2><a class="post-title btn btn-info btn-large" href="{{site.url}}{{ post.url }}">{{ post.title }}</a></h2>
+			<div class="muted">
+				{{ post.date | date: "%d %B %Y" }} - {{ post.platform }}
+			</div>
 			<div class="lead">
 				{{ post.excerpt  }}
 			</div>
-		
-			<ul class="muted">
-			  	<li>Project date: {{ post.date | date: "%d %B %Y" }}</li>
-				<li>Target platforms: {{ post.platform }} {{ counter }}</li>
-			</ul>
 		</div>
 	
 	</article>
