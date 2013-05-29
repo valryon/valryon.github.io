@@ -1,6 +1,6 @@
 ---
 title: Pixelnest Studio
-layout: post
+layout: release
 ---
 
 I'm currently creating my own **company** with [Matthieu Oger](http://www.solarsailer.net). We will create apps and games for mobile, desktop and web platforms.

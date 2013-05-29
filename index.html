@@ -3,25 +3,18 @@ layout: default
 title: Damien Mayance (Valryon)
 ---
 
-{% for post in site.posts %}
+{% for post in paginator.posts %}
 
-<div class="row-fluid post">
-	<article class="">
-			
-		<div class="span3">
-			<p class="text-center">
-			<!--				<img src="{{ post.thumbail }}" width="200" /> -->
-				<img class="img-polaroid" src="http://placekitten.com/g/200/200" />
+<div class="row-fluid">
+	<article class="post">
+	  	<h1><a class="post-title " href="{{site.url}}{{ post.url }}">{{ post.title }}</a></h1>
+		<div class="muted">
+			<p>
+				{{ post.date | date: "%d %B %Y" }}
 			</p>
 		</div>
-		<div class="span9">
-		  	<h2><a class="post-title btn btn-info btn-large" href="{{site.url}}{{ post.url }}">{{ post.title }}</a></h2>
-			<div class="muted">
-				{{ post.date | date: "%d %B %Y" }} - {{ post.platform }}
-			</div>
-			<div class="lead">
-				{{ post.excerpt  }}
-			</div>
+		<div>
+			{{ post.content  }}
 		</div>
 	
 	</article>

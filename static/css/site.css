@@ -1,19 +1,19 @@
 .avatar
 {
-	background: url(http://www.gravatar.com/avatar/545f7c7f0ed11d6ef21722a7e6c47acf?s=200) center 0 no-repeat;
-	background-size: 200px 200px;
-	height: 200px;
-	width: 200px;
-	margin: 42px auto 21px;
+	background: url(http://www.gravatar.com/avatar/545f7c7f0ed11d6ef21722a7e6c47acf?s=150) center 0 no-repeat;
+	background-size: 150px 150px;
+	height: 150px;
+	width: 150px;
 	overflow: hidden;
 	text-indent: -9999em;
-
+	margin: 12px 0px 0px 0px;
 }
 
 .header
 {
 	text-align: center;
 	background-color: #EDEFF1;
+	margin: 42px 0px 0px 0px;
 }
 
 .links
@@ -28,16 +28,16 @@
 	margin: 12px 12px 12px;
 }
 
-.posts
+.projects
 {
+	text-align: center;
 	background-color: #EDEFF1;
-	padding: 21px 42px 21px 42px;
+	color: #FFFFFF;
 }
 
 .post
 {
-	background-color: #EDEFF1;
-	padding: 12px 0px 12px 0px
+	padding: 24px 42px 24px 42px
 }
 
 .post-title

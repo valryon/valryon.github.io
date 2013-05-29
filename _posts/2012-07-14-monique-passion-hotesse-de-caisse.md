@@ -1,6 +1,6 @@
 ---
 title: Monique Passion Hôtesse de caisse
-layout: post
+layout: release
 ---
 
 Cashier job **game parody**, made for the "worst game ever" contest.

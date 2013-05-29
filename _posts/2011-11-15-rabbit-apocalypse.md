@@ -1,6 +1,6 @@
 ---
 title: Rabbit Apocalype!
-layout: post
+layout: release
 ---
 
 **Rabbit Apocalypse!** is a short and simple 2D **platformer** with random level creation.
