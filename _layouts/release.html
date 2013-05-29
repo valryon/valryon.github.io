@@ -2,13 +2,12 @@
 layout: default
 ---
 
+<article class="post">
+	  	<h1 class="post-title">{{ page.title }}</h1>
+		<p class="post-date muted">{{ page.date | date: "%d %B %Y" }}</p>
 
-	<article class="post">
-		  	<h1 class="post-title">{{ page.title }}</h1>
-			<p class="muted">{{ page.date | date: "%d %B %Y" }}</p>
-
-			<div>
-				{{ content  }}
-			</div>
-	</article>
+		<div class="post-content">
+			{{ content  }}
+		</div>
+</article>
 

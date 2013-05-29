@@ -37,12 +37,20 @@
 
 .post
 {
-	padding: 24px 42px 24px 42px
 }
 
 .post-title
 {
-	margin: 12px auto 12px auto;;
+	margin: 0px 12px 4px 0px;
+}
+
+.post-date
+{
+	margin: -8px 0px 21px 0px;
+}
+
+.post-content
+{
 }
 
 .footer
