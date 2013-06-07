@@ -2,7 +2,9 @@
 title: Blogging with Jekyll and GitHub pages
 layout: post
 ---
-Last Monday I completely broke up my blog. It was a custom homemade engine using ASP.NET MVC hosted on an Apache server, parsing markdown files to serve Razor powered views. It was nice, but I updated the server and it just stopped working. The site was up but no posts were found. I think it was the signal: having a custom engine is fun and challenging, but **for a blog does it worth reinventing the wheel again?** (You can still the .NET engine on [github](https://github.com/Valryon/valryon.github.io/tree/asp.net-mvc)).
+Last Monday I completely broke up my blog. 
+
+It was a custom homemade engine using ASP.NET MVC hosted on an Apache server, parsing markdown files to serve Razor powered views. It was nice, but I updated the server and it just stopped working. The site was up but no posts were found. I think it was the signal: having a custom engine is fun and challenging, but **for a blog does it worth reinventing the wheel again?** (You can still the .NET engine on [github](https://github.com/Valryon/valryon.github.io/tree/asp.net-mvc)).
 
 So I just switch to **Jekyll** for the server and **GitHub Pages** for hosting.
 
@@ -10,14 +12,11 @@ So I just switch to **Jekyll** for the server and **GitHub Pages** for hosting.
 
 As I already did with my homemade engine, I am now writing posts in markdown files stored in a GitHub repo. [See this post as markdown](https://github.com/Valryon/valryon.github.io/blob/master/_posts/2013-04-08-blogging-with-jekyll-and-github-pages.md).
 
-Markdown is great, simple, easy to parse and even to read. And you can still add some HTML in it for images or videos.
-
-You can find some great editors as [MarkdownPad](http://markdownpad.com/) on Windows or [Mou](http://mouapp.com/) for OS.X.
+Markdown is great, simple, easy to parse and even to read. And you can still add some HTML in it for images or videos. You can find some WISYWIG editors as [MarkdownPad](http://markdownpad.com/) on Windows or [Mou](http://mouapp.com/) for OS.X.
 
 ### Layouts, feeds, etc
 
 Jekyll is smart. It will look at each files you feed him with and try to transform it with rules.
-
 Posts, for example, have a simple header like this:
 
 <script src="https://gist.github.com/Valryon/5335230.js"></script>
@@ -28,9 +27,7 @@ The `layout` item tells the engine the layout to use. This layout is stored in t
 
 You should have a file named just as the desired layout (``post.html`` here). Those layouts can inherit between them. For my blog I have a ``default.html`` layout and two children layouts.
 
-Children will fill the ``content`` layout section with some new things you write.
-
-This is very similar to some other template system, such as the Razor one in ASP.NET MVC.
+Children will fill the ``content`` layout section with some new things you write. This is very similar to some other template system, such as the Razor one in ASP.NET MVC.
 
 If you want a sitemap, it's the same idea. You add a ``sitemap.xml`` to your repository containing some code:
 
@@ -62,12 +59,11 @@ If you have your own Jekyll server, you can enable auto-refresh to the server wi
 
 ### My 2 cents
 
-This combination of markdown + Jekyll is so great and easy that I will probably reuse it for every static HTML content I want to serve.
+This combination of markdown + Jekyll is so great and easy that I will probably reuse it for every static HTML content I want to serve. 
 
 GitHub Pages is the bonus for a free and easy hosting system, but having my own Jekyll server would still have been really simple.
 
 Combined with Javascript you can do nearly everything that don't directly require a database connection (you can still have a webservice and JS calls).
-
 
 ### Try it!
 
