@@ -5,36 +5,36 @@ title: Indie game and software developer
 
 {% for post in paginator.posts %}
 
-<div class="row-fluid">
-	<article class="post">
-	  	<h1><a class="post-title " href="{{site.url}}{{ post.url }}">{{ post.title }}</a></h1>
-		<p class="post-date muted">{{ post.date | date: "%d %B %Y" }}</p>
+<article class="post">
+	<h1 class="post__title">
+  	<a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+  </h1>
 
-		<div class="post-content">
-			{{ post.content  }}
-		</div>
-	
-	</article>
-	<hr />
-</div>
+	<p class="post__date">{{ post.date | date: "%d %B %Y" }}</p>
+
+	<div class="post__content">
+		{{ post.content  }}
+	</div>
+
+  <hr class="post__separator" />
+</article>
 
 {% endfor %}
 
-<div class="row-fluid pagination">
-	<ul>
-	  	{% if paginator.previous_page %}
-	  		{% if paginator.previous_page == 1 %}
-	    		<li><span><a href="{{site.url}}/">«</a></span></li>
-		    {% else %}
-			    <li><span><a href="/page{{paginator.previous_page}}">«</a></span></li>
-	    	{% endif %}
-	  	{% endif %}
-	  	
-	  	<li><span class="disabled" ">{{paginator.page}} of {{paginator.total_pages}}</span></li>
-	  	
-	  	{% if paginator.next_page %}
-	    	<li><a href="/page{{paginator.next_page}}">»</a></li>
-	  	{% endif %}
-	  	
-  	</ul>
+<div class="pagination">
+	  {% if paginator.previous_page %}
+	  	{% if paginator.previous_page == 1 %}
+  	   	<span class="pagination__previous"><a href="{{site.url}}/">« previous</a></span>
+		  {% else %}
+        <span class="pagination__previous"><a href="{{site.url}}/">« first</a></span>
+  		  <span class="pagination__previous"><a href="/page{{paginator.previous_page}}">« previous</a></span>
+	    {% endif %}
+	  {% endif %}
+
+	 <span class="pagination__desc">{{paginator.page}} of {{paginator.total_pages}}</span>
+
+	  {% if paginator.next_page %}
+      <span class="pagination__next"><a href="/page{{paginator.next_page}}">next »</a></span>
+      <span class="pagination__next"><a href="/page{{paginator.total_pages}}">last »</a></span>
+	  {% endif %}
 </div>

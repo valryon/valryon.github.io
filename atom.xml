@@ -4,11 +4,11 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     
-    <title>Sirupsen</title>
-    <link href="http://valryon.github.io/portfolio/atom.xml" rel="self"/>
-    <link href="http://valryon.github.io/portfolio"/>
+    <title>Damien Mayance</title>
+    <link href="http://dmayance.com/atom.xml" rel="self"/>
+    <link href="http://dmayance.com/"/>
     <updated>{{ site.time | date_to_xmlschema }}</updated>
-    <id>http://valryon.github.io/portfolio</id>
+    <id>http://dmayance.com/</id>
     <author>
         <name>Damien Mayance (Valryon)</name>
         <email>dam@pixelnest.io</email>
@@ -17,9 +17,9 @@ layout: nil
     {% for post in site.posts %}
     <entry>
         <title>{{ post.title }}</title>
-        <link href="http://valryon.github.io/portfolio{{ post.url }}"/>
+        <link href="http://dmayance.com/{{ post.url }}"/>
         <updated>{{ post.date | date_to_xmlschema }}</updated>
-        <id>http://valryon.github.io/portfolio{{ post.id }}</id>
+        <id>http://dmayance.com/{{ post.id }}</id>
         <content type="html">{{ post.content | xml_escape }}</content>
     </entry>
     {% endfor %}
