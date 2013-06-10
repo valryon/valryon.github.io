@@ -12,7 +12,14 @@ layout: release
 
 ## Trailer & screenshots
 
-<object class="post__video" width="320" height="180"><param name="movie" value="http://www.youtube.com/v/J1tHrOtvXvQ?version=3&amp;hl=fr_FR&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/J1tHrOtvXvQ?version=3&amp;hl=fr_FR&amp;rel=0" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+<iframe 
+  class="post__video"
+  width="560"   
+  height="315" 
+  src="http://www.youtube.com/embed/J1tHrOtvXvQ" 
+  frameborder="0" 
+  allowfullscreen>
+</iframe>
 
 <img src="http://uppix.net/b/6/b/e3387d48d2823e47ec39dd934a8actt.jpg" />
 

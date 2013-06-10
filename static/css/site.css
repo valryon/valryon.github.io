@@ -229,6 +229,11 @@ h1 {
 	font-size: 1em;
 }
 
+.post__video {
+	display: block;
+	margin: 0 auto;
+}
+
 .post__separator {
 	margin: 30px 80px;
 	border: 1px solid rgba(200, 200, 200, 0.5);
@@ -405,6 +410,12 @@ h1 {
 	.content
 		h1 {
 		font-size: 2.2em;
+	}
+	
+	/* Reduce the video if small */
+	.post__video {
+		width: 100%;
+		height: auto;
 	}
 	
 	.page-footer {
