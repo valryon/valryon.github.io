@@ -3,7 +3,7 @@ title: Rabbit Apocalype!
 layout: release
 ---
 
-**Rabbit Apocalypse!** is a short and simple 2D **platformer** with random level creation.
+**Rabbit Apocalypse!** is a short and simple **2D platformer** with random level creation.
 
 The earth is going to be blown by an asteroid, and rabbits want to survive by going into space with their spaceship.
 Sdaly they lost the key, and you must find it quickly!
@@ -14,18 +14,15 @@ The little game was made in two months from scratch for a contest (Game A Niaque
 
 <img src="http://uppix.net/1/b/2/4fe9ce13449d9209bb105fc27eaectt.jpg" />
 
-## Download
-
-<a class="btn btn-primary" href="http://thegreatpaperadventure.com/files/RabbitApocalypse_v1.0_TGS_FINAL.zip">Télécharger le jeu présenté au TGS</a>
-
-<a class="btn btn-info" href="https://github.com/Valryon/Rabbit-Apocalypse">Voir le code source</a>
+- [Download the game](http://thegreatpaperadventure.com/files/RabbitApocalypse_v1.0_TGS_FINAL.zip)
+- [See the source code](https://github.com/Valryon/Rabbit-Apocalypse)
 
 ### The Team
 
 - Gabriel CORBEL: game & level designer, tester
 - Damien MAYANCE: developer
 - Thibault PERSON: developer, 2D artist
-- (Cyril BROUILLARD)](http://www.chiptunes-headbangers.net/Spintronic): musics.
+- [Cyril BROUILLARD](http://www.chiptunes-headbangers.net/Spintronic): musics.
 
 ## Screenshots
 

@@ -5,7 +5,7 @@ layout: release
 
 **Culturez-Vous !** was an application for Windows Phone 7, that was providing one old or unused french word everyday.
 
-We had to remove it from the market due to our lack of time to update it but from May 2012 to Feb 2013 we had about 10.000 downloads.
+We had to remove it from the market due to our lack of time to update it but from May 2012 to Feb 2013 we had about **10.000 downloads**.
 
 
 ## The team
@@ -18,7 +18,7 @@ We had to remove it from the market due to our lack of time to update it but fro
 
 ## Source code
 
-<a class="btn btn-primary" href="https://github.com/Valryon/Culturez-Vous/tree/master/app/wp7">See the source code on GitHub</a>
+**[See the source code on GitHub](https://github.com/Valryon/Culturez-Vous/tree/master/app/wp7)**
 
 Words and data are from the [1Jour1Mot Twitter](http://twitter.com/1Jour1Mot), which granted us authourization of using its content. Thanks a lot to them!
 

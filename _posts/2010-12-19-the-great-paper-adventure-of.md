@@ -7,15 +7,12 @@ layout: release
 
 <img src="http://uppix.net/b/f/f/01e9d4263691050611047efe03847tt.jpg" />
 
-## Download
-
-<a href="http://www.thegreatpaperadventure.com" class="btn btn-primary">Download the game (Windows, XNA)</a>
-
-<a href="https://github.com/Valryon/the-great-paper-adventure" class="btn btn-info">See the source code</a>
+- **[Download the game (Windows, XNA)](http://www.thegreatpaperadventure.com)**
+- [Source code](https://github.com/Valryon/the-great-paper-adventure)
 
 ## Trailer & screenshots
 
-<object width="640" height="360"><param name="movie" value="http://www.youtube.com/v/J1tHrOtvXvQ?version=3&amp;hl=fr_FR&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/J1tHrOtvXvQ?version=3&amp;hl=fr_FR&amp;rel=0" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+<object width="320" height="180"><param name="movie" value="http://www.youtube.com/v/J1tHrOtvXvQ?version=3&amp;hl=fr_FR&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/J1tHrOtvXvQ?version=3&amp;hl=fr_FR&amp;rel=0" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>
 
 <img src="http://uppix.net/b/6/b/e3387d48d2823e47ec39dd934a8actt.jpg" />
 
