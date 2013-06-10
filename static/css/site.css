@@ -384,6 +384,12 @@ h1 {
 	.content {
 		margin: 0;
 	}
+	
+	/* Reduce the video if small */
+	.post__video {
+		width: 320px;
+		height: 240px;
+	}
 
 	/* Footer */
 
@@ -410,12 +416,6 @@ h1 {
 	.content
 		h1 {
 		font-size: 2.2em;
-	}
-	
-	/* Reduce the video if small */
-	.post__video {
-		width: 100%;
-		height: auto;
 	}
 	
 	.page-footer {
