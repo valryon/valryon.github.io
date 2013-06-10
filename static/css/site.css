@@ -151,7 +151,13 @@ h1 {
 .content
 	h2 {
 	margin-top: 40px;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+}
+
+.content
+	h3 {
+	margin-top: 30px;
+	margin-bottom: 0px;
 }
 
 /**************************************************************
@@ -202,6 +208,7 @@ h1 {
 .post__content
 	img {
 	display: block;
+	max-width: 100%;
 	margin: 30px auto;
 }
 
@@ -370,13 +377,6 @@ h1 {
 
 	.content {
 		margin: 0;
-	}
-
-	/* Post */
-
-	.post__content
-		img {
-		max-width: 100%;
 	}
 
 	/* Footer */
