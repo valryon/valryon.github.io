@@ -317,6 +317,7 @@ h1 {
  * Mobile
  **************************************************************/
 
+/* Medium */
 @media only screen and (max-width: 840px)  {
 
 	/* Infos */
@@ -386,6 +387,7 @@ h1 {
 	}
 }
 
+/* Small */
 @media only screen and (max-width: 550px) {
 
 	/* Infos */
@@ -396,11 +398,18 @@ h1 {
 
 	/* Content */
 
+	.content {
+		padding: 20px;
+	}
+
 	.content
 		h1 {
 		font-size: 2.2em;
 	}
-
+	
+	.page-footer {
+		padding: 0 20px 20px 20px;
+	}
 
 	/* Pagination */
 
