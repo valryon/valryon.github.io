@@ -45,7 +45,7 @@ You can have user/organization pages or per-project pages. The rules differs a b
 
 - For a project ``name.github.com/project``, you must have a ``gh-pages`` branch containing your pages. It will be served at [name.github.io/project](name.github.io/project).
 
-A bit tricky, but nothing to configure and it only has two states : working or not.
+A bit tricky, but nothing to configure and it only has two states: working or not.
 
 ## Deployment
 
@@ -53,9 +53,9 @@ To deploy new posts, new layouts, config files, etc, you just have to commit and
 
 ``git push``.
 
-And your site will be updated in few seconds. Kind of magical.
+And your site will be updated in few seconds. Kind of magic.
 
-If you have your own Jekyll server, you can enable auto-refresh to the server will check for file modification. For now a config change still requires a jekyll restart, but posts and layouts can be updated on the fly.
+If you have your own Jekyll server, you can enable auto-refresh to the server and it will check for file modification. For now a config change still requires a jekyll restart, but posts and layouts can be updated on the fly.
 
 ## My 2 cents
 
