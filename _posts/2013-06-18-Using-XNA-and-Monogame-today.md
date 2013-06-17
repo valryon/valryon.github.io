@@ -16,6 +16,8 @@ As I finally got a game working on PC and iPad (see picture below), I can provid
 
 <img src="{{site.url}}/static/content/posts/2013-06-18/pon-ipad-pc.jpg" />
 
+**I'm not an expert, and I love what is becoming Monogame, those guys are doing a great job. I think it still needs a lot of work and polish, but if you like XNA definitely should give it a try**
+
 ## Is Monogame made for you?
 
 Monogame is still very rough. There is few documentation, some bugs, some strange behavior... There is also no doubt that it will be better in the future.
@@ -36,6 +38,8 @@ Related to the previous issue, the easiest way to use Monogame is to have first 
 
 And as a rule, I would say: **don't use Monogame on Windows**. No more updates doesn't mean the original framework stopped working.
 
+When I tried Monogame 3.0.1 for George on Windows, the game kept freezing some micro seconds and I couldn't play a mp3 song file. Back to XNA, everything worked fine.
+
 ### 2 - Use the Monogame release version
 
 This point can be discussed, but I recommand tu use the Monogame **installer** (at least on Windows) to get everything working: dlls, templates, dependencies…
@@ -53,18 +57,18 @@ The easiest way to do is:
 
 - Create a new **Monogame content project**. It's the same then the XNA content project with some multiplatform directive.
 
--- Screen
+<img src="{{site.url}}/static/content/posts/2013-06-18/content_project.png" />
+
 
 - Add your files to this project. You can use this content project directly with your XNA game.
 - You must change the **content processor** for every assets in your content project. They should appear if you installed Monogame correctly)
 
-<img src="{{site.url}}/static/content/posts/2013-06-18/processor.png" />
 
 - Then select the **target platform** in the compilation combobox. Only available if you created a project from a Monogame template.
 
--- Screen
+<img src="{{site.url}}/static/content/posts/2013-06-18/targets.png" />
 
-- **Copy the output files** (bin/Content) and transfer them to the project that need them (iOS, Android, OS X...). People made some scripts to automate that part. I just keep copy/pasting and I really wait for the real Monogame multiplatform content pipeline. 
+- **Copy the output files** (``bin/Content/*.xnb``) and transfer them to the project that need them (iOS, Android, OS X...). People made some scripts to automate that part. I just keep copy/pasting and I really wait for the real Monogame multiplatform content pipeline. 
 
 <img src="{{site.url}}/static/content/posts/2013-06-18/content_ios.png" />
 
@@ -82,6 +86,14 @@ For example:
 
 **Don't try to have only one big project** file with MSBuild directive symbols, etc. It's a waste of time, it's finally far more easy to sync multiple ``.csproj`` files.
 
+### 5 - Keep yourself up to date 
+
+Check the [official website](http://monogame.net/), the [twitter](https://twitter.com/MonoGameTeam), the [github repository](https://github.com/mono/MonoGame) to know when new things are released.
+
+Keep in minds current limitation, such as:
+
+- Do not use XACT (even if it was quite a good software)
+- Assets format per platforms
 
 
 ## See also
