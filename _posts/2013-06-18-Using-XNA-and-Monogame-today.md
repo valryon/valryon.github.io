@@ -63,6 +63,7 @@ The easiest way to do is:
 - Add your files to this project. You can use this content project directly with your XNA game.
 - You must change the **content processor** for every assets in your content project. They should appear if you installed Monogame correctly)
 
+<img src="{{site.url}}/static/content/posts/2013-06-18/processor.png" />
 
 - Then select the **target platform** in the compilation combobox. Only available if you created a project from a Monogame template.
 
