@@ -24,7 +24,7 @@ The last release (3.0.1) is quite stable. But what you have to know is that **yo
 
 And XNA is Windows only. For now you can't make your game from scratch on OS X, Monogame still use the XNA content pipeline but it is changing. 
 
-*it may be possible by compiling undocumented stuff by I am too lazy to try that. I like when things simply works.*   
+*It may be possible by compiling undocumented stuff bbut I am too lazy to try that. I like when things simply works.*   
 
 So Monogame is for developer who **can work mostly on Windows**.
 
