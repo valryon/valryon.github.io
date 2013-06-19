@@ -4,17 +4,17 @@ layout: nil
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.sitemaps.org/schemas/sitemap-image/1.1" xmlns:video="http://www.sitemaps.org/schemas/sitemap-video/1.1">
 <url>
-	<loc>{{ site.url }}</loc>
+	<loc>http://dmayance.com</loc>
 	<lastmod>2013-06-07T00:00:00-00:00</lastmod>
 </url>
 <url>
-	<loc>{{ site.url }}/about/</loc>
+	<loc>http://dmayance.com/about/</loc>
 	<lastmod>2013-06-07T00:00:00-00:00</lastmod>
 </url>
   {% for post in site.posts %}
     {% unless post.hide %}
 		  <url>
-		    <loc>{{ site.url }}{{ post.url }}</loc>
+		    <loc>{http://dmayance.com{{ post.url }}</loc>
 		    {% if post.lastmod %}
 		    <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
 		    {% else %}
