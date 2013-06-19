@@ -14,7 +14,7 @@ layout: nil
   {% for post in site.posts %}
     {% unless post.hide %}
 		  <url>
-		    <loc>{http://dmayance.com{{ post.url }}</loc>
+		    <loc>http://dmayance.com{{ post.url }}</loc>
 		    {% if post.lastmod %}
 		    <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
 		    {% else %}
