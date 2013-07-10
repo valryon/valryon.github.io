@@ -13,7 +13,7 @@ It's been a while since I've using *.NET* for my projects.
 
 I made several projects using *ASP.NET MVC*, especially a big secured webservice handling thousands of requests each day, and I must admit that this framework is awesome.
 
-But for [Pixelnest](http://pixelnest.io), I'm not sure this is a good choice. It's a bit hard to deploy this kind of app on an Apache server, even if I'm managed to I'm not sure this is reliable, and Windows Server licence are too expensive for us at the moment.
+But for [Pixelnest](http://pixelnest.io), I'm not sure this is a good choice. It's a bit hard to deploy this kind of app on an Apache server. And even if I managed to do it, I'm not sure this is reliable. Windows Server licence are too expensive for us at the moment.
 
 So having a look at modern web technologies, *Ruby* and *Ruby on Rails* seems to be a good choice and it was a good timing for me to learn new things.
 
