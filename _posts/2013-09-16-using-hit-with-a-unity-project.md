@@ -15,7 +15,7 @@ In Unity, go to *Edit* -> *Project Settings* -> *Editor*
 
 <img src="{{site.url}}/static/content/posts/2013-09-16/editor.png" />
 
-In the inspector window, select *Metafiles* under Version Control and *Force Text* under Assets Serialization.
+In the inspector window, select *Meta Files* under Version Control and *Force Text* under Assets Serialization.
 
 <img src="{{site.url}}/static/content/posts/2013-09-16/inspector.png" />
 
@@ -31,8 +31,8 @@ This is a nice standard .gitignore file for Unity projects.
 
 Few comments:
 
-- the *Library* folder is recreated the first time you open the project
-- the .csproj and .sln files can be recreated in one clic (Assets -> Sync Monodevelop projects) so you shoud not commit them (and they should not be modified manually)
+- the *Library* folder is created **automatically** the first time you open the project
+- the *.csproj* and *.sln* files can be recreated in one clic (Assets -> Sync Monodevelop projects) so you shoud not commit them (and they should not be modified manually)
 
 # Applying this to an existing project
 
