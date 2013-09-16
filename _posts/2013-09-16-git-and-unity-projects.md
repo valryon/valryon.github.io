@@ -1,5 +1,5 @@
 ---
-title: Using Git with a Unity project
+title: Git and Unity projects
 layout: post
 ---
 
