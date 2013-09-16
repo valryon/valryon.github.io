@@ -9,7 +9,7 @@ By default, it's not that easy to have a clean Unity project under source contro
 
 **Remember: you need to do this for each new project**. 
 
-# Enable external source control
+## Enable external source control
 
 In Unity, go to *Edit* -> *Project Settings* -> *Editor*
 
@@ -23,7 +23,7 @@ The first option will allow a project to be commited without the huge *Library* 
 
 Forcing asset to text is better when you work in teams (but most files require the Pro version to be serialized as texts), because you use a diff tool
 
-# The .gitignore
+## The .gitignore
 
 This is a nice standard .gitignore file for Unity projects.
 
@@ -34,7 +34,7 @@ Few comments:
 - the *Library* folder is created **automatically** the first time you open the project
 - the *.csproj* and *.sln* files can be recreated in one clic (Assets -> Sync Monodevelop projects) so you shoud not commit them (and they should not be modified manually)
 
-# Applying this to an existing project
+## Applying this to an existing project
 
 Sometimes you want to add version control to an existing project. Be careful, you can lose all your data, so make sure to have a **backup**.
 
