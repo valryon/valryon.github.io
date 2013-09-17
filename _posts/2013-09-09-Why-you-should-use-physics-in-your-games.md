@@ -13,4 +13,4 @@ Here's me trying to make things spawn in my game prototype (more about it later)
 
 <a href="http://uppix.net/isVaFv"><img src="http://uppix.net/isVaFv.gif" alt="uppix.net" /></a>
 
-(I love to make gifs. I use GifCam on Windows, thanks to [Yaki_]("https://twitter.com/yaki_") for the tip)
+(I love to make gifs. I use GifCam on Windows, thanks to [Yaki_ ]("https://twitter.com/yaki_") for the tip)
