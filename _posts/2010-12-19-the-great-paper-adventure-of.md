@@ -13,7 +13,7 @@ layout: release
 
 ## The team
 
-<img src="{{site.url}}/static/content/posts/tgpa/team.png" />
+<img src="{{site.url}}/static/content/posts/tgpa/team.jpg" />
 
 - **Valryon (Damien Mayance): Project leader, main developer**
 - **Lapinou (Thibault Person): 2D "Graphist", developer**
