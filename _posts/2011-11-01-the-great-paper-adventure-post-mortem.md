@@ -1,4 +1,8 @@
-﻿<a title="Using cheat codes - Kawaii - Indie DB" href="http://www.indiedb.com/games/the-great-paper-adventure/images/using-cheat-codes-kawaii" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.indiedb.com']);" target="_blank"><img class="aligncenter" src="http://media.indiedb.com/cache/images/games/1/13/12847/thumb_620x2000/kawaii_mode.png" alt="Using cheat codes - Kawaii"></a>
+﻿---
+title: The Great Paper Adventure: Post Mortem
+layout: post
+---
+<a title="Using cheat codes - Kawaii - Indie DB" href="http://www.indiedb.com/games/the-great-paper-adventure/images/using-cheat-codes-kawaii" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.indiedb.com']);" target="_blank"><img class="aligncenter" src="http://media.indiedb.com/cache/images/games/1/13/12847/thumb_620x2000/kawaii_mode.png" alt="Using cheat codes - Kawaii"></a>
 
 Il y a un peu plus de deux ans, aux alentours d’avril 2009, je téléchargeais Visual studio C# 2008 Express et XNA 3.1 dans le but de tester un peu cette technologie et de faire un remake rapide de mon jeu NDS [Shmup](http://www.valryon.fr/shmup-nds/).
 

@@ -5,10 +5,27 @@ layout: release
 
 **The Great Paper Adventure** is a funny papered **2D shoot-them-up** made with XNA. It was released on PC during Decembre 2012 and on Xbox during June 2011.
 
-<img src="http://uppix.net/b/f/f/01e9d4263691050611047efe03847tt.jpg" />
+<img src="{{site.url}}/static/content/posts/tgpa/screen2.png" />
 
-- **[Download the game (Windows, XNA)](http://www.thegreatpaperadventure.com)**
+- **[Download the game (Windows, XNA)](http://www.indiedb.com/games/the-great-paper-adventure/downloads/the-great-paper-adventure-release-1070)**
+- **[Play it on Xbox 360 (Xbox Live Indie Game)](http://marketplace.xbox.com/fr-FR/Product/The-Great-Paper-Adventure/66acd000-77fe-1000-9115-d80258550897?cid=search)**
 - [Source code](https://github.com/Valryon/the-great-paper-adventure)
+
+## The team
+
+<img src="{{site.url}}/static/content/posts/tgpa/team.png" />
+
+- **Valryon (Damien Mayance): Project leader, main developer**
+- **Lapinou (Thibault Person): 2D "Graphist", developer**
+- Aymarick (Aymeric De Abreu): iOS version developer
+- Ashen (Matthieu Oger): Website developper
+
+Special thanks to:
+
+- Minishlink (Louis Lagrange): additionnal developer
+- Spintronic: chiptune composer
+- Semoule (Anaïs Noblanc): support, tests and cooking
+- Yaki (Gabriel Corbel): tests
 
 ## Trailer & screenshots
 
@@ -21,10 +38,28 @@ layout: release
   allowfullscreen>
 </iframe>
 
-<img src="http://uppix.net/b/6/b/e3387d48d2823e47ec39dd934a8actt.jpg" />
+<img src="{{site.url}}/static/content/posts/tgpa/screen1.png" />
 
-<img src="http://uppix.net/2/1/1/236419ec3db9011b3ab5dc4b37ac7tt.jpg" />
+<img src="{{site.url}}/static/content/posts/tgpa/screen0.png" />
 
-<img src="http://uppix.net/e/1/e/642c134a8c2d7a80d1843cb2250a2tt.jpg" />
+<img src="{{site.url}}/static/content/posts/tgpa/screen3.png" />
 
-<img src="http://uppix.net/5/b/f/53e7015ea52ed2445f170bb2eed0ctt.jpg" />
+<img src="{{site.url}}/static/content/posts/tgpa/screen4.png" />
+
+## Bonus
+
+### Original Sound Track
+
+By Spintronic. Get it or listen to it online on his website.
+
+- **[Get the TGPA OST](http://chiptunes-headbangers.net/album/show/15429)**
+
+### The Great Paper Artbook
+
+Original drawings by Thibault Person for the game.
+
+- **[Download the artbook (PDF)](http://d.pr/f/rLif)**
+
+### Read the Post mortem 
+
+- **[The Great Paper Adventure: Post Mortem by Valryon](http://dmayance.com/the-great-paper-adventure-post-mortem/)**
