@@ -1,5 +1,5 @@
 ---
-title: The Great Paper Adventure: Post Mortem
+title: The Great Paper Adventure - Post Mortem
 layout: post
 ---
 
