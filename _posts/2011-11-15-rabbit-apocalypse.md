@@ -12,7 +12,7 @@ The level generation consists in assembling already defined pieces toegether ran
 
 The little game was made in two months from scratch for a contest (Game A Niaque 2011). It uses a custom XNA engine full of bugs.
 
-<img src="{{site.url}}/static/content/posts/ra/screen0.jpg" />
+<img src="{{site.url}}/static/content/posts/ra/screen0.png" />
 
 - [Download the game](http://thegreatpaperadventure.com/files/RabbitApocalypse_v1.0_TGS_FINAL.zip)
 - [See the source code](https://github.com/Valryon/Rabbit-Apocalypse)
@@ -26,13 +26,13 @@ The little game was made in two months from scratch for a contest (Game A Niaque
 
 ## Screenshots
 
-<img src="{{site.url}}/static/content/posts/ra/screen1.jpg" />
+<img src="{{site.url}}/static/content/posts/ra/screen1.png" />
 
-<img src="{{site.url}}/static/content/posts/ra/screen2.jpg" />
+<img src="{{site.url}}/static/content/posts/ra/screen2.png" />
 
-<img src="{{site.url}}/static/content/posts/ra/screen3.jpg" />
+<img src="{{site.url}}/static/content/posts/ra/screen3.png" />
 
-<img src="{{site.url}}/static/content/posts/ra/screen4.jpg" />
+<img src="{{site.url}}/static/content/posts/ra/screen4.png" />
 
-<img src="{{site.url}}/static/content/posts/ra/screen5.jpg" />
+<img src="{{site.url}}/static/content/posts/ra/screen5.png" />
 
