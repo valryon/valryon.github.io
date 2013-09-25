@@ -4,30 +4,27 @@
   <!-- meta -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-{% if page %}
-	<meta property="og:title" content="{{ page.title }}" itemprop="name">
-	<meta name="twitter:title" content="{{ page.title}}">
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="PAGE{{ site.url }}{{ page.url }}" />
-	<meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
-{% else %}
-	<meta property="og:title" content="{{ post.title }}" />
-	<meta property="og:type" content="article" />	
-	<meta name="description" content="{{ post.excerpt }}">
-	<meta property="og:description" content="{{ post.excerpt }}" itemprop="description">
-	<meta name="twitter:title" content="{{ post.excerpt }}">
-	<meta name="twitter:description" content="{{ post.excerpt }}">
-	<meta property="og:url" content="pouet{{ site.url }}{{ post.url }}" />
-	<meta name="twitter:url" content="{{ site.url }}{{ post.url }}">
-{% endif %}
   
+  <meta property="og:title" content="{{ page.title }}" itemprop="name">
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
   <meta property="og:site_name" content="Damien Mayance (Valryon)">
   <meta property="og:image" content="http://www.gravatar.com/avatar/545f7c7f0ed11d6ef21722a7e6c47acf?s=300" itemprop="image">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@Valryon">
   <meta name="twitter:creator" content="@Valryon">  
   <meta name="twitter:image" content="http://www.gravatar.com/avatar/545f7c7f0ed11d6ef21722a7e6c47acf?s=300">
+  <meta name="twitter:title" content="{{ page.title}}">
+  <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+  
+{% if post.excerpt %}
+	<meta property="og:type" content="article" />	
+	<meta name="description" content="{{ post.excerpt }}">
+	<meta property="og:description" content="{{ post.excerpt }}" itemprop="description">
+	<meta name="twitter:description" content="{{ post.excerpt }}">
+{% else %}
+	<meta property="og:type" content="website" />	
+{% endif %}
   
   <meta property="robots" content="index,follow" />
   
