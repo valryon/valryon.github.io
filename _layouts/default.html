@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <meta property="og:title" content="{{ page.title }}" itemprop="name">
-  <meta property="og:type" content="article" />
   <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
   <meta property="og:site_name" content="Damien Mayance (Valryon)">
   <meta property="og:image" content="http://www.gravatar.com/avatar/545f7c7f0ed11d6ef21722a7e6c47acf?s=300" itemprop="image">
@@ -17,11 +16,11 @@
   <meta name="twitter:title" content="{{ page.title}}">
   <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
   
-{% if post.excerpt %}
+{% if page.excerpt %}
 	<meta property="og:type" content="article" />	
-	<meta name="description" content="{{ post.excerpt }}">
-	<meta property="og:description" content="{{ post.excerpt }}" itemprop="description">
-	<meta name="twitter:description" content="{{ post.excerpt }}">
+	<meta name="description" content="{{ page.excerpt }}">
+	<meta property="og:description" content="{{ page.excerpt }}" itemprop="description">
+	<meta name="twitter:description" content="{{ page.excerpt }}">
 {% else %}
 	<meta property="og:type" content="website" />	
 {% endif %}
