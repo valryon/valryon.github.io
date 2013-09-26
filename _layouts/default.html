@@ -16,15 +16,6 @@
   <meta name="twitter:title" content="{{ page.title}}">
   <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
   
-{% if page.excerpt %}
-	<meta property="og:type" content="article" />	
-	<meta name="description" content="{{ page.excerpt }}">
-	<meta property="og:description" content="{{ page.excerpt }}" itemprop="description">
-	<meta name="twitter:description" content="{{ page.excerpt }}">
-{% else %}
-	<meta property="og:type" content="website" />	
-{% endif %}
-  
   <meta property="robots" content="index,follow" />
   
   <title>{{ page.title }} - Damien Mayance (Valryon)</title>
