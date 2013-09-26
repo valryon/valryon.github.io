@@ -1,8 +1,32 @@
 <!doctype html>
 <html>
 <head>
+  <!-- meta -->
   <meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta property="og:title" content="{{ page.title }}" itemprop="name">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+  <meta property="og:site_name" content="Damien Mayance (Valryon)">
+  <meta property="og:image" content="http://www.gravatar.com/avatar/545f7c7f0ed11d6ef21722a7e6c47acf?s=300" itemprop="image">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@Valryon">
+  <meta name="twitter:creator" content="@Valryon">  
+  <meta name="twitter:image" content="http://www.gravatar.com/avatar/545f7c7f0ed11d6ef21722a7e6c47acf?s=300">
+  <meta name="twitter:title" content="{{ page.title}}">
+  <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+  
+{% if page.excerpt %}
+	<meta property="og:type" content="article" />	
+	<meta name="description" content="{{ page.excerpt }}">
+	<meta property="og:description" content="{{ page.excerpt }}" itemprop="description">
+	<meta name="twitter:description" content="{{ page.excerpt }}">
+{% else %}
+	<meta property="og:type" content="website" />	
+{% endif %}
+  
+  <meta property="robots" content="index,follow" />
+  
   <title>{{ page.title }} - Damien Mayance (Valryon)</title>
   <script src="{{site.url}}/static/js/ga.js" type="text/javascript"></script>
 
@@ -20,12 +44,7 @@
   <!--<link href="{{site.url}}/atom.xml" rel="alternate" title="Damien Mayance (Valryon)" type="application/atom+xml" />-->
   <link href="http://feedpress.me/dmayance" rel="alternate" title="Damien Mayance (Valryon)" type="application/atom+xml" />
   <link rel="shortcut icon" href="{{site.baseurl}}/static/img/favicon.png" />
-
-  <!-- meta -->
-  <meta property="twitter:creator" content="@Valryon" />
-  <meta property="og:title" content="{{ page.title }}" />
-  <meta property="og:type" content="blog" />
-  <meta property="robots" content="index,follow" />
+  
 </head>
 <body>
   <div class="page">
