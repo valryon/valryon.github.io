@@ -49,7 +49,7 @@ Sometimes you want to add version control to an existing project. Be careful, yo
 - Manually delete the Library, obj and Temp folder
 - Save
 - Restart the project
-- Makes sure everything is working (you will that very, very fast)
+- Makes sure everything is working (you will know that very, very fast)
 - Commit
 - Enjoy!
 
