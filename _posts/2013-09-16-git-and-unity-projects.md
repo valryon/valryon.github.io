@@ -21,7 +21,7 @@ In the inspector window, select *Meta Files* under Version Control and *Force Te
 
 The first option will allow a project to be commited without the huge *Library* folder, containing the asset database. 
 
-Forcing asset to text is better when you work in teams (but most files require the Pro version to be serialized as texts), because you use a diff tool
+Forcing asset to text is better when you work in teams because you use a diff tool
 
 ## The .gitignore
 
