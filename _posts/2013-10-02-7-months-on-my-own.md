@@ -94,8 +94,7 @@ Those bunch of prototypes are just a start. You will hear from us soon, especial
 
 Stay tuned!
 
-[url_img_koikou]: http://
-farm8.staticflickr.com/7434/10051803654_2dd07fb534.jpg
+[url_img_koikou]: http://farm8.staticflickr.com/7434/10051803654_2dd07fb534.jpg
 
 [url_img_pixpuzzle]: http://farm4.staticflickr.com/3666/10051931836_0a979449b3.jpg
 
