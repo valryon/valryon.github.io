@@ -9,7 +9,7 @@ Here we are, 7 months later. The company is not created yet, but it is planned f
 
 You may ask what I have been doing during all this time, so here is a summary of my activity.
 
-# 7 months at home
+## 7 months at home
 
 First, a quick feeling about my indie life. Last august I moved back in Brest. I still like working from home, even if it is lonely some days. I missed the video game contacts I had in Rennes. But it's not that far, it's just I can feel stuck at home some days.
 
@@ -19,11 +19,11 @@ Having time for everything is great. I need to improve my work time but this is 
 
 The hardest part is that we didn't ship anything yet, so for most people we are either on vacation or doing nothing. We took vacation (summer was terrible for work) but we also made a lot of progress and prototypes to find the right idea.
 
-# 7 months of projects
+## 7 months of projects
 
 We have tons of ideas, I am quite a fast coder, so there are plenty of pieces of games to show.
 
-## The Koikoukesse
+### The Koikoukesse
 
 The canceled (for now) video game quiz for iOS.
  
@@ -33,7 +33,7 @@ The canceled (for now) video game quiz for iOS.
 - I learned _Ruby_ and rewrite the back-end so we can host it on _Heroku_ for free
 - I made the game basis (questions, win/lose, score, screens with placeholders)
 
-## Pixpuzzle
+### Pixpuzzle
 
 A clone of _PathPix_ games, for the challenge.
 
@@ -42,7 +42,7 @@ A clone of _PathPix_ games, for the challenge.
 - Fully working, despite its lack of optimization and design
 - Cross-platform: iOS and Windows Phone (using Xamarin)
 
-## Pon
+### Pon
 
 A clone of _Panel de Pon_. Here again, for challenge.
 
@@ -52,7 +52,7 @@ A clone of _Panel de Pon_. Here again, for challenge.
 - Solo mode is working
 - Realtime multiplayer with Game Center on iOS. A disaster but worth the test)
 
-## Georges
+### Georges
 
 - The game we had with Pixelnest for the Stunfest 2013.
 - I wrote the code while Matthieu was working on the Koikou, [Marion Chrétien](http://www.xn--miroir-enchant-okb.com/) draw some nice graphics for us. 
@@ -64,7 +64,7 @@ A clone of _Panel de Pon_. Here again, for challenge.
 
 [  ![George with Unity][url_img_george_unity]  ][url_img_george_unity]
   
-## Unnamed weird company simulator
+### Unnamed weird company simulator
 
 A real _Unity_ test:
 
@@ -74,7 +74,7 @@ A real _Unity_ test:
 - Pathfinding
 
 
-## Bunny splash
+### Bunny splash
 
 The last prototype. I already wrote a blog post about it. We are trying some local multiplayer concept (= 4 players on the same screens having fun).
 
@@ -88,7 +88,7 @@ The last prototype. I already wrote a blog post about it. We are trying some loc
 
 - We are experimenting a new mode with castles.
 
-# Next 7 months
+## Next 7 months
 
 Those bunch of prototypes are just a start. You will hear from us soon, especially when _Unity_ will release it's 2D tools. We have plans for _George_, _The Great Paper Adventure_ and new fresh ideas!
 
