@@ -1,5 +1,5 @@
 ---
-title: Unity: Paint and blood splatters tests
+title: Unity - Paint and blood splatters tests
 layout: post
 ---
 
