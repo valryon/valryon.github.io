@@ -7,7 +7,9 @@ I know this has been covered a hundred times over the Internet, but I need to ce
 
 By default, it's not that easy to have a clean Unity project under source control.
 
-**Remember: you need to do this for each new project**. 
+**Remark:** this post has been updated for **Unity 4.3**.
+
+**Remember:** you need to do this for each new project. 
 
 ## Enable external source control
 
@@ -15,13 +17,13 @@ In Unity, go to *Edit* -> *Project Settings* -> *Editor*
 
 <img src="{{site.url}}/static/content/posts/2013-09-16/editor.png" />
 
-In the inspector window, select *Meta Files* under Version Control and *Force Text* under Assets Serialization.
+In the inspector window, select *Visible Meta Files* mode under Version Control and *Force Text* under Assets Serialization.
 
 <img src="{{site.url}}/static/content/posts/2013-09-16/inspector.png" />
 
 The first option will allow a project to be commited without the huge *Library* folder, containing the asset database. 
 
-Forcing asset to text is better when you work in teams because you use a diff tool
+Forcing asset to text is better when you work in teams because you can use a diff tool.
 
 ## The .gitignore
 
