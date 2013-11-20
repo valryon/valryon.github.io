@@ -13,7 +13,9 @@ Mais ils sont encore en ligne sur le forum de dev-fr :
 
 **Cependant**, si tu es intéressé par le développement de jeux modernes, je te conseille de suivre mon nouveau didacticiel sur Unity:
 
-**[Make a 2D game with Unity (en anglais par contre)](http://pixelnest.io/tutorials/2d-game-unity/]**
+**[Créez un jeu 2D avec Unity (FR)]((http://pixelnest.io/tutorials/creer-un-jeu-2d-avec-unity/)**
+
+**[Make a 2D game with Unity (EN)](http://pixelnest.io/tutorials/2d-game-unity/)**
 
 (ou de te pencher sur Monogame).
 
