@@ -45,7 +45,7 @@ _C#, XNA, PC_
 
 ## Pon!
 
-[ ![Panel de Pon](http://farm6.staticflickr.com/5327/10052007123_bd4c450943.jpg)]([http://www.youtube.com/watch?v=xhm9xO3AoJg&feature=youtu.be)
+[ ![Panel de Pon](http://farm6.staticflickr.com/5327/10052007123_bd4c450943.jpg)](http://www.youtube.com/watch?v=xhm9xO3AoJg)
 
 "Panel de pon" clone, on iPad using Monogame.
 
