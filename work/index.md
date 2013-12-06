@@ -57,7 +57,7 @@ _C#, Monogame, PC and iOS_
 
 A Unity prototype for [George: Le Pirate](http://pixelnest.io/work/george/).
 
-The 3D Terrain is terraformed at runtime when Goerge dig.
+The 3D Terrain is terraformed at runtime when George dig.
 
 _C#, Unity_
 
