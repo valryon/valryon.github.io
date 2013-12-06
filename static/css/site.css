@@ -106,6 +106,7 @@ h1 {
 .info__link.github   a { background-image: url("../images/icon-github@2x.png"); }
 .info__link.linkedin a { background-image: url("../images/icon-linkedin@2x.png"); }
 .info__link.careers  a { background-image: url("../images/icon-careers@2x.png"); }
+.info__link.work  a { background-image: url("../images/icon-work@2x.png"); }
 
 /* Avatar */
 
