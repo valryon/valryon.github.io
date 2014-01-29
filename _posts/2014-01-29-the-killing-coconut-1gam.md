@@ -9,6 +9,8 @@ For January, the theme was **Respawn**.
 
 Here's my production. It's still rough, graphics are ripped from a pack and an older project, there is no end... but it's kinda fun!
 
+It has been made in 2 full days.
+
 It was made with Unity3D using all the new [2D features](http://pixelnest.io/tutorials/2d-game-unity/).
 
 # The game
