@@ -41,6 +41,15 @@ Rabbit Apocalypse! is a short and simple 2D platformer with random level creatio
 
 _C#, XNA, PC_
 
+# One game a month
+
+## The Killing Coconut
+
+January 2014
+Theme: Respawn
+
+[![The Killing Coconut](http://dmayance.com/work/1gam-respawn/game2.png)](http://dmayance.com/the-killing-coconut-1gam/)
+
 # Prototypes
 
 ## Pon!
