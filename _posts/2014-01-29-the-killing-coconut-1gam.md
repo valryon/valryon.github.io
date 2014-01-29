@@ -32,7 +32,7 @@ George Burgess
 
 An evil coconut has decided to eradicate humans from the earth by killing them one by one.
 
-You have 60 sec to kill as many things as possible!
+It's you! And you have 60 sec to kill as many things as possible!
 
 ## Controls
 
