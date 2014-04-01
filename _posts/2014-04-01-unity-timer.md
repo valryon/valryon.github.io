@@ -13,8 +13,8 @@ It features:
 
 - A duration (it will wait n seconds then execute the piece of code)
 - Repeat this timer until the object is destroyed or stopped
-- The clalback, a ``System.Action`` delegate to execute some code with a very simple syntax.
+- The callback, a ``System.Action`` delegate to execute some code with a very simple syntax
 
-Enjoy.
+Enjoy :).
 
 {% gist 9915075 %}
