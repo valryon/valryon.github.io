@@ -14,7 +14,7 @@ The little game was made in two months from scratch for a contest (Game A Niaque
 
 <img src="{{site.url}}/static/content/posts/ra/screen0.png" />
 
-- [Download the game](http://thegreatpaperadventure.com/files/RabbitApocalypse_v1.0_TGS_FINAL.zip)
+- [Download the game](https://www.dropbox.com/s/411cd1mg3c75jon/RabbitApocalypse.zip)
 - [See the source code](https://github.com/Valryon/Rabbit-Apocalypse)
 
 ### The Team
