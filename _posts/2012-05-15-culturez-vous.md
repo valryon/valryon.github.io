@@ -24,14 +24,16 @@ Words and data are from the [1Jour1Mot Twitter](http://twitter.com/1Jour1Mot), w
 
 ## Screenshots
 
-<img src="http://uppix.net/d/5/8/1e19cf19e36ce6e336426044d758f.png" />
+<img src="{{site.url}}/static/content/posts/2012-05-15/cv (1).png" />
 
-<img src="http://uppix.net/1/9/6/775afc4e837235755225195841fbc.png" />
+<img src="{{site.url}}/static/content/posts/2012-05-15/cv (2).png" />
 
-<img src="http://uppix.net/4/3/0/3f61380b6436cdb128378e0b967fc.png" />
+<img src="{{site.url}}/static/content/posts/2012-05-15/cv (3).png" />
 
-<img src="http://uppix.net/a/c/8/a205bc4014966570ef4e140224cb1.png" />
+<img src="{{site.url}}/static/content/posts/2012-05-15/cv (4).png" />
 
-<img src="http://uppix.net/5/9/c/1a5883d18a9b1f5711a293a1d0cb9.png" />
+<img src="{{site.url}}/static/content/posts/2012-05-15/cv (5).png" />
 
-<img src="http://uppix.net/c/0/f/6a41f2c168f297eade54a9786618d.png" />
+<img src="{{site.url}}/static/content/posts/2012-05-15/cv (6).png" />
+
+<img src="{{site.url}}/static/content/posts/2012-05-15/cv (7).png" />
