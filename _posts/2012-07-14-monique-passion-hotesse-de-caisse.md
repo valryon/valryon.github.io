@@ -13,7 +13,7 @@ The game is in french only, we don't plan to translate but I think it's playable
 
 From here you can:
 
-- [Download the french game (Windows, XNA)](https://www.dropbox.com/s/3ptmgncdf6jfed9/MoniquePHDC_1.0.0.0.zip)
+- **Game downlad has been suspended. Best jokes are the short ones!**
 - [See the source code](https://github.com/Valryon/super-caissiere)
 
 Have fun… maybe!
@@ -27,7 +27,7 @@ Simulation humouristique et volontairement mauvaise du quotidien d'une hôtesse 
 
 **Disclaimer :** *ceci est un jeu parodique dans le cadre de la participation d’un concours humouristique. Toute ressemblance avec des faits ou des personnes réelles ne seraient que pure coïncidence.*
 
-- [Télécharger le jeu (Windows, XNA)](https://www.dropbox.com/s/3ptmgncdf6jfed9/MoniquePHDC_1.0.0.0.ziphttps://www.dropbox.com/s/3ptmgncdf6jfed9/MoniquePHDC_1.0.0.0.zip)
+- **Les meilleurs blagues ont une fin, le téléchargement du jeu n'est plus possible.**
 - [Voir le code source](https://github.com/Valryon/super-caissiere)
 
 Scannez-les tous ! **Monique Passion Hôtesse de caisse** est une simulation unique qui vous place la douchette à la main devant des situations variées où la vitesse et la dextérité sont primordiales pour satisfaire le client et votre patron ! Mais la récompense sera grande quand 18h sonnera ! Saurez-vous relever le défi ?
