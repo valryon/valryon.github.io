@@ -88,7 +88,7 @@ I mixed it with the previous splash algorithm so it's raycasting everywhere to p
 I'm still working on it, I don't know if I can solve the scale issue but I'll see and update if I find a solution.
 Also, I saw some fluid decals but this seems like a preciously kept mystery for now. 
 
-**[Take a look at the next article to this the solution I found].(dmayance.com/2013-10-09-unity-paint-part-2/)**
+**[Take a look at the next article to this the solution I found](http://dmayance.com/unity-paint-part-2/)**
 
 [url_img_decal_paint]: {{site.url}}/static/content/posts/2013-10-08/paint.png
 
