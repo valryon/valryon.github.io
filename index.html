@@ -18,22 +18,32 @@ title: Indie game and software developer
 
 <h2>Projects</h2>
 
-<p>My released work (games, apps)</p>
-<ul>
-  {% for post in site.posts %}
-    {% if post.tags contains 'project' %}
+<p>My (more or less) released work. Games/Apps.</p>
 
-      <li>
+{% for post in site.posts %}
+  {% if post.tags contains 'project' %}
+
+    <article style="clear:both">
+
+      <section>
         <a href="{{ site.url }}{{ post.url }}">
-          <img src="{{ post.image }}" width="256" />
+
+          <!-- TODO Ditch ugly css! -->
+          <img src="{{ post.image }}" style="float: left; margin-right: 20px; margin-bottom: 20px; width: 256px;" />
+        </a>
+      </section>
+      <section>
+        <a href="{{ site.url }}{{ post.url }}">
           {{ post.title }}
         </a>
-        {{ post.excerpt }}
-      </li>
+      {{ post.excerpt }}
+    </article>
 
-    {% endif %}
-  {% endfor %}
-</ul>
+  {% endif %}
+{% endfor %}
+
+<!-- TODO Ditch super ugly hack! -->
+<p style="clear:both;" />
 
 <h2>Code</h2>
 

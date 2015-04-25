@@ -5,12 +5,15 @@ title: My code snippets
 
 <h1>Code: snippets, open source stuff</h1>
 
+<ul>
 {% for post in site.posts %}
   {% if post.tags contains 'code' %}
 
-    <img src="{{ post.image }}" />
-    <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
-    <p>{{ post.excerpt }}</p>
+    <li>
+      <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+      {{ post.excerpt }}
+    </li>
 
   {% endif %}
 {% endfor %}
+</ul>
