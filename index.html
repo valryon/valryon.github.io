@@ -5,6 +5,9 @@ title: Indie game and software developer
 
 <h1>Indie game and software developer</h1>
 
+<p>Hello, you will find here the projects I worked on and some resources I share.</p>
+<p>Enjoy. :)</p>
+
 <h2>Information</h2>
 
 <ul>
@@ -21,7 +24,10 @@ title: Indie game and software developer
     {% if post.tags contains 'project' %}
 
       <li>
-        <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+        <a href="{{ site.url }}{{ post.url }}">
+          <img src="{{ post.image }}" width="256" />
+          {{ post.title }}
+        </a>
         {{ post.excerpt }}
       </li>
 

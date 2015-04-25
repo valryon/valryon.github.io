@@ -2,6 +2,7 @@
 title: Unity - Timer using co-routine
 layout: post
 tags: code unity
+excerpt_separator: <!--more-->
 ---
 
 Advanced Timer usable as a coroutine for Unity.

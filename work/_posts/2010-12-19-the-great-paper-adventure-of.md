@@ -2,11 +2,13 @@
 title: The Great Paper Adventure
 layout: release
 tags: project
+image: ./static/content/the-great-paper-adventure/3.png
+excerpt_separator: <!--more-->
 ---
 
-**The Great Paper Adventure** is a funny papered **2D shoot-them-up** made with XNA. It was released on PC during Decembre 2012 and on Xbox during June 2011.
+The Great Paper Adventure is a funny papered 2D shoot-them-up** made with XNA. It was released on PC during Decembre 2012 and on Xbox during June 2011.
 
-<img src="{{site.url}}/static/content/posts/tgpa/screen2.png" />
+<!--more-->
 
 - **[Download the game (Windows, XNA)](http://www.indiedb.com/games/the-great-paper-adventure/downloads/the-great-paper-adventure-release-1070)**
 - **[Play it on Xbox 360 (Xbox Live Indie Game)](http://marketplace.xbox.com/fr-FR/Product/The-Great-Paper-Adventure/66acd000-77fe-1000-9115-d80258550897?cid=search)**
@@ -14,7 +16,7 @@ tags: project
 
 ## The team
 
-<img src="{{site.url}}/static/content/posts/tgpa/team.jpg" />
+![{{site.url}}/static/content/the-great-paper-adventure/team.jpg]({{site.url}}/static/content/the-great-paper-adventure/team.jpg)
 
 - **Valryon (Damien Mayance): Project leader, main developer**
 - **Lapinou (Thibault Person): 2D "Graphist", developer**
@@ -28,7 +30,7 @@ Special thanks to:
 - Semoule (Anaïs Noblanc): support, tests and cooking
 - Yaki (Gabriel Corbel): tests
 
-## Trailer & screenshots
+## Video
 
 <iframe
   class="post__video"
@@ -39,13 +41,15 @@ Special thanks to:
   allowfullscreen>
 </iframe>
 
-<img src="{{site.url}}/static/content/posts/tgpa/screen1.png" />
+## Screenshots
 
-<img src="{{site.url}}/static/content/posts/tgpa/screen0.png" />
+![{{site.url}}/static/content/the-great-paper-adventure/1.png]({{site.url}}/static/content/the-great-paper-adventure/1.png)
 
-<img src="{{site.url}}/static/content/posts/tgpa/screen3.png" />
+![{{site.url}}/static/content/the-great-paper-adventure/2.png]({{site.url}}/static/content/the-great-paper-adventure/2.png)
 
-<img src="{{site.url}}/static/content/posts/tgpa/screen4.png" />
+![{{site.url}}/static/content/the-great-paper-adventure/3.png]({{site.url}}/static/content/the-great-paper-adventure/1.png)
+
+![{{site.url}}/static/content/the-great-paper-adventure/4.png]({{site.url}}/static/content/the-great-paper-adventure/4.png)
 
 ## Bonus
 

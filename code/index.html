@@ -8,6 +8,7 @@ title: My code snippets
 {% for post in site.posts %}
   {% if post.tags contains 'code' %}
 
+    <img src="{{ post.image }}" />
     <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
     <p>{{ post.excerpt }}</p>
 

@@ -2,6 +2,7 @@
 title: 2D water line in Unity
 layout: post
 tags: code unity
+excerpt_separator: <!--more-->
 ---
 
 A simple 2D water line in Unity.

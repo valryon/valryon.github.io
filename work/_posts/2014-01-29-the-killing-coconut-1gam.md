@@ -1,10 +1,16 @@
 ---
 title: The Killing Coconut #1GAM
 layout: post
-tags: project unity
+tags: project unity prototype
+image: ./static/content/killing-coconut/2.png
+excerpt_separator: <!--more-->
 ---
 
-I'm trying to participate to the [2014 "One Game a Month" challenge](http://onegameamonth.com) to enhance my game design and game developer skills.
+Unity prototype for the One Game A Month January 2014 challenge
+
+<!--more-->
+
+I participated to the [2014 "One Game a Month" challenge](http://onegameamonth.com) to enhance my game design and game developer skills.
 
 For January, the theme was **Respawn**.
 
@@ -19,10 +25,6 @@ It was made with Unity3D using all the new [2D features](http://pixelnest.io/tut
 ## Play!
 
 **[Click on any image to play (Unity3D).][game_link]**
-
-[ ![Menu][menu]][game_link]
-[ ![Game][game1]][game_link]
-[ ![Game][game2]][game_link]
 
 ## Gameplay
 
@@ -49,9 +51,16 @@ It's you! And you have 60 sec to kill as many things as possible!
 * Additionnal graphics from Kenney Platform Pack.
 * Music by Isak Martinsson
 
-[menu]: {{site.url}}/work/1gam-respawn/menu.png
-[game1]: {{site.url}}/work/1gam-respawn/game1.png
-[game2]: {{site.url}}/work/1gam-respawn/game2.png
+## Screenshots
+
+[ ![Menu][screen1]][screen1]
+[ ![Game][screen2]][screen2]
+[ ![Game][screen3]][screen3]
+
+
+[screen1]: {{site.url}}/static/content/killing-coconut/1.png
+[screen2]: {{site.url}}/static/content/killing-coconut/2.png
+[screen3]: {{site.url}}/static/content/killing-coconut/3.png
 [game_link]: {{site.url}}/work/1gam-respawn/TheKillingCoconut.html
 
 
