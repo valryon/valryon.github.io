@@ -1,0 +1,43 @@
+---
+layout: default
+title: My code snippets
+---
+
+{% for post in site.posts %}
+
+  {% if post.tags contains 'code' %}
+
+    <article class="post">
+      <h1 class="post__title">
+        <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+      </h1>
+
+      <p class="post__date">{{ post.date | date: "%d %B %Y" }}</p>
+
+      <div class="post__content">
+        {{ post.content  }}
+      </div>
+
+      <hr class="post__separator" />
+    </article>
+
+  {% endif %}
+{% endfor %}
+<!--
+<div class="pagination">
+    {% if paginator.previous_page %}
+      {% if paginator.previous_page == 1 %}
+        <span class="pagination__previous"><a href="{{site.url}}/">« previous</a></span>
+      {% else %}
+        <span class="pagination__previous"><a href="{{site.url}}/">« first</a></span>
+        <span class="pagination__previous"><a href="/page{{paginator.previous_page}}">« previous</a></span>
+      {% endif %}
+    {% endif %}
+
+   <span class="pagination__desc">{{paginator.page}} of {{paginator.total_pages}}</span>
+
+    {% if paginator.next_page %}
+      <span class="pagination__next"><a href="/page{{paginator.next_page}}">next »</a></span>
+      <span class="pagination__next"><a href="/page{{paginator.total_pages}}">last »</a></span>
+    {% endif %}
+</div> -->
