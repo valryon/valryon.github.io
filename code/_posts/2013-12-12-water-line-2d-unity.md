@@ -1,5 +1,5 @@
 ---
-title: 2D water line in Unity
+title: Unity - basic 2D water line
 layout: post
 tags: code unity
 excerpt_separator: <!--more-->
@@ -17,7 +17,7 @@ It's not that hard to make, but it lacks of buoyancy, droplets, reflection... li
 
 Thanks to [http://forum.unity3d.com/threads/141925-2d-Water](http://forum.unity3d.com/threads/141925-2d-Water) and [http://games.deozaan.com/unity/MeshTutorial.pdf](http://games.deozaan.com/unity/MeshTutorial.pdf)
 
-# The idea
+## The idea
 
 The line is a list of dots connected by springs.
 
@@ -25,7 +25,7 @@ Then we create a simple mesh (few triangles) between each pair of dots.
 
 Finally, we update the mesh vertices at each update using the new dots positions.
 
-# The result
+## The result
 
 Here's the result with the ``Sprite-default`` material:
 
@@ -37,7 +37,7 @@ Here's the result with the ``Sprite-default`` material:
 
 You can probably apply some shader on it.
 
-# The script
+## The script
 
 {% gist 7927741 %}
 
