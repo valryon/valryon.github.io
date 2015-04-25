@@ -1,13 +1,14 @@
 ---
 title: Unity - Paint and blood splatters tests
 layout: post
+tags: code, unity
 ---
 
 The concept: trying to paint a level with blood or paint (nearly the same thing, only the color is different).
 
 ## First method: decals
 
-Decals are simple sprites, repeated and drawn on top of other objects. They are usually used for visual enhancements of a scene more than for gameplay purposes.  
+Decals are simple sprites, repeated and drawn on top of other objects. They are usually used for visual enhancements of a scene more than for gameplay purposes.
 
 Here's an example of a decal for paint.
 
@@ -19,7 +20,7 @@ Using an existing script probably made by a Dexter fan ([download and demo here]
 
 The splash algorithm from the original script linked above is quite smart. From a point in space it raycasts in random direction and print a decal when it hits something.
 
-I added some debug features to visualize it. 
+I added some debug features to visualize it.
 
 [  ![Paint decal test visualization][url_img_decal_paint_test_vizualize]  ][url_img_decal_paint_test_vizualize]
 
@@ -31,7 +32,7 @@ The decals itself was:
 - The texture above with alpha as transparency...
 - ...texture that was on a BlendedDecal shader material
 
-Nothing else. The fun part is when you add a rigidbody, you can have physics splash. 
+Nothing else. The fun part is when you add a rigidbody, you can have physics splash.
 
 And here's the script I used for painting. I put it online because the original script was in JavaScript so it may helps someone to have it done in C#.
 
@@ -52,7 +53,7 @@ And here's the script I used for painting. I put it online because the original 
 
 Unity allow to directly change the colour of a pixel on a texture.
 
-You just have to use the **[SetPixel(s)](http://docs.unity3d.com/Documentation/ScriptReference/Texture2D.SetPixel.html) method**. 
+You just have to use the **[SetPixel(s)](http://docs.unity3d.com/Documentation/ScriptReference/Texture2D.SetPixel.html) method**.
 
 It's a bit slow, but if you batch your modification you can optimize the paint.
 
@@ -86,7 +87,7 @@ I mixed it with the previous splash algorithm so it's raycasting everywhere to p
 ## Work in progress
 
 I'm still working on it, I don't know if I can solve the scale issue but I'll see and update if I find a solution.
-Also, I saw some fluid decals but this seems like a preciously kept mystery for now. 
+Also, I saw some fluid decals but this seems like a preciously kept mystery for now.
 
 **[Take a look at the next article to this the solution I found](http://dmayance.com/unity-paint-part-2/)**
 

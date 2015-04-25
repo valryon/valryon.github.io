@@ -1,6 +1,7 @@
 ---
 title: Steredenn announcement
 layout: post
+tags: project, pixelnest
 ---
 
 A quick note about what I'm working on since a few months.
@@ -9,7 +10,7 @@ I am the main developer behind **[Sterdenn](http://steredenn.pixelnest.io/)**, t
 
 It's a frenetic action shoot them up with awesome graphics made by [Plus](http://pluspixels.tumblr.com).
 
-We took the gameplay of the [Shmupfest](http://shmupfest.stunfest.fr) and refined it to make something bigger and better! 
+We took the gameplay of the [Shmupfest](http://shmupfest.stunfest.fr) and refined it to make something bigger and better!
 
 Have a look at the teaser:
 

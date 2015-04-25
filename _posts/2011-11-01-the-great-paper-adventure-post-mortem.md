@@ -1,6 +1,7 @@
 ---
 title: The Great Paper Adventure - Post Mortem
 layout: post
+tags: archive
 ---
 
 <a title="Using cheat codes - Kawaii - Indie DB" href="http://www.indiedb.com/games/the-great-paper-adventure/images/using-cheat-codes-kawaii" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.indiedb.com']);" target="_blank"><img class="aligncenter" src="http://media.indiedb.com/cache/images/games/1/13/12847/thumb_620x2000/kawaii_mode.png" alt="Using cheat codes - Kawaii"></a>

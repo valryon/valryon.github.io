@@ -1,6 +1,7 @@
 ---
 title: Unity - Paint and blood splatters part 2
 layout: post
+tags: code, unity
 ---
 
 After another day of research, I am quite satisfied with the result:

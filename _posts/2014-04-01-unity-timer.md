@@ -1,13 +1,14 @@
 ---
 title: Unity - Timer using co-routine
 layout: post
+tags: code, unity
 ---
 
 Hello folks,
 
 It is time to share some useful code I wrote for some Unity projects.
 
-Here is a simple and powerful **Timer class**. 
+Here is a simple and powerful **Timer class**.
 
 It features:
 

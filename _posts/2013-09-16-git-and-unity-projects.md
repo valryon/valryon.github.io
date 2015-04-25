@@ -1,6 +1,7 @@
 ---
 title: Git and Unity projects
 layout: post
+tags: code, unity
 ---
 
 I know this has been covered a hundred times over the Internet, but I need to centralized all the useful information for my future projects.
@@ -9,7 +10,7 @@ By default, it's not that easy to have a clean Unity project under source contro
 
 **Remark:** this post has been updated for **Unity 4.3**.
 
-**Remember:** you need to do this for each new project. 
+**Remember:** you need to do this for each new project.
 
 ## Enable external source control
 
@@ -21,7 +22,7 @@ In the inspector window, select *Visible Meta Files* mode under Version Control 
 
 <img src="{{site.url}}/static/content/posts/2013-09-16/inspector.png" />
 
-The first option will allow a project to be commited without the huge *Library* folder, containing the asset database. 
+The first option will allow a project to be commited without the huge *Library* folder, containing the asset database.
 
 Forcing asset to text is better when you work in teams because you can use a diff tool.
 
@@ -43,7 +44,7 @@ Sometimes you want to add version control to an existing project. Be careful, yo
 - Create a new git repository
 - Copy all your Unity files in it
 - Open your project
-- Change the editor settings 
+- Change the editor settings
 - Save
 - (Save)
 - (Save)

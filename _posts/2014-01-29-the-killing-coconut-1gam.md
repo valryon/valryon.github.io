@@ -1,6 +1,7 @@
 ---
 title: The Killing Coconut #1GAM
 layout: post
+tags: project, unity
 ---
 
 I'm trying to participate to the [2014 "One Game a Month" challenge](http://onegameamonth.com) to enhance my game design and game developer skills.

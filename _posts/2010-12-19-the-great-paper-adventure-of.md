@@ -1,6 +1,7 @@
 ---
 title: The Great Paper Adventure
 layout: release
+tags: project
 ---
 
 **The Great Paper Adventure** is a funny papered **2D shoot-them-up** made with XNA. It was released on PC during Decembre 2012 and on Xbox during June 2011.
@@ -29,12 +30,12 @@ Special thanks to:
 
 ## Trailer & screenshots
 
-<iframe 
+<iframe
   class="post__video"
-  width="560"   
-  height="315" 
-  src="http://www.youtube.com/embed/J1tHrOtvXvQ" 
-  frameborder="0" 
+  width="560"
+  height="315"
+  src="http://www.youtube.com/embed/J1tHrOtvXvQ"
+  frameborder="0"
   allowfullscreen>
 </iframe>
 
@@ -60,6 +61,6 @@ Original drawings by Thibault Person for the game.
 
 - **[Download the artbook (PDF)](http://d.pr/f/rLif)**
 
-### Read the Post mortem 
+### Read the Post mortem
 
 - **[The Great Paper Adventure: Post Mortem by Valryon](http://dmayance.com/the-great-paper-adventure-post-mortem/)**
