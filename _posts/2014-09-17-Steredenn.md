@@ -1,7 +1,7 @@
 ---
 title: Steredenn announcement
 layout: post
-tags: project, pixelnest
+tags: project pixelnest
 ---
 
 A quick note about what I'm working on since a few months.

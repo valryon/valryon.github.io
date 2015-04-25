@@ -1,7 +1,7 @@
 ---
 title: Unity - Timer using co-routine
 layout: post
-tags: code, unity
+tags: code unity
 ---
 
 Hello folks,

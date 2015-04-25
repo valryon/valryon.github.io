@@ -1,7 +1,7 @@
 ---
 title: Bunny Splash
 layout: post
-tags: project, unity
+tags: project unity
 ---
 
 A Unity prototype of a local multiplayer platformer fight. Mainly inspired by [Jump Bump](http://www.youtube.com/watch?v=jAjbKy7ChwY).

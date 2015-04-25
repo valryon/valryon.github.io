@@ -1,7 +1,7 @@
 ---
 title: Git and Unity projects
 layout: post
-tags: code, unity
+tags: code unity
 ---
 
 I know this has been covered a hundred times over the Internet, but I need to centralized all the useful information for my future projects.

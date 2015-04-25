@@ -1,7 +1,7 @@
 ---
 title: Creating a 2D game with Unity
 layout: post
-tags: code, unity
+tags: code unity
 ---
 
 A quick but interesting news:

@@ -1,7 +1,7 @@
 ---
 title: Culturez-Vous !
 layout: release
-tags: projects
+tags: project
 ---
 
 **Culturez-Vous !** was an application for Windows Phone 7, that was providing one old or unused french word everyday.

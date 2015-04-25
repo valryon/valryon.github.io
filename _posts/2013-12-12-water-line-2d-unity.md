@@ -1,7 +1,7 @@
 ---
 title: 2D water line in Unity
 layout: post
-tags: code, unity
+tags: code unity
 ---
 
 I just managed to have a 2d water line in Unity 4.3.
