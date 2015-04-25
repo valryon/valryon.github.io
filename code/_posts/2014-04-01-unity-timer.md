@@ -4,6 +4,10 @@ layout: post
 tags: code unity
 ---
 
+Advanced Timer usable as a coroutine for Unity.
+
+<!--more-->
+
 Hello folks,
 
 It is time to share some useful code I wrote for some Unity projects.

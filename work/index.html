@@ -1,9 +1,19 @@
 ---
+layout: default
 title: My work, projects and prototypes
-layout: post
 ---
 
-Click on the images to see a video or more information about a project or a prototype.
+{% for post in site.posts %}
+  {% if post.tags contains 'project' %}
+
+    <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
+    <p>{{ post.excerpt }}</p>
+
+  {% endif %}
+{% endfor %}
+
+
+<!-- Click on the images to see a video or more information about a project or a prototype.
 
 Code source for those project mostly hosted [on my GitHub](https://github.com/Valryon).
 
@@ -76,8 +86,8 @@ _C#, Unity_
 
 A Unity prototype based on Bump'n'Jump re-using some assets from an older project.
 
-The purpose was to try some local multiplayer concept (= 4 players on the same screens having fun). 
+The purpose was to try some local multiplayer concept (= 4 players on the same screens having fun).
 
-_C#, Unity_
+_C#, Unity_ -->
 
 

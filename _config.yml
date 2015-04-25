@@ -2,4 +2,3 @@ name: Damien Mayance (Valryon)
 highlighter: true
 markdown: kramdown
 permalink: /:title
-paginate: 3

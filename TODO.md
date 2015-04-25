@@ -1,9 +1,9 @@
 # TODO
 
 [X] Fix warnings
-[ ] Add tags to articles (code, project, archive)
-[ ] Homepage != blog
-[ ] /work
+[X] Add tags to articles (code, project, archive)
+[X] Homepage != blog
+[ ] /work with images
 [ ] /code
 [ ] Display articles by tags on homepage
 [ ] OpenGraph

@@ -2,7 +2,12 @@
 title: Git and Unity projects
 layout: post
 tags: code unity
+excerpt_separator: <!--more-->
 ---
+
+Using git version control with Unity.
+
+<!--more-->
 
 I know this has been covered a hundred times over the Internet, but I need to centralized all the useful information for my future projects.
 

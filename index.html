@@ -3,38 +3,44 @@ layout: default
 title: Indie game and software developer
 ---
 
-{% for post in paginator.posts %}
+<h1>Indie game and software developer</h1>
 
-<article class="post">
-	<h1 class="post__title">
-  	<a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-  </h1>
+<h2>Information</h2>
 
-	<p class="post__date">{{ post.date | date: "%d %B %Y" }}</p>
+<ul>
+  <li>Twitter: <a href="https://twitter.com/Valryon">@Valryon</a></li>
+  <li>GitHub: <a href="https://github.com/Valryon">Valryon</a></li>
+  <li><a href="http://fr.linkedin.com/in/damienmayance">LinkedIn</a></li>
+</ul>
 
-	<div class="post__content">
-		{{ post.content  }}
-	</div>
+<h2>Projects</h2>
 
-  <hr class="post__separator" />
-</article>
+<p>My released work (games, apps)</p>
+<ul>
+  {% for post in site.posts %}
+    {% if post.tags contains 'project' %}
 
-{% endfor %}
+      <li>
+        <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+        {{ post.excerpt }}
+      </li>
 
-<div class="pagination">
-	  {% if paginator.previous_page %}
-	  	{% if paginator.previous_page == 1 %}
-  	   	<span class="pagination__previous"><a href="{{site.url}}/">« previous</a></span>
-		  {% else %}
-        <span class="pagination__previous"><a href="{{site.url}}/">« first</a></span>
-  		  <span class="pagination__previous"><a href="/page{{paginator.previous_page}}">« previous</a></span>
-	    {% endif %}
-	  {% endif %}
+    {% endif %}
+  {% endfor %}
+</ul>
 
-	 <span class="pagination__desc">{{paginator.page}} of {{paginator.total_pages}}</span>
+<h2>Code</h2>
 
-	  {% if paginator.next_page %}
-      <span class="pagination__next"><a href="/page{{paginator.next_page}}">next »</a></span>
-      <span class="pagination__next"><a href="/page{{paginator.total_pages}}">last »</a></span>
-	  {% endif %}
-</div>
+<p>Code: snippets, open source stuff</p>
+<ul>
+  {% for post in site.posts %}
+    {% if post.tags contains 'code' %}
+
+      <li>
+        <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+        {{ post.excerpt }}
+      </li>
+
+    {% endif %}
+  {% endfor %}
+</ul>

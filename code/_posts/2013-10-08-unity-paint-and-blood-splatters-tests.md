@@ -4,7 +4,9 @@ layout: post
 tags: code unity
 ---
 
-The concept: trying to paint a level with blood or paint (nearly the same thing, only the color is different).
+The concept: trying to paint a level with blood or paint (nearly the same thing, only the color is different) in Unity 3D.
+
+<!--more-->
 
 ## First method: decals
 

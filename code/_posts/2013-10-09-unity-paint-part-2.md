@@ -4,6 +4,10 @@ layout: post
 tags: code unity
 ---
 
+Advanced research on painting a level with decals in Unity 3D.
+
+<!--more-->
+
 After another day of research, I am quite satisfied with the result:
 
 [  ![Paint decal][url_img_result]  ][url_img_result]
