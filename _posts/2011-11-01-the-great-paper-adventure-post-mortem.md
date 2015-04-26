@@ -16,7 +16,7 @@ Mais revenons sur les points forts et faibles du développement du jeu, et essay
 
 ### La grande aventure humaine
 
-<img src="http://thegreatpaperadventure.com/static/images/faces/team.jpg" />
+![{{site.url}}/static/content/the-great-paper-adventure/team.jpg]({{site.url}}/static/content/the-great-paper-adventure/team.jpg)
 
 Si TGPA est allé aussi loin, pour ne pas dire jusqu’au bout, c’est avant tout grâce à la communauté de gens qui se sont intéressés au jeu.
 
@@ -30,7 +30,7 @@ Enfin, il paraît qu’on a le public qu’on mérite… dans ce cas on est plus
 
 ### Les graphismes
 
-<img src="http://thegreatpaperadventure.com/static/images/artworks/art4.png" />
+![{{site.url}}/static/content/the-great-paper-adventure/3.png]({{site.url}}/static/content/the-great-paper-adventure/3.png)
 
 Bien que le jeu pêche du côté de son gameplay (voir après), l’un des points forts du jeu qui aura fait l’unanimité aura été son ambiance complètement barrée, définie par les musiques et les dessins.
 
@@ -60,7 +60,7 @@ Grâce à tout ça TGPA a réussi à se faire une place sur le « Meilleur Class
 
 ### L’échec de la version Xbox
 
-<img src="http://uppix.net/7/0/f/2aacf1b92525102cab5bc799e95f0tt.jpg" />
+![{{site.url}}/static/content/the-great-paper-adventure/1.png]({{site.url}}/static/content/the-great-paper-adventure/1.png)
 
 Malgré d’excellentes reviews de gros sites anglophones, les ventes n’ont pas décollées. Il n’a jamais été question de devenir millionnaire avec le jeu, mais il faut reconnaître que c’est un échec commercial pour nous.
 
@@ -84,7 +84,7 @@ Définitivement un point à ne pas reproduire pour notre futur prochain jeu ! Su
 
 ### Le gameplay Shmup non assumé
 
-<img src="http://uppix.net/f/0/2/562695f5f8881a33758885b71d823tt.jpg" />
+![{{site.url}}/static/content/the-great-paper-adventure/2.png]({{site.url}}/static/content/the-great-paper-adventure/2.png)
 
 Mon postulat de base était, au grand désespoir de LapinouFou, de faire un Shmup un peu plus accessible et grand public que les cadors du genre. J’ai commencé le développement en connaissant très peu ce genre (j’avais à l’époque terminé uniquement Ikaruga et joué à quelques titres cultes comme R-Type mais c’est tout). j’ai donc cherché à faire un jeu qui me plairait d’abord, et c’est d’ailleurs une idée qui est restée tout au long du développement.
 
@@ -106,4 +106,4 @@ Damien. The Great Paper Team Leader of The Great Paper Adventure Of The Nameless
 
 ### A voir aussi
 
-- [The Great Paper Artbook : l’artbook du jeu, les ennemis, les décors, la technique](http://d.pr/f/rLif)
+- [The Great Paper Artbook : l’artbook du jeu, les ennemis, les décors, la technique]({{site.url}}/static/content/the-great-paper-adventure/TheGreatPaperArtbook.pdf)

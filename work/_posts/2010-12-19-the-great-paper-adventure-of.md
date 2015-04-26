@@ -57,13 +57,13 @@ Special thanks to:
 
 By Spintronic. Get it or listen to it online on his website.
 
-- **[Get the TGPA OST](http://chiptunes-headbangers.net/album/show/15429)**
+- **[Get the TGPA OST](https://www.jamendo.com/fr/list/a85421/the-great-paper-adventure-bo)**
 
 ### The Great Paper Artbook
 
 Original drawings by Thibault Person for the game.
 
-- **[Download the artbook (PDF)](http://d.pr/f/rLif)**
+- **[Download the artbook (PDF)]({{site.url}}/static/content/the-great-paper-adventure/TheGreatPaperArtbook.pdf)**
 
 ### Read the Post mortem
 
