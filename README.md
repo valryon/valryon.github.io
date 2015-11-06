@@ -1,14 +1,10 @@
 Damien Mayance (Valryon) - Portfolio
 =========
 
-My personal portfolio and blog.
+My personal portfolio and blog: [http://www.dmayance.com](http://www.dmayance.com)
 
-It uses Jekyll, GitHub pages and Twitter Bootstrap.
+Design by [Matthieu Oger (solarsailer)](https://github.com/solarsailer)
 
-You can see how it is rendered using one of the following links :
+Made with Jekyll & GitHub pages.
 
-- [http://valryon.github.io/](http://valryon.github.io/)
-- [http://www.dmayance.com](http://www.dmayance.com)
-- [http://www.valryon.fr](http://www.valryon.fr)
-
-Enjoy ! :)
+Enjoy! :)
