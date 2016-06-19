@@ -10,6 +10,7 @@ Culturez-Vous ! was an application for Windows Phone 7, that was providing one o
 
 We had to remove it from the market due to our lack of time to update it but from May 2012 to Feb 2013 we had about **10.000 downloads**.
 
+ <!--more-->
 
 ## The team
 
