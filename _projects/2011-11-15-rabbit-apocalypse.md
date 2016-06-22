@@ -1,6 +1,6 @@
 ---
 title: Rabbit Apocalype!
-layout: release
+layout: project
 tags: project
 image: ./static/content/rabbit-apocalypse/2.png
 excerpt_separator: <!--more-->

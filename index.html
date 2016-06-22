@@ -20,26 +20,26 @@ title: Indie game and software developer
 
 <p>My (more or less) released work. Games/Apps.</p>
 
-{% for post in site.posts %}
-  {% if post.tags contains 'project' %}
+{% assign projects = site.projects | sort: 'date' | reverse %}
 
-    <article style="clear:both">
+{% for post in projects %}
 
-      <section>
-        <a href="{{ site.url }}{{ post.url }}">
+  <article style="clear:both">
 
-          <!-- TODO Ditch ugly css! -->
-          <img src="{{ post.image }}" style="float: left; margin-right: 20px; margin-bottom: 20px; width: 256px;" />
-        </a>
-      </section>
-      <section>
-        <a href="{{ site.url }}{{ post.url }}">
-          {{ post.title }}
-        </a>
-      {{ post.excerpt }}
-    </article>
+    <section>
+      <a href="{{ site.url }}{{ post.url }}">
 
-  {% endif %}
+        <!-- TODO Ditch ugly css! -->
+        <img src="{{ post.image }}" style="float: left; margin-right: 20px; margin-bottom: 20px; width: 256px;" />
+      </a>
+    </section>
+    <section>
+      <a href="{{ site.url }}{{ post.url }}">
+        {{ post.title }}
+      </a>
+    {{ post.excerpt }}
+  </article>
+
 {% endfor %}
 
 <!-- TODO Ditch super ugly hack! -->
@@ -47,17 +47,16 @@ title: Indie game and software developer
 
 <h2>Code</h2>
 
-<p>Code: snippets, open source stuff</p>
+<p>Posts: snippets, open source stuff</p>
 <ul>
+  {% assign code = site.posts | sort: 'date' | reverse %}
   {% for post in site.posts %}
-    {% if post.tags contains 'code' %}
 
       <li>
         <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
         {{ post.excerpt }}
       </li>
 
-    {% endif %}
   {% endfor %}
 </ul>
 
@@ -67,4 +66,3 @@ title: Indie game and software developer
   <li><a href="http://www.stunfest.fr/">Stunfest 2015</a>: Indie game zone co-organizer </li>
   <li><a href="http://pitchmygame.com/">Pitch My Game</a>: Stunfest 2014 and Breizh #1 PMG edition </li>
 </ul>
-

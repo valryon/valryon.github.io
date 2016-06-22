@@ -1,3 +1,64 @@
 name: Damien Mayance (Valryon)
-markdown: kramdown
-permalink: /:title
+
+# -------------------------------------------------------
+# Globals.
+# -------------------------------------------------------
+
+show_drafts: nil
+permalink: /:title/
+
+include: ['_pages']
+exclude: ['README.md', 'LICENSE', 'package.json', 'gulpfile.js', 'node_modules', 'Gemfile', 'Gemfile.lock']
+
+excerpt_separator: <!--more-->
+
+# -------------------------------------------------------
+# Collections.
+# -------------------------------------------------------
+
+collections:
+  projects:
+    output: true
+
+# -------------------------------------------------------
+# Defaults.
+# -------------------------------------------------------
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+
+# -------------------------------------------------------
+# Markdown.
+# -------------------------------------------------------
+
+kramdown:
+  input: GFM
+  parse_block_html: true
+  parse_span_html: true
+
+# -------------------------------------------------------
+# Code.
+# -------------------------------------------------------
+
+highlighter: rouge
+
+# -------------------------------------------------------
+# Plugins.
+# -------------------------------------------------------
+
+gems:
+  - jekyll-redirect-from

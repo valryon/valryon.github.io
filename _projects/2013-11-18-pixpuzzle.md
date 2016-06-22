@@ -1,6 +1,6 @@
 ---
 title: Pix Puzzle
-layout: release
+layout: project
 tags: project prototype
 image: ./static/content/pixpuzzle/1.jpg
 excerpt_separator: <!--more-->

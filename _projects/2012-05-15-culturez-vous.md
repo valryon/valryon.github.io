@@ -1,6 +1,6 @@
 ---
 title: Culturez-Vous !
-layout: release
+layout: project
 tags: project
 image: ./static/content/culturez-vous/6.png
 excerpt_separator: <!--more-->

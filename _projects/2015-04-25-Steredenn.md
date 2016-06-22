@@ -1,6 +1,6 @@
 ---
 title: Steredenn
-layout: release
+layout: project
 tags: project pixelnest
 image: ./static/content/steredenn/02.png
 excerpt_separator: <!--more-->

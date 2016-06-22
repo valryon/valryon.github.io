@@ -1,6 +1,6 @@
 ---
 title: The Great Paper Adventure
-layout: release
+layout: project
 tags: project
 image: ./static/content/the-great-paper-adventure/3.png
 excerpt_separator: <!--more-->
