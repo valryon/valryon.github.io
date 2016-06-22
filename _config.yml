@@ -19,6 +19,7 @@ excerpt_separator: <!--more-->
 collections:
   projects:
     output: true
+    permalink: /:title/
 
 # -------------------------------------------------------
 # Defaults.
