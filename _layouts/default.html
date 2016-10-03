@@ -14,54 +14,16 @@
 </head>
 <body>
   <div class="page">
-    <aside class="info">
-      <h1 class="info__title">
-        <a href="{{site.url}}/">Damien Mayance</a>
-      </h1>
 
-      <div class="info__avatar">
-        <img
-          class="border-decoration"
-          src="http://www.gravatar.com/avatar/545f7c7f0ed11d6ef21722a7e6c47acf?s=300"
-          title="Damien Mayance"
-          alt="Damien Mayance" />
-      </div>
-
-      <p class="info__desc">French indie game and software developer</p>
-
-      <p class="info__desc">
-        Co-founder of
-        <a href="http://pixelnest.io">
-          Pixelnest Studio
-          <!--<img src="{{site.url}}/static/images/pixelnest.png" alt="Pixelnest Studio" title="Pixelnest Studio" />-->
-        </a>
-      </p>
-
-      <hr class="info__separator" />
-
-      <ul class="info__links">
-        <li class="info__link about">
-          <a href="/about">About me</a>
-        </li>
-        <li class="info__link twitter">
-          <a href="http://twitter.com/Valryon">@Valryon</a>
-        </li>
-        <li class="info__link github">
-          <a href="http://github.com/Valryon">GitHub</a>
-        </li>
-      </ul>
-    </aside>
+    {% include header.html %}
 
     <div class="content">
       {{ content }}
     </div>
-  </div>
 
-  <footer class="page-footer">
-    <p>
-      Copyright Damien Mayance 2013-2042.
-    </p>
-  </footer>
+    {% include footer.html %}
+
+  </div>
 
   {% include js.html %}
 </body>
