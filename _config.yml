@@ -24,6 +24,7 @@ collections:
     output: true
   code:
     output: true
+    permalink: /:title/
 
 # -------------------------------------------------------
 # Defaults.
