@@ -81,6 +81,7 @@ a:hover {
  .banner__links__link {
    display: inline-block;
    width:22%;
+   text-transform: uppercase;
  }
 
  .banner__links__link a
