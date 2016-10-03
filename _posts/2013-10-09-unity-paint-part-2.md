@@ -55,7 +55,7 @@ If you have a lot of colors or decals, you may have to find another solution to 
 
 Here is the script. Provided "as it', "no warranty", "works for me".
 
-{% gist 6886871 %}
+{TODO gist 6886871 %}
 
 Feel free to contact me for any question.
 

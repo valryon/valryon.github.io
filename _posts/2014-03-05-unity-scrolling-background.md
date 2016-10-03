@@ -15,4 +15,4 @@ It will move every object that are children of the game object handling the scro
 
 And will loop sprites (object with a SpriteRenderer component).
 
-{% gist 7547513 %}
+{TODO gist 7547513 %}

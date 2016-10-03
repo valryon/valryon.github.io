@@ -41,7 +41,7 @@ Nothing else. The fun part is when you add a rigidbody, you can have physics spl
 
 And here's the script I used for painting. I put it online because the original script was in JavaScript so it may helps someone to have it done in C#.
 
-{% gist 6870378 %}
+{TODO gist 6870378 %}
 
 ### Advantages:
 

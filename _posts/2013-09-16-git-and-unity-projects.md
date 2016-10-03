@@ -35,7 +35,7 @@ Forcing asset to text is better when you work in teams because you can use a dif
 
 This is a nice standard .gitignore file for Unity projects.
 
-{% gist 6581543 %}
+{TODO gist 6581543 %}
 
 Few comments:
 

@@ -39,7 +39,7 @@ You can probably apply some shader on it.
 
 ## The script
 
-{% gist 7927741 %}
+{TODO gist 7927741 %}
 
 Enjoy! ;)
 

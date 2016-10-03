@@ -13,4 +13,4 @@ A simple expendable Laser script for Unity.
 
 [Source and explnation](http://steredenn-game.tumblr.com/post/98397504410/steredenn-making-an-expandable-laser)
 
-{% gist 566c02f3c5808dcd9968 %}
+{TODO gist 566c02f3c5808dcd9968 %}

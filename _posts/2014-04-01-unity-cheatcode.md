@@ -11,4 +11,4 @@ Unity cheat code handler
 
 Script that will detect key typed with keyboard and execute a given method is something is recognized.
 
-{% gist 9910583 %}
+{TODO gist 9910583 %}
