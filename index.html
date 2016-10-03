@@ -3,73 +3,79 @@ layout: default
 title: Indie game and software developer
 ---
 
-<h1>Indie game and software developer</h1>
+<div class="home">
 
-<p>Hello, you will find here the projects I worked on and some resources I share.</p>
-<p>Enjoy. :)</p>
+  <!-- About me -->
+  <div class="home__block">
+    <div class="home__block__header">
+      <h2>About me</h2>
+      <a href="/about">Read more</a>
+    </div>
+    <div class="home__block__content">
+      <p>
+        I'm a French indie game and software developer. I'm also the co-founder of [Pixelnest Studio](http://pixelnest.io), where I created Steredenn and numerous other projects.
+      </p>
+      <p>
+        This is my portfolio — you will find my projects, snippets and resources, as well as my other appearances. Enjoy. :)
+      </p>
+    </div>
+  </div>
 
-<h2>Information</h2>
+  <!-- Projects list -->
+  <div class="home__block">
+    <div class="home__block__header">
+      <h2>Projects</h2>
+    </div>
+    <div class="home__block__content">
+      {% assign projects = site.projects | sort: 'date' | reverse %}
+      {% for post in projects %}
 
-<ul>
-  <li>Twitter: <a href="https://twitter.com/Valryon">@Valryon</a></li>
-  <li>GitHub: <a href="https://github.com/Valryon">Valryon</a></li>
-  <li><a href="http://fr.linkedin.com/in/damienmayance">LinkedIn</a></li>
-</ul>
+        <article class="home__project">
+          <a href="{{ site.url }}{{ post.url }}">
+            <img src="{{ post.image }}" alt="{{ post.title }}" />
+            <p>{{ post.excerpt }}</p>
+          </a>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
 
-<h2>Projects</h2>
+  <!-- Code snippets and tutorials -->
+  <div class="home__block">
+    <div class="home__block__header">
+      <h2>Code</h2>
+    </div>
+    <div class="home__block__content">
+      <ul>
+        {% assign code = site.posts | sort: 'date' | reverse %}
+        {% for post in site.posts %}
 
-<p>My (more or less) released work. Games/Apps.</p>
+            <li>
+              <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+              {{ post.excerpt }}
+            </li>
 
-{% assign projects = site.projects | sort: 'date' | reverse %}
-{% for post in projects %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
 
-  <article style="clear:both">
+  <!-- Events --> 
+  <div class="home__block">
+    <div class="home__block__header">
+      <h2>Events</h2>
+    </div>
+    <div class="home__block__content">
+      <ul>
+        {% assign events = site.events | sort: 'date' | reverse %}
+        {% for event in events %}
+        <li>
+          <a href="{{ site.url }}{{ event.url }}">{{ event.title }}</a>
+          {{ event.excerpt }}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
 
-    <section>
-      <a href="{{ site.url }}{{ post.url }}">
-
-        <!-- TODO Ditch ugly css! -->
-        <img src="{{ post.image }}" style="float: left; margin-right: 20px; margin-bottom: 20px; width: 256px;" />
-      </a>
-    </section>
-    <section>
-      <a href="{{ site.url }}{{ post.url }}">
-        {{ post.title }}
-      </a>
-    {{ post.excerpt }}
-  </article>
-
-{% endfor %}
-
-<!-- TODO Ditch super ugly hack! -->
-<p style="clear:both;" />
-
-<h2>Code</h2>
-
-<p>Posts: snippets, open source stuff</p>
-<ul>
-  {% assign code = site.posts | sort: 'date' | reverse %}
-  {% for post in site.posts %}
-
-      <li>
-        <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-        {{ post.excerpt }}
-      </li>
-
-  {% endfor %}
-</ul>
-
-<h2>Events</h2>
-
-<ul>
-  {% assign events = site.events | sort: 'date' | reverse %}
-  {% for event in events %}
-  <li>
-    <a href="{{ site.url }}{{ event.url }}">{{ event.title }}</a>
-    {{ event.excerpt }}
-  </li>
-  {% endfor %}
-
-
-  <li><a href="http://pitchmygame.com/">Pitch My Game</a>: Stunfest 2014 and Breizh #1 PMG edition </li>
-</ul>
+</div>
