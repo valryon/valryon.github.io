@@ -7,13 +7,24 @@
  * Global
  **************************************************************/
 
-body {
+html {
+  font-weight: normal;
   font-family: Hack, monospace;
+  font-size: 16px;
 }
 
 p {
   font-family: 'PT Sans', sans-serif;
 }
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 /**************************************************************
  * Page (container)
  **************************************************************/
@@ -23,3 +34,43 @@ p {
   margin:0 auto;
 }
 
+/**************************************************************
+ * Banner
+ **************************************************************/
+
+.page-header {
+  display: table;
+}
+
+.banner__column__left {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.banner__column__right {
+  display: table-cell;
+  width: 120px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+ .banner__a {
+   color: #797979;
+ }
+
+ .banner__name {
+   font-size: 30px;
+   font-weight: 100;
+   text-transform: uppercase;
+ }
+
+ .banner__avatar img {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+ }
+
+ .banner__links {
+   display: inline;
+   text-align: left;
+ }
