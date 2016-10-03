@@ -1,7 +1,6 @@
 ---
 title: Monique Passion Hôtesse de caisse
-layout: project
-tags: project
+tags: game
 image: ./static/content/monique/1.png
 excerpt_separator: <!--more-->
 ---

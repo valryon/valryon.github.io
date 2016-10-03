@@ -1,7 +1,6 @@
 ---
 title: Steredenn
-layout: project
-tags: project pixelnest
+tags: pixelnest game
 image: ./static/content/steredenn/02.png
 excerpt_separator: <!--more-->
 ---

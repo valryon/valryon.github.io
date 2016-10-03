@@ -1,6 +1,5 @@
 ---
 title: Unity - Paint and blood splatters part 2
-layout: post
 tags: code unity
 excerpt_separator: <!--more-->
 ---

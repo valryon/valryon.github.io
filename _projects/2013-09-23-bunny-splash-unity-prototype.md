@@ -1,7 +1,6 @@
 ---
 title: Bunny Splash
-layout: project
-tags: project unity prototype
+tags: unity prototype
 image: ./static/content/bunny-splash/01.png
 excerpt_separator: <!--more-->
 ---

@@ -1,6 +1,5 @@
 ---
 title: Pitch My Game Breizh Edition
-layout: event
 ---
 
 [Pitch My Game](http://pitchmygame.com/) is a serie of french events allowing game developers to *pitch* a game project to a diverse audience (pro, players, press).

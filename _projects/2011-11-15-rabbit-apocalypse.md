@@ -1,7 +1,6 @@
 ---
 title: Rabbit Apocalype!
-layout: project
-tags: project
+tags: game
 image: ./static/content/rabbit-apocalypse/2.png
 excerpt_separator: <!--more-->
 ---
@@ -40,4 +39,3 @@ The little game was made in two months from scratch for a contest (Game A Niaque
 ![{{ site.url }}/static/content/rabbit-apocalypse/5.png]({{ site.url }}/static/content/rabbit-apocalypse/5.png)
 
 ![{{ site.url }}/static/content/rabbit-apocalypse/6.png]({{ site.url }}/static/content/rabbit-apocalypse/6.png)
-

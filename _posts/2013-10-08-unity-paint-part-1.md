@@ -2,7 +2,6 @@
 title: Unity - Paint and blood splatters part 1
 redirect_from:
   - /unity-paint-and-blood-splatters-tests/
-layout: post
 tags: code unity
 excerpt_separator: <!--more-->
 ---

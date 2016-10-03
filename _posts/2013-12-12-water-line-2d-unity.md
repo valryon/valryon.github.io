@@ -1,6 +1,5 @@
 ---
 title: Unity - basic 2D water line
-layout: post
 tags: code unity
 excerpt_separator: <!--more-->
 ---

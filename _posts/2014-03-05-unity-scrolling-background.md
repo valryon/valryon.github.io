@@ -1,6 +1,5 @@
 ---
 title: Unity - Scrolling background
-layout: post
 tags: code unity
 excerpt_separator: <!--more-->
 ---

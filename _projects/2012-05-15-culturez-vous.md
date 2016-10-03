@@ -1,7 +1,6 @@
 ---
 title: Culturez-Vous !
-layout: project
-tags: project
+tags: app
 image: ./static/content/culturez-vous/6.png
 excerpt_separator: <!--more-->
 ---

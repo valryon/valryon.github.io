@@ -1,7 +1,6 @@
 ---
 title: BulletML for Unity
-layout: project
-tags: project pixelnest
+tags: pixelnest unity plugin
 image: ./static/content/bulletml-unity/1.png
 excerpt_separator: <!--more-->
 ---

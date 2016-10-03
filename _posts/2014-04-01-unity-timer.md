@@ -1,6 +1,5 @@
 ---
 title: Unity - Timer using co-routine
-layout: post
 tags: code unity
 excerpt_separator: <!--more-->
 ---
@@ -20,6 +19,3 @@ Features:
 Enjoy :).
 
 {TODO gist 9915075 %}
-
-
-

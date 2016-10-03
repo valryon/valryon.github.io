@@ -1,7 +1,6 @@
 ---
 title: The Great Paper Adventure
-layout: project
-tags: project
+tags: game
 image: ./static/content/the-great-paper-adventure/3.png
 excerpt_separator: <!--more-->
 ---

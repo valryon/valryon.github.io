@@ -43,6 +43,11 @@ defaults:
       type: "projects"
     values:
       layout: "project"
+  - scope:
+      path: ""
+      type: "events"
+    values:
+      layout: "event"
 
 # -------------------------------------------------------
 # Markdown.

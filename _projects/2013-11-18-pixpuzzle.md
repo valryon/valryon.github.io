@@ -1,7 +1,6 @@
 ---
 title: Pix Puzzle
-layout: project
-tags: project prototype
+tags: prototype
 image: ./static/content/pixpuzzle/1.jpg
 excerpt_separator: <!--more-->
 ---
@@ -31,4 +30,3 @@ It used to work on iOS and Windows Phone, but the Windows Phone project hasn't b
 ## Screenshots
 
 ![{{ site.url }}/static/content/pixpuzzle/1.jpg]({{ site.url }}/static/content/pixpuzzle/1.jpg)
-

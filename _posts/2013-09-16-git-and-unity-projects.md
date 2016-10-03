@@ -1,6 +1,5 @@
 ---
 title: Git and Unity projects
-layout: post
 tags: code unity
 excerpt_separator: <!--more-->
 ---

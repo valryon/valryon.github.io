@@ -1,6 +1,5 @@
 ---
 title: Unity - Cheat code
-layout: post
 tags: code unity
 excerpt_separator: <!--more-->
 ---

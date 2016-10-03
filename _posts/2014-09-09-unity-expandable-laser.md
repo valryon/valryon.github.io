@@ -1,6 +1,5 @@
 ---
 title: Unity - Expandable laser
-layout: post
 tags: code unity
 excerpt_separator: <!--more-->
 ---

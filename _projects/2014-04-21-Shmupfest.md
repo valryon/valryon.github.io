@@ -1,7 +1,6 @@
 ---
 title: Shmupfest
-layout: project
-tags: project pixelnest
+tags: pixelnest game
 image: ./static/content/shmupfest/1.png
 excerpt_separator: <!--more-->
 ---
