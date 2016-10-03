@@ -20,6 +20,8 @@ collections:
   projects:
     output: true
     permalink: /:title/
+  events:
+    output: true
 
 # -------------------------------------------------------
 # Defaults.

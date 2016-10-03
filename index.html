@@ -21,7 +21,6 @@ title: Indie game and software developer
 <p>My (more or less) released work. Games/Apps.</p>
 
 {% assign projects = site.projects | sort: 'date' | reverse %}
-
 {% for post in projects %}
 
   <article style="clear:both">
@@ -63,6 +62,14 @@ title: Indie game and software developer
 <h2>Events</h2>
 
 <ul>
-  <li><a href="http://www.stunfest.fr/">Stunfest 2015</a>: Indie game zone co-organizer </li>
+  {% assign events = site.events | sort: 'date' | reverse %}
+  {% for event in events %}
+  <li>
+    <a href="{{ site.url }}{{ event.url }}">{{ event.title }}</a>
+    {{ event.excerpt }}
+  </li>
+  {% endfor %}
+
+
   <li><a href="http://pitchmygame.com/">Pitch My Game</a>: Stunfest 2014 and Breizh #1 PMG edition </li>
 </ul>
