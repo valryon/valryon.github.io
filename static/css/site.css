@@ -41,6 +41,7 @@ a:hover {
 .page-header {
   display: table;
   width: 100%;
+  margin: auto auto 42px auto;
 }
 
 .banner__column__left {
@@ -60,9 +61,10 @@ a:hover {
  }
 
  .banner__name {
-   font-size: 30px;
+   font-size: 5 0px;
    font-weight: 100;
    text-transform: uppercase;
+   margin: 0 0 0 0;
  }
 
  .banner__avatar img {
@@ -78,5 +80,32 @@ a:hover {
 
  .banner__links__link {
    display: inline-block;
-   width:20%;
+   width:22%;
  }
+
+ .banner__links__link a
+ {
+  display: inline-block;
+  height: 20px;
+  padding-top: 1px;
+  padding-left: 24px;
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  color: #4198E6;
+ }
+
+.twitter a {
+  background-image: url(../images/icon-twitter@2x.png);
+}
+
+.github a {
+ background-image: url(../images/icon-github@2x.png);
+}
+
+.linkedin a {
+ background-image: url(../images/icon-linkedin@2x.png);
+}
+
+.pixelnest a {
+ background-image: url(../images/icon-pixelnest@2x.png);
+}
