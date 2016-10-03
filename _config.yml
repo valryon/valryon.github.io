@@ -22,6 +22,8 @@ collections:
     permalink: /:title/
   events:
     output: true
+  code:
+    output: true
 
 # -------------------------------------------------------
 # Defaults.
@@ -36,6 +38,11 @@ defaults:
   - scope:
       path: ""
       type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "code"
     values:
       layout: "post"
   - scope:

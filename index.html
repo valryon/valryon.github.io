@@ -47,12 +47,11 @@ title: Indie game and software developer
     </div>
     <div class="home__block__content">
       <ul>
-        {% assign code = site.posts | sort: 'date' | reverse %}
-        {% for post in site.posts %}
-
+        {% assign code = site.code | sort: 'date' | reverse %}
+        {% for p in code %}
             <li>
-              <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-              {{ post.excerpt }}
+              <a href="{{ site.url }}{{ post.url }}">{{ p.title }}</a>
+              {{ p.excerpt }}
             </li>
 
         {% endfor %}
@@ -60,7 +59,7 @@ title: Indie game and software developer
     </div>
   </div>
 
-  <!-- Events --> 
+  <!-- Events -->
   <div class="home__block">
     <div class="home__block__header">
       <h2>Events</h2>
