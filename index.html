@@ -45,49 +45,52 @@ title: Portfolio
     </div>
   </div>
 
+  <!-- Events -->
+  <div class="home__block row">
+    <div class="home__block__header">
+      <h2>Events &amp; Experiences</h2>
+    </div>
+    <div class="home__block__content">
+      {% assign events = site.events | sort: 'date' | reverse %}
+      {% for p in events limit:10 %}
+      <div class="home__element">
+        <a href="{{ site.url }}{{ p.url }}">
+          <p class="home__element__title">
+            {{ p.title }}
+          </p>
+          <p class="home__element__desc">
+            {{ p.shortdesc }}
+          </p>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
   <!-- Code snippets and tutorials -->
   <div class="home__block row">
     <div class="home__block__header">
       <h2>Code</h2>
     </div>
     <div class="home__block__content">
-      <ul>
-        {% assign snippets = site.code | sort: 'date' | reverse %}
-        {% for p in snippets %}
-            <li>
-              <p class="tags">
-                {% for tag in p.tags %}
-                  <span class="tag {{ tag }}">{{ tag }}</span>
-                {% endfor %}
+      {% assign snippets = site.code | sort: 'date' | reverse %}
+      {% for p in snippets limit:15  %}
+          <div class="home__element">
+            <ul class="tags">
+              {% for tag in p.tags %}
+                <li class="tag {{ tag }}">{{ tag }}</li>
+              {% endfor %}
+            </ul>
+            <a href="{{ site.url }}{{ p.url }}">
+              <p class="home__element__title">
+                {{ p.title }}
               </p>
-              <p>
-                <a href="{{ site.url }}{{ p.url }}">{{ p.title }}</a>
+              <p class="home__element__desc">
+                {{ p.shortdesc }}
               </p>
-              <p>
-                {{ p.excerpt }}
-              </p>
-            </li>
-        {% endfor %}
-      </ul>
+            </a>
+          </div>
+      {% endfor %}
     </div>
   </div>
-
-  <!-- Events -->
-  <div class="home__block row">
-    <div class="home__block__header">
-      <h2>Events</h2>
-    </div>
-    <div class="home__block__content">
-      <ul>
-        {% assign events = site.events | sort: 'date' | reverse %}
-        {% for event in events %}
-        <li>
-          <a href="{{ site.url }}{{ event.url }}">{{ event.title }}</a>
-          {{ event.excerpt }}
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
-  </div>
-
 </div>
