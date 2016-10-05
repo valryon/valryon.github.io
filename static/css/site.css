@@ -21,10 +21,16 @@ p {
 
 a {
   text-decoration: none;
+  color: #4198E6;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #4159DD;
 }
 
 /**************************************************************
@@ -44,23 +50,28 @@ a:hover {
 
 .page-header {
   display: table;
-  margin: 42px auto 42px auto;
+  margin: 42px 0px 42px 0px;
+  width: 100%;
 }
+
+/* Name and links */
 
 .banner__column__left {
   display: table-cell;
-  vertical-align: middle;
-}
-
-.banner__column__right {
-  display: table-cell;
-  width: 120px;
-  vertical-align: middle;
-  text-align: center;
 }
 
 .banner__a {
- color: #797979;
+  text-decoration: none;
+  color: #797979;
+}
+
+.banner__a:hover {
+  text-decoration: none;
+}
+
+.banner__a:visited {
+  text-decoration: none;
+  color: #797979;
 }
 
 .banner__name {
@@ -70,11 +81,22 @@ a:hover {
   margin: 15px auto 15px;
 }
 
+/* Avatar */
+
+.banner__column__right {
+  display: table-cell;
+  width: 120px;
+  vertical-align: middle;
+  text-align: right;
+}
+
 .banner__avatar img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
 }
+
+/* Links */
 
 .banner__links {
   display: inline;
@@ -94,7 +116,6 @@ a:hover {
   padding-left: 24px;
   background-repeat: no-repeat;
   background-size: 18px 18px;
-  color: #4198E6;
 }
 
 .twitter a {
