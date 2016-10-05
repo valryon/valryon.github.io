@@ -11,12 +11,16 @@ html {
   font-weight: normal;
   font-family: Hack, monospace;
   font-size: 16px;
+  color: #444444;
+}
+
+html, body {
+  height: 100%;
 }
 
 p {
   font-family: 'PT Sans', sans-serif;
   font-weight: 200;
-  color: #444444;
 }
 
 a {
@@ -42,6 +46,14 @@ a:visited {
    padding: 0 20px;
    margin-left: auto;
    margin-right: auto;
+   position: relative;
+   min-height: 100%;
+}
+
+.page::after {
+  display: block;
+  content: "";
+  padding-bottom: 100px;
 }
 
 /**************************************************************
@@ -178,6 +190,21 @@ a:visited {
   font-style: italic;
   font-size: 13px;
   color: #F9644B;
+}
+
+/**************************************************************
+ * Footer
+ **************************************************************/
+.page-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 100;
+  font-family: Hack, monospace;
+  color: #BBBBBB;
 }
 
 /**************************************************************
