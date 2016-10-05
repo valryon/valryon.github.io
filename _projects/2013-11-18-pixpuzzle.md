@@ -1,8 +1,8 @@
 ---
 title: Pix Puzzle
 tags: prototype
-image: ./static/content/pixpuzzle/1.jpg
-shortdesv: was a simple "connect the dots" game in a grid and with the addition of color.
+image: ./static/content/pixpuzzle/cover.png
+shortdesc: was a simple "connect the dots" game in a grid and with the addition of color
 ---
 
 PixPuzzle is a simple "connect the dots" game in a grid and with the addition of color.
