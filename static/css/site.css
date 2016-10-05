@@ -8,9 +8,8 @@
  **************************************************************/
 
 html {
-  font-weight: normal;
-  font-family: Hack, monospace;
-  font-size: 16px;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 200;
   color: #444444;
 }
 
@@ -18,9 +17,9 @@ html, body {
   height: 100%;
 }
 
-p {
-  font-family: 'PT Sans', sans-serif;
-  font-weight: 200;
+h1,h2,h3,h3 {
+  font-weight: normal;
+  font-family: Hack, monospace;
 }
 
 a {
@@ -333,6 +332,52 @@ a:visited {
 
 .unity {
   background-color: #FF0066;
+}
+
+/**************************************************************
+ * Posts and special pages
+ **************************************************************/
+
+.post h1 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #8C8C8C;
+  font-size: 24px;
+  font-weight: bold;;
+
+  margin-top: 60px;
+}
+
+.post h1:first-child {
+  margin-top: 0px;
+}
+
+.post h2 {
+  color: #8C8C8C;
+  font-size: 20px;
+  font-weight: 250;
+
+  margin-top: 42px;
+  margin-bottom: 21px;
+
+  border-bottom: 1px dotted #000;
+}
+
+.post h3 {
+  text-align: left;
+  color: #8C8C8C;
+  font-size: 17px;
+  font-weight: 250;
+
+  margin-top: 42px;
+  margin-bottom: 21px;
+}
+
+.back a {
+  text-transform: uppercase;
+  text-align: right;
+  font-style: italic;
+  color: #F9644B;
 }
 
 /**************************************************************
