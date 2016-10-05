@@ -2,12 +2,10 @@
 title: Rabbit Apocalype!
 tags: game
 image: ./static/content/rabbit-apocalypse/2.png
-excerpt_separator: <!--more-->
+shortdesc: is a short, simple and quite awful homemade 2D platformer with random level creation.
 ---
 
 Rabbit Apocalypse! is a short, simple and quite bugguy homemade 2D platformer with random level creation.
-
-<!--more-->
 
 The earth is going to be blown by an asteroid, and rabbits want to survive by going into space with their spaceship.
 Sdaly they lost the key, and you must find it quickly!

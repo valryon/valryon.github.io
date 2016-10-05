@@ -2,12 +2,10 @@
 title: Bunny Splash
 tags: unity prototype
 image: ./static/content/bunny-splash/01.png
-excerpt_separator: <!--more-->
+shortdesc: was a rough Unity prototype of a local multiplayer platformer fight.
 ---
 
 A rough Unity prototype of a local multiplayer platformer fight.
-
-<!--more-->
 
 Mainly inspired by [Jump Bump](http://www.youtube.com/watch?v=jAjbKy7ChwY).
 

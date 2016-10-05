@@ -2,12 +2,10 @@
 title: Pix Puzzle
 tags: prototype
 image: ./static/content/pixpuzzle/1.jpg
-excerpt_separator: <!--more-->
+shortdesv: was a simple "connect the dots" game in a grid and with the addition of color.
 ---
 
 PixPuzzle is a simple "connect the dots" game in a grid and with the addition of color.
-
-<!--more-->
 
 It takes an image as a source and generate a puzzle from it. The player has to fill all the grid to complete the level and unlock a new image.
 

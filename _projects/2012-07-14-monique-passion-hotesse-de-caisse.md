@@ -2,13 +2,11 @@
 title: Monique Passion Hôtesse de caisse
 tags: game
 image: ./static/content/monique/1.png
-excerpt_separator: <!--more-->
+shortdesc: is Cashier job game parody made for the "worst game ever" contest.
 ---
 
 Cashier job **game parody**, made for the "worst game ever" contest.
 And we won!
-
- <!--more-->
 
 ## Description
 
