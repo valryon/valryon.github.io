@@ -64,7 +64,7 @@ a:visited {
 
 .page-header {
   display: table;
-  margin: 42px 0px 42px 0px;
+  padding: 42px 0px 42px 0px;
   width: 100%;
 }
 
