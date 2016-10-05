@@ -30,8 +30,23 @@ a:hover {
  **************************************************************/
 
 .page {
-  width:600px;
-  margin:0 auto;
+}
+
+/* Override Bootstrap container fixed size */
+@media (min-width: 768px) {
+  .container {
+    width: 650px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 650px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 650px;
+  }
 }
 
 /**************************************************************
@@ -39,32 +54,19 @@ a:hover {
  **************************************************************/
 
 .page-header {
-  display: table;
   width: 100%;
-  margin: auto auto 42px auto;
+  margin: 42px auto 42px auto;
 }
 
-.banner__column__left {
-  display: table-cell;
-  vertical-align: middle;
+.banner__a {
+ color: #797979;
 }
-
-.banner__column__right {
-  display: table-cell;
-  width: 120px;
-  vertical-align: middle;
-  text-align: center;
-}
-
- .banner__a {
-   color: #797979;
- }
 
  .banner__name {
-   font-size: 5 0px;
+   font-size: 42px;
    font-weight: 100;
    text-transform: uppercase;
-   margin: 0 0 0 0;
+   margin: 15px auto 15px;
  }
 
  .banner__avatar img {
@@ -80,7 +82,6 @@ a:hover {
 
  .banner__links__link {
    display: inline-block;
-   width:22%;
    text-transform: uppercase;
  }
 
@@ -88,6 +89,7 @@ a:hover {
  {
   display: inline-block;
   height: 20px;
+  width: 80px;
   padding-top: 1px;
   padding-left: 24px;
   background-repeat: no-repeat;
@@ -109,4 +111,12 @@ a:hover {
 
 .pixelnest a {
  background-image: url(../images/icon-pixelnest@2x.png);
+}
+
+/**************************************************************
+ * Titles
+ **************************************************************/
+
+.home__block__header {
+  border-bottom: 1px dotted #000;
 }
