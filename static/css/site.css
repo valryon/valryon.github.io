@@ -322,12 +322,16 @@ a:visited {
   box-sizing: border-box;
 
   /* Text style */
-  text-align: center;
   font-size: 12px;
   font-weight: 100;
   font-family: Hack, monospace;
   color: #BBBBBB;
 }
+
+.page-footer p {
+  text-align: center;
+}
+
 
 /**************************************************************
  * Misc
