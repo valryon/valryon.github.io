@@ -166,7 +166,7 @@ a:visited {
  * Titles
  **************************************************************/
 
-.home__block__header {
+.block-header {
   margin-top: 21px;
   border-bottom: 1px dotted #000;
   margin-bottom: 21px;
@@ -175,7 +175,7 @@ a:visited {
   padding-bottom: 6px;
 }
 
-.home__block__header h2 {
+.block-header h2 {
   display: table-cell;
   text-transform: uppercase;
   color: #8C8C8C;
@@ -183,7 +183,7 @@ a:visited {
   font-weight: 100;
 }
 
-.home__block__header a {
+.block-header a {
   display: table-cell;
   width: 100px;
   margin: 0px auto 0px auto;
@@ -198,23 +198,23 @@ a:visited {
 * Projects
 **************************************************************/
 
-.home__project {
+.project {
   margin-bottom: 24px;
   display: table;
 }
 
-.home__project__left {
+.project-left {
   display: table-cell;
   width: 33%;
   vertical-align: top;
 }
 
-.home__project__left img {
+.project-left img {
   width: 250px;
   height: 100px;
 }
 
-.home__project__right {
+.project-right {
   display: table-cell;
   width: 66%;
   vertical-align: middle;;
@@ -225,44 +225,44 @@ a:visited {
   line-height: 1.5em;
 }
 
-.home__project__right p {
+.project-right p {
   margin: 0px;
 }
 
-.home__project strong {
+.project strong {
   font-weight: bold;
   font-size: 1.1em;
 }
 
-.home__project a {
+.project a {
   text-decoration: none;
   color: #444444;
 }
 
-.home__project a:hover {
+.project a:hover {
   text-decoration: none;
   color: #4198E6;
 }
 
-.home__project a:visited {
+.project a:visited {
   text-decoration: none;
 }
 
 /* Hide text on mobile */
 @media(max-width: 550px) {
-  .home__project {
+  .project {
     display: block;
   }
-  .home__project__left {
+  .project-left {
     display: block;
     width: 100%;
   }
-  .home__project__left img {
+  .project-left img {
     margin: 0 auto;
     width: 100%;
     height: auto;
   }
-  .home__project__right {
+  .project-right {
     display: none;
   }
 }
@@ -271,25 +271,25 @@ a:visited {
 * Code & events
 **************************************************************/
 
-.home__element {
+.element {
   margin-bottom: 24px;
 }
 
-.home__element a {
+.element a {
   text-decoration: none;
   color:#444444;
 }
 
-.home__element a:hover {
+.element a:hover {
   text-decoration: none;
   color: #35C1F1;
 }
 
-.home__element a:visited {
+.element a:visited {
   text-decoration: none;
 }
 
-.home__element__title {
+.element-title {
   display: inline;
   text-transform: uppercase;
   color: #1686DB;
@@ -297,11 +297,11 @@ a:visited {
   margin-bottom: 0px;
 }
 
-.home__element__title:hover {
+.element-title:hover {
   color: #35C1F1;
 }
 
-.home__element__desc {
+.element-desc {
   margin-top: 0px;
   margin-bottom: 0px;
   font-size: 14px;

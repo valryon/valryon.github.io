@@ -4,24 +4,24 @@ title: Code snippets
 ---
 
 <!-- Code snippets and tutorials -->
-<div class="home__block row">
-  <div class="home__block__header">
+<div class="block">
+  <div class="block-header">
     <h2>Code</h2>
   </div>
-  <div class="home__block__content">
+  <div class="block-content">
     {% assign snippets = site.code | sort: 'date' | reverse %}
     {% for p in snippets %}
-        <div class="home__element">
+        <div class="element">
           <ul class="tags">
             {% for tag in p.tags %}
               <li class="tag {{ tag }}">{{ tag }}</li>
             {% endfor %}
           </ul>
           <a href="{{ site.url }}{{ p.url }}">
-            <p class="home__element__title">
+            <p class="element-title">
               {{ p.title }}
             </p>
-            <p class="home__element__desc">
+            <p class="element-desc">
               {{ p.shortdesc }}
             </p>
           </a>

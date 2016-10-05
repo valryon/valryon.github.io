@@ -6,12 +6,12 @@ title: Portfolio
 <div class="home">
 
   <!-- About me -->
-  <div class="home__block row">
-    <div class="home__block__header">
+  <div class="block">
+    <div class="block-header">
       <h2>About me</h2>
       <a href="/about">Read more</a>
     </div>
-    <div class="home__block__content">
+    <div class="block-content">
       <p>
         I'm a French indie game and software developer. I'm also the co-founder of <a class="pixelnest-logo" href="http://pixelnest.io">Pixelnest Studio</a> where I created Steredenn and numerous other projects.
       </p>
@@ -22,21 +22,21 @@ title: Portfolio
   </div>
 
   <!-- Projects list -->
-  <div class="home__block row">
-    <div class="home__block__header">
+  <div class="block">
+    <div class="block-header">
       <h2>Projects</h2>
     </div>
-    <div class="home__block__content">
+    <div class="block-content">
       {% assign projects = site.projects | sort: 'date' | reverse %}
       {% for post in projects %}
 
-        <article class="home__project">
+        <article class="project">
           <a href="{{ site.url }}{{ post.url }}">
 
-            <div class="home__project__left">
+            <div class="project-left">
               <img src="{{ post.image }}" alt="{{ post.title }}" />
             </div>
-            <div class="home__project__right">
+            <div class="project-right">
               <p><strong>{{ post.title }}</strong> {{ post.shortdesc }}</p>
             </div>
           </a>
@@ -46,20 +46,20 @@ title: Portfolio
   </div>
 
   <!-- Events -->
-  <div class="home__block row">
-    <div class="home__block__header">
+  <div class="block">
+    <div class="block-header">
       <h2>Events &amp; Experiences</h2>
       <a href="/events">See All</a>
     </div>
-    <div class="home__block__content">
+    <div class="block-content">
       {% assign events = site.events | sort: 'date' | reverse %}
       {% for p in events limit:10 %}
-      <div class="home__element">
+      <div class="element">
         <a href="{{ site.url }}{{ p.url }}">
-          <p class="home__element__title">
+          <p class="element-title">
             {{ p.title }}
           </p>
-          <p class="home__element__desc">
+          <p class="element-desc">
             {{ p.shortdesc }}
           </p>
         </a>
@@ -69,25 +69,25 @@ title: Portfolio
   </div>
 
   <!-- Code snippets and tutorials -->
-  <div class="home__block row">
-    <div class="home__block__header">
+  <div class="block">
+    <div class="block-header">
       <h2>Code</h2>
       <a href="/code">See All</a>
     </div>
-    <div class="home__block__content">
+    <div class="block-content">
       {% assign snippets = site.code | sort: 'date' | reverse %}
       {% for p in snippets limit:15  %}
-          <div class="home__element">
+          <div class="element">
             <ul class="tags">
               {% for tag in p.tags %}
                 <li class="tag {{ tag }}">{{ tag }}</li>
               {% endfor %}
             </ul>
             <a href="{{ site.url }}{{ p.url }}">
-              <p class="home__element__title">
+              <p class="element-title">
                 {{ p.title }}
               </p>
-              <p class="home__element__desc">
+              <p class="element-desc">
                 {{ p.shortdesc }}
               </p>
             </a>
