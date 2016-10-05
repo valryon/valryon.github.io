@@ -195,6 +195,87 @@ a:visited {
 }
 
 /**************************************************************
+* Projects
+**************************************************************/
+
+.home__project {
+  margin-bottom: 24px;
+  display: table;
+}
+
+.home__project__left {
+  display: table-cell;
+  width: 33%;
+  vertical-align: top;
+}
+
+.home__project__right {
+  display: table-cell;
+  width: 66%;
+  vertical-align: top;
+  padding: 12px 12px 0px 12px;
+}
+
+.home__project img {
+  width: 250px;
+  height: 150px;
+  height: auto;
+
+}
+
+.home__project a {
+  text-decoration: none;
+  color: #444444;
+}
+
+.home__project a:hover {
+  text-decoration: none;
+  color: #4198E6;
+}
+
+.home__projecta:visited {
+    text-decoration: none;
+}
+
+/* Tags */
+
+.tags {
+  margin: 0px;
+}
+
+.tag {
+
+}
+
+.unity {
+
+}
+
+.pixelnest {
+
+}
+
+.code {
+
+}
+
+.prototype {
+
+}
+
+.game {
+
+}
+
+/**************************************************************
+* Code
+**************************************************************/
+
+/**************************************************************
+* Events
+**************************************************************/
+
+/**************************************************************
  * Footer
  **************************************************************/
 .page-footer {
