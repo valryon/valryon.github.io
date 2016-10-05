@@ -250,6 +250,26 @@ a:visited {
   text-decoration: none;
 }
 
+/* Hide text on mobile */
+@media(max-width: 550px) {
+  .home__project {
+    display: block;
+  }
+  .home__project__left {
+    display: block;
+    width: 100%;
+  }
+  .home__project__left img {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+  }
+  .home__project__right {
+    display: none;
+  }
+}
+
+
 /* Tags */
 
 .tags {
