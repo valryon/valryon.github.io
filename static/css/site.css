@@ -130,8 +130,12 @@ a:visited {
  background-image: url(../images/icon-linkedin@2x.png);
 }
 
-.pixelnest a {
+.pixelnest-logo {
  background-image: url(../images/icon-pixelnest@2x.png);
+ display: inline-block;
+ padding-left: 22px;
+ background-repeat: no-repeat;
+ background-size: 18px 18px;
 }
 
 /**************************************************************
