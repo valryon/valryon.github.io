@@ -1,6 +1,6 @@
 ---
 title: Unity - Cheat code
-tags: code unity
+tags: unity
 shortdesc: Unity cheat code handler
 ---
 

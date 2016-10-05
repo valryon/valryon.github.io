@@ -1,6 +1,6 @@
 ---
 title: Unity - Paint and blood splatters part 2
-tags: code unity
+tags: unity
 shortdesc: Painting a level with blood or paint in Unity (R&D).
 ---
 

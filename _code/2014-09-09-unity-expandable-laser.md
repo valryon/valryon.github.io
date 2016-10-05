@@ -1,6 +1,6 @@
 ---
 title: Unity - Expandable laser
-tags: code unity
+tags: unity
 shortdesc: A simple expendable Laser script for Unity.
 ---
 

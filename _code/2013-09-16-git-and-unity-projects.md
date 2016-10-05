@@ -1,6 +1,6 @@
 ---
 title: Git and Unity projects
-tags: code unity
+tags: unity
 shortdesc: Using git version control with Unity.
 ---
 

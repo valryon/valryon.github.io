@@ -1,6 +1,6 @@
 ---
 title: Unity - Timer using co-routine
-tags: code unity
+tags: unity
 shortdesc: Advanced Timer usable as a coroutine for Unity.
 ---
 

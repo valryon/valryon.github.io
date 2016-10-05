@@ -1,6 +1,6 @@
 ---
 title: Unity - Scrolling background
-tags: code unity
+tags: unity
 shortdesc: Multi-directionnal infinite scrolling script Unity script for a 2D paralax effect.
 ---
 

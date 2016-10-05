@@ -1,6 +1,6 @@
 ---
 title: Unity - basic 2D water line
-tags: code unity
+tags: unity
 shortdesc: A simple 2D water line in Unity.
 ---
 
