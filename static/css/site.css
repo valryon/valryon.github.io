@@ -15,6 +15,8 @@ html {
 
 p {
   font-family: 'PT Sans', sans-serif;
+  font-weight: 200;
+  color: #444444;
 }
 
 a {
@@ -32,29 +34,12 @@ a:hover {
 .page {
 }
 
-/* Override Bootstrap container fixed size */
-@media (min-width: 768px) {
-  .container {
-    width: 650px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    width: 650px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 650px;
-  }
-}
-
 /**************************************************************
  * Banner
  **************************************************************/
 
 .page-header {
-  width: 100%;
+  display: block;
   margin: 42px auto 42px auto;
 }
 
@@ -118,5 +103,29 @@ a:hover {
  **************************************************************/
 
 .home__block__header {
+  margin-top: 21px;
   border-bottom: 1px dotted #000;
+  margin-bottom: 21px;
+  display: table;
+  width: 100%;
+  padding-bottom: 6px;
+}
+
+.home__block__header h2 {
+  display: table-cell;
+  text-transform: uppercase;
+  color: #8C8C8C;
+  font-size: 11px;
+  font-weight: 100;
+}
+
+.home__block__header a {
+  display: table-cell;
+  width: 100px;
+  margin: 0px auto 0px auto;
+  text-transform: uppercase;
+  text-align: right;
+  font-style: italic;
+  font-size: 13px;
+  color: #F9644B;
 }
