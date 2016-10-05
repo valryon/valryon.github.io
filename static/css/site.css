@@ -21,6 +21,7 @@ html, body {
 p {
   font-family: 'PT Sans', sans-serif;
   font-weight: 200;
+  text-align: justify;
 }
 
 a {
@@ -209,18 +210,30 @@ a:visited {
   vertical-align: top;
 }
 
+.home__project__left img {
+  width: 250px;
+  height: 100px;
+}
+
 .home__project__right {
   display: table-cell;
   width: 66%;
-  vertical-align: top;
-  padding: 12px 12px 0px 12px;
+  vertical-align: middle;;
+  padding-left: 12px;
+  padding-right: 6px;
+  padding-bottom: 16px;
+
+  line-height: 1.5em;
 }
 
-.home__project img {
-  width: 250px;
-  height: 150px;
-  height: auto;
+.home__project__right p {
+  margin: 0px;
+  text-align: justify;
+}
 
+.home__project strong {
+  font-weight: bold;
+  font-size: 1.1em;
 }
 
 .home__project a {
@@ -234,7 +247,7 @@ a:visited {
 }
 
 .home__projecta:visited {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* Tags */
