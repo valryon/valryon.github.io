@@ -1,12 +1,8 @@
 ---
 title: Unity - basic 2D water line
 tags: code unity
-excerpt_separator: <!--more-->
+shortdesc: A simple 2D water line in Unity.
 ---
-
-A simple 2D water line in Unity.
-
-<!--more-->
 
 I just managed to have a 2d water line in Unity 4.3.
 

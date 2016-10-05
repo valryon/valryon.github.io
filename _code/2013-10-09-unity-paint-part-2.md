@@ -1,7 +1,7 @@
 ---
 title: Unity - Paint and blood splatters part 2
 tags: code unity
-excerpt_separator: <!--more-->
+shortdesc: Painting a level with blood or paint in Unity (R&D).
 ---
 
 Advanced research on painting a level with decals in Unity 3D.

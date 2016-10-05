@@ -1,12 +1,8 @@
 ---
 title: Git and Unity projects
 tags: code unity
-excerpt_separator: <!--more-->
+shortdesc: Using git version control with Unity.
 ---
-
-Using git version control with Unity.
-
-<!--more-->
 
 I know this has been covered a hundred times over the Internet, but I need to centralized all the useful information for my future projects.
 

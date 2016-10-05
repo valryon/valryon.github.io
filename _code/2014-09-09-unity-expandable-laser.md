@@ -1,12 +1,8 @@
 ---
 title: Unity - Expandable laser
 tags: code unity
-excerpt_separator: <!--more-->
+shortdesc: A simple expendable Laser script for Unity.
 ---
-
-A simple expendable Laser script for Unity.
-
-<!--more-->
 
 ![Exemple](http://33.media.tumblr.com/e5fa91e55d018da78b417d53ea44a837/tumblr_inline_nceyghKUdb1sg1att.gif)
 

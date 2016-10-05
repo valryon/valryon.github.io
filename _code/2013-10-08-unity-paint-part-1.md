@@ -3,7 +3,7 @@ title: Unity - Paint and blood splatters part 1
 redirect_from:
   - /unity-paint-and-blood-splatters-tests/
 tags: code unity
-excerpt_separator: <!--more-->
+shortdesc: Painting a level with blood or paint in Unity (R&D).
 ---
 
 The concept: trying to paint a level with blood or paint (nearly the same thing, only the color is different) in Unity 3D.

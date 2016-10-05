@@ -1,12 +1,8 @@
 ---
 title: Unity - Timer using co-routine
 tags: code unity
-excerpt_separator: <!--more-->
+shortdesc: Advanced Timer usable as a coroutine for Unity.
 ---
-
-Advanced Timer usable as a coroutine for Unity.
-
-<!--more-->
 
 Here is a simple and powerful **Timer class**.
 

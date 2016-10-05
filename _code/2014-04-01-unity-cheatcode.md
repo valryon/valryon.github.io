@@ -1,12 +1,8 @@
 ---
 title: Unity - Cheat code
 tags: code unity
-excerpt_separator: <!--more-->
+shortdesc: Unity cheat code handler
 ---
-
-Unity cheat code handler
-
-<!--more-->
 
 Script that will detect key typed with keyboard and execute a given method is something is recognized.
 
