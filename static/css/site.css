@@ -109,6 +109,18 @@ a:hover {
   border-radius: 50%;
 }
 
+.banner-avatar a {
+  display: block;
+}
+
+.banner-avatar a img {
+  transition: transform 0.15s ease-out;
+}
+
+.banner-avatar a:hover img {
+  transform: rotate(-180deg);
+}
+
 /* Links */
 
 .banner-links {
@@ -237,11 +249,8 @@ a:hover {
   color: #444444;
 
   -webkit-transition: -webkit-transform 0.15s ease-out;
-
   transition: -webkit-transform 0.15s ease-out;
-
   transition: transform 0.15s ease-out;
-
   transition: transform 0.15s ease-out, -webkit-transform 0.15s ease-out;
 }
 
