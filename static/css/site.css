@@ -25,6 +25,7 @@ h1,h2,h3,h3 {
 a {
   text-decoration: none;
   color: #4198E6;
+  -webkit-transition: all 0.25s;
   transition: all 0.25s;
 }
 
@@ -235,17 +236,25 @@ a:hover {
   text-decoration: none;
   color: #444444;
 
+  -webkit-transition: -webkit-transform 0.15s ease-out;
+
+  transition: -webkit-transform 0.15s ease-out;
+
   transition: transform 0.15s ease-out;
+
+  transition: transform 0.15s ease-out, -webkit-transform 0.15s ease-out;
 }
 
 .project a:hover {
   text-decoration: none;
   color: #4198E6;
-  transform: scale(1.025);
+  -webkit-transform: scale(1.025);
+          transform: scale(1.025);
 }
 
 .project a:focus {
-  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .project a:visited {
@@ -305,6 +314,7 @@ a:hover {
 
 .element a .element-title,
 .element a .element-desc {
+  -webkit-transition: all 0.25s;
   transition: all 0.25s;
 }
 
