@@ -1,6 +1,5 @@
 ---
 title: The Great Paper Adventure - Post Mortem
-layout: post
 excerpt_separator: <!--more-->
 ---
 

@@ -20,6 +20,11 @@ collections:
   projects:
     output: true
     permalink: /:title/
+  events:
+    output: true
+  code:
+    output: true
+    permalink: /:title/
 
 # -------------------------------------------------------
 # Defaults.
@@ -38,9 +43,19 @@ defaults:
       layout: "post"
   - scope:
       path: ""
+      type: "code"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
       type: "projects"
     values:
-      layout: "project"
+      layout: "post"
+  - scope:
+      path: ""
+      type: "events"
+    values:
+      layout: "post"
 
 # -------------------------------------------------------
 # Markdown.

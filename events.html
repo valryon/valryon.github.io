@@ -1,0 +1,18 @@
+---
+layout: post
+title: Events &amp; Experiences
+---
+
+{% assign events = site.events | sort: 'date' | reverse %}
+{% for p in events %}
+<div class="element">
+  <a href="{{ site.url }}{{ p.url }}">
+    <p class="element-title">
+      {{ p.title }}
+    </p>
+    <p class="element-desc">
+      {{ p.shortdesc }}
+    </p>
+  </a>
+</div>
+{% endfor %}

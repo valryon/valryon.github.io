@@ -1,14 +1,11 @@
 ---
 title: Steredenn
-layout: project
-tags: project pixelnest
-image: ./static/content/steredenn/02.png
-excerpt_separator: <!--more-->
+tags: pixelnest game
+image: ./static/content/steredenn/cover.png
+shortdesc: is a frenetic and chaotic space shooter, carved in big beautiful pixels, with insane boss battles for PC (Steam), Xbox One and PlayStation 4
 ---
 
 Steredenn is a frenetic and chaotic space shooter, carved in big beautiful pixels, with insane boss battles for **PC (Steam)**, **Xbox One** and **PlaySTation 4**.
-
-<!--more-->
 
 **[Steredenn](http://steredenn.pixelnest.io/)** is the new game of Pixelnest Studio, and I'm one of the developers.
 

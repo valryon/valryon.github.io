@@ -1,13 +1,8 @@
 ---
 title: Git and Unity projects
-layout: post
-tags: code unity
-excerpt_separator: <!--more-->
+tags: unity
+shortdesc: Using git version control with Unity.
 ---
-
-Using git version control with Unity.
-
-<!--more-->
 
 I know this has been covered a hundred times over the Internet, but I need to centralized all the useful information for my future projects.
 
@@ -35,7 +30,43 @@ Forcing asset to text is better when you work in teams because you can use a dif
 
 This is a nice standard .gitignore file for Unity projects.
 
-{% gist 6581543 %}
+[See on Gist](https://gist.github.com/valryon/6581543)
+
+```
+# =============== #
+# Unity generated #
+# =============== #
+Temp/
+Obj/
+UnityGenerated/
+/Library/
+
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+ExportedObj/
+*.svd
+*.userprefs
+*.csproj
+*.pidb
+*.suo
+*.sln
+*.user
+*.unityproj
+*.booproj
+
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+```
 
 Few comments:
 

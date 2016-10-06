@@ -1,0 +1,23 @@
+---
+layout: post
+title: Code snippets
+---
+
+{% assign snippets = site.code | sort: 'date' | reverse %}
+{% for p in snippets %}
+  <div class="element">
+    <a href="{{ site.url }}{{ p.url }}">
+      <ul class="tags">
+        {% for tag in p.tags %}
+          <li class="tag {{ tag }}">{{ tag }}</li>
+        {% endfor %}
+      </ul>
+      <p class="element-title">
+        {{ p.title }}
+      </p>
+      <p class="element-desc">
+        {{ p.shortdesc }}
+      </p>
+    </a>
+  </div>
+{% endfor %}

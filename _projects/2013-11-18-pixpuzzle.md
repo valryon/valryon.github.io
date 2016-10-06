@@ -1,14 +1,11 @@
 ---
 title: Pix Puzzle
-layout: project
-tags: project prototype
-image: ./static/content/pixpuzzle/1.jpg
-excerpt_separator: <!--more-->
+tags: prototype
+image: ./static/content/pixpuzzle/cover.png
+shortdesc: was a simple "connect the dots" game in a grid and with the addition of color
 ---
 
 PixPuzzle is a simple "connect the dots" game in a grid and with the addition of color.
-
-<!--more-->
 
 It takes an image as a source and generate a puzzle from it. The player has to fill all the grid to complete the level and unlock a new image.
 
@@ -31,4 +28,3 @@ It used to work on iOS and Windows Phone, but the Windows Phone project hasn't b
 ## Screenshots
 
 ![{{ site.url }}/static/content/pixpuzzle/1.jpg]({{ site.url }}/static/content/pixpuzzle/1.jpg)
-

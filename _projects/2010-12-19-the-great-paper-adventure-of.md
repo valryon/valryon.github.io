@@ -1,16 +1,13 @@
 ---
 title: The Great Paper Adventure
-layout: project
-tags: project
-image: ./static/content/the-great-paper-adventure/3.png
-excerpt_separator: <!--more-->
+tags: game
+image: ./static/content/the-great-paper-adventure/cover.png
+shortdesc: is a funny papered 2D shoot-them-up made with XNA. It was released on PC during Decembre 2012 and on Xbox during June 2011
 ---
 
 The Great Paper Adventure is a funny papered 2D shoot-them-up made with XNA. It was released on PC during Decembre 2012 and on Xbox during June 2011.
 
-<!--more-->
-
-- **[Download the game (Windows, XNA)](http://www.indiedb.com/games/the-great-paper-adventure/downloads/the-great-paper-adventure-release-1070)**
+- **[Download the game (Windows, XNA)](https://team-monique.itch.io/the-great-paper-adventure)**
 - **[Play it on Xbox 360 (Xbox Live Indie Game)](http://marketplace.xbox.com/fr-FR/Product/The-Great-Paper-Adventure/66acd000-77fe-1000-9115-d80258550897?cid=search)**
 - [Source code](https://github.com/Valryon/the-great-paper-adventure)
 
