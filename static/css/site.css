@@ -25,6 +25,7 @@ h1,h2,h3,h3 {
 a {
   text-decoration: none;
   color: #4198E6;
+  transition: all 0.25s;
 }
 
 a:hover {
@@ -234,13 +235,21 @@ a:visited {
 }
 
 .project a {
+  display: block;
   text-decoration: none;
   color: #444444;
+
+  transition: transform 0.1s ease-in-out;
 }
 
 .project a:hover {
   text-decoration: none;
   color: #4198E6;
+  transform: scale(1.025);
+}
+
+.project a:focus {
+  transform: scale(0.9);
 }
 
 .project a:visited {
