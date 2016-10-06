@@ -69,27 +69,27 @@ a:visited {
 
 /* Name and links */
 
-.banner__column__left {
+.banner-left {
   display: table-cell;
   width: auto;
   vertical-align: top;
 }
 
-.banner__a {
+.banner-a {
   text-decoration: none;
   color: #797979;
 }
 
-.banner__a:hover {
+.banner-a:hover {
   text-decoration: none;
 }
 
-.banner__a:visited {
+.banner-a:visited {
   text-decoration: none;
   color: #797979;
 }
 
-.banner__name {
+.banner-name {
   font-size: 42px;
   font-weight: 100;
   text-transform: uppercase;
@@ -98,14 +98,14 @@ a:visited {
 
 /* Avatar */
 
-.banner__column__right {
+.banner-right {
   display: table-cell;
   width: 120px;
   vertical-align: top;
   text-align: right;
 }
 
-.banner__avatar img {
+.banner-avatar img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -113,19 +113,19 @@ a:visited {
 
 /* Links */
 
-.banner__links {
+.banner-links {
   display: inline;
   padding-left: 0;
 }
 
-.banner__links__link {
+.banner-link {
   display: inline-block;
   list-style-type: none;
   text-transform: uppercase;
   width: 125px;
 }
 
-.banner__links__link a {
+.banner-link a {
   display: inline-block;
   height: 20px;
   padding-top: 1px;
@@ -150,13 +150,13 @@ a:visited {
 /* And reduce name size */
 
 @media(max-width: 550px) {
-  .banner__name {
+  .banner-name {
     font-size: 30px;
   }
-  .banner__links__link {
+  .banner-link {
     display: block;
   }
-  .banner__links__link a {
+  .banner-link a {
     display: list-item;;
   }
 }
