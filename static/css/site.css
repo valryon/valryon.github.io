@@ -338,6 +338,21 @@ a:visited {
  * Posts and special pages
  **************************************************************/
 
+.post-header {
+  margin-top: 21px;
+  margin-bottom: 42px;
+}
+
+.post-date {
+  text-transform: uppercase;
+  text-align: center;
+  font-style: italic;
+  font-size: 14px;
+  color: #F9644B;
+
+  margin-top: 0px
+}
+
 .post h1 {
   text-transform: uppercase;
   text-align: center;
@@ -345,7 +360,7 @@ a:visited {
   font-size: 24px;
   font-weight: bold;;
 
-  margin-top: 60px;
+  margin-bottom: 6px;
 }
 
 .post h1:first-child {
@@ -371,6 +386,24 @@ a:visited {
 
   margin-top: 42px;
   margin-bottom: 21px;
+}
+
+.post img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.post iframe {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto 1.6rem;
+}
+
+.gist {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .back a {
