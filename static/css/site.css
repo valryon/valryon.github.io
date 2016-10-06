@@ -284,13 +284,9 @@ a:visited {
 }
 
 .element a {
+  display: block;
   text-decoration: none;
   color:#444444;
-}
-
-.element a:hover {
-  text-decoration: none;
-  color: #35C1F1;
 }
 
 .element a:visited {
@@ -305,14 +301,16 @@ a:visited {
   margin-bottom: 0px;
 }
 
-.element-title:hover {
-  color: #35C1F1;
-}
-
 .element-desc {
   margin-top: 0px;
   margin-bottom: 0px;
   font-size: 14px;
+}
+
+.element a:hover .element-title,
+.element a:hover .element-desc {
+  text-decoration: none;
+  color: #35C1F1;
 }
 
 /**************************************************************

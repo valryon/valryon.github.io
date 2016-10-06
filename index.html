@@ -78,12 +78,12 @@ title: Portfolio
       {% assign snippets = site.code | sort: 'date' | reverse %}
       {% for p in snippets limit:15  %}
           <div class="element">
-            <ul class="tags">
-              {% for tag in p.tags %}
-                <li class="tag {{ tag }}">{{ tag }}</li>
-              {% endfor %}
-            </ul>
             <a href="{{ site.url }}{{ p.url }}">
+              <ul class="tags">
+                {% for tag in p.tags %}
+                <li class="tag {{ tag }}">{{ tag }}</li>
+                {% endfor %}
+              </ul>
               <p class="element-title">
                 {{ p.title }}
               </p>
