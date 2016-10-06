@@ -374,6 +374,8 @@ a:hover {
 }
 
 .post h1:first-child {
+  border-top: 1px solid #E8E8E8;
+  padding-top: 30px;
   margin-top: 0px;
 }
 
@@ -425,11 +427,22 @@ a:hover {
   margin: 0 auto;
 }
 
+.back {
+  text-align: center;
+  margin-top: 50px;
+}
+
 .back a {
+  background: #F9644B;
+  color: #FFFFFF;
+
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-size: 13px;
+  margin: 0 auto;
+
   text-transform: uppercase;
   text-align: right;
-  font-style: italic;
-  color: #F9644B;
 }
 
 /**************************************************************
