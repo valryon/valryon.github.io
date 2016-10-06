@@ -307,6 +307,11 @@ a:visited {
   font-size: 14px;
 }
 
+.element a .element-title,
+.element a .element-desc {
+  transition: all 0.25s;
+}
+
 .element a:hover .element-title,
 .element a:hover .element-desc {
   text-decoration: none;
