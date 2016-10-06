@@ -330,13 +330,15 @@ a:visited {
 
 .tag {
   display: inline-block;
-  padding: 2px 4px 2px 4px;
+  padding: 4px 4px 2px 4px;
+
+  vertical-align: top;
 
   font-size: 10px;
   text-transform: uppercase;
   text-align: center;
 
-  border-radius: 20%;
+  border-radius: 4px;
 
   color: #FFFFFF;
   background-color: #969696;
