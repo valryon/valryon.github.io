@@ -32,11 +32,6 @@ a:hover {
   text-decoration: underline;
 }
 
-a:visited {
-  text-decoration: none;
-  color: #4159DD;
-}
-
 /**************************************************************
  * Page (container)
  **************************************************************/
