@@ -14,7 +14,7 @@ The level generation consists in assembling already defined pieces toegether ran
 
 The little game was made in two months from scratch for a contest (Game A Niaque 2011). It uses a custom XNA engine full of bugs.
 
-- [Download the game](https://www.dropbox.com/s/411cd1mg3c75jon/RabbitApocalypse.zip)
+- [Download the game](https://team-monique.itch.io/rabbit-apocalypse)
 - [See the source code](https://github.com/Valryon/Rabbit-Apocalypse)
 
 ### The Team
