@@ -1,29 +1,18 @@
 ---
-layout: default
-title: Events & Experiences
+layout: post
+title: Events &amp; Experiences
 ---
 
-<div class="post">
-  <h1>Events &amp; Experiences</h1>
-
-  <!-- Events -->
-  <div class="block">
-    <div class="block-content">
-      {% assign events = site.events | sort: 'date' | reverse %}
-      {% for p in events %}
-      <div class="element">
-        <a href="{{ site.url }}{{ p.url }}">
-          <p class="element-title">
-            {{ p.title }}
-          </p>
-          <p class="element-desc">
-            {{ p.shortdesc }}
-          </p>
-        </a>
-      </div>
-      {% endfor %}
-
-    </div>
-  </div>
-  {% include components/backbutton.html %}
+{% assign events = site.events | sort: 'date' | reverse %}
+{% for p in events %}
+<div class="element">
+  <a href="{{ site.url }}{{ p.url }}">
+    <p class="element-title">
+      {{ p.title }}
+    </p>
+    <p class="element-desc">
+      {{ p.shortdesc }}
+    </p>
+  </a>
 </div>
+{% endfor %}
