@@ -122,12 +122,12 @@ a:visited {
   display: inline-block;
   list-style-type: none;
   text-transform: uppercase;
+  width: 125px;
 }
 
 .banner__links__link a {
   display: inline-block;
   height: 20px;
-  width: 91px;
   padding-top: 1px;
   padding-left: 24px;
   background-repeat: no-repeat;
