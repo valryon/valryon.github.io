@@ -50,12 +50,12 @@ defaults:
       path: ""
       type: "projects"
     values:
-      layout: "project"
+      layout: "post"
   - scope:
       path: ""
       type: "events"
     values:
-      layout: "event"
+      layout: "post"
 
 # -------------------------------------------------------
 # Markdown.
