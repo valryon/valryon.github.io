@@ -375,6 +375,26 @@ strong {
   background-color: #2D5EFF;
 }
 
+.game {
+  background-color: #0087FF;
+}
+
+.pixelnest {
+  background-color: #FF4600;
+}
+
+.prototype {
+  background-color: #7ACC1C;
+}
+
+.plugin {
+  background-color: #778D99;
+}
+
+.app {
+  background-color: #99183C;
+}
+
 /**************************************************************
  * Posts and special pages
  **************************************************************/
@@ -382,6 +402,7 @@ strong {
 .post-header {
   margin-top: 21px;
   margin-bottom: 42px;
+  text-align: center;
 }
 
 .post-date {
