@@ -33,6 +33,10 @@ a:hover {
   text-decoration: underline;
 }
 
+strong {
+  font-weight: bold;
+}
+
 /**************************************************************
  * Page (container)
  **************************************************************/
@@ -439,7 +443,17 @@ a:hover {
   margin: 0 auto 1.6rem;
 }
 
-.post .highlight {
+p code, li code {
+  padding: 1px 3px;
+  background: #8C8C8C;
+  color: #C25;
+  font-size: 0.85rem;
+  border-radius: 3px;
+  border-color: #D14;
+  background-color: #F7F7F9;
+}
+
+.highlight {
   padding: 12px;
   background: #282C34;
   border-radius: 2px;
