@@ -2,7 +2,7 @@
 title: 2D Water surface with reflection
 tags: unity
 shortdesc: A simple shader + example of a water surface with reflection in 2D
-image: ./static/content/water2d/cover.png
+image: static/content/water2d/cover.png
 ---
 
 I am not good with shaders. But for a 2D prototype I wanted to have a nice **water effect**.

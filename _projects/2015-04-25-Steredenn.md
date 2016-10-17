@@ -1,7 +1,7 @@
 ---
 title: Steredenn
 tags: pixelnest game
-image: ./static/content/steredenn/cover.png
+image: static/content/steredenn/cover.png
 shortdesc: is a frenetic and chaotic space shooter, carved in big beautiful pixels, with insane boss battles for PC (Steam), Xbox One and PlayStation 4
 ---
 

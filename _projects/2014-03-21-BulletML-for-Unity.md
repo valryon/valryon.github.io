@@ -1,7 +1,7 @@
 ---
 title: BulletML for Unity
 tags: pixelnest unity plugin
-image: ./static/content/bulletml-unity/cover.png
+image: static/content/bulletml-unity/cover.png
 shortdesc: is a Unity plugin, is a simple and powerful wrapper around BulletML
 ---
 
