@@ -141,6 +141,10 @@ Category {
 
 ```
 
+# Credits
+
+Thanks to [Branden](http://brandenstrochinsky.blogspot.fr/2016/06/water-effect.html) for the height map and inspiration. Check out his article for a similar solution with more details on the shaders.
+
 
 [url_img_gif]: {{site.url}}/static/content/water2d-unity/water2D_3.gif
 
