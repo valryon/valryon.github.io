@@ -13,8 +13,9 @@ The result:
 [  ![Shader in action][url_img_gif]  ][url_img_gif]
 
 I made an easy-to-use unity package if you'd like to use it too:
+
 - [Source](https://github.com/valryon/water2d-unity/)
-- [Download package](https://github.com/valryon/water2d-unity/releases/download/1.0/water2d_surface.unitypackage)
+- [Download package](https://github.com/valryon/water2d-unity/releases/download/1.01/water2D_surface_1.01.unitypackage)
 
 It has been made with Unity 5.4.2f1 and has been tested on PC and mobile. But I don't guarantee crazy performances or compatibility everywhere.
 
@@ -144,6 +145,8 @@ Category {
 # Credits
 
 Thanks to [Branden](http://brandenstrochinsky.blogspot.fr/2016/06/water-effect.html) for the height map and inspiration. Check out his article for a similar solution with more details on the shaders.
+
+Thanks to the [Superpowers team](https://github.com/sparklinlabs/superpowers-asset-packs) for the demo assets.
 
 
 [url_img_gif]: {{site.url}}/static/content/water2d-unity/water2D_3.gif
