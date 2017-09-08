@@ -31,7 +31,12 @@ title: Portfolio
       {% for post in projects %}
 
         <article class="project">
+
+          {% if post.direct %}
+          <a href="{{ post.direct }}">
+          {% else %}
           <a href="{{ site.url }}{{ post.url }}">
+          {% endif %}
 
             <div class="project-left">
               <img src="{{ site.url }}/{{ post.image }}" alt="{{ post.title }}" />
