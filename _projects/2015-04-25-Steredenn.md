@@ -33,3 +33,7 @@ We took the gameplay of the [Shmupfest](../shmupfest) and refined it to make som
 ![{{ site.url }}/static/content/steredenn/15.png]({{ site.url }}/static/content/steredenn/15.png)
 
 ![{{ site.url }}/static/content/steredenn/22.png]({{ site.url }}/static/content/steredenn/22.png)
+
+## Bonus
+
+- [Lego version]({{ site.url }}/steredenn-lego)

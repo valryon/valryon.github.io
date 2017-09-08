@@ -1,0 +1,66 @@
+---
+title: Steredenn - Legos
+---
+
+# Steredenn... in Lego!
+
+Unofficial Lego version of the Steredenn ship(s).
+
+## Tempest
+
+![Result]({{ site.url }}/static/content/legos-steredenn/tempest.png)
+
+- [Mecabricks model](https://www.mecabricks.com/fr/models/beDa5DyYvzg)
+- [Brick list](http://www.brickowl.com/wishlist/view/valryon/steredenn-tempest)
+- Manual (**not up-to-date**)
+
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/1.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/2.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/3.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/4.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/5.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/6.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/7.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/8.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/9.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/10.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/11.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/12.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/13.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/14.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/15.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/16.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/17.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/18.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/19.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/20.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/21.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/22.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/23.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/24.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/25.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/26.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/27.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/28.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/29.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/30.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/31.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/32.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/33.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/34.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/35.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/36.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/37.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/38.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/39.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/40.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/41.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/42.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/43.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/44.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/45.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/46.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/47.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/48.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/49.png)
+![Step]({{ site.url }}/static/content/legos-steredenn/tempest/50.png)
