@@ -1,10 +1,10 @@
 ---
-title: Steredenn - Legos
+title: Steredenn... in LEGO®
 ---
 
-# Steredenn... in Lego!
+Unofficial LEGO® version of the Steredenn ship(s). 
 
-Unofficial Lego version of the Steredenn ship(s).
+This is a fan-made project with no commercial outcome.
 
 ## Tempest
 
