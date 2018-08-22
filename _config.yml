@@ -20,6 +20,9 @@ collections:
   projects:
     output: true
     permalink: /:title/
+  protos:
+    output: true
+    permalink: /:title/
   events:
     output: true
   code:
