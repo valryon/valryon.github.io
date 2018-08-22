@@ -53,6 +53,11 @@ defaults:
       path: ""
       type: "projects"
     values:
+      layout: "post"  
+  - scope:
+      path: ""
+      type: "protos"
+    values:
       layout: "post"
   - scope:
       path: ""
