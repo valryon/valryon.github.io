@@ -1,5 +1,5 @@
 ---
-title: City Invaders Call
+title: City Invaders
 tags: game
 image: static/content/cityinvaders/cover.png
 shortdesc: is massively multiplayer free-to-play geolocalized tactical game by Lone Stone Studio.
