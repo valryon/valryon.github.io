@@ -1,0 +1,50 @@
+---
+layout: post
+title: All projcets
+---
+
+# Projects & Games
+
+{% assign projects = site.projects | sort: 'date' | reverse %}
+{% for post in projects %}
+
+  <article class="project">
+
+    {% if post.direct %}
+    <a href="{{ post.direct }}">
+    {% else %}
+    <a href="{{ site.url }}{{ post.url }}">
+    {% endif %}
+
+      <div class="project-left">
+        <img src="{{ site.url }}/{{ post.image }}" alt="{{ post.title }}" />
+      </div>
+      <div class="project-right">
+        <p><strong>{{ post.title }}</strong> {{ post.shortdesc }}</p>
+      </div>
+    </a>
+  </article>
+{% endfor %}
+
+# Prototypes & experiments
+
+{% assign protos = site.protos | sort: 'date' | reverse %}
+{% for post in protos %}
+
+  <article class="project">
+
+    {% if post.direct %}
+    <a href="{{ post.direct }}">
+    {% else %}
+    <a href="{{ site.url }}{{ post.url }}">
+    {% endif %}
+
+      <div class="project-left">
+        <img src="{{ site.url }}/{{ post.image }}" alt="{{ post.title }}" />
+      </div>
+      <div class="project-right">
+        <p><strong>{{ post.title }}</strong> {{ post.shortdesc }}</p>
+      </div>
+    </a>
+  </article>
+{% endfor %}

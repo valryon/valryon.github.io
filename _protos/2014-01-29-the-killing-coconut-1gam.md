@@ -2,7 +2,7 @@
 title: The Killing Coconut #1GAM
 tags: unity prototype
 image: static/content/killing-coconut/cover.png
-shortdesc: is a Unity prototype for the One Game A Month January 2014 challenge
+shortdesc: (2014) is a Unity prototype for the One Game A Month January 2014 challenge
 ---
 
 I participated to the [2014 "One Game a Month" challenge](http://onegameamonth.com) to enhance my game design and game developer skills.

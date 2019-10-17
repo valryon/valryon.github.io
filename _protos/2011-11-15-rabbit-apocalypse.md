@@ -2,7 +2,7 @@
 title: Rabbit Apocalype!
 tags: game
 image: static/content/rabbit-apocalypse/cover.png
-shortdesc: is a short, simple and quite awful homemade 2D platformer with random level creation
+shortdesc: (2011) is a short, simple and quite awful homemade 2D platformer with random level creation
 ---
 
 Rabbit Apocalypse! is a short, simple and quite bugguy homemade 2D platformer with random level creation.

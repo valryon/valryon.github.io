@@ -2,7 +2,7 @@
 title: Night Call
 tags: game
 image: static/content/nightcall/cover.png
-shortdesc: is a game by Monkey Moon and Black Muffin Studio edited by Raw Fury. I'm helping on the code here.
+shortdesc: (2019) is a game by Monkey Moon and Black Muffin Studio edited by Raw Fury. I'm helping on the code here.
 direct: http://nightcall-game.com/
 ---
 

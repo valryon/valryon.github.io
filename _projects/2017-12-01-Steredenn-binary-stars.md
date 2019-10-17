@@ -2,7 +2,7 @@
 title: Steredenn - Binary Stars
 tags: game
 image: static/content/steredenn/coverbs.png
-shortdesc: is a hugely improved and massively expanded version of the original Steredenn.
+shortdesc: (2018) is a hugely improved and massively expanded version of the original Steredenn.
 direct: http://steredenn.pixelnest.io
 ---
 
