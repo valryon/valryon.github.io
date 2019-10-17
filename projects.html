@@ -3,7 +3,7 @@ layout: post
 title: All projects, prototypes and experiments
 ---
 
-<h1>Projects and games</h1>>
+<h2>Projects and games</h2>
 
 {% assign projects = site.projects | sort: 'date' | reverse %}
 {% for post in projects %}
@@ -26,7 +26,8 @@ title: All projects, prototypes and experiments
   </article>
 {% endfor %}
 
-<h1>Prototypes/experiments</h1>
+<hr />
+<h2>Prototypes/experiments</h2>
 
 {% assign protos = site.protos | sort: 'date' | reverse %}
 {% for post in protos %}
