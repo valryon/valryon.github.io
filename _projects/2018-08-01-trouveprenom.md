@@ -3,7 +3,7 @@ title: 🇫🇷 Trouve Prénom
 tags: app
 image: static/content/trouveprenom/cover.png
 shortdesc: (2018) a simple website for future parents looking for names ideas. Also show statistics for each name.
-direct: http://trouveprenoms.azurewebsites.net
+direct: https://trouveprenoms.azurewebsites.net
 ---
 
 - [Website](http://trouveprenoms.azurewebsites.net)
