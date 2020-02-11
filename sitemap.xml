@@ -27,12 +27,6 @@ layout: null
   <changefreq>monthly</changefreq>
   <priority>0.7</priority>
 </url>
-<url>
-	<loc>https://dmayance.com/events/</loc>
-	<lastmod>{{ site.time | date_to_xmlschema}}</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
-</url>
   {% for post in site.posts %}
     {% unless post.hide %}
 		  <url>
