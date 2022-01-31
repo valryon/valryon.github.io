@@ -3,6 +3,7 @@ title: Culturez-Vous !
 tags: app
 image: static/content/culturez-vous/cover.png
 shortdesc: (2012) was an application for Windows Phone 7, that was providing one old or unused french word everyday
+archive: yes
 ---
 
 Culturez-Vous ! was an application for Windows Phone 7, that was providing one old or unused french word everyday.

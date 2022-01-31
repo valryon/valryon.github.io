@@ -3,6 +3,7 @@ title: BulletML for Unity
 tags: pixelnest unity plugin
 image: static/content/bulletml-unity/cover.png
 shortdesc: (2014) is a Unity plugin, is a simple and powerful wrapper around BulletML
+archive: yes
 ---
 
 BulletML for Unity, a Unity plugin, is a simple and powerful wrapper around BulletML.

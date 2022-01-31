@@ -59,11 +59,6 @@ defaults:
       type: "protos"
     values:
       layout: "post"
-  - scope:
-      path: ""
-      type: "events"
-    values:
-      layout: "post"
 
 # -------------------------------------------------------
 # Markdown.

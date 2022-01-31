@@ -24,7 +24,7 @@ title: Portfolio
     </div>
   </div>
 
-  <!-- Projects list -->
+  <!-- Main projects list -->
   <div class="block">
     <div class="block-header">
       <h2>Main work</h2>
@@ -34,22 +34,56 @@ title: Portfolio
       {% assign projects = site.projects | sort: 'date' | reverse %}
       {% for post in projects %}
 
-        <article class="project">
+        {% unless post.archive %}
+          <article class="project">
 
-          {% if post.direct %}
-          <a href="{{ post.direct }}">
-          {% else %}
-          <a href="{{ site.url }}{{ post.url }}">
-          {% endif %}
+            {% if post.direct %}
+            <a href="{{ post.direct }}">
+            {% else %}
+            <a href="{{ site.url }}{{ post.url }}">
+            {% endif %}
 
-            <div class="project-left">
-              <img src="{{ site.url }}/{{ post.image }}" alt="{{ post.title }}" />
-            </div>
-            <div class="project-right">
-              <p><strong>{{ post.title }}</strong> {{ post.shortdesc }}</p>
-            </div>
-          </a>
-        </article>
+              <div class="project-left">
+                <img src="{{ site.url }}/{{ post.image }}" alt="{{ post.title }}" />
+              </div>
+              <div class="project-right">
+                <p><strong>{{ post.title }}</strong> {{ post.shortdesc }}</p>
+              </div>
+            </a>
+          </article>
+        {% endunless %}
+      {% endfor %}
+    </div>
+  </div>
+
+   <!-- Prototypes and sub projects -->
+  <div class="block">
+    <div class="block-header">
+      <h2>Prototypes and archives</h2>
+      <a href="/projects">See all</a>
+    </div>
+    <div class="block-content">
+      {% assign projects = site.projects | sort: 'date' | reverse %}
+      {% for post in projects %}
+
+        {% if post.archive %}
+          <article class="project">
+
+            {% if post.direct %}
+            <a href="{{ post.direct }}">
+            {% else %}
+            <a href="{{ site.url }}{{ post.url }}">
+            {% endif %}
+
+              <div class="project-left">
+                <img src="{{ site.url }}/{{ post.image }}" alt="{{ post.title }}" />
+              </div>
+              <div class="project-right">
+                <p><strong>{{ post.title }}</strong> {{ post.shortdesc }}</p>
+              </div>
+            </a>
+          </article>
+        {% endif %}
       {% endfor %}
     </div>
   </div>
@@ -57,10 +91,10 @@ title: Portfolio
   <!-- Code snippets and tutorials -->
   <div class="block">
     <div class="block-header">
-      <h2>Code</h2>
+      <h2>Code snippets (archives)</h2>
       <a href="/code">See All</a>
     </div>
-    <div class="block-content">
+    <!-- <div class="block-content">
       {% assign snippets = site.code | sort: 'date' | reverse %}
       {% for p in snippets limit:15  %}
           <div class="element">
@@ -79,6 +113,6 @@ title: Portfolio
             </a>
           </div>
       {% endfor %}
-    </div>
+    </div> -->
   </div>
 </div>
