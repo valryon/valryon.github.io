@@ -1,4 +1,4 @@
-name: Damien Mayance (Valryon)
+title: Damien Mayance (Valryon)
 
 # -------------------------------------------------------
 # Globals.
@@ -84,5 +84,5 @@ highlighter: rouge
 # Plugins.
 # -------------------------------------------------------
 
-gems:
+plugins:
   - jekyll-redirect-from
