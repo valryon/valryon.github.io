@@ -31,7 +31,7 @@ title: Portfolio
       <a href="/projects">See all</a>
     </div>
     <div class="block-content">
-      {% assign projects = site.projects | sort: 'date' | reverse %}
+      {% assign projects = site.projects | sort: 'highlight', 'date' | reverse %}
       {% for post in projects %}
 
         {% unless post.archive %}
