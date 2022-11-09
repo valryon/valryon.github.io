@@ -164,6 +164,10 @@ strong {
  background-image: url(../images/icon-linkedin@2x.png);
 }
 
+.mastodon a {
+ background-image: url(../images/icon-mastodon@2x.png);
+}
+
 /* On mobile display links vertically */
 /* And reduce name size */
 
