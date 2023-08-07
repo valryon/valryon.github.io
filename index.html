@@ -54,43 +54,18 @@ title: Portfolio
         {% endif %}
       {% endfor %}
     </div>
-    <div class="block-content">
-      {% assign projects = site.projects | sort: 'date' | reverse %}
-      {% for post in projects %}
 
-        {% unless post.highlight %}
-          <article class="project">
-
-            {% if post.direct %}
-            <a href="{{ post.direct }}">
-            {% else %}
-            <a href="{{ site.url }}{{ post.url }}">
-            {% endif %}
-
-              <div class="project-left">
-                <img src="{{ site.url }}/{{ post.image }}" alt="{{ post.title }}" />
-              </div>
-              <div class="project-right">
-                <p><strong>{{ post.title }}</strong> {{ post.shortdesc }}</p>
-              </div>
-            </a>
-          </article>
-        {% endunless %}
-      {% endfor %}
-    </div>
-  </div>
-
-   <!-- Prototypes and sub projects -->
+   <!-- Prototypes, archives and sub projects -->
   <div class="block">
     <div class="block-header">
-      <h2>Prototypes and archives</h2>
+      <h2>Minor work, prototypes and archives</h2>
       <a href="/projects">See all</a>
     </div>
     <div class="block-content">
       {% assign projects = site.projects | sort: 'date' | reverse %}
       {% for post in projects %}
 
-        {% if post.archive %}
+        {% unless post.highlight %}
           <article class="project">
 
             {% if post.direct %}
