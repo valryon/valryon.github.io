@@ -9,24 +9,6 @@ layout: null
   <changefreq>monthly</changefreq>
   <priority>1.0</priority>
 </url>
-<url>
-	<loc>https://dmayance.com/work/</loc>
-	<lastmod>{{ site.time | date_to_xmlschema}}</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.9</priority>
-</url>
-<url>
-	<loc>https://dmayance.com/about/</loc>
-	<lastmod>{{ site.time | date_to_xmlschema}}</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.9</priority>
-</url>
-<url>
-	<loc>https://dmayance.com/code/</loc>
-	<lastmod>{{ site.time | date_to_xmlschema}}</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.7</priority>
-</url>
   {% for post in site.posts %}
     {% unless post.hide %}
 		  <url>
