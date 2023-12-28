@@ -1,117 +1,28 @@
 ---
 layout: default
 title: Portfolio
+h1: Main work
 ---
 
-<div class="home">
+<div>
+  <div id="projects">
+    {% assign projects = site.projects | sort: 'date' | reverse %}
+    {% for post in projects %}
 
-  <!-- About me -->
-  <div class="block">
-    <div class="block-header">
-      <h2>About me</h2>
-      <a href="/about">Read more</a>
-    </div>
-    <div class="block-content">
-      <p>
-        I'm a French indie game, web and software developer. I love programming, creating and hacking stuff.
-      </p>
-      <p>
-        I co-founded <a class="pixelnest-logo" href="https://pixelnest.io">Pixelnest Studio</a> where I created Steredenn and numerous other projects.
-      </p>
-      <p>
-        This is my portfolio — you will find my projects, snippets and resources. Enjoy. :)
-      </p>
-    </div>
-  </div>
-
-  <!-- Main projects list -->
-  <div class="block">
-    <div class="block-header">
-      <h2>Main work</h2>
-      <a href="/projects">See all</a>
-    </div>
-    <div class="block-content">
-      {% assign projects = site.projects | sort: 'date' | reverse %}
-      {% for post in projects %}
-
-        {% if post.highlight %}
-          <article class="project">
-
-            {% if post.direct %}
-            <a href="{{ post.direct }}">
-            {% else %}
-            <a href="{{ site.url }}{{ post.url }}">
-            {% endif %}
-
-              <div class="project-left">
-                <img src="{{ site.url }}/{{ post.image }}" alt="{{ post.title }}" />
-              </div>
-              <div class="project-right">
-                <p><strong>{{ post.title }}</strong> {{ post.shortdesc }}</p>
-              </div>
-            </a>
-          </article>
+      {% if post.highlight %}
+        {% if post.direct %}
+          {% capture url %}{{post.direct}}{% endcapture %}
+        {% else %}
+          {% capture url %}{{ site.url }}{{ post.url }}{% endcapture %}
         {% endif %}
-      {% endfor %}
-    </div>
 
-   <!-- Prototypes, archives and sub projects -->
-  <div class="block">
-    <div class="block-header">
-      <h2>Minor work, prototypes and archives</h2>
-      <a href="/projects">See all</a>
-    </div>
-    <div class="block-content">
-      {% assign projects = site.projects | sort: 'date' | reverse %}
-      {% for post in projects %}
+        {% capture year %}{{post.date | date: "%Y"}}{% endcapture %}
 
-        {% unless post.highlight %}
-          <article class="project">
+        {% include card.html
+            image=post.image url=url role=post.role year=year title=post.title shortdesc=post.shortdesc
+        %}
 
-            {% if post.direct %}
-            <a href="{{ post.direct }}">
-            {% else %}
-            <a href="{{ site.url }}{{ post.url }}">
-            {% endif %}
-
-              <div class="project-left">
-                <img src="{{ site.url }}/{{ post.image }}" alt="{{ post.title }}" />
-              </div>
-              <div class="project-right">
-                <p><strong>{{ post.title }}</strong> {{ post.shortdesc }}</p>
-              </div>
-            </a>
-          </article>
-        {% endunless %}
-      {% endfor %}
-    </div>
-  </div>
-
-  <!-- Code snippets and tutorials -->
-  <div class="block">
-    <div class="block-header">
-      <h2>Code snippets (archives)</h2>
-      <a href="/code">See All</a>
-    </div>
-    <!-- <div class="block-content">
-      {% assign snippets = site.code | sort: 'date' | reverse %}
-      {% for p in snippets limit:15  %}
-          <div class="element">
-            <a href="{{ site.url }}{{ p.url }}">
-              <ul class="tags">
-                {% for tag in p.tags %}
-                <li class="tag {{ tag }}">{{ tag }}</li>
-                {% endfor %}
-              </ul>
-              <p class="element-title">
-                {{ p.title }}
-              </p>
-              <p class="element-desc">
-                {{ p.shortdesc }}
-              </p>
-            </a>
-          </div>
-      {% endfor %}
-    </div> -->
+      {% endif %}
+    {% endfor %}
   </div>
 </div>

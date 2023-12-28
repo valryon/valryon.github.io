@@ -23,11 +23,6 @@ collections:
   protos:
     output: true
     permalink: /:title/
-  events:
-    output: true
-  code:
-    output: true
-    permalink: /:title/
 
 # -------------------------------------------------------
 # Defaults.
@@ -44,9 +39,6 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-  - scope:
-      path: ""
-      type: "code"
     values:
       layout: "post"
   - scope:
