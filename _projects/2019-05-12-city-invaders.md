@@ -2,6 +2,7 @@
 title: City Invaders
 tags: game
 image: static/content/cityinvaders/cover.png
-shortdesc: (2020) is massively multiplayer free-to-play geolocalized tactical game by Lone Stone Studio.
+shortdesc: A massively multiplayer free-to-play geolocalized mobile tactical game by Lonestone Studio.
 direct: https://cityinvaders.game
+role: dev
 ---

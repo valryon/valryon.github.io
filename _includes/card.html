@@ -1,0 +1,17 @@
+<article class="hover:bg-indigo-900 rounded mb-4">
+    <a href="{{ include.url }}">
+        <div class="flex flex-rows py-2 px-2 gap-6 items-center">
+            <div class="shrink-0 w-16 sm:w-48">
+                <img class="rounded-lg" src="{{ site.url }}/{{ include.image }}" alt="{{ include.title }}" />
+            </div>
+            <div class="flex-auto">
+                <h2 class="text-lg font-bold">{{ include.title }} </h2>
+                <span class="text-slate-400">{{ include.role }}</span>
+                <p>{{ include.shortdesc }}</p>
+            </div>
+            <div class="flex-shrink px-2">
+                <span class="text-md text-slate-300">{{ include.year }}</span>
+            </div>
+        </div>
+    </a>
+</article>

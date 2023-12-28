@@ -1,22 +1,77 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   {% include meta.html %}
 
   <title>{{ page.title }} - Damien Mayance (Valryon)</title>
 
 </head>
-<body>
-  <div class="page">
 
-    {% include header.html %}
+<body class="bg-gray-900 text-slate-50 max-w-6xl mx-auto">
+  <div class="flex flex-col lg:flex-row">
+    <aside class="pb-4 pt-0 w-full px-8 lg:w-3/12 h-full">
+      <img src="https://www.gravatar.com/avatar/545f7c7f0ed11d6ef21722a7e6c47acf?s=300" alt="Damien Mayance"
+        class="w-48 my-4 rounded-full hover:rotate-180 hover:transition-all">
+      <h1 class="text-2xl font-bold">Damien Mayance</h1>
+      <h3 class="text-sm text-slate-300">@valryon</h3>
+      <p class="py-2">French indie game, web and software developer.<br />I love programming, creating and
+        hacking stuff.</p>
+      <div class="my-2">
+        <h3 class="text-lg font-semibold pt-1">Links</h3>
+        <div class="mt-2 mb-4 text-lg flex flex-col gap-2">
+          <div class="flex gap-x-3 ml-1 items-center">
+            <i class="fa-solid fa-location-dot"></i>
+            <span class="hover:font-bold">Vitré, France</span>
+          </div>
+          <div class="flex gap-x-3 ml-1 items-center text-slate-200">
+            <i class="fa-brands fa-linkedin"></i>
+            <a class="hover:underline hover:font-bold" href="https://fr.linkedin.com/in/damienmayance">LinkedIn</a>
+          </div>
+          <div class="flex gap-x-3 ml-1 items-center text-slate-200">
+            <i class="fa-brands fa-github"></i>
+            <a class="hover:underline hover:font-bold" href="https://github.com/Valryon">GitHub</a>
+          </div>
+          <div class="flex gap-x-2 items-center text-slate-200">
+            <img style="width:24px; height:24px" src="{{ site.url }}/static/images/icon-pixelnest@2x.png">
+            <a class="hover:underline hover:font-bold" href="https://pixelnest.io">Pixelnest Studio</a>
+          </div>
+          <div class="flex gap-x-3 ml-1 items-center text-slate-200">
+            <i class="fa-solid fa-envelope"></i>
+            <a class="hover:underline hover:font-bold" href="mailto:coucou@dmayance.com">Contact me</a>
+          </div>
 
-    <main class="page-content">
-      {{ content }}
+        </div>
+      </div>
+    </aside>
+
+    <main class="flex-1 lg:px-8 pb-4 lg:pt-4 h-auto w-full ">
+      <div class="space-x-4 my-4 lg:space-x-6 lg:my-6 text-lg lg:text-xl flex flex-row justify-center">
+        <div>
+          <a class="rounded-full px-4 bg-indigo-900 py-1 hover:font-bold" href="/" id="projects">Portfolio</a>
+        </div>
+        <div>
+          <a class="rounded-full px-4 bg-red-900 py-1 hover:font-bold" href="/archives" id="archives">Archives</a>
+        </div>
+        <div>
+          <a class="rounded-full px-4 bg-violet-900 py-1 hover:font-bold" href="/formation" id="formation">Formation</a>
+        </div>
+      </div>
+      <div class="">
+
+        <h1 class="text-2xl font-semibold mt-2 mb-6 text-center">{{ page.h1 }}</h1>
+
+        {{ content }}
+
+      </div>
     </main>
-
-    {% include footer.html %}
-
   </div>
+
+  <footer class="text-center py-4">
+    <p class="text-xs text-slate-300">
+      © Damien Mayance - Made with Jekyll + tailwind.css, hosted on GitHub Pages
+    </p>
+  </footer>
 </body>
+
 </html>

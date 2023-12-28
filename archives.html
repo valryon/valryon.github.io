@@ -1,15 +1,15 @@
 ---
 layout: default
-title: Portfolio
-h1: Main work
+title: Archives
+h1: Archived projects, prototypes, old stuff
 ---
 
 <div>
-  <div id="projects">
+  <div id="archives">
     {% assign projects = site.projects | sort: 'date' | reverse %}
     {% for post in projects %}
 
-      {% if post.highlight %}
+      {% unless post.highlight %}
         {% if post.direct %}
           {% capture url %}{{post.direct}}{% endcapture %}
         {% else %}
@@ -22,7 +22,7 @@ h1: Main work
             image=post.image url=url role=post.role year=year title=post.title shortdesc=post.shortdesc
         %}
 
-      {% endif %}
+      {% endunless %}
     {% endfor %}
   </div>
 </div>
