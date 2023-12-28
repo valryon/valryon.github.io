@@ -10,9 +10,11 @@
 
 <body class="bg-gray-900 text-slate-50 max-w-6xl mx-auto">
   <div class="flex flex-col lg:flex-row">
-    <aside class="pb-4 pt-0 w-full px-8 lg:w-3/12 h-full">
-      <img src="https://www.gravatar.com/avatar/545f7c7f0ed11d6ef21722a7e6c47acf?s=300" alt="Damien Mayance"
-        class="w-48 my-4 rounded-full hover:rotate-180 hover:transition-all">
+    <aside class="pb-4 pt-0 w-full px-3 sm:px-6 lg:px-8 lg:w-3/12 h-full lg:mt-18 lg:pt-2">
+      <a href="/">
+        <img src="https://www.gravatar.com/avatar/545f7c7f0ed11d6ef21722a7e6c47acf?s=300" alt="Damien Mayance"
+          class="w-48 my-4 rounded-full hover:rotate-180 hover:transition-all">
+      </a>
       <h1 class="text-2xl font-bold">Damien Mayance</h1>
       <h3 class="text-sm text-slate-300">@valryon</h3>
       <p class="py-2">French indie game, web and software developer.<br />I love programming, creating and
@@ -40,26 +42,35 @@
             <i class="fa-solid fa-envelope"></i>
             <a class="hover:underline hover:font-bold" href="mailto:coucou@dmayance.com">Contact me</a>
           </div>
-
+        </div>
+      </div>
+      <div class="my-2">
+        <h3 class="text-lg font-semibold pt-1">Categories</h3>
+        <div class="mt-2 mb-4 text-md sm:text-lg flex flex-rows lg:flex-col gap-4 lg:text-xl">
+          <div class="rounded-full px-4 py-2 bg-indigo-900 py-1 hover:font-bold hover:underline">
+            <i class="fa-solid fa-star"></i>
+            <a href="/" id="projects">Main&nbsp;work</a>
+          </div>
+          <div class="rounded-full px-4 py-2 bg-red-900 py-1 hover:font-bold hover:underline">
+            <i class="fa-solid fa-box-archive"></i>
+            <a href="/archives" id="archives">Archives</a>
+          </div>
+          <div class="rounded-full px-4 py-2 bg-blue-900 py-1 hover:font-bold hover:underline">
+            <i class="fa-solid fa-school"></i>
+            <a href="/formation" id="formation">Formation</a>
+          </div>
         </div>
       </div>
     </aside>
 
-    <main class="flex-1 lg:px-8 pb-4 lg:pt-4 h-auto w-full ">
-      <div class="space-x-4 my-4 lg:space-x-6 lg:my-6 text-lg lg:text-xl flex flex-row justify-center">
-        <div>
-          <a class="rounded-full px-4 bg-indigo-900 py-1 hover:font-bold" href="/" id="projects">Portfolio</a>
-        </div>
-        <div>
-          <a class="rounded-full px-4 bg-red-900 py-1 hover:font-bold" href="/archives" id="archives">Archives</a>
-        </div>
-        <div>
-          <a class="rounded-full px-4 bg-violet-900 py-1 hover:font-bold" href="/formation" id="formation">Formation</a>
-        </div>
-      </div>
+    <main class="flex-1 px-2 sm:px-4 lg:px-8 pb-4 lg:pt-4 h-auto w-full ">
       <div class="">
 
-        <h1 class="text-2xl font-semibold mt-2 mb-6 text-center">{{ page.h1 }}</h1>
+        {% if page.h1 %}
+        <div class="border-2 rounded mt-2 mb-6">
+          <h1 class="text-2xl font-semibold py-4 text-center">{{ page.h1 }}</h1>
+        </div>
+        {% endif %}
 
         {{ content }}
 

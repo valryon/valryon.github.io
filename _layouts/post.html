@@ -4,12 +4,14 @@ layout: default
 
 <article class="">
 
-  <h1 class="text-2xl font-semibold mt-2 text-center">{{ page.title }}</h1>
-  <p class="text-md text-slate-300 text-center mb-6 ">
-    {{ page.date | date: "%d %B %Y" }}
-  </p>
+  <div class="border-2 rounded mt-2 mb-6 py-4">
+    <h1 class="text-2xl font-semibold text-center">{{ page.title }}</h1>
+    <p class="text-md text-slate-300 text-center">
+      {{ page.date | date: "%d %B %Y" }}
+    </p>
+  </div>
 
-	<div class="post-content">
-		{{ content  }}
-	</div>
+  <div class="post-content">
+    {{ content }}
+  </div>
 </article>
