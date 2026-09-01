@@ -17,24 +17,6 @@
 --------------------------------------------------------- */
 
 @media (max-width: 840px) {
-  .shell {
-    grid-template-columns: 1fr;
-    gap: 4px;
-  }
-
-  .profile {
-    position: static;
-    padding: 30px 0 6px;
-  }
-
-  .tagline {
-    max-width: none;
-  }
-
-  .contact-link {
-    display: none;
-  }
-
   .topbar-inner {
     justify-content: center;
   }
@@ -43,6 +25,85 @@
     position: static;
     left: auto;
     transform: none;
+  }
+
+  .contact-link {
+    display: none;
+  }
+
+  .shell {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  /* sidebar collapses into a compact horizontal profile header */
+
+  .profile {
+    position: static;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "avatar name"
+      "avatar handle"
+      "avatar tagline"
+      "links  links";
+    -moz-column-gap: 18px;
+         column-gap: 18px;
+    align-items: start;
+    padding: 24px 0 14px;
+    margin-bottom: 6px;
+    border-bottom: 1px solid rgba(20, 22, 25, 0.12);
+  }
+
+  .profile > a {
+    grid-area: avatar;
+    align-self: center;
+  }
+
+  .avatar {
+    width: 92px;
+    height: 92px;
+    margin-bottom: 0;
+  }
+
+  .name {
+    grid-area: name;
+    align-self: end;
+    font-size: 25px;
+  }
+
+  .handle {
+    grid-area: handle;
+  }
+
+  .tagline {
+    grid-area: tagline;
+    max-width: none;
+    margin-top: 8px;
+  }
+
+  .side-label {
+    display: none;
+  }
+
+  .links {
+    grid-area: links;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 16px;
+  }
+
+  .link {
+    gap: 8px;
+    padding: 6px 11px;
+    border: 1px solid rgba(20, 22, 25, 0.22);
+    border-radius: 999px;
+    font-size: 13px;
+  }
+
+  .link i {
+    width: auto;
   }
 
   .card {
@@ -66,6 +127,10 @@
 }
 
 @media (max-width: 520px) {
+  .name {
+    font-size: 22px;
+  }
+
   .card {
     grid-template-columns: 1fr;
   }
@@ -644,19 +709,19 @@ body {
   color: #17181B;
   font-family: var(--body);
   background-image:
-      radial-gradient(900px 480px at 88% -6%, rgba(222, 47, 134, 0.055), transparent 60%),
-      radial-gradient(700px 420px at 4% 2%, rgba(222, 47, 134, 0.055), transparent 55%);
+      radial-gradient(900px 480px at 88% -6%, rgba(20, 135, 206, 0.05), transparent 60%),
+      radial-gradient(700px 420px at 4% 2%, rgba(20, 135, 206, 0.05), transparent 55%);
   background-attachment: fixed;
   min-height: 100vh;
 }
 
 ::-moz-selection {
-  background: #C8264F;
+  background: #0E6FB0;
   color: #fff;
 }
 
 ::selection {
-  background: #C8264F;
+  background: #0E6FB0;
   color: #fff;
 }
 
@@ -719,8 +784,8 @@ body {
   bottom: -1px;
   height: 2px;
   border-radius: 2px;
-  background: #E63462;
-  box-shadow: 0 0 10px rgba(222, 47, 134, 0.22);
+  background: #1487CE;
+  box-shadow: 0 0 10px rgba(20, 135, 206, 0.22);
 }
 
 .contact-link {
@@ -736,8 +801,8 @@ body {
 }
 
 .contact-link:hover {
-  color: #E63462;
-  border-color: #E63462;
+  color: #1487CE;
+  border-color: #1487CE;
 }
 
 /* ---- shell + sidebar ---- */
@@ -773,7 +838,7 @@ body {
 
 .avatar:hover {
   transform: rotate(360deg);
-  border-color: #E63462;
+  border-color: #1487CE;
 }
 
 .name {
@@ -786,7 +851,7 @@ body {
 }
 
 .handle {
-  color: #E63462;
+  color: #1487CE;
   font-size: 14px;
   font-weight: 400;
   margin: 6px 0 0;
@@ -828,7 +893,7 @@ body {
 
 .link:hover {
   background: #FBFBF7;
-  color: #E63462;
+  color: #1487CE;
 }
 
 .link i {
@@ -841,7 +906,7 @@ body {
 }
 
 .link:hover i {
-  color: #E63462;
+  color: #1487CE;
 }
 
 .link img {
@@ -886,7 +951,7 @@ body {
   background: #F0F0EA;
   border-color: rgba(20, 22, 25, 0.22);
   transform: translateY(-3px);
-  box-shadow: 0 14px 34px -14px rgba(20, 22, 25, 0.15), 0 0 0 1px rgba(222, 47, 134, 0.22);
+  box-shadow: 0 14px 34px -14px rgba(20, 22, 25, 0.15), 0 0 0 1px rgba(20, 135, 206, 0.22);
 }
 
 .cover {
@@ -930,7 +995,7 @@ body {
 }
 
 .role {
-  color: #E63462;
+  color: #1487CE;
   font-size: 12.5px;
   font-weight: 500;
   margin: 7px 0 0;
@@ -957,7 +1022,7 @@ body {
   width: 44px;
   height: 4px;
   border-radius: 2px;
-  background: #E63462;
+  background: #1487CE;
   margin-bottom: 14px;
 }
 
@@ -1002,7 +1067,7 @@ body {
 .edu-period {
   flex: none;
   width: 96px;
-  color: #E63462;
+  color: #1487CE;
   font-variant-numeric: tabular-nums;
 }
 

@@ -21,12 +21,12 @@ module.exports = {
         muted: '#5F6166',
         'muted-strong': '#45474C', // darker body text (e.g. tagline)
         dim: '#8A8C92',
-        accent: '#E63462',
-        'accent-strong': '#C8264F',
+        accent: '#1487CE',
+        'accent-strong': '#0E6FB0',
         // surface/effect tokens
         topbar: 'rgba(226, 226, 219, 0.85)', // frosted top bar (slightly darker than ground)
-        ring: 'rgba(222, 47, 134, 0.22)',    // accent glow / focus ring
-        wash: 'rgba(222, 47, 134, 0.055)',   // ambient background tint
+        ring: 'rgba(20, 135, 206, 0.22)',    // accent glow / focus ring
+        wash: 'rgba(20, 135, 206, 0.05)',    // ambient background tint
         shadow: 'rgba(20, 22, 25, 0.15)',    // card elevation
       },
     },
