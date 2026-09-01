@@ -11,17 +11,23 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        bg: '#0E1420',
-        panel: '#141B2A',
-        card: '#172032',
-        'card-hover': '#1E2A46',
-        line: 'rgba(148, 163, 184, 0.13)',
-        'line-strong': 'rgba(148, 163, 184, 0.24)',
-        text: '#F1F5FB',
-        muted: '#93A2B8',
-        dim: '#64748B',
-        accent: '#818CF8',
-        'accent-strong': '#6366F1',
+        bg: '#ECECE6',
+        panel: '#F4F4EF',
+        card: '#FBFBF7',
+        'card-hover': '#F0F0EA',
+        line: 'rgba(20, 22, 25, 0.12)',
+        'line-strong': 'rgba(20, 22, 25, 0.22)',
+        text: '#17181B',
+        muted: '#5F6166',
+        'muted-strong': '#45474C', // darker body text (e.g. tagline)
+        dim: '#8A8C92',
+        accent: '#E63462',
+        'accent-strong': '#C8264F',
+        // surface/effect tokens
+        topbar: 'rgba(226, 226, 219, 0.85)', // frosted top bar (slightly darker than ground)
+        ring: 'rgba(222, 47, 134, 0.22)',    // accent glow / focus ring
+        wash: 'rgba(222, 47, 134, 0.055)',   // ambient background tint
+        shadow: 'rgba(20, 22, 25, 0.15)',    // card elevation
       },
     },
   },

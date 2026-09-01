@@ -17,8 +17,8 @@
     color: theme('colors.text');
     font-family: var(--body);
     background-image:
-      radial-gradient(900px 480px at 88% -6%, rgba(99, 102, 241, 0.10), transparent 60%),
-      radial-gradient(700px 420px at 4% 2%, rgba(99, 102, 241, 0.06), transparent 55%);
+      radial-gradient(900px 480px at 88% -6%, theme('colors.wash'), transparent 60%),
+      radial-gradient(700px 420px at 4% 2%, theme('colors.wash'), transparent 55%);
     background-attachment: fixed;
     min-height: 100vh;
   }
@@ -32,7 +32,7 @@
     position: sticky;
     top: 0;
     z-index: 20;
-    background: rgba(14, 20, 32, 0.82);
+    background: theme('colors.topbar');
     backdrop-filter: blur(10px);
     border-bottom: 1px solid theme('colors.line');
   }
@@ -72,7 +72,7 @@
     height: 2px;
     border-radius: 2px;
     background: theme('colors.accent');
-    box-shadow: 0 0 10px rgba(129, 140, 248, 0.6);
+    box-shadow: 0 0 10px theme('colors.ring');
   }
   .contact-link {
     display: flex;
@@ -119,7 +119,7 @@
     margin: 0;
   }
   .handle { color: theme('colors.accent'); font-size: 14px; font-weight: 400; margin: 6px 0 0; }
-  .tagline { color: theme('colors.muted'); font-size: 14px; margin: 16px 0 0; max-width: 30ch; }
+  .tagline { color: theme('colors.muted-strong'); font-size: 14px; margin: 16px 0 0; max-width: 30ch; }
   .side-label {
     font-family: var(--display);
     font-weight: 700;
@@ -151,6 +151,7 @@
   }
   .link:hover i { color: theme('colors.accent'); }
   .link img { flex: none; width: 20px; height: 20px; border-radius: 5px; }
+  .link img.logo-wide { width: 22px; height: auto; border-radius: 0; }
 
   /* ---- work feed + project cards ---- */
   .main { padding: 34px 0 60px; min-width: 0; }
@@ -170,7 +171,7 @@
     background: theme('colors.card-hover');
     border-color: theme('colors.line-strong');
     transform: translateY(-3px);
-    box-shadow: 0 14px 34px -14px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(129, 140, 248, 0.18);
+    box-shadow: 0 14px 34px -14px theme('colors.shadow'), 0 0 0 1px theme('colors.ring');
   }
   .cover {
     width: 230px;
@@ -194,22 +195,35 @@
   .role { color: theme('colors.accent'); font-size: 12.5px; font-weight: 500; margin: 7px 0 0; }
   .desc { color: theme('colors.muted'); font-size: 14px; margin: 8px 0 0; max-width: 64ch; }
 
-  /* ---- page title box (archives / formation / posts) ---- */
+  /* ---- page title header (archives / formation / posts) ---- */
   .title-box {
-    border: 1px solid theme('colors.line');
-    background: theme('colors.card');
-    border-radius: 14px;
-    padding: 18px 22px;
-    margin: 10px 0 26px;
+    margin: 6px 0 30px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid theme('colors.line');
+  }
+  .title-box::before {
+    content: "";
+    display: block;
+    width: 44px;
+    height: 4px;
+    border-radius: 2px;
+    background: theme('colors.accent');
+    margin-bottom: 14px;
   }
   .title-heading {
     font-family: var(--display);
     font-weight: 800;
-    font-size: clamp(24px, 3.4vw, 34px);
+    font-size: clamp(26px, 4vw, 38px);
     letter-spacing: -0.02em;
-    line-height: 1.1;
+    line-height: 1.08;
     margin: 0;
     text-wrap: balance;
+  }
+  .post-date {
+    margin: 12px 0 0;
+    font-size: 13px;
+    color: theme('colors.dim');
+    font-variant-numeric: tabular-nums;
   }
 
   /* ---- footer ---- */

@@ -4,11 +4,9 @@ layout: default
 
 <article class="">
 
-  <div class="title-box py-4">
+  <div class="title-box">
     <h1 class="title-heading">{{ page.title }}</h1>
-    <p class="text-md text-slate-300 text-center">
-      {{ page.date | date: "%d %B %Y" }}
-    </p>
+    <p class="post-date">{{ page.date | date: "%d %B %Y" }}</p>
   </div>
 
   <div class="post-content">
