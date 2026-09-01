@@ -39,8 +39,6 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-    values:
-      layout: "post"
   - scope:
       path: ""
       type: "projects"
