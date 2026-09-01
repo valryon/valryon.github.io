@@ -1,9 +1,9 @@
 /* ---------------------------------------------------------
    Design tokens
 
-   Color tokens (--bg, --accent, …) are defined in a :root
-   block rendered by Jekyll from the `colors:` map in
-   _config.yml — see _includes/meta.html.
+   Colors come from `theme.extend.colors` in tailwind.config.js,
+   pulled in below via Tailwind's theme() function. Edit the
+   palette there.
 --------------------------------------------------------- */
 :root {
   --display: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -13,8 +13,8 @@
 
 @layer base {
   body {
-    background-color: var(--bg);
-    color: var(--text);
+    background-color: theme('colors.bg');
+    color: theme('colors.text');
     font-family: var(--body);
     background-image:
       radial-gradient(900px 480px at 88% -6%, rgba(99, 102, 241, 0.10), transparent 60%),
@@ -22,7 +22,7 @@
     background-attachment: fixed;
     min-height: 100vh;
   }
-  ::selection { background: var(--accent-strong); color: #fff; }
+  ::selection { background: theme('colors.accent-strong'); color: #fff; }
 }
 
 @layer components {
@@ -34,7 +34,7 @@
     z-index: 20;
     background: rgba(14, 20, 32, 0.82);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--line);
+    border-bottom: 1px solid theme('colors.line');
   }
   .topbar-inner {
     position: relative;
@@ -58,20 +58,20 @@
     font-family: var(--display);
     font-weight: 600;
     font-size: 15px;
-    color: var(--muted);
+    color: theme('colors.muted');
     padding: 8px 14px;
     border-radius: 9px;
     transition: color 0.15s, background 0.15s;
   }
-  .tab:hover { color: var(--text); background: var(--panel); }
-  .tab.active { color: var(--text); }
+  .tab:hover { color: theme('colors.text'); background: theme('colors.panel'); }
+  .tab.active { color: theme('colors.text'); }
   .tab.active::after {
     content: "";
     position: absolute;
     left: 14px; right: 14px; bottom: -1px;
     height: 2px;
     border-radius: 2px;
-    background: var(--accent);
+    background: theme('colors.accent');
     box-shadow: 0 0 10px rgba(129, 140, 248, 0.6);
   }
   .contact-link {
@@ -79,13 +79,13 @@
     align-items: center;
     gap: 8px;
     font-size: 13.5px;
-    color: var(--muted);
+    color: theme('colors.muted');
     padding: 8px 12px;
-    border: 1px solid var(--line-strong);
+    border: 1px solid theme('colors.line-strong');
     border-radius: 9px;
     transition: color 0.15s, border-color 0.15s;
   }
-  .contact-link:hover { color: var(--accent); border-color: var(--accent); }
+  .contact-link:hover { color: theme('colors.accent'); border-color: theme('colors.accent'); }
 
   /* ---- shell + sidebar ---- */
   .shell {
@@ -103,13 +103,13 @@
     height: 128px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid var(--line-strong);
+    border: 2px solid theme('colors.line-strong');
     display: block;
     margin-bottom: 20px;
-    background: var(--card);
+    background: theme('colors.card');
     transition: transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1), border-color 0.3s;
   }
-  .avatar:hover { transform: rotate(360deg); border-color: var(--accent); }
+  .avatar:hover { transform: rotate(360deg); border-color: theme('colors.accent'); }
   .name {
     font-family: var(--display);
     font-weight: 800;
@@ -118,15 +118,15 @@
     letter-spacing: -0.02em;
     margin: 0;
   }
-  .handle { color: var(--accent); font-size: 14px; font-weight: 400; margin: 6px 0 0; }
-  .tagline { color: var(--muted); font-size: 14px; margin: 16px 0 0; max-width: 30ch; }
+  .handle { color: theme('colors.accent'); font-size: 14px; font-weight: 400; margin: 6px 0 0; }
+  .tagline { color: theme('colors.muted'); font-size: 14px; margin: 16px 0 0; max-width: 30ch; }
   .side-label {
     font-family: var(--display);
     font-weight: 700;
     font-size: 12px;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: var(--dim);
+    color: theme('colors.dim');
     margin: 30px 0 10px;
   }
   .links { display: flex; flex-direction: column; gap: 1px; }
@@ -136,20 +136,20 @@
     gap: 12px;
     padding: 8px;
     border-radius: 9px;
-    color: var(--text);
+    color: theme('colors.text');
     font-size: 14px;
     transition: background 0.14s, color 0.14s;
   }
-  .link:hover { background: var(--card); color: var(--accent); }
+  .link:hover { background: theme('colors.card'); color: theme('colors.accent'); }
   .link i {
     flex: none;
     width: 22px;
     text-align: center;
-    color: var(--muted);
+    color: theme('colors.muted');
     font-size: 16px;
     transition: color 0.14s;
   }
-  .link:hover i { color: var(--accent); }
+  .link:hover i { color: theme('colors.accent'); }
   .link img { flex: none; width: 20px; height: 20px; border-radius: 5px; }
 
   /* ---- work feed + project cards ---- */
@@ -161,14 +161,14 @@
     gap: 22px;
     align-items: center;
     padding: 14px;
-    border: 1px solid var(--line);
+    border: 1px solid theme('colors.line');
     border-radius: 16px;
-    background: var(--card);
+    background: theme('colors.card');
     transition: background 0.18s, border-color 0.18s, transform 0.18s, box-shadow 0.18s;
   }
   .card:hover {
-    background: var(--card-hover);
-    border-color: var(--line-strong);
+    background: theme('colors.card-hover');
+    border-color: theme('colors.line-strong');
     transform: translateY(-3px);
     box-shadow: 0 14px 34px -14px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(129, 140, 248, 0.18);
   }
@@ -177,7 +177,7 @@
     aspect-ratio: 460 / 215;
     border-radius: 11px;
     object-fit: cover;
-    background: var(--panel);
+    background: theme('colors.panel');
     display: block;
   }
   .card-body { min-width: 0; display: flex; flex-direction: column; padding: 4px 6px 4px 0; }
@@ -190,14 +190,14 @@
     line-height: 1.15;
     margin: 0;
   }
-  .year { flex: none; font-size: 14px; color: var(--dim); font-variant-numeric: tabular-nums; }
-  .role { color: var(--accent); font-size: 12.5px; font-weight: 500; margin: 7px 0 0; }
-  .desc { color: var(--muted); font-size: 14px; margin: 8px 0 0; max-width: 64ch; }
+  .year { flex: none; font-size: 14px; color: theme('colors.dim'); font-variant-numeric: tabular-nums; }
+  .role { color: theme('colors.accent'); font-size: 12.5px; font-weight: 500; margin: 7px 0 0; }
+  .desc { color: theme('colors.muted'); font-size: 14px; margin: 8px 0 0; max-width: 64ch; }
 
   /* ---- page title box (archives / formation / posts) ---- */
   .title-box {
-    border: 1px solid var(--line);
-    background: var(--card);
+    border: 1px solid theme('colors.line');
+    background: theme('colors.card');
     border-radius: 14px;
     padding: 18px 22px;
     margin: 10px 0 26px;
@@ -217,16 +217,16 @@
     max-width: var(--maxw);
     margin: 0 auto;
     padding: 26px clamp(16px, 4vw, 36px) 44px;
-    border-top: 1px solid var(--line);
+    border-top: 1px solid theme('colors.line');
     font-size: 12.5px;
-    color: var(--dim);
+    color: theme('colors.dim');
     text-align: center;
   }
 
   /* ---- education / timeline rows (formation) ---- */
-  .edu-row { display: flex; gap: 24px; padding: 14px 0; border-bottom: 1px solid var(--line); }
-  .edu-period { flex: none; width: 96px; color: var(--accent); font-variant-numeric: tabular-nums; }
-  .edu-place { flex: none; width: 16rem; color: var(--muted); text-align: right; }
+  .edu-row { display: flex; gap: 24px; padding: 14px 0; border-bottom: 1px solid theme('colors.line'); }
+  .edu-period { flex: none; width: 96px; color: theme('colors.accent'); font-variant-numeric: tabular-nums; }
+  .edu-place { flex: none; width: 16rem; color: theme('colors.muted'); text-align: right; }
 }
 
 /* ---------------------------------------------------------

@@ -7,23 +7,6 @@ title: Damien Mayance (Valryon)
 show_drafts: nil
 permalink: /:title/
 
-# -------------------------------------------------------
-# Theme colors (rendered as CSS variables in _includes/meta.html)
-# -------------------------------------------------------
-
-colors:
-  bg: "#0E1420"
-  panel: "#141B2A"
-  card: "#172032"
-  card_hover: "#1E2A46"
-  line: "rgba(148, 163, 184, 0.13)"
-  line_strong: "rgba(148, 163, 184, 0.24)"
-  text: "#F1F5FB"
-  muted: "#93A2B8"
-  dim: "#64748B"
-  accent: "#818CF8"
-  accent_strong: "#6366F1"
-
 include: ['_pages']
 exclude: ['README.md', 'LICENSE', 'node_modules', 'Gemfile', 'Gemfile.lock', 'package.json', 'package-lock.json', 'tailwind.config.js', 'static/css/input.css', 'static/css/components.css']
 
