@@ -8,88 +8,78 @@
 
 </head>
 
-<body class="bg-gray-900 text-slate-50 max-w-6xl mx-auto">
-  <div class="flex flex-col lg:flex-row">
-    <aside class="pb-4 pt-0 w-full px-3 sm:px-6 lg:px-8 lg:w-3/12 h-full lg:mt-18 lg:pt-2">
-      <a href="/">
-        <img src="https://www.gravatar.com/avatar/545f7c7f0ed11d6ef21722a7e6c47acf?s=300" alt="Damien Mayance"
-          class="w-48 my-4 rounded-full hover:rotate-180 hover:transition-all">
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <nav class="tabs">
+        <a class="tab {% if page.url == '/' %}active{% endif %}" href="/">Main work</a>
+        <a class="tab {% if page.url contains 'archives' %}active{% endif %}" href="/archives">Archives</a>
+        <a class="tab {% if page.url contains 'formation' %}active{% endif %}" href="/formation">Formation</a>
+      </nav>
+      <a class="contact-link" href="mailto:coucou@dmayance.com">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Contact me</span>
       </a>
-      <h1 class="text-2xl font-bold">Damien Mayance</h1>
-      <h3 class="text-sm text-slate-300">@valryon</h3>
-      <p class="py-2">French indie game, XR, web and software developer.<br />I love programming, creating and
+    </div>
+  </header>
+
+  <div class="shell">
+    <aside class="profile">
+      <a href="/">
+        <img class="avatar" src="https://www.gravatar.com/avatar/545f7c7f0ed11d6ef21722a7e6c47acf?s=300"
+          alt="Damien Mayance">
+      </a>
+      <h1 class="name">Damien Mayance</h1>
+      <h3 class="handle">@valryon</h3>
+      <p class="tagline">French indie game, XR, web and software developer.<br />I love programming, creating and
         hacking stuff.</p>
-      <div class="my-2">
-        <h3 class="side-heading">Links</h3>
-        <div class="mt-2 mb-4 text-lg flex flex-col gap-2">
-          <div class="side-row">
-            <i class="fa-solid fa-location-dot"></i>
-            <span class="hover:font-bold">Vitré, France</span>
-          </div>
-          <div class="side-row text-slate-200">
-            <i class="fa-brands fa-linkedin"></i>
-            <a class="side-link" href="https://fr.linkedin.com/in/damienmayance">LinkedIn</a>
-          </div>
-          <div class="side-row text-slate-200">
-            <i class="fa-brands fa-bluesky"></i>
-            <a class="side-link" href="https://bsky.app/profile/valryon.bsky.social">@valryon.bsky.social</a>
-          </div>
-          <div class="side-row text-slate-200">
-            <i class="fa-brands fa-github"></i>
-            <a class="side-link" href="https://github.com/Valryon">GitHub</a>
-          </div>
-          <div class="side-row-img">
-            <img style="width:24px; height:24px" src="{{ site.url }}/static/images/icon-pixelnest@2x.png">
-            <a class="side-link" href="https://pixelnest.io">Pixelnest Studio</a>
-          </div>
-          <div class="side-row-img">
-            <img style="width:24px; height:24px" src="{{ site.url }}/static/images/icon-tygames.png">
-            <a class="side-link" href="https://ty.games">TyGAMES</a>
-          </div>
-          <div class="side-row text-slate-200">
-            <i class="fa-solid fa-envelope"></i>
-            <a class="side-link" href="mailto:coucou@dmayance.com">Contact me</a>
-          </div>
+
+      <div class="side-label">Links</div>
+      <div class="links">
+        <div class="link">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Vitré, France</span>
         </div>
-      </div>
-      <div class="my-2">
-        <h3 class="side-heading">Categories</h3>
-        <div class="mt-2 mb-4 text-md text-center sm:text-lg flex flex-rows lg:flex-col gap-4 lg:text-xl lg:text-left">
-          <div class="category-pill bg-indigo-900">
-            <i class="fa-solid fa-star"></i>
-            <a href="/#projects">Main&nbsp;work</a>
-          </div>
-          <div class="category-pill bg-red-900">
-            <i class="fa-solid fa-box-archive"></i>
-            <a href="/archives#archives">Archives</a>
-          </div>
-          <div class="category-pill bg-blue-900">
-            <i class="fa-solid fa-school"></i>
-            <a href="/formation#formation">Formation</a>
-          </div>
-        </div>
+        <a class="link" href="https://fr.linkedin.com/in/damienmayance">
+          <i class="fa-brands fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+        <a class="link" href="https://bsky.app/profile/valryon.bsky.social">
+          <i class="fa-brands fa-bluesky"></i>
+          <span>@valryon.bsky.social</span>
+        </a>
+        <a class="link" href="https://github.com/Valryon">
+          <i class="fa-brands fa-github"></i>
+          <span>GitHub</span>
+        </a>
+        <a class="link" href="https://pixelnest.io">
+          <img src="{{ site.url }}/static/images/icon-pixelnest@2x.png" alt="">
+          <span>Pixelnest Studio</span>
+        </a>
+        <a class="link" href="https://ty.games">
+          <img src="{{ site.url }}/static/images/icon-tygames.png" alt="">
+          <span>TyGAMES</span>
+        </a>
+        <a class="link" href="mailto:coucou@dmayance.com">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Contact me</span>
+        </a>
       </div>
     </aside>
 
-    <main class="flex-1 px-2 sm:px-4 lg:px-8 pb-4 lg:pt-4 h-auto w-full ">
-      <div class="">
-
-        {% if page.h1 %}
-        <div class="title-box">
-          <h1 class="title-heading py-4">{{ page.h1 }}</h1>
-        </div>
-        {% endif %}
-
-        {{ content }}
-
+    <main class="main">
+      {% if page.h1 %}
+      <div class="title-box">
+        <h1 class="title-heading">{{ page.h1 }}</h1>
       </div>
+      {% endif %}
+
+      {{ content }}
     </main>
   </div>
 
-  <footer class="text-center py-4">
-    <p class="text-xs text-slate-300">
-      © Damien Mayance - Made with Jekyll + tailwind.css, hosted on GitHub Pages
-    </p>
+  <footer class="site-footer">
+    © Damien Mayance - Made with Jekyll + tailwind.css, hosted on GitHub Pages
   </footer>
 </body>
 

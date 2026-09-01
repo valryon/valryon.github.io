@@ -1,20 +1,11 @@
-<article class="card">
-    <a href="{{ include.url }}">
-        <div class="card-body">
-            <div class="card-media">
-                <img class="rounded-lg" src="{{ site.url }}/{{ include.image }}" alt="{{ include.title }}" />
-            </div>
-            <div class="flex-auto">
-                <div class="card-header">
-                    <h2 class="card-title">{{ include.title }} </h2>
-                    <span class="card-year md:collapse">{{ include.year }}</span>
-                </div>
-                <span class="card-role">{{ include.role }}</span>
-                <p>{{ include.shortdesc }}</p>
-            </div>
-            <div class="flex-shrink collapse md:visible px-2">
-                <span class="card-year">{{ include.year }}</span>
-            </div>
+<a href="{{ include.url }}" class="card">
+    <img class="cover" src="{{ site.url }}/{{ include.image }}" alt="{{ include.title }}" loading="lazy" />
+    <div class="card-body">
+        <div class="card-top">
+            <h2 class="card-title">{{ include.title }}</h2>
+            <span class="year">{{ include.year }}</span>
         </div>
-    </a>
-</article>
+        <span class="role">{{ include.role }}</span>
+        <p class="desc">{{ include.shortdesc }}</p>
+    </div>
+</a>

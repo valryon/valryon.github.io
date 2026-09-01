@@ -1,79 +1,254 @@
+/* ---------------------------------------------------------
+   Design tokens
+
+   Color tokens (--bg, --accent, …) are defined in a :root
+   block rendered by Jekyll from the `colors:` map in
+   _config.yml — see _includes/meta.html.
+--------------------------------------------------------- */
+:root {
+  --display: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --body: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --maxw: 1140px;
+}
+
+@layer base {
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: var(--body);
+    background-image:
+      radial-gradient(900px 480px at 88% -6%, rgba(99, 102, 241, 0.10), transparent 60%),
+      radial-gradient(700px 420px at 4% 2%, rgba(99, 102, 241, 0.06), transparent 55%);
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+  ::selection { background: var(--accent-strong); color: #fff; }
+}
+
 @layer components {
 
-  /* Sidebar section heading (Links, Categories) */
-  .side-heading {
-    @apply text-lg font-semibold pt-1;
+  /* ---- top tab bar ---- */
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: rgba(14, 20, 32, 0.82);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
   }
-
-  /* Sidebar row with a Font Awesome icon (LinkedIn, GitHub, etc.) */
-  .side-row {
-    @apply flex gap-x-3 ml-1 items-center;
+  .topbar-inner {
+    position: relative;
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 0 clamp(16px, 4vw, 36px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 60px;
   }
-
-  /* Sidebar row with an image icon (Pixelnest, TyGAMES) */
-  .side-row-img {
-    @apply flex gap-x-2 items-center text-slate-200;
+  .tabs {
+    display: flex;
+    gap: 4px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
-
-  /* Sidebar contact / social link rows */
-  .side-link {
-    @apply hover:underline hover:font-bold;
+  .tab {
+    position: relative;
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--muted);
+    padding: 8px 14px;
+    border-radius: 9px;
+    transition: color 0.15s, background 0.15s;
   }
-
-  /* Category navigation pills (color set inline per pill) */
-  .category-pill {
-    @apply rounded-full px-4 py-1 hover:font-bold hover:underline;
+  .tab:hover { color: var(--text); background: var(--panel); }
+  .tab.active { color: var(--text); }
+  .tab.active::after {
+    content: "";
+    position: absolute;
+    left: 14px; right: 14px; bottom: -1px;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--accent);
+    box-shadow: 0 0 10px rgba(129, 140, 248, 0.6);
   }
-
-  /* Page / post title header box */
-  .title-box {
-    @apply border-2 rounded mt-2 mb-6;
+  .contact-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13.5px;
+    color: var(--muted);
+    padding: 8px 12px;
+    border: 1px solid var(--line-strong);
+    border-radius: 9px;
+    transition: color 0.15s, border-color 0.15s;
   }
+  .contact-link:hover { color: var(--accent); border-color: var(--accent); }
 
-  .title-heading {
-    @apply text-2xl font-semibold text-center;
+  /* ---- shell + sidebar ---- */
+  .shell {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 0 clamp(16px, 4vw, 36px);
+    display: grid;
+    grid-template-columns: 288px 1fr;
+    gap: clamp(28px, 4vw, 52px);
+    align-items: start;
   }
+  .profile { position: sticky; top: 60px; padding: 38px 0 32px; }
+  .avatar {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--line-strong);
+    display: block;
+    margin-bottom: 20px;
+    background: var(--card);
+    transition: transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1), border-color 0.3s;
+  }
+  .avatar:hover { transform: rotate(360deg); border-color: var(--accent); }
+  .name {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 1.04;
+    letter-spacing: -0.02em;
+    margin: 0;
+  }
+  .handle { color: var(--accent); font-size: 14px; font-weight: 400; margin: 6px 0 0; }
+  .tagline { color: var(--muted); font-size: 14px; margin: 16px 0 0; max-width: 30ch; }
+  .side-label {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--dim);
+    margin: 30px 0 10px;
+  }
+  .links { display: flex; flex-direction: column; gap: 1px; }
+  .link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px;
+    border-radius: 9px;
+    color: var(--text);
+    font-size: 14px;
+    transition: background 0.14s, color 0.14s;
+  }
+  .link:hover { background: var(--card); color: var(--accent); }
+  .link i {
+    flex: none;
+    width: 22px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 16px;
+    transition: color 0.14s;
+  }
+  .link:hover i { color: var(--accent); }
+  .link img { flex: none; width: 20px; height: 20px; border-radius: 5px; }
 
-  /* Project / archive card (see _includes/card.html) */
+  /* ---- work feed + project cards ---- */
+  .main { padding: 34px 0 60px; min-width: 0; }
+  .feed { display: flex; flex-direction: column; gap: 14px; }
   .card {
-    @apply hover:bg-indigo-900 rounded mb-4;
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    gap: 22px;
+    align-items: center;
+    padding: 14px;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    background: var(--card);
+    transition: background 0.18s, border-color 0.18s, transform 0.18s, box-shadow 0.18s;
   }
-
-  .card-body {
-    @apply flex flex-col md:flex-row py-2 px-2 gap-4 md:items-center;
+  .card:hover {
+    background: var(--card-hover);
+    border-color: var(--line-strong);
+    transform: translateY(-3px);
+    box-shadow: 0 14px 34px -14px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(129, 140, 248, 0.18);
   }
-
-  .card-media {
-    @apply shrink-0 w-full md:w-48;
+  .cover {
+    width: 230px;
+    aspect-ratio: 460 / 215;
+    border-radius: 11px;
+    object-fit: cover;
+    background: var(--panel);
+    display: block;
   }
-
-  .card-header {
-    @apply flex;
-  }
-
+  .card-body { min-width: 0; display: flex; flex-direction: column; padding: 4px 6px 4px 0; }
+  .card-top { display: flex; align-items: baseline; justify-content: space-between; gap: 14px; }
   .card-title {
-    @apply flex-auto text-lg font-bold;
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: 19px;
+    letter-spacing: -0.01em;
+    line-height: 1.15;
+    margin: 0;
+  }
+  .year { flex: none; font-size: 14px; color: var(--dim); font-variant-numeric: tabular-nums; }
+  .role { color: var(--accent); font-size: 12.5px; font-weight: 500; margin: 7px 0 0; }
+  .desc { color: var(--muted); font-size: 14px; margin: 8px 0 0; max-width: 64ch; }
+
+  /* ---- page title box (archives / formation / posts) ---- */
+  .title-box {
+    border: 1px solid var(--line);
+    background: var(--card);
+    border-radius: 14px;
+    padding: 18px 22px;
+    margin: 10px 0 26px;
+  }
+  .title-heading {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: clamp(24px, 3.4vw, 34px);
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin: 0;
+    text-wrap: balance;
   }
 
-  .card-year {
-    @apply text-slate-300;
+  /* ---- footer ---- */
+  .site-footer {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 26px clamp(16px, 4vw, 36px) 44px;
+    border-top: 1px solid var(--line);
+    font-size: 12.5px;
+    color: var(--dim);
+    text-align: center;
   }
 
-  .card-role {
-    @apply text-slate-400;
-  }
+  /* ---- education / timeline rows (formation) ---- */
+  .edu-row { display: flex; gap: 24px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+  .edu-period { flex: none; width: 96px; color: var(--accent); font-variant-numeric: tabular-nums; }
+  .edu-place { flex: none; width: 16rem; color: var(--muted); text-align: right; }
+}
 
-  /* Education / timeline rows (formation) */
-  .edu-row {
-    @apply flex gap-4;
-  }
-
-  .edu-period {
-    @apply flex-shrink text-slate-300;
-  }
-
-  .edu-place {
-    @apply flex-shrink-0 w-64;
-  }
-
+/* ---------------------------------------------------------
+   Responsive
+--------------------------------------------------------- */
+@media (max-width: 840px) {
+  .shell { grid-template-columns: 1fr; gap: 4px; }
+  .profile { position: static; padding: 30px 0 6px; }
+  .tagline { max-width: none; }
+  .contact-link { display: none; }
+  .topbar-inner { justify-content: center; }
+  .tabs { position: static; left: auto; transform: none; }
+  .card { grid-template-columns: 168px 1fr; gap: 16px; }
+  .cover { width: 168px; }
+  .edu-row { flex-wrap: wrap; gap: 4px 16px; }
+  .edu-place { width: auto; text-align: left; }
+}
+@media (max-width: 520px) {
+  .card { grid-template-columns: 1fr; }
+  .cover { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .card, .avatar, .tab, .link, .contact-link { transition: none; }
+  .avatar:hover { transform: none; }
 }

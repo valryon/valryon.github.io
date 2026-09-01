@@ -1,11 +1,10 @@
 ---
 layout: default
 title: Portfolio
-h1: Main work
 ---
 
 <div>
-  <div id="projects">
+  <div class="feed">
     {% assign projects = site.projects | sort: 'date' | reverse %}
     {% for post in projects %}
 
