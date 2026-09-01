@@ -1,10 +1,9 @@
-/* ---------------------------------------------------------
+/* =========================================================
    Design tokens
-
-   Colors come from `theme.extend.colors` in tailwind.config.js,
-   pulled in below via Tailwind's theme() function. Edit the
-   palette there.
---------------------------------------------------------- */
+   Colors live in `theme.extend.colors` (tailwind.config.js) and
+   are pulled in here via Tailwind's theme() function — edit the
+   palette there, not in this file.
+   ========================================================= */
 :root {
   --display: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --body: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -13,21 +12,21 @@
 
 @layer base {
   body {
-    background-color: theme('colors.bg');
-    color: theme('colors.text');
+    min-height: 100vh;
     font-family: var(--body);
+    color: theme('colors.text');
+    background-color: theme('colors.bg');
     background-image:
       radial-gradient(900px 480px at 88% -6%, theme('colors.wash'), transparent 60%),
       radial-gradient(700px 420px at 4% 2%, theme('colors.wash'), transparent 55%);
     background-attachment: fixed;
-    min-height: 100vh;
   }
   ::selection { background: theme('colors.accent-strong'); color: #fff; }
 }
 
 @layer components {
 
-  /* ---- top tab bar ---- */
+  /* ---- top tab bar ---------------------------------------- */
   .topbar {
     position: sticky;
     top: 0;
@@ -38,29 +37,30 @@
   }
   .topbar-inner {
     position: relative;
-    max-width: var(--maxw);
-    margin: 0 auto;
-    padding: 0 clamp(16px, 4vw, 36px);
     display: flex;
     align-items: center;
     justify-content: flex-end;
     height: 60px;
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 0 clamp(16px, 4vw, 36px);
   }
+
   .tabs {
-    display: flex;
-    gap: 4px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    display: flex;
+    gap: 4px;
   }
   .tab {
     position: relative;
+    padding: 8px 14px;
+    border-radius: 9px;
     font-family: var(--display);
     font-weight: 600;
     font-size: 15px;
     color: theme('colors.muted');
-    padding: 8px 14px;
-    border-radius: 9px;
     transition: color 0.15s, background 0.15s;
   }
   .tab:hover { color: theme('colors.text'); background: theme('colors.panel'); }
@@ -74,60 +74,82 @@
     background: theme('colors.accent');
     box-shadow: 0 0 10px theme('colors.ring');
   }
+
   .contact-link {
     display: flex;
     align-items: center;
     gap: 8px;
-    font-size: 13.5px;
-    color: theme('colors.muted');
     padding: 8px 12px;
     border: 1px solid theme('colors.line-strong');
     border-radius: 9px;
+    font-size: 13.5px;
+    color: theme('colors.muted');
     transition: color 0.15s, border-color 0.15s;
   }
   .contact-link:hover { color: theme('colors.accent'); border-color: theme('colors.accent'); }
 
-  /* ---- shell + sidebar ---- */
+  /* ---- shell + sidebar ------------------------------------ */
   .shell {
-    max-width: var(--maxw);
-    margin: 0 auto;
-    padding: 0 clamp(16px, 4vw, 36px);
     display: grid;
     grid-template-columns: 288px 1fr;
     gap: clamp(28px, 4vw, 52px);
     align-items: start;
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 0 clamp(16px, 4vw, 36px);
   }
   .profile { position: sticky; top: 60px; padding: 38px 0 32px; }
+
   .avatar {
+    display: block;
     width: 128px;
     height: 128px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid theme('colors.line-strong');
-    display: block;
     margin-bottom: 20px;
+    border-radius: 50%;
+    border: 2px solid theme('colors.line-strong');
+    object-fit: cover;
     background: theme('colors.card');
     transition: transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1), border-color 0.3s;
   }
   .avatar:hover { transform: rotate(360deg); border-color: theme('colors.accent'); }
+
   .name {
+    margin: 0;
     font-family: var(--display);
     font-weight: 800;
     font-size: 30px;
     line-height: 1.04;
     letter-spacing: -0.02em;
-    margin: 0;
   }
-  .handle { color: theme('colors.accent'); font-size: 14px; font-weight: 400; margin: 6px 0 0; }
-  .tagline { color: theme('colors.muted-strong'); font-size: 14px; margin: 16px 0 0; max-width: 30ch; }
+  .handle { margin: 6px 0 0; font-size: 14px; font-weight: 400; color: theme('colors.accent'); }
+
+  /* short accent line (echoes the page-title rule) */
+  .accent-line {
+    width: 44px;
+    height: 4px;
+    margin: 16px 0 2px;
+    border-radius: 2px;
+    background: theme('colors.accent');
+  }
+
+  .tagline {
+    max-width: 32ch;
+    margin: 14px 0 0;
+    font-size: 13.5px;
+    line-height: 1.62;
+    color: theme('colors.muted-strong');
+    text-wrap: pretty;
+  }
+  .tagline strong { color: theme('colors.accent'); font-weight: 700; letter-spacing: -0.01em; }
+
   .side-label {
+    margin: 30px 0 10px;
     font-family: var(--display);
     font-weight: 700;
     font-size: 12px;
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: theme('colors.dim');
-    margin: 30px 0 10px;
   }
   .links { display: flex; flex-direction: column; gap: 1px; }
   .link {
@@ -136,26 +158,27 @@
     gap: 12px;
     padding: 8px;
     border-radius: 9px;
-    color: theme('colors.text');
     font-size: 14px;
+    color: theme('colors.text');
     transition: background 0.14s, color 0.14s;
   }
   .link:hover { background: theme('colors.card'); color: theme('colors.accent'); }
   .link i {
     flex: none;
     width: 22px;
+    font-size: 16px;
     text-align: center;
     color: theme('colors.muted');
-    font-size: 16px;
     transition: color 0.14s;
   }
   .link:hover i { color: theme('colors.accent'); }
   .link img { flex: none; width: 20px; height: 20px; border-radius: 5px; }
   .link img.logo-wide { width: 22px; height: auto; border-radius: 0; }
 
-  /* ---- work feed + project cards ---- */
-  .main { padding: 34px 0 60px; min-width: 0; }
+  /* ---- work feed + project cards -------------------------- */
+  .main { min-width: 0; padding: 34px 0 60px; }
   .feed { display: flex; flex-direction: column; gap: 14px; }
+
   .card {
     display: grid;
     grid-template-columns: 230px 1fr;
@@ -168,34 +191,34 @@
     transition: background 0.18s, border-color 0.18s, transform 0.18s, box-shadow 0.18s;
   }
   .card:hover {
-    background: theme('colors.card-hover');
-    border-color: theme('colors.line-strong');
     transform: translateY(-3px);
+    border-color: theme('colors.line-strong');
+    background: theme('colors.card-hover');
     box-shadow: 0 14px 34px -14px theme('colors.shadow'), 0 0 0 1px theme('colors.ring');
   }
   .cover {
+    display: block;
     width: 230px;
     aspect-ratio: 460 / 215;
     border-radius: 11px;
     object-fit: cover;
     background: theme('colors.panel');
-    display: block;
   }
   .card-body { min-width: 0; display: flex; flex-direction: column; padding: 4px 6px 4px 0; }
   .card-top { display: flex; align-items: baseline; justify-content: space-between; gap: 14px; }
   .card-title {
+    margin: 0;
     font-family: var(--display);
     font-weight: 700;
     font-size: 19px;
-    letter-spacing: -0.01em;
     line-height: 1.15;
-    margin: 0;
+    letter-spacing: -0.01em;
   }
   .year { flex: none; font-size: 14px; color: theme('colors.dim'); font-variant-numeric: tabular-nums; }
-  .role { color: theme('colors.accent'); font-size: 12.5px; font-weight: 500; margin: 7px 0 0; }
-  .desc { color: theme('colors.muted'); font-size: 14px; margin: 8px 0 0; max-width: 64ch; }
+  .role { margin: 7px 0 0; font-size: 12.5px; font-weight: 500; color: theme('colors.accent'); }
+  .desc { max-width: 64ch; margin: 8px 0 0; font-size: 14px; color: theme('colors.muted'); }
 
-  /* ---- page title header (archives / formation / posts) ---- */
+  /* ---- page title header (archives / formation / posts) --- */
   .title-box {
     margin: 6px 0 30px;
     padding-bottom: 18px;
@@ -206,27 +229,22 @@
     display: block;
     width: 44px;
     height: 4px;
+    margin-bottom: 14px;
     border-radius: 2px;
     background: theme('colors.accent');
-    margin-bottom: 14px;
   }
   .title-heading {
+    margin: 0;
     font-family: var(--display);
     font-weight: 800;
     font-size: clamp(26px, 4vw, 38px);
-    letter-spacing: -0.02em;
     line-height: 1.08;
-    margin: 0;
+    letter-spacing: -0.02em;
     text-wrap: balance;
   }
-  .post-date {
-    margin: 12px 0 0;
-    font-size: 13px;
-    color: theme('colors.dim');
-    font-variant-numeric: tabular-nums;
-  }
+  .post-date { margin: 12px 0 0; font-size: 13px; color: theme('colors.dim'); font-variant-numeric: tabular-nums; }
 
-  /* ---- footer ---- */
+  /* ---- footer --------------------------------------------- */
   .site-footer {
     max-width: var(--maxw);
     margin: 0 auto;
@@ -237,32 +255,32 @@
     text-align: center;
   }
 
-  /* ---- education / timeline rows (formation) ---- */
+  /* ---- education / timeline rows (formation) -------------- */
   .edu-row { display: flex; gap: 24px; padding: 14px 0; border-bottom: 1px solid theme('colors.line'); }
   .edu-period { flex: none; width: 96px; color: theme('colors.accent'); font-variant-numeric: tabular-nums; }
   .edu-place { flex: none; width: 16rem; color: theme('colors.muted'); text-align: right; }
-}
 
-/* ---------------------------------------------------------
-   Responsive
---------------------------------------------------------- */
-@media (max-width: 840px) {
-  .shell { grid-template-columns: 1fr; gap: 4px; }
-  .profile { position: static; padding: 30px 0 6px; }
-  .tagline { max-width: none; }
-  .contact-link { display: none; }
-  .topbar-inner { justify-content: center; }
-  .tabs { position: static; left: auto; transform: none; }
-  .card { grid-template-columns: 168px 1fr; gap: 16px; }
-  .cover { width: 168px; }
-  .edu-row { flex-wrap: wrap; gap: 4px 16px; }
-  .edu-place { width: auto; text-align: left; }
-}
-@media (max-width: 520px) {
-  .card { grid-template-columns: 1fr; }
-  .cover { width: 100%; }
-}
-@media (prefers-reduced-motion: reduce) {
-  .card, .avatar, .tab, .link, .contact-link { transition: none; }
-  .avatar:hover { transform: none; }
+  /* ---- responsive ----------------------------------------- */
+  /* Nested here (not a separate top-level block) so these rules stay
+     in the components layer and override the base rules above. */
+  @media (max-width: 840px) {
+    .shell { grid-template-columns: 1fr; gap: 4px; }
+    .profile { position: static; padding: 30px 0 6px; }
+    .tagline { max-width: none; }
+    .contact-link { display: none; }
+    .topbar-inner { justify-content: center; }
+    .tabs { position: static; left: auto; transform: none; }
+    .card { grid-template-columns: 168px 1fr; gap: 16px; }
+    .cover { width: 168px; }
+    .edu-row { flex-wrap: wrap; gap: 4px 16px; }
+    .edu-place { width: auto; text-align: left; }
+  }
+  @media (max-width: 520px) {
+    .card { grid-template-columns: 1fr; }
+    .cover { width: 100%; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .card, .avatar, .tab, .link, .contact-link { transition: none; }
+    .avatar:hover { transform: none; }
+  }
 }
