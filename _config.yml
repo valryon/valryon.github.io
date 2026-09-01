@@ -8,7 +8,7 @@ show_drafts: nil
 permalink: /:title/
 
 include: ['_pages']
-exclude: ['README.md', 'LICENSE', 'package.json', 'gulpfile.js', 'node_modules', 'Gemfile', 'Gemfile.lock']
+exclude: ['README.md', 'LICENSE', 'node_modules', 'Gemfile', 'Gemfile.lock', 'package.json', 'package-lock.json', 'tailwind.config.js', 'static/css/input.css', 'static/css/components.css']
 
 excerpt_separator: <!--more-->
 

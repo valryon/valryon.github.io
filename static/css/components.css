@@ -1,0 +1,79 @@
+@layer components {
+
+  /* Sidebar section heading (Links, Categories) */
+  .side-heading {
+    @apply text-lg font-semibold pt-1;
+  }
+
+  /* Sidebar row with a Font Awesome icon (LinkedIn, GitHub, etc.) */
+  .side-row {
+    @apply flex gap-x-3 ml-1 items-center;
+  }
+
+  /* Sidebar row with an image icon (Pixelnest, TyGAMES) */
+  .side-row-img {
+    @apply flex gap-x-2 items-center text-slate-200;
+  }
+
+  /* Sidebar contact / social link rows */
+  .side-link {
+    @apply hover:underline hover:font-bold;
+  }
+
+  /* Category navigation pills (color set inline per pill) */
+  .category-pill {
+    @apply rounded-full px-4 py-1 hover:font-bold hover:underline;
+  }
+
+  /* Page / post title header box */
+  .title-box {
+    @apply border-2 rounded mt-2 mb-6;
+  }
+
+  .title-heading {
+    @apply text-2xl font-semibold text-center;
+  }
+
+  /* Project / archive card (see _includes/card.html) */
+  .card {
+    @apply hover:bg-indigo-900 rounded mb-4;
+  }
+
+  .card-body {
+    @apply flex flex-col md:flex-row py-2 px-2 gap-4 md:items-center;
+  }
+
+  .card-media {
+    @apply shrink-0 w-full md:w-48;
+  }
+
+  .card-header {
+    @apply flex;
+  }
+
+  .card-title {
+    @apply flex-auto text-lg font-bold;
+  }
+
+  .card-year {
+    @apply text-slate-300;
+  }
+
+  .card-role {
+    @apply text-slate-400;
+  }
+
+  /* Education / timeline rows (formation) */
+  .edu-row {
+    @apply flex gap-4;
+  }
+
+  .edu-period {
+    @apply flex-shrink text-slate-300;
+  }
+
+  .edu-place {
+    @apply flex-shrink-0 w-64;
+  }
+
+}

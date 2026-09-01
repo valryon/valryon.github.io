@@ -4,7 +4,7 @@ tags: game
 image: static/content/nightcall/cover.png
 shortdesc: A non linear narrative game by Monkey Moon and Black Muffin Studio, edited by Raw Fury. I helped them closing the project.
 direct: https://nightcall-game.com/
-role: dev
+role: Unity3D dev
 highlight: yes
 ---
 

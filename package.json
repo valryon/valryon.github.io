@@ -1,0 +1,14 @@
+{
+  "name": "valryon.github.io",
+  "version": "1.0.0",
+  "scripts": {
+    "build:css": "tailwindcss -i static/css/input.css -o static/css/output.css --minify",
+    "watch:css": "tailwindcss -i static/css/input.css -o static/css/output.css --watch",
+    "build": "npm run build:css && bundle exec jekyll build",
+    "serve": "concurrently \"npm run watch:css\" \"bundle exec jekyll serve --livereload\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "tailwindcss": "^3.4.0"
+  }
+}

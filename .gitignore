@@ -9,3 +9,4 @@ Desktop.ini
 
 _site/
 .jekyll-cache/
+node_modules/
