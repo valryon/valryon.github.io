@@ -1,5 +1,5 @@
-<a href="{{ include.url }}" class="card">
-    <img class="cover" src="{{ site.url }}/{{ include.image }}" alt="{{ include.title }}" loading="lazy" />
+<a href="{{ include.url }}" class="card{% if include.featured %} card-featured{% endif %}">
+    <img class="cover" src="{{ site.url }}/{{ include.image | default: include.fallback_image }}" alt="{{ include.title }}" loading="lazy" />
     <div class="card-body">
         <div class="card-top">
             <h2 class="card-title">{{ include.title }}</h2>
