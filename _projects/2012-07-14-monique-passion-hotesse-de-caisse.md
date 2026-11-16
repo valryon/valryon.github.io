@@ -4,7 +4,7 @@ tags: game
 image: static/content/monique/cover.png
 shortdesc: This is a Cashier job game parody made for the "worst game ever" contest. We won.
 role: dev
-archive: yes
+archived: yes
 ---
 
 Cashier job **game parody**, made for the "worst game ever" contest.

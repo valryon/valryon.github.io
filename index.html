@@ -28,7 +28,7 @@ title: Portfolio
   <div class="feed">
     {% for post in projects %}
 
-      {% if post.highlight and post.featured == nil %}
+      {% unless post.archived or post.featured %}
         {% if post.direct %}
           {% capture url %}{{post.direct}}{% endcapture %}
         {% else %}
@@ -41,7 +41,7 @@ title: Portfolio
             image=post.image url=url role=post.role year=year title=post.title shortdesc=post.shortdesc
         %}
 
-      {% endif %}
+      {% endunless %}
     {% endfor %}
   </div>
 </div>

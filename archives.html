@@ -9,7 +9,7 @@ h1: Archived projects, prototypes, old stuff
     {% assign projects = site.projects | sort: 'date' | reverse %}
     {% for post in projects %}
 
-      {% unless post.highlight %}
+      {% if post.archived %}
         {% if post.direct %}
           {% capture url %}{{post.direct}}{% endcapture %}
         {% else %}
@@ -22,7 +22,7 @@ h1: Archived projects, prototypes, old stuff
             image=post.image url=url role=post.role year=year title=post.title shortdesc=post.shortdesc
         %}
 
-      {% endunless %}
+      {% endif %}
     {% endfor %}
   </div>
 </div>

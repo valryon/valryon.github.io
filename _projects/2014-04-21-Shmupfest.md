@@ -4,7 +4,7 @@ tags: pixelnest game
 image: static/content/shmupfest/cover.png
 shortdesc: A procedural shoot them up made for the Stunfest 2014 festival
 role: dev & design
-archive: yes
+archived: yes
 ---
 
 The Shmupfest is a procedural shoot them up made for the Stunfest 2014 festival.
